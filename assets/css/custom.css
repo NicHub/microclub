@@ -435,3 +435,25 @@
     font-size: 2.2rem;
   }
 }
+
+.home-next-event {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.home-next-event__link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: rgb(var(--color-primary-600));
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-next-event__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.dark .home-next-event__link {
+  color: rgb(var(--color-primary-400));
+}

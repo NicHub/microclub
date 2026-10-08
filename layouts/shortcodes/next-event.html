@@ -1,0 +1,17 @@
+{{ $next := dict }}
+{{ range sort hugo.Data.agenda.events.events "date" "asc" }}
+  {{ $eventDate := time.AsTime .date }}
+  {{ if and (not $next) (ge $eventDate now) (ne .status "canceled") }}
+    {{ $next = . }}
+  {{ end }}
+{{ end }}
+
+<div class="home-next-event">
+  {{ with $next }}
+    {{ partial "agenda-event.html" (dict "event" . "today" (now | time.Format "2006-01-02")) }}
+    <a class="home-next-event__link" href="{{ relLangURL "agenda/" }}">Consulter tout l’agenda →</a>
+  {{ else }}
+    <p>Aucun événement n’est encore annoncé.</p>
+    <a class="home-next-event__link" href="{{ relLangURL "agenda/" }}">Consulter l’agenda →</a>
+  {{ end }}
+</div>

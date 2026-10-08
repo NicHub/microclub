@@ -72,7 +72,7 @@ enableGitInfo = true
     showScrollToTop = true
 
   [params.homepage]
-    layout = "background"
+    layout = "landing"
     homepageImage = "images/site-background.png"
     layoutBackgroundBlur = true
     showRecent = true
