@@ -1,0 +1,35 @@
+{{/* Compléments inspirés du projet CNL. Blowfish conserve toutes ses balises natives. */}}
+{{ if not .IsHome }}{{ hugo.Generator }}{{ end }}
+<meta name="generator-date" content="{{ now.UTC.Format "2006-01-02T15:04:05Z" }}">
+{{ if not hugo.IsProduction }}<meta name="robots" content="noindex, nofollow">{{ end }}
+
+{{ $socialImageAlt := site.Params.socialImageAlt | default site.Title }}
+<meta property="og:image:alt" content="{{ $socialImageAlt }}">
+<meta name="twitter:image:alt" content="{{ $socialImageAlt }}">
+
+{{ if .IsHome }}
+  {{ $productionBaseURL := strings.TrimSuffix "/" site.Params.productionBaseURL }}
+  {{ $homeURL := printf "%s/" $productionBaseURL }}
+  {{ $logoURL := printf "%s/images/microclub-avatar.png" $productionBaseURL }}
+  {{ $sameAs := slice }}
+  {{ range site.Params.Author.links }}
+    {{ range $name, $url := . }}
+      {{ if not (strings.HasPrefix $url "mailto:") }}
+        {{ $sameAs = $sameAs | append $url }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $organization := dict
+    "@context" "https://schema.org"
+    "@type" "Organization"
+    "@id" (printf "%s#organization" $homeURL)
+    "name" site.Title
+    "url" $homeURL
+    "logo" $logoURL
+    "image" $logoURL
+    "description" site.Params.description
+    "foundingDate" (string site.Params.founded)
+    "sameAs" $sameAs
+  }}
+  <script type="application/ld+json">{{ $organization | jsonify | safeJS }}</script>
+{{ end }}
