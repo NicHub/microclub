@@ -1,5 +1,6 @@
 baseURL = "https://microclub.ch/"
 locale = "fr-CH"
+timeZone = "Europe/Zurich"
 defaultContentLanguage = "fr"
 title = "Microclub"
 theme = "microclub-modern"

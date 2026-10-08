@@ -1,0 +1,503 @@
+###
+# Données de l’agenda du MicroClub.
+# Formats attendus :
+#   date        : date et heure au format ISO 8601, heure locale suisse sans
+#                 décalage (le fuseau Europe/Zurich est défini dans
+#                 config/_default/hugo.yaml, qui gère l’heure d’été/hiver),
+#                 ex. "2026-11-13T19:00:00". Non tenue à 19:00.
+#   status      : une des trois valeurs :
+#                   - "confirmed"     : confirmée, pas encore déroulée ;
+#                   - "tobeconfirmed" : à confirmer (date provisoire) ;
+#                   - "canceled"      : annulée ou déplacée (affichée barrée).
+#                 "done" n’existe plus : un évènement confirmé ou à confirmer
+#                 dont la date est passée est affiché automatiquement comme
+#                 "done" (a eu lieu).
+#   title       : titre de la conférence (markdown accepté).
+#   speaker     : intervenant, facultatif.
+#   location    : lieu, objet {name, url} (url facultative, facultatif).
+#   description : brève description ou consignes pour les participants.
+#   links       : liste de URLs (documents, articles associés), facultative.
+#   notes       : liste de brèves (markdown), affichées en puces.
+#
+# La clé "date" sert de clé de tri (ordre inverse chronologique) : la garder
+# au format ci-dessus et descendre pour les événements passés.
+##
+
+events:
+    - date: "2026-12-11T19:00:00"
+      status: confirmed
+      title: Repas de clôture au Florissant
+      location:
+          name: le Florissant
+          url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
+      description: ""
+      links: []
+    - date: "2026-11-27T19:00:00"
+      status: confirmed
+      title: Les condensateurs
+      speaker: Jean-Pierre Broillet
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-11-13T19:00:00"
+      status: confirmed
+      title: Site Web avec Hugo
+      speaker: Nicolas Jeanmonod
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: Découvrez comment créer un site web statique avec <b>Hugo, le générateur de site le plus rapide au monde</b>. Nous verrons l’installation, la configuration, le thème Blowfish et la mise en ligne. Apportez votre ordinateur portable pour suivre les manipulations en direct.
+      links:
+          - https://blowfish.page
+          - https://microclub.ch/posts/site-web-avec-hugo/
+    - date: "2026-10-30T19:00:00"
+      status: confirmed
+      title: IA programmation
+      speaker: Laurent Francey
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-10-16T19:00:00"
+      status: confirmed
+      title: Ballon-sonde et radiosonde
+      speaker: Jean-Marc Paratte
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-10-02T19:00:00"
+      status: confirmed
+      title: Smaky 6
+      speaker: Pierre-Yves Rochat
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-09-21T19:00:00"
+      status: tobeconfirmed
+      title: Sortie du lundi du Jeune fédéral Météo Suisse
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-09-04T19:00:00"
+      status: confirmed
+      title: Reprise du Microclub au Florissant
+      location:
+          name: le Florissant
+          url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
+      description: ""
+      links: []
+    - date: "2026-07-03T19:00:00"
+      status: confirmed
+      title: Repas au Florissant pour la fin du premier semestre
+      location:
+          name: le Florissant
+          url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
+      description: ""
+      links: []
+    - date: "2026-06-19T19:00:00"
+      status: confirmed
+      title: Assemblée Générale
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-06-05T19:00:00"
+      status: confirmed
+      title: Discussion et projets
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-03-27T19:00:00"
+      status: tobeconfirmed
+      title: A définir ultérieurement
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-03-13T19:00:00"
+      status: confirmed
+      title: IA, oui mais… RFID, théorie et application Arduino
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-03-06T19:00:00"
+      status: confirmed
+      title: À 38 km d’altitude avec des ballons expérimentaux
+      speaker: Mathieu Leuppi
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-02-27T19:00:00"
+      title: Séance déplacée au 06.03.2026
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+      status: canceled
+    - date: "2026-02-20T19:00:00"
+      title: Déplacée au 13.03.2026
+      speaker: Jean-Pierre Broillet
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+      status: canceled
+    - date: "2026-02-13T19:00:00"
+      title: Séance déplacée exceptionnellement au 20.02.2026
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+      status: canceled
+    - date: "2026-02-06T19:00:00"
+      status: confirmed
+      title: Découverte de la création de pages HTML à l’aide de Claude AI
+      speaker: Jean-Marc Paratte
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2026-01-30T19:00:00"
+      title: Séance déplacée exceptionnellement au 06.02.2026
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+      status: canceled
+    - date: "2026-01-16T19:00:00"
+      status: confirmed
+      title: Présentation des bricolages des membres
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
+    - date: "2025-12-12T19:00:00"
+      status: confirmed
+      title: Vin chaud de Noël au Florissant
+      location:
+          name: le Florissant
+          url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
+      description: ""
+      links: []
+    - date: "2025-11-28T19:00:00"
+      status: confirmed
+      title: Docker sur Raspberry Pi4
+      speaker: C. Balmer
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-11-14T19:00:00"
+      status: confirmed
+      title: Le magnétisme
+      speaker: Laurent Francey
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-10-31T19:00:00"
+      status: confirmed
+      title: Meshtastic
+      speaker: Johannes David
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-10-17T19:00:00"
+      status: confirmed
+      title: Kicad, questions-réponses
+      speaker: C. Balmer
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-10-03T19:00:00"
+      status: confirmed
+      title: Kicad, premier objet
+      speaker: C. Balmer
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-09-19T19:00:00"
+      status: confirmed
+      title: Kicad premiers pas, introduction et installation
+      speaker: C. Balmer
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-09-05T19:00:00"
+      status: confirmed
+      title: La soirée raclette est remplacée par un repas au Florissant
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-07-04T19:00:00"
+      status: confirmed
+      title: Souper de fin de semestre
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-06-06T19:00:00"
+      status: confirmed
+      title: Démarrer avec un Raspberry PICO
+      speaker: Laurent Francey
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-05-09T19:00:00"
+      status: confirmed
+      title: Amplificateurs opérationnels
+      speaker: Jean-Pierre Broillet / Laurent Francey
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-04-11T19:00:00"
+      status: confirmed
+      title: "Atelier IA/2 : reconnaissance par caméra d’objets"
+      speaker: Laurent Francey
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-04-04T19:00:00"
+      status: confirmed
+      title: "Atelier IA/1 : reconnaissance par caméra d’objets"
+      speaker: Laurent Francey
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2025-03-14T19:00:00"
+      status: confirmed
+      title: 49ème Assemblée générale
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2023-01-20T19:00:00"
+      status: confirmed
+      title: Reprise, Pic & AVR, projets divers
+      speaker: Laurent
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-12-16T19:00:00"
+      status: confirmed
+      title: Apéritif de fin d’année au Florissant
+      speaker: Laurent
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-11-25T19:00:00"
+      status: confirmed
+      title: Voiture électrique
+      speaker: Yves Masur
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-11-11T19:00:00"
+      status: confirmed
+      title: Micropython ou Raspberry
+      speaker: J.M. Paratte
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-10-28T19:00:00"
+      status: confirmed
+      title: Radio amateurs
+      speaker: Michel Vonlanten
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-10-14T19:00:00"
+      status: confirmed
+      title: Automatisation d’un télescope
+      speaker: Johannes David
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-09-30T19:00:00"
+      status: confirmed
+      title: Algorithme « gestion de listes »
+      speaker: Claude Balmer
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-09-19T19:00:00"
+      status: confirmed
+      title: Sortie au mini-train de Pully
+      speaker: Jonathan
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-09-02T19:00:00"
+      status: confirmed
+      title: Traditionnelle raclette chez JD Freymann
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-07-01T19:00:00"
+      status: confirmed
+      title: Clôture 1er semestre, repas au Florissant
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-06-17T19:00:00"
+      status: confirmed
+      title: Les dB (comment les additionner et les multiplier) et comment calculer une intensité de champ électrique (en V/m)
+      speaker: Jean-Pierre Broillet
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-06-03T19:00:00"
+      status: confirmed
+      title: gestion d’interrupteurs, anti-rebonds & Cie, utilisation de touches click, double click, clik court, long etc.
+      speaker: Claude Balmer
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-05-20T19:00:00"
+      status: confirmed
+      title: Assemblée générale
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-05-06T19:00:00"
+      status: confirmed
+      title: Plateforme de Stewart sur ESP32
+      speaker: Nicolas Jeanmonod
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-04-08T19:00:00"
+      status: confirmed
+      title: introduction à micropython 2
+      speaker: Jean-Marc Paratte
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-03-25T19:00:00"
+      status: confirmed
+      title: Arkanoid sur ESP32
+      speaker: Nicolas Jeanmonod
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-03-11T19:00:00"
+      status: confirmed
+      title: Recettes pour bien réussir un montage à uC
+      speaker: Laurent Francey
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-02-25T19:00:00"
+      status: confirmed
+      title: GitHub pour les débutants
+      speaker: Nicolas Jeanmonod
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-02-11T19:00:00"
+      status: confirmed
+      title: l’introduction orientée Python et IDE Thonny, avec une démo ESP32
+      speaker: Jean-Marc Paratte
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-01-28T19:00:00"
+      status: confirmed
+      title: Windows 11, les nouveautés
+      speaker: Laurent Francey
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []
+    - date: "2022-01-14T19:00:00"
+      status: confirmed
+      title: Bricolages d’hiver 2021/2022
+      location:
+          name: ""
+          url: ""
+      description: ""
+      links: []

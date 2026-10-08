@@ -31,6 +31,7 @@ Le thème choisi pour ce test ne modifie ni `hugo.toml` ni les contenus. Pour re
 
 - `content/articles/` : 301 articles avec leurs URL historiques ;
 - `content/pages/` : pages institutionnelles ;
+- `data/agenda/events.yaml` : source structurée de la page Agenda ;
 - `static/media/` : médias réellement référencés par les contenus ;
 - `themes/microclub-modern/` : habillage par défaut, isolé et remplaçable ;
 - `scripts/migrate_microclub.py` : migration reproductible depuis la branche miroir ;
