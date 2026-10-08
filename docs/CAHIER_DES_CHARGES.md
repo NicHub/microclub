@@ -15,7 +15,7 @@ Remplacer le site WordPress archivé par un site Hugo rapide, actuel, accessible
 
 - accueil éditorial et responsive ;
 - articles classés chronologiquement, par auteur, catégorie et mot-clé ;
-- pages Agenda, Le club, Photos, Ressources et Contact ;
+- pages Agenda, Présentation, Photos, Ressources et Contact ;
 - recherche locale côté navigateur, sans service tiers ;
 - flux RSS, sitemap, page 404 et métadonnées essentielles ;
 - publication et commentaires par modification de fichiers Markdown ;

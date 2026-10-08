@@ -97,7 +97,7 @@ comment_count: 1
 <td>109</td>
 </tr>
 <tr>
-<td><a href="/historique/" target="_blank">Historique</a></td>
+<td><a href="/presentation/" target="_blank">Présentation</a></td>
 <td><a href="/wp-admin/admin.php?page=stats&amp;view=post&amp;post=10&amp;blog=19358666"><img alt="More stats" src="http://dashboard.wordpress.com/i/stats-icon.png"/></a></td>
 <td>101</td>
 </tr>

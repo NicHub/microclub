@@ -24,7 +24,7 @@ enableGitInfo = true
       name = "Microclub"
       image = "images/microclub-avatar.png"
       headline = "Association de passionnés d’électronique et de microinformatique"
-      bio = "Le plus ancien club informatique de Suisse romande, fondé en 1976."
+      bio = "Le premier club informatique de Suisse romande, fondé en 1976."
       links = [
         { email = "mailto:info@microclub.ch" },
         { facebook = "https://www.facebook.com/groups/microclub.ch/" },
@@ -106,9 +106,9 @@ enableGitInfo = true
   url = "/agenda/"
   weight = 20
 [[menus.main]]
-  name = "Le club"
-  url = "/historique/"
-  weight = 30
+  name = "Présentation"
+  url = "/presentation/"
+  weight = 5
 [[menus.main]]
   name = "Ressources"
   url = "/liens/"

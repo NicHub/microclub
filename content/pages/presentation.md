@@ -1,8 +1,10 @@
 ---
-title: "Le club"
+title: "Présentation"
 date: "2007-11-11T08:51:49"
 lastmod: "2025-03-15T07:18:55"
-url: "/historique/"
+url: "/presentation/"
+aliases:
+  - "/historique/"
 weight: 10
 ---
 <h3 align="center"><span>Présentation du Microclub</span></h3>
