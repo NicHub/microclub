@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="shell hero-grid">
+    <div>
+      <p class="kicker">Lausanne · depuis 1976</p>
+      <h1>Comprendre la technologie, <em>ensemble.</em></h1>
+      <p class="lead">Électronique, programmation, intelligence artificielle et culture numérique : des expériences partagées par une communauté de passionnés.</p>
+      <div class="actions"><a class="button" href="/agenda/">Voir l’agenda</a><a class="text-link" href="/historique/">Découvrir le club →</a></div>
+    </div>
+    <div class="signal" aria-hidden="true"><span>01</span><span>µC</span><span>AI</span><span>∞</span></div>
+  </div>
+</section>
+<section class="section shell">
+  <div class="section-head"><div><p class="kicker">Journal du club</p><h2>Dernières publications</h2></div><a href="/articles/">Toutes les archives →</a></div>
+  <div class="card-grid">{{ range first 9 (where site.RegularPages "Section" "articles") }}{{ partial "article-card.html" . }}{{ end }}</div>
+</section>
+<section class="manifesto">
+  <div class="shell manifesto-grid"><p class="kicker">Notre approche</p><p>Pas de boîte noire. On démonte, on mesure, on code et surtout, on transmet. Le savoir du club est archivé ici, en accès libre.</p></div>
+</section>
+{{ end }}

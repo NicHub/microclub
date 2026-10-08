@@ -1,0 +1,57 @@
+baseURL = "https://microclub.ch/"
+locale = "fr-CH"
+defaultContentLanguage = "fr"
+title = "Microclub"
+enableRobotsTXT = true
+enableGitInfo = true
+
+[pagination]
+  pagerSize = 12
+
+[permalinks]
+  articles = "/:year/:month/:day/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  description = "Le plus ancien club informatique de Suisse romande. Échanges, électronique, programmation et culture numérique."
+  founded = 1976
+  repository = ""
+
+[[menus.main]]
+  name = "Articles"
+  url = "/articles/"
+  weight = 10
+[[menus.main]]
+  name = "Agenda"
+  url = "/agenda/"
+  weight = 20
+[[menus.main]]
+  name = "Le club"
+  url = "/historique/"
+  weight = 30
+[[menus.main]]
+  name = "Ressources"
+  url = "/liens/"
+  weight = 40
+[[menus.main]]
+  name = "Contact"
+  url = "/contacts/"
+  weight = 50
+[[menus.main]]
+  name = "Recherche"
+  url = "/recherche/"
+  weight = 60
+
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true

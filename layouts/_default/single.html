@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="article shell">
+  <header class="article-header">
+    {{ if eq .Section "articles" }}<p class="kicker">{{ with index .Params.categories 0 }}{{ . }}{{ else }}Article{{ end }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ if eq .Section "articles" }}
+      <div class="article-meta"><span>{{ .Date | time.Format ":date_long" }}</span>{{ with .Params.author }}<span>Par {{ . }}</span>{{ end }}<span>{{ .ReadingTime }} min de lecture</span></div>
+    {{ end }}
+  </header>
+  <div class="prose">{{ .Content }}</div>
+  {{ if eq .Section "articles" }}
+  <aside class="contribute"><strong>Une précision ou un commentaire ?</strong><p>Modifiez ce fichier dans Git et ajoutez votre message sous « Commentaires ».</p><a href="/contribuer/">Mode d’emploi →</a></aside>
+  {{ end }}
+</article>
+{{ end }}

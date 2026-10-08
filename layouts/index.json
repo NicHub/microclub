@@ -1,0 +1,8 @@
+[{{ range $index, $page := where site.RegularPages "Section" "articles" }}{{ if $index }},{{ end }}{
+  "title": {{ $page.Title | jsonify }},
+  "url": {{ $page.RelPermalink | jsonify }},
+  "date": {{ ($page.Date | time.Format ":date_long") | jsonify }},
+  "author": {{ ($page.Params.author | default "") | jsonify }},
+  "text": {{ $page.Plain | truncate 260 | jsonify }},
+  "terms": {{ delimit ($page.Params.tags | default slice) " " | jsonify }}
+}{{ end }}]

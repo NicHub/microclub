@@ -1,0 +1,9 @@
+<article class="card">
+  <div class="eyebrow">{{ .Date | time.Format ":date_long" }}</div>
+  <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  <p>{{ .Plain | truncate 170 }}</p>
+  <div class="card-meta">
+    {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+    <span>{{ .ReadingTime }} min</span>
+  </div>
+</article>

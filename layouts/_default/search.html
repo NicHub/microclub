@@ -1,0 +1,8 @@
+{{ define "main" }}
+<header class="page-intro shell"><p class="kicker">Dans les archives</p><h1>{{ .Title }}</h1><p class="lead">Recherchez parmi plus de 300 articles publiés depuis les débuts du club.</p></header>
+<section class="section shell search-area">
+  <label for="search">Mots-clés</label><input id="search" type="search" placeholder="Arduino, Python, électronique…" autocomplete="off">
+  <p id="search-status" aria-live="polite"></p><div id="search-results" class="search-results"></div>
+</section>
+{{ $js := resources.Get "js/search.js" | minify | fingerprint }}<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ end }}
