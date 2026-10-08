@@ -1,6 +1,8 @@
 ---
 title: "Contribuer au site"
 url: "/contribuer/"
+aliases:
+  - "/login/"
 ---
 
 Le site est entièrement géré avec Git. Une proposition est relue avant sa fusion et sa publication.

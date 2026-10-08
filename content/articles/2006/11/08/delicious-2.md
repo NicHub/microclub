@@ -6,6 +6,8 @@ author: "Rolf Ziegler"
 categories: ["Microclub"]
 tags: ["del-icio-us", "non-classe", "tags"]
 url: "/2006/11/08/delicious-2/"
+aliases:
+  - "/2006/11/08/delicious/"
 wordpress_id: 365
 comment_count: 0
 ---
