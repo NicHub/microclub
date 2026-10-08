@@ -44,7 +44,8 @@ Un commentaire est ajouté dans le fichier de l’article sous `## Commentaires`
 - HTML sémantique, navigation clavier, lien d’évitement et contraste lisible ;
 - images fluides et chargement sans ressources de pistage ;
 - build sans erreur ni avertissement de chemin ;
-- dépôt dépourvu du répertoire généré `public/`.
+- fichiers générés regroupés et ignorés dans `.hugo_nokdrive/` ;
+- thème par défaut isolé sous `themes/` et remplaçable sans modifier les contenus.
 
 ## 8. Recette
 

@@ -15,6 +15,7 @@
 #   --buildDrafts     Include content marked as draft.
 #   --openBrowser     Open the preview in the default browser (default: on).
 #   --openBrowser=false  Disable automatic browser opening.
+#   --theme NAME      Preview a theme from themes/ (default: configured theme).
 #   --port N          Prefer port N (default: 1313); the next free port is
 #                     used automatically if N is already taken, scanning at
 #                     most PORT_SCAN_LIMIT ports (default: 10).
@@ -42,6 +43,7 @@ os_name="$(uname -s 2>/dev/null || printf '%s' 'unknown')"
 parse_arguments() {
     OPEN_BROWSER=true
     BUILD_DRAFTS=false
+    THEME=""
     PREFERRED_PORT="1313"
     PORT_SCAN_LIMIT="${PORT_SCAN_LIMIT:-10}"
 
@@ -56,6 +58,14 @@ parse_arguments() {
             --openBrowser=false)
                 OPEN_BROWSER=false
                 ;;
+            --theme)
+                if (($# < 2)) || [ -z "$2" ]; then
+                    printf 'Option --theme requires a theme name.\n' >&2
+                    exit 2
+                fi
+                THEME="$2"
+                shift
+                ;;
             --port)
                 if (($# < 2)) || [ -z "$2" ]; then
                     printf 'Option --port requires a port number.\n' >&2
@@ -65,7 +75,7 @@ parse_arguments() {
                 shift
                 ;;
             *)
-                printf 'Unknown option: %s\nAvailable options: --buildDrafts, --openBrowser[=true|false], --port N\n' "$1" >&2
+                printf 'Unknown option: %s\nAvailable options: --buildDrafts, --openBrowser[=true|false], --theme NAME, --port N\n' "$1" >&2
                 exit 2
                 ;;
         esac
@@ -171,6 +181,10 @@ start_hugo_server() {
         --appendPort=true              # Append ":port" to the served URLs.
         --watch                        # Watch the filesystem for changes and rebuild as needed.
     )
+
+    if [ -n "$THEME" ]; then
+        options+=(--theme="$THEME")
+    fi
 
     cd "$PROJECT_DIR"
     if is_windows; then

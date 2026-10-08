@@ -2,6 +2,9 @@ baseURL = "https://microclub.ch/"
 locale = "fr-CH"
 defaultContentLanguage = "fr"
 title = "Microclub"
+theme = "microclub-modern"
+publishDir = ".hugo_nokdrive/public"
+resourceDir = ".hugo_nokdrive/resources"
 enableRobotsTXT = true
 enableGitInfo = true
 

@@ -1,10 +1,16 @@
-.PHONY: serve build check
+.PHONY: serve build check clean
+
+THEME ?= microclub-modern
+HUGO = hugo --theme "$(THEME)"
 
 serve:
-	hugo server --buildDrafts --disableFastRender
+	$(HUGO) server --buildDrafts --disableFastRender
 
 build:
-	hugo --gc --minify
+	$(HUGO) --gc --minify
 
 check:
-	hugo --gc --minify --printPathWarnings
+	$(HUGO) --gc --minify --printPathWarnings
+
+clean:
+	rm -rf .hugo .hugo_nokdrive public resources
