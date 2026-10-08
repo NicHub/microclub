@@ -23,7 +23,7 @@ enableGitInfo = true
     [languages.fr.params.author]
       name = "Microclub"
       image = "images/microclub-avatar.png"
-      headline = "Association de passionnés d’électronique et de micro-informatique."
+      headline = "Association de passionnés d’électronique et de microinformatique"
       bio = "Le plus ancien club informatique de Suisse romande, fondé en 1976."
       links = [
         { email = "mailto:info@microclub.ch" },
@@ -58,6 +58,7 @@ enableGitInfo = true
   enableCodeCopy = true
   mainSections = ["articles"]
   defaultBackgroundImage = "images/site-background.png"
+  defaultFeaturedImage = "/img/featured.svg"
   backgroundCanvas = true
 
   [params.header]
