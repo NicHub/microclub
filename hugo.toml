@@ -21,7 +21,13 @@ enableGitInfo = true
 
     [languages.fr.params.author]
       name = "Microclub"
+      image = "images/microclub-avatar.png"
       headline = "Association de passionnés d’électronique et de micro-informatique."
+      bio = "Le plus ancien club informatique de Suisse romande, fondé en 1976."
+      links = [
+        { email = "mailto:info@microclub.ch" },
+        { facebook = "https://www.facebook.com/groups/microclub.ch/" },
+      ]
 
 [pagination]
   pagerSize = 12
@@ -44,12 +50,14 @@ enableGitInfo = true
   description = "Le plus ancien club informatique de Suisse romande. Échanges, électronique, programmation et culture numérique."
   founded = 1976
   repository = ""
-  colorScheme = "noir"
+  colorScheme = "burufugu"
   defaultAppearance = "dark"
   autoSwitchAppearance = true
   enableSearch = true
   enableCodeCopy = true
   mainSections = ["articles"]
+  defaultBackgroundImage = "images/site-background.png"
+  backgroundCanvas = true
 
   [params.header]
     layout = "floating"
@@ -62,7 +70,9 @@ enableGitInfo = true
     showScrollToTop = true
 
   [params.homepage]
-    layout = "landing"
+    layout = "background"
+    homepageImage = "images/site-background.png"
+    layoutBackgroundBlur = true
     showRecent = true
     showRecentItems = 12
     showMoreLink = true
