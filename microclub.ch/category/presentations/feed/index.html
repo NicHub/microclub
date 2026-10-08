@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Présentations &#8211; Microclub</title>
+	<atom:link href="https://microclub.ch/category/presentations/feed/" rel="self" type="application/rss+xml" />
+	<link>https://microclub.ch</link>
+	<description>Le plus ancien club informatique de suisse romande</description>
+	<lastBuildDate>Mon, 11 Mar 2024 20:05:23 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+	<item>
+		<title>Conférence sur les thermocouples vendredi 22 mars 2024 par Jean-Pierre Broillet.</title>
+		<link>https://microclub.ch/2024/03/11/conference-sur-les-thermocouples-vendredi-22-mars-2024-par-jean-pierre-broillet/</link>
+					<comments>https://microclub.ch/2024/03/11/conference-sur-les-thermocouples-vendredi-22-mars-2024-par-jean-pierre-broillet/#respond</comments>
+		
+		<dc:creator><![CDATA[franic]]></dc:creator>
+		<pubDate>Mon, 11 Mar 2024 20:04:21 +0000</pubDate>
+				<category><![CDATA[Présentations]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5355</guid>
+
+					<description><![CDATA[Introduction aux Thermocouples Définition: Un thermocouple est un capteur de température composé de deux métaux différents joints à une extrémité,]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"></p>
+
+
+<p><strong>Introduction aux Thermocouples</strong>
+</p>
+<ul>
+  <li><strong>Définition</strong>: Un thermocouple est un capteur de température composé de deux métaux différents joints à une extrémité, générant une tension qui varie avec la température.
+  </li>
+  <li><strong>Principe de Fonctionnement</strong>: Basé sur l&rsquo;effet Seebeck, où une différence de température entre les jonctions chaude et froide génère une tension électrique.
+  </li>
+  <li><strong>Applications</strong>: Large utilisation dans l&rsquo;industrie pour la mesure de températures élevées, dans les processus chimiques, la fabrication de métal, et les systèmes de chauffage.
+  </li>
+</ul>
+<p><strong>Fonctionnement Détaillé des Thermocouples</strong>
+</p>
+<ul>
+  <li><strong>Effet Seebeck</strong>: Explication de l&rsquo;effet thermoélectrique où une différence de température entre deux métaux produit une tension électrique.
+  </li>
+  <li><strong>Types de Thermocouples</strong>: Description des différents types (K, J, T, etc.), leurs matériaux et leurs plages de température.
+  </li>
+  <li><strong>Avantages et Limitations</strong>: Avantages tels que la large gamme de températures et les limites, incluant la nécessité de la compensation de la soudure froide.
+  </li>
+</ul>
+<p><strong> Le Concept de Soudure Froide</strong>
+</p>
+<ul>
+  <li><strong>Problématique de la Soudure Froide</strong>: La mesure de température par thermocouple nécessite une référence de température à la jonction froide, souvent à température ambiante, introduisant des erreurs potentielles.
+  </li>
+  <li><strong>Impact sur les Mesures</strong>: La température de la soudure froide affecte directement la précision des mesures de température, nécessitant des méthodes de compensation précises.
+  </li>
+</ul>
+<p><strong>Compensation de la Soudure Froide</strong>
+</p>
+<ul>
+  <li><strong>Méthodes de Compensation</strong>: Utilisation de circuits intégrés spécifiques pour simuler la température de la jonction froide ou l&rsquo;ajustement numérique des lectures de température.
+  </li>
+  <li><strong>Importance de la Compensation</strong>: Assure la précision des mesures de température, particulièrement dans les applications critiques où les erreurs de mesure peuvent avoir des conséquences graves.
+  </li>
+</ul>
+<p><strong>Circuit pour la Compensation de la Soudure Froide</strong>
+</p>
+<ul>
+  <li><strong>Principe de Fonctionnement</strong>: Comment le circuit compense la différence de température à la jonction froide pour améliorer l&rsquo;exactitude des mesures.
+  </li>
+  <li><strong>Composants Clés</strong>: Présentation des éléments essentiels du circuit, tels que les amplificateurs opérationnels et les circuits intégrés spécifiques.
+  </li>
+  <li><strong>Exemple de Circuit</strong>: Schéma d&rsquo;un circuit de compensation typique et explication de son fonctionnement.
+  </li>
+</ul>
+<p><strong>Utilisation d&rsquo;Arduino pour la Compensation de la Soudure Froide</strong>
+</p>
+<ul>
+  <li><strong>Arduino et Thermocouples</strong>: Introduction à l&rsquo;intégration d&rsquo;Arduino avec des thermocouples pour la lecture des températures.
+  </li>
+  <li><strong>Compensation Numérique de la Soudure Froide</strong>: Explication de comment Arduino peut être programmé pour compenser la température de la soudure froide, en utilisant des bibliothèques spécifiques.
+  </li>
+  <li><strong>Exemples de Projets</strong>: Présentation de quelques projets exemplaires qui utilisent Arduino pour la mesure de température avec des thermocouples, soulignant la flexibilité et l&rsquo;accessibilité de cette approche.
+  </li>
+</ul>
+<p><strong>Calcul de Température via une Équation Polynomiale</strong>
+</p>
+<ul>
+  <li><strong>Relation Tension-Température</strong>: Introduction à la relation non linéaire entre la tension générée par un thermocouple et la température mesurée.
+  </li>
+  <li><strong>Équation Polynomiale</strong>: Présentation de l&rsquo;équation polynomiale typique utilisée pour modéliser cette relation, incluant les coefficients spécifiques au type de thermocouple.
+  </li>
+  <li><strong>Avantages de la Méthode</strong>: Précision élevée, possibilité de compenser les non-linéarités inhérentes au thermocouple, et application facile avec des outils de calcul numérique.
+  </li>
+  <li>
+    Pour calculer la température à partir de la tension d&rsquo;un thermocouple en utilisant une équation polynomiale en C++, nous pouvons écrire un code qui applique cette équation. L&rsquo;équation polynomiale générale pour un thermocouple peut être représentée comme suit :
+  </li>
+  <li>
+    T=a0+a1V+a2V2+&#8230;+anVnT=a0​+a1​V+a2​V2+&#8230;+an​Vn
+  </li>
+  <li>
+    où TT est la température en degrés Celsius, VV est la tension mesurée en millivolts, et a0,a1,&#8230;,ana0​,a1​,&#8230;,an​ sont les coefficients spécifiques au type de thermocouple. Ces coefficients sont déterminés expérimentalement et sont disponibles dans la documentation technique des thermocouples.
+  </li>
+</ul>]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2024/03/11/conference-sur-les-thermocouples-vendredi-22-mars-2024-par-jean-pierre-broillet/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Les Finesses de Python</title>
+		<link>https://microclub.ch/2018/06/02/les-finesses-de-python/</link>
+					<comments>https://microclub.ch/2018/06/02/les-finesses-de-python/#respond</comments>
+		
+		<dc:creator><![CDATA[Rolf Ziegler]]></dc:creator>
+		<pubDate>Sat, 02 Jun 2018 07:40:33 +0000</pubDate>
+				<category><![CDATA[Présentations]]></category>
+		<category><![CDATA[Python]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=3868</guid>
+
+					<description><![CDATA[Le « notebook Jupyter » de la présentation d&#8217;hier soir se trouve ici. Les sujets abordés étaient Objets et Types (Classes)¶ Générateurs, iterateurs]]></description>
+										<content:encoded><![CDATA[<p>Le « notebook <a href="http://jupyter.org/" target="_blank" rel="noopener">Jupyter</a> » de la présentation d&rsquo;hier soir <a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb" target="_blank" rel="noopener">se trouve ici.</a></p>
+<p>Les sujets abordés étaient</p>
+<ul>
+<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#objs" target="_blank" rel="noopener">Objets et Types (Classes)¶</a></li>
+<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#iter" target="_blank" rel="noopener">Générateurs, iterateurs et programmation fonctionnelle</a></li>
+<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#intro" target="_blank" rel="noopener">Introspection</a></li>
+<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#deco" target="_blank" rel="noopener">Décorateurs</a>
+<ul>
+<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#memo" target="_blank" rel="noopener">Memoïsation</a></li>
+<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#stop" target="_blank" rel="noopener">Timeout</a></li>
+<li>Prédéfinis et « multiméthodes »</li>
+</ul>
+</li>
+</ul>
+<p>edit du 23.6 : je viens de découvrir comment intégrer un notebook Jupyter à WordPress, alors voilà:</p>
+<p>https://gist.github.com/goulu/e0a39091eaed677aa9c9a75669750a11</p>
+<p>(tiens&#8230; <a href="https://www.drgoulu.com/2018/06/23/les-finesses-de-python/" target="_blank" rel="noopener">ça marche chez moi</a> mais pas ici&#8230;)</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2018/06/02/les-finesses-de-python/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Impression jet d&#8217;encre industrielle</title>
+		<link>https://microclub.ch/2018/03/10/impression-jet-dencre-industrielle/</link>
+					<comments>https://microclub.ch/2018/03/10/impression-jet-dencre-industrielle/#respond</comments>
+		
+		<dc:creator><![CDATA[Rolf Ziegler]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2018 10:21:28 +0000</pubDate>
+				<category><![CDATA[Présentations]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=3808</guid>
+
+					<description><![CDATA[Les slides de la présentation sont accessibles ici]]></description>
+										<content:encoded><![CDATA[<p>Les slides de la présentation sont <a href="https://docs.google.com/presentation/d/e/2PACX-1vTBIWY3ztKrFAwTLfoIJZb2k20y8Pz-mMdUmHu_UkWrHatku5YURpEGMAnd5G5wTBHjTEJKP8Awk5A_/pub?start=false&amp;loop=false&amp;delayms=3000" target="_blank" rel="noopener">accessibles ici</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2018/03/10/impression-jet-dencre-industrielle/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Jean-Pierre Broillet &#8211; Microclub</title>
+	<atom:link href="https://microclub.ch/author/jpbroillet/feed/" rel="self" type="application/rss+xml" />
+	<link>https://microclub.ch</link>
+	<description>Le plus ancien club informatique de suisse romande</description>
+	<lastBuildDate>Sat, 19 Sep 2026 17:44:40 +0000</lastBuildDate>
+	<language>fr-FR</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+	<item>
+		<title>Thérémine à la sauce Arduino</title>
+		<link>https://microclub.ch/2026/09/19/theremine-a-la-sauce-arduino/</link>
+					<comments>https://microclub.ch/2026/09/19/theremine-a-la-sauce-arduino/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Sat, 19 Sep 2026 17:44:40 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5871</guid>
+
+					<description><![CDATA[THÉRÉMINE ULTRASONIQUE Arduino Uno + deux transducteurs HC-SR04 Jean-Pierre Broillet septembre 2026 Étude, câblage, calibration et programme C++ documenté Projet]]></description>
+										<content:encoded><![CDATA[<p><strong>THÉRÉMINE ULTRASONIQUE</strong></p>
+<p><strong>Arduino Uno + deux transducteurs HC-SR04</strong></p>
+<p><strong>Jean-Pierre Broillet septembre 2026</strong></p>
+<p><em>Étude, câblage, calibration et programme C++ documenté</em></p>
+<p><strong>Projet expérimental d’un instrument électronique sans contact</strong></p>
+<p><img fetchpriority="high" decoding="async" width="802" height="218" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-1.png" class="wp-image-5872" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-1.png 802w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-1-300x82.png 300w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-1-768x209.png 768w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-1-800x218.png 800w" sizes="(max-width: 802px) 100vw, 802px" /></p>
+<h1>1. Objet du projet</h1>
+<p>Le but est de réaliser un thérémine numérique avec un Arduino Uno et deux capteurs ultrasonores HC-SR04. Un capteur mesure la position d’une main pour commander la hauteur du son (pitch), tandis que le second commande le volume. Contrairement au thérémine historique, qui exploite la variation de capacité créée par les mains à proximité d’antennes radiofréquences, cette réalisation mesure directement des distances.</p>
+<p>C’est aussi un instrument difficile à maîtriser, car le musicien ne dispose d’aucun repère physique pour placer ses notes.</p>
+<p>L’intérêt pédagogique est important : acquisition ultrasonore, filtrage numérique, conversion d’une grandeur physique en paramètre musical, temporisation, génération audio et amplification.</p>
+<p>Une virtuose du thérémine :</p>
+<p><a href="https://www.youtube.com/watch?v=lY7sXKGZl2w&amp;list=RDlY7sXKGZl2w&amp;start_radio=1">https://www.youtube.com/watch?v=lY7sXKGZl2w&amp;list=RDlY7sXKGZl2w&amp;start_radio=1</a></p>
+<h1>2. Architecture générale</h1>
+<p><img decoding="async" width="722" height="432" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-2.png" class="wp-image-5873" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-2.png 722w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-2-300x180.png 300w" sizes="(max-width: 722px) 100vw, 722px" /></p>
+<p>Les deux capteurs doivent être suffisamment séparés et, si possible, orientés selon des axes différents. Cela diminue les risques qu’un HC-SR04 reçoive l’écho de l’impulsion émise par l’autre.</p>
+<h1>3. Composants proposés</h1>
+<ul>
+<li>
+    1 × Arduino Uno</li>
+<li>
+    2 × HC-SR04</li>
+<li>
+    1 × petit amplificateur audio (LM386 ou module équivalent recommandé)</li>
+<li>
+    1 × haut-parleur 8 Ω</li>
+<li>
+    1 × bouton-poussoir CALIBRATION (évolution recommandée)</li>
+<li>
+    1 × bouton-poussoir MUTE (évolution recommandée)</li>
+<li>
+    Résistances, condensateurs de découplage, plaque d’essai et alimentation 5 V adaptée</li>
+</ul>
+<h1>4. Affectation des broches</h1>
+<table>
+<tr>
+<td>
+  Fonction</td>
+<td>
+  Arduino Uno</td>
+</tr>
+<tr>
+<td>
+  TRIG HC-SR04 Pitch</td>
+<td>
+  D7</td>
+</tr>
+<tr>
+<td>
+  ECHO HC-SR04 Pitch</td>
+<td>
+  D8</td>
+</tr>
+<tr>
+<td>
+  TRIG HC-SR04 Volume</td>
+<td>
+  D9</td>
+</tr>
+<tr>
+<td>
+  ECHO HC-SR04 Volume</td>
+<td>
+  D10</td>
+</tr>
+<tr>
+<td>
+  Sortie audio</td>
+<td>
+  D3</td>
+</tr>
+<tr>
+<td>
+  Alimentation HC-SR04</td>
+<td>
+  +5 V</td>
+</tr>
+<tr>
+<td>
+  Masse</td>
+<td>
+  GND</td>
+</tr>
+</table>
+<h1>5. Schéma électrique de base</h1>
+<p><img decoding="async" width="766" height="724" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-3.png" class="wp-image-5874" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-3.png 766w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-3-300x284.png 300w" sizes="(max-width: 766px) 100vw, 766px" /></p>
+<p>Important : ne pas brancher directement un haut-parleur de 8 Ω sur une sortie de l’Arduino. La broche ne peut pas fournir le courant nécessaire. Pour les premiers essais, un étage transistor peut suffire, mais un LM386 ou un petit amplificateur audio est préférable.</p>
+<h1>6. Séquencement des mesures ultrasonores</h1>
+<p>Les deux HC-SR04 ne doivent pas être déclenchés simultanément. Une mesure Pitch est effectuée, puis une temporisation est respectée avant la mesure Volume. Un capteur pourrait recevoir l&rsquo;écho de l&rsquo;impulsion émise par l&rsquo;autre et donner une distance totalement fausse.</p>
+<p>Une attente d&rsquo;une trentaine de millisecondes constituent un bon point de départ pour le prototype.</p>
+<h1><img loading="lazy" decoding="async" width="722" height="232" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-4.png" class="wp-image-5875" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-4.png 722w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-4-300x96.png 300w" sizes="auto, (max-width: 722px) 100vw, 722px" /></h1>
+<h1>7. Conversion de la distance en hauteur musicale</h1>
+<p>C&rsquo;est ici que le projet devient intéressant.</p>
+<p>Une conversion simplement linéaire, par exemple :</p>
+<p><img loading="lazy" decoding="async" width="768" height="24" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-5.png" class="wp-image-5876" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-5.png 768w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-5-300x9.png 300w" sizes="auto, (max-width: 768px) 100vw, 768px" /></p>
+<p>fonctionnerait, mais serait musicalement médiocre, parce que notre perception des hauteurs est logarithmique.</p>
+<p>Il vaut mieux travailler par octaves :</p>
+<p><img loading="lazy" decoding="async" width="768" height="25" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-6.png" class="wp-image-5877" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-6.png 768w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-6-300x10.png 300w" sizes="auto, (max-width: 768px) 100vw, 768px" /></p>
+<p>avec</p>
+<p><img loading="lazy" decoding="async" width="768" height="74" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-7.png" class="wp-image-5878" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-7.png 768w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-7-300x29.png 300w" sizes="auto, (max-width: 768px) 100vw, 768px" /></p>
+<p>et N le nombre d&rsquo;octaves.</p>
+<p><img loading="lazy" decoding="async" width="768" height="25" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-8.png" class="wp-image-5879" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-8.png 768w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-8-300x10.png 300w" sizes="auto, (max-width: 768px) 100vw, 768px" /></p>
+<p>et quatre octaves donnent :</p>
+<p><img loading="lazy" decoding="async" width="768" height="25" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-9.png" class="wp-image-5880" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-9.png 768w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-9-300x10.png 300w" sizes="auto, (max-width: 768px) 100vw, 768px" /></p>
+<p>C&rsquo;est beaucoup plus naturel à jouer.</p>
+<h1>8. Filtrage des HC-SR04</h1>
+<p>Les mesures brutes peuvent varier de quelques millimètres à quelques centimètres, ce qui devient immédiatement audible sous forme de vibrato parasite.</p>
+<p>Je propose donc un filtre exponentiel :</p>
+<p><img loading="lazy" decoding="async" width="352" height="30" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-10.png" class="wp-image-5881" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-10.png 352w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-10-300x26.png 300w" sizes="auto, (max-width: 352px) 100vw, 352px" /></p>
+<p>avec :</p>
+<p><img loading="lazy" decoding="async" width="103" height="26" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-11.png" class="wp-image-5882" /></p>
+<p>Une petite valeur donne un instrument très stable mais plus lent ; une grande valeur donne un instrument vif mais plus nerveux.</p>
+<p>C&rsquo;est donc un paramètre que je mettrais explicitement dans le programme.</p>
+<h1>9. Commande du volume</h1>
+<p>Pour le capteur Volume, la convention retenue est : main proche = silence, main éloignée = volume maximal. Dans la première version utilisant tone(), le niveau calculé sert surtout de seuil marche/arrêt. Une version évoluée utilisera une véritable modulation d’amplitude ou une sortie PWM filtrée.</p>
+<h1>10. Programme C++ complet &#8211; version de test</h1>
+<p>/*</p>
+<p>================================================================</p>
+<p>THEREMINE A ULTRASONS &#8211; Arduino UNO + 2 x HC-SR04</p>
+<p>HC-SR04 n°1 : hauteur (PITCH)</p>
+<p>HC-SR04 n°2 : volume</p>
+<p>================================================================</p>
+<p>*/</p>
+<p>#include &lt;Arduino.h&gt;</p>
+<p>#include &lt;math.h&gt;</p>
+<p>const byte TRIG_PITCH  = 7;</p>
+<p>const byte ECHO_PITCH  = 8;</p>
+<p>const byte TRIG_VOLUME = 9;</p>
+<p>const byte ECHO_VOLUME = 10;</p>
+<p>const byte AUDIO_PIN   = 3;</p>
+<p>const float DIST_MIN = 5.0;      // cm</p>
+<p>const float DIST_MAX = 50.0;     // cm</p>
+<p>const float FREQ_MIN = 110.0;    // Hz</p>
+<p>const float NB_OCTAVES = 4.0;</p>
+<p>const float ALPHA = 0.20;</p>
+<p>float distancePitchFiltree  = 25.0;</p>
+<p>float distanceVolumeFiltree = 25.0;</p>
+<p>float mesurerDistance(byte trigPin, byte echoPin)</p>
+<p>{</p>
+<p>digitalWrite(trigPin, LOW);</p>
+<p>delayMicroseconds(3);</p>
+<p>digitalWrite(trigPin, HIGH);</p>
+<p>delayMicroseconds(10);</p>
+<p>digitalWrite(trigPin, LOW);</p>
+<p>// Timeout afin d&rsquo;éviter un blocage si aucun écho n&rsquo;est reçu.</p>
+<p>unsigned long duree = pulseIn(echoPin, HIGH, 30000UL);</p>
+<p>if (duree == 0)</p>
+<p>return -1.0;</p>
+<p>// Vitesse du son ≈ 0,0343 cm/us ; division par 2 : aller-retour.</p>
+<p>return duree * 0.0343 / 2.0;</p>
+<p>}</p>
+<p>float limiter(float valeur, float minimum, float maximum)</p>
+<p>{</p>
+<p>if (valeur &lt; minimum) valeur = minimum;</p>
+<p>if (valeur &gt; maximum) valeur = maximum;</p>
+<p>return valeur;</p>
+<p>}</p>
+<p>float distanceVersFrequence(float distance)</p>
+<p>{</p>
+<p>distance = limiter(distance, DIST_MIN, DIST_MAX);</p>
+<p>// Main proche -&gt; x = 1 ; main éloignée -&gt; x = 0.</p>
+<p>float x = (DIST_MAX &#8211; distance) / (DIST_MAX &#8211; DIST_MIN);</p>
+<p>// Loi exponentielle correspondant à NB_OCTAVES octaves.</p>
+<p>return FREQ_MIN * pow(2.0, NB_OCTAVES * x);</p>
+<p>}</p>
+<p>int distanceVersVolume(float distance)</p>
+<p>{</p>
+<p>distance = limiter(distance, DIST_MIN, DIST_MAX);</p>
+<p>// Main proche -&gt; silence ; main éloignée -&gt; maximum.</p>
+<p>float x = (distance &#8211; DIST_MIN) / (DIST_MAX &#8211; DIST_MIN);</p>
+<p>return constrain((int)(255.0 * x), 0, 255);</p>
+<p>}</p>
+<p>void setup()</p>
+<p>{</p>
+<p>pinMode(TRIG_PITCH, OUTPUT);</p>
+<p>pinMode(ECHO_PITCH, INPUT);</p>
+<p>pinMode(TRIG_VOLUME, OUTPUT);</p>
+<p>pinMode(ECHO_VOLUME, INPUT);</p>
+<p>pinMode(AUDIO_PIN, OUTPUT);</p>
+<p>Serial.begin(115200);</p>
+<p>Serial.println(« Theremine ultrasonique &#8211; initialisation »);</p>
+<p>}</p>
+<p>void loop()</p>
+<p>{</p>
+<p>// Mesure du capteur de hauteur.</p>
+<p>float dPitch = mesurerDistance(TRIG_PITCH, ECHO_PITCH);</p>
+<p>if (dPitch &gt; 0)</p>
+<p>distancePitchFiltree =</p>
+<p>ALPHA * dPitch + (1.0 &#8211; ALPHA) * distancePitchFiltree;</p>
+<p>// Séparation temporelle des émissions ultrasonores.</p>
+<p>delay(30);</p>
+<p>// Mesure du capteur de volume.</p>
+<p>float dVolume = mesurerDistance(TRIG_VOLUME, ECHO_VOLUME);</p>
+<p>if (dVolume &gt; 0)</p>
+<p>distanceVolumeFiltree =</p>
+<p>ALPHA * dVolume + (1.0 &#8211; ALPHA) * distanceVolumeFiltree;</p>
+<p>float frequence = distanceVersFrequence(distancePitchFiltree);</p>
+<p>int volume = distanceVersVolume(distanceVolumeFiltree);</p>
+<p>// Première version : tone() produit une onde carrée.</p>
+<p>// Le volume est ici utilisé comme seuil d&rsquo;activation.</p>
+<p>if (volume &gt; 10)</p>
+<p>tone(AUDIO_PIN, (unsigned int)frequence);</p>
+<p>else</p>
+<p>noTone(AUDIO_PIN);</p>
+<p>// Informations de mise au point sur le PC.</p>
+<p>Serial.print(« Pitch : « );</p>
+<p>Serial.print(distancePitchFiltree, 1);</p>
+<p>Serial.print( » cm   F = « );</p>
+<p>Serial.print(frequence, 1);</p>
+<p>Serial.print( » Hz   Volume : « );</p>
+<p>Serial.print(distanceVolumeFiltree, 1);</p>
+<p>Serial.print( » cm   Niveau = « );</p>
+<p>Serial.println(volume);</p>
+<p>delay(10);</p>
+<p>}</p>
+<h1>11. Mais je modifierais ensuite la génération sonore</h1>
+<p><strong>tone()</strong> est excellent pour vérifier le fonctionnement, mais pas pour obtenir un beau thérémine. Il produit essentiellement une onde carrée riche en harmoniques impaires.</p>
+<p>Le projet devient beaucoup plus intéressant avec cette chaîne :</p>
+<p><img loading="lazy" decoding="async" width="341" height="512" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-12.png" class="wp-image-5883" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-12.png 341w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-12-200x300.png 200w" sizes="auto, (max-width: 341px) 100vw, 341px" /></p>
+<p>On pourrait générer une onde triangulaire ou une combinaison sinusoïde + harmoniques donnant un timbre beaucoup plus agréable.</p>
+<h1>12. Le « calage » que je recommande</h1>
+<p>C&rsquo;est même un point que je considère essentiel.</p>
+<p>Plutôt que d&rsquo;imposer définitivement 5 et 50 cm dans le programme, le thérémine devrait posséder une procédure de calibration.</p>
+<p>Au démarrage :</p>
+<p><img loading="lazy" decoding="async" width="722" height="492" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-13.png" class="wp-image-5884" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-13.png 722w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-13-300x204.png 300w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-13-130x90.png 130w" sizes="auto, (max-width: 722px) 100vw, 722px" /></p>
+<p>On peut ajouter <strong>deux boutons-poussoirs</strong>, ou mieux encore un bouton CALIBRATION et utiliser le moniteur série pour guider l&rsquo;utilisateur.</p>
+<p>Je verrais volontiers :</p>
+<p><img loading="lazy" decoding="async" width="386" height="252" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-14.png" class="wp-image-5885" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-14.png 386w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-14-300x196.png 300w" sizes="auto, (max-width: 386px) 100vw, 386px" /></p>
+<p>Le bouton <strong>MUTE</strong> serait particulièrement pratique : un thérémine sans moyen simple de couper le son devient vite pénible pendant les essais.</p>
+<h1>13. Une amélioration très importante</h1>
+<p>Il faudrait séparer <strong>mesure</strong>, <strong>traitement</strong> et <strong>production audio</strong>.</p>
+<p>Dans le programme précédent, <strong>pulseIn()</strong> est bloquant. Cela suffit pour une démonstration, mais ce n&rsquo;est pas idéal pour un véritable instrument.</p>
+<p>La version évoluée pourrait fonctionner ainsi :</p>
+<p><img loading="lazy" decoding="async" width="722" height="352" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-15.png" class="wp-image-5886" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-15.png 722w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-15-300x146.png 300w" sizes="auto, (max-width: 722px) 100vw, 722px" /></p>
+<p>La génération sonore par <strong>Timer1 avec accumulateur de phase</strong> serait nettement supérieure : l&rsquo;audio continuerait à être généré régulièrement pendant les calculs et les acquisitions.</p>
+<h1>14. Architecture finale</h1>
+<p><strong>Arduino Uno + 2 HC-SR04 + bouton CALIB + bouton MUTE + sortie audio PWM + filtre RC + LM386 + haut-parleur 8 Ω.</strong></p>
+<p>Et surtout, je ferais évoluer le logiciel en trois étapes : d&rsquo;abord la version <strong>tone()</strong> ci-dessus pour valider la géométrie et les capteurs ; ensuite une version avec <strong>vrai contrôle continu du volume</strong> ; enfin une version avec <strong>DDS/Timer</strong>, forme d&rsquo;onde travaillée et calibration automatique.</p>
+<p>Cette dernière version serait un véritable petit instrument numérique et non plus seulement une démonstration HC-SR04. Elle permettrait même d&rsquo;ajouter ultérieurement <strong>vibrato, choix du timbre, changement du nombre d&rsquo;octaves et quantification facultative sur les notes de la gamme</strong>.</p>
+<p><strong>L&rsquo;accumulateur de phase</strong></p>
+<p>L’<strong>accumulateur de phase</strong> est une technique numérique très élégante pour fabriquer un signal périodique de fréquence précise. Dans notre thérémine, il permettrait de remplacer avantageusement <strong>tone().</strong></p>
+<h3>Le principe</h3>
+<p>Imaginez un tour complet de cercle correspondant à une période du signal :</p>
+<p><img loading="lazy" decoding="async" width="314" height="35" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-16.png" class="wp-image-5887" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-16.png 314w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-16-300x33.png 300w" sizes="auto, (max-width: 314px) 100vw, 314px" /></p>
+<p>À chaque « tic » d&rsquo;une horloge très régulière, on avance d&rsquo;une certaine quantité sur ce cercle. Cette position est la <strong>phase</strong>.</p>
+<p>On utilise donc une variable entière :</p>
+<p><img loading="lazy" decoding="async" width="216" height="69" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-17.png" class="wp-image-5888" /></p>
+<p>C&rsquo;est cette variable phase que l&rsquo;on appelle <strong>accumulateur de phase</strong>.</p>
+<p>Plus <strong>increment</strong> est grand, plus on fait rapidement le tour, donc plus la fréquence sonore est élevée.</p>
+<h3>Exemple très simple</h3>
+<h3>Supposons arbitrairement un accumulateur allant de 0 à 255.</h3>
+<p>Avec un incrément de 1 :</p>
+<p><img loading="lazy" decoding="async" width="766" height="44" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-18.png" class="wp-image-5889" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-18.png 766w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-18-300x17.png 300w" sizes="auto, (max-width: 766px) 100vw, 766px" /></p>
+<p>Il faut <strong>256 coups d&rsquo;horloge</strong> pour effectuer une période.</p>
+<p>Avec un incrément de 4 :</p>
+<p><img loading="lazy" decoding="async" width="722" height="32" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-19.png" class="wp-image-5890" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-19.png 722w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-19-300x13.png 300w" sizes="auto, (max-width: 722px) 100vw, 722px" /></p>
+<p>Il ne faut plus que :</p>
+<p><strong>256/4 = 64</strong></p>
+<p>coups d&rsquo;horloge pour une période.</p>
+<p>La fréquence est donc quatre fois plus élevée.</p>
+<h3>Relation mathématique</h3>
+<p>Avec un accumulateur de phase de N bits possède :</p>
+<p><strong>2<sup>N</sup></strong></p>
+<p>états.</p>
+<p>Si la fréquence d&rsquo;échantillonnage est Fs et l&rsquo;incrément de phase vaut K, la fréquence générée est :</p>
+<p><img loading="lazy" decoding="async" width="118" height="53" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-20.png" class="wp-image-5891" /></p>
+<p>Prenons par exemple un accumulateur <strong>32 bits</strong> et une interruption audio à :</p>
+<p><strong>F<sub>S</sub> = 31250Hz</strong></p>
+<p>Pour produire le La à 440 Hz :</p>
+<p><strong>K = 440 x 2<sup>32</sup>/31250</strong></p>
+<p>ce qui donne environ :</p>
+<p><strong><img loading="lazy" decoding="async" width="140" height="26" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5871-21.png" class="wp-image-5892" /></strong></p>
+<p>Cela paraît énorme, mais pour un microcontrôleur ce n&rsquo;est qu&rsquo;un entier 32 bits.</p>
+<h3>Pour quelle raison, c&rsquo;est mieux que tone() ?</h3>
+<p><strong>tone()</strong> est pratique pour un prototype, mais l&rsquo;accumulateur de phase permet de contrôler indépendamment <strong>fréquence, amplitude et forme d&rsquo;onde</strong>. On peut ainsi produire une sinusoïde, un triangle, un signal enrichi en harmoniques, ajouter du vibrato et faire varier la fréquence de façon parfaitement continue.</p>
+<p>Et il y a une propriété particulièrement intéressante pour le thérémine : lorsque la fréquence change, <strong>la phase continue</strong>. On ne redémarre pas la sinusoïde à zéro à chaque nouvelle mesure de la main. Les glissandos deviennent donc naturellement continus.</p>
+<p>C&rsquo;est précisément pour cette raison que je propose cette technique. Je suis d&rsquo;avis que la prochaine étape intéressante est de construire une vraie version <strong>DDS + Timer</strong>, en expliquant en détail <strong>Timer1, fréquence d&rsquo;échantillonnage, accumulateur 32 bits, table sinus et PWM</strong>, puis d&rsquo;en tirer le programme C++ complet du thérémine.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2026/09/19/theremine-a-la-sauce-arduino/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>RFID_Microclub</title>
+		<link>https://microclub.ch/2026/09/15/rfid_microclub/</link>
+					<comments>https://microclub.ch/2026/09/15/rfid_microclub/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 12:08:28 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5866</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[
+<div data-wp-interactive="core/file" class="wp-block-file"><object data-wp-bind--hidden="!state.hasPdfPreview" hidden class="wp-block-file__embed" data="https://microclub.ch/wp-content/uploads/2026/09/RFID_Microclub.pdf" type="application/pdf" style="width:100%;height:575px" aria-label="Contenu embarqué RFID_Microclub."></object><a id="wp-block-file--media-a0e2737d-f914-4798-bf80-0bf309e38a6c" href="https://microclub.ch/wp-content/uploads/2026/09/RFID_Microclub.pdf">RFID_Microclub</a><a href="https://microclub.ch/wp-content/uploads/2026/09/RFID_Microclub.pdf" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-a0e2737d-f914-4798-bf80-0bf309e38a6c">Télécharger</a></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2026/09/15/rfid_microclub/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>GPU et IA</title>
+		<link>https://microclub.ch/2026/09/15/gpu-et-ia/</link>
+					<comments>https://microclub.ch/2026/09/15/gpu-et-ia/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Tue, 15 Sep 2026 10:19:48 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5826</guid>
+
+					<description><![CDATA[La carte RTX 3090 (28 milliards de transistors) son impact sur l&#8217;IA et la question philosophiques sous-jacente Le sujet est]]></description>
+										<content:encoded><![CDATA[<p><strong>La carte RTX 3090 (28 milliards de transistors) son impact sur l&rsquo;IA et la question philosophiques sous-jacente</strong></p>
+<p>Le sujet est plus profond qu’il n’y paraît, car la <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/30-series/rtx-3090-3090ti/?utm_source=chatgpt.com">RTX 3090</a> est un bon exemple d’un phénomène historique : <strong>un composant conçu principalement pour le graphisme est devenu une petite machine de calcul neuronal accessible aux particuliers</strong>.</p>
+<p><img loading="lazy" decoding="async" width="1000" height="750" alt="Image" src="https://microclub.ch/wp-content/uploads/2026/09/image.jpeg" class="wp-image-5827" srcset="https://microclub.ch/wp-content/uploads/2026/09/image.jpeg 1000w, https://microclub.ch/wp-content/uploads/2026/09/image-300x225.jpeg 300w, https://microclub.ch/wp-content/uploads/2026/09/image-768x576.jpeg 768w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></p>
+<p><strong>1. Pourquoi un GPU est-il si adapté à l&rsquo;IA ?</strong></p>
+<p>Un processeur classique possède relativement peu de cœurs très sophistiqués.</p>
+<p>Un GPU adopte presque la philosophie inverse : énormément d&rsquo;unités de calcul relativement simples travaillant simultanément.</p>
+<p>Or un réseau neuronal passe une énorme partie de son temps à effectuer des opérations du genre :</p>
+<p><img loading="lazy" decoding="async" width="149" height="30" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-2.png" class="wp-image-5828" /></p>
+<p>c&rsquo;est-à-dire des <strong>multiplications matricielles</strong>. Prenons une couche d&rsquo;un réseau :</p>
+<p><img loading="lazy" decoding="async" width="165" height="36" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-3.png" class="wp-image-5829" /></p>
+<p>avec :</p>
+<p><img loading="lazy" decoding="async" width="222" height="98" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-4.png" class="wp-image-5830" /></p>
+<p>Pour quelques neurones, rien d&rsquo;impressionnant, de difficile. Mais avec des milliards de paramètres, il faut effectuer <strong>des milliards d&rsquo;opérations similaires</strong>.</p>
+<p>Et c&rsquo;est précisément ce que les GPU savent faire extrêmement efficacement.</p>
+<p><strong>2. Les Tensor Cores changent encore la situation</strong></p>
+<p>Avec les RTX, NVIDIA a ajouté des circuits spécialisés : les <strong>Tensor Cores</strong>.</p>
+<p>Ils sont particulièrement adaptés aux opérations matricielles utilisées par l&rsquo;apprentissage profond.</p>
+<p>Schématiquement :</p>
+<p><img loading="lazy" decoding="async" width="163" height="22" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-5.png" class="wp-image-5831" /></p>
+<p>peut être réalisée massivement en parallèle. Ainsi la RTX 3090 n&rsquo;est plus simplement : « une carte graphique très rapide ». Elle devient pratiquement : <strong>un accélérateur de calcul matriciel vendu au grand public.</strong></p>
+<p>C&rsquo;est une différence conceptuelle considérable.</p>
+<p><strong>3. Et c&rsquo;est là que commence la question philosophique</strong></p>
+<p>À mon sens, la révolution la plus importante n&rsquo;est pas : « les ordinateurs deviennent plus rapides ».</p>
+<p>Elle est plutôt : <strong>la capacité cognitive artificielle se déplace progressivement du centre vers la périphérie.</strong></p>
+<p>Pendant longtemps, utiliser une IA puissante impliquait :</p>
+<p><img loading="lazy" decoding="async" width="420" height="35" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-6.png" class="wp-image-5832" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-6.png 420w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-6-300x25.png 300w" sizes="auto, (max-width: 420px) 100vw, 420px" /></p>
+<p>Mais une machine équipée d&rsquo;un GPU de cette catégorie permet maintenant :</p>
+<p><img loading="lazy" decoding="async" width="182" height="39" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-7.png" class="wp-image-5833" /></p>
+<p>directement. Et cela change énormément de choses.</p>
+<p><strong>4. L&rsquo;IA devient une propriété de l&rsquo;individu</strong></p>
+<p>Imaginons un ordinateur personnel contenant une IA locale.</p>
+<p>Elle peut disposer de :</p>
+<ul>
+<li>
+    vos documents,</li>
+<li>
+    vos livres,</li>
+<li>
+    vos programmes,</li>
+<li>
+    vos photographies,</li>
+<li>
+    vos recherches,</li>
+<li>
+    vos notes,</li>
+<li>
+    vos bases de données,</li>
+<li>
+    votre correspondance.</li>
+</ul>
+<p>Tout cela peut potentiellement rester <strong>sur votre ordinateur</strong>.</p>
+<p>On obtient alors quelque chose qui ressemble à :</p>
+<p><img loading="lazy" decoding="async" width="444" height="48" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-8.png" class="wp-image-5834" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-8.png 444w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-8-300x32.png 300w" sizes="auto, (max-width: 444px) 100vw, 444px" /></p>
+<p>Le PC avait démocratisé le <strong>calcul</strong>.</p>
+<p>Internet avait démocratisé <strong>l&rsquo;accès à l&rsquo;information</strong>.</p>
+<p>Le GPU pourrait contribuer à démocratiser <strong>le traitement intelligent de cette information</strong>.</p>
+<p><strong>5. Cela rappelle étrangement l&rsquo;histoire du PC</strong></p>
+<p>Dans les années 1960 :</p>
+<p><img loading="lazy" decoding="async" width="456" height="33" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-9.png" class="wp-image-5835" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-9.png 456w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-9-300x22.png 300w" sizes="auto, (max-width: 456px) 100vw, 456px" /></p>
+<p>Puis sont arrivés les microprocesseurs.</p>
+<p>Dans les années 1980 :</p>
+<p><img loading="lazy" decoding="async" width="386" height="31" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-10.png" class="wp-image-5836" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-10.png 386w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-10-300x24.png 300w" sizes="auto, (max-width: 386px) 100vw, 386px" /></p>
+<p>Nous observons peut-être aujourd&rsquo;hui quelque chose d&rsquo;analogue.</p>
+<p>Première phase :</p>
+<p><img loading="lazy" decoding="async" width="238" height="41" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-11.png" class="wp-image-5837" /></p>
+<p>Deuxième phase :</p>
+<p><img loading="lazy" decoding="async" width="231" height="38" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-12.png" class="wp-image-5838" /></p>
+<p>Troisième phase possible :</p>
+<p><img loading="lazy" decoding="async" width="249" height="29" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-13.png" class="wp-image-5839" /></p>
+<p>puis :</p>
+<p><img loading="lazy" decoding="async" width="220" height="31" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-14.png" class="wp-image-5840" /></p>
+<p>La RTX 3090 n&rsquo;est évidemment pas à elle seule responsable de cette évolution. Mais elle en constitue un <strong>symbole particulièrement intéressant</strong>.</p>
+<p><strong>6. Et il y a une conséquence encore plus profonde</strong></p>
+<p>Jusqu&rsquo;à présent, l&rsquo;ordinateur était principalement un outil.</p>
+<p>Vous lui disiez : calcule ceci.</p>
+<p>Il calculait.</p>
+<p>Puis : affiche ceci.</p>
+<p>Il affichait.</p>
+<p>Puis : cherche ceci.</p>
+<p>Il cherchait.</p>
+<p>Avec l&rsquo;IA générative, nous commençons à lui dire : réfléchis à ce problème.</p>
+<p>Et la nature de la relation change.</p>
+<p>Nous passons progressivement de :</p>
+<p><img loading="lazy" decoding="async" width="100" height="38" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-15.png" class="wp-image-5841" /></p>
+<p>à</p>
+<p><img loading="lazy" decoding="async" width="209" height="39" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-16.png" class="wp-image-5842" /></p>
+<p>voire, dans certains usages :</p>
+<p><img loading="lazy" decoding="async" width="188" height="36" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-17.png" class="wp-image-5843" /></p>
+<p>Le terme doit être utilisé avec prudence — le modèle ne possède pas nécessairement une compréhension ou une conscience comparable aux nôtres — mais <strong>fonctionnellement</strong>, pour l&rsquo;utilisateur, la transformation est réelle.</p>
+<p><strong>7. Cela pose immédiatement la question de l&rsquo;intelligence</strong></p>
+<p>Pendant des siècles, nous avons implicitement associé :</p>
+<p><img loading="lazy" decoding="async" width="293" height="25" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-18.png" class="wp-image-5844" /></p>
+<p>Les ordinateurs nous obligent progressivement à séparer :</p>
+<p><img loading="lazy" decoding="async" width="124" height="24" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-19.png" class="wp-image-5845" /></p>
+<p>de</p>
+<p><img loading="lazy" decoding="async" width="198" height="27" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-20.png" class="wp-image-5846" /></p>
+<p>Et c&rsquo;est philosophiquement beaucoup plus important que les performances d&rsquo;une carte graphique.</p>
+<p>Car si certaines activités que nous considérions comme intellectuelles peuvent être obtenues par :</p>
+<p><img loading="lazy" decoding="async" width="363" height="24" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-21.png" class="wp-image-5847" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-21.png 363w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-21-300x20.png 300w" sizes="auto, (max-width: 363px) 100vw, 363px" /></p>
+<p>une question vertigineuse apparaît :</p>
+<p><strong>Quelle partie de ce que nous appelons intelligence provient réellement de propriétés exclusivement humaines ?</strong></p>
+<p><strong>8. Et cela conduit à une autre question</strong></p>
+<p>Supposons une machine équipée d&rsquo;une IA locale connaissant :</p>
+<ul>
+<li>
+    tous vos travaux,</li>
+<li>
+    vos raisonnements précédents,</li>
+<li>
+    vos préférences intellectuelles,</li>
+<li>
+    vos méthodes de calcul,</li>
+<li>
+    vos erreurs habituelles,</li>
+<li>
+    vos projets.</li>
+</ul>
+<p>Vous lui posez un problème.</p>
+<p>Elle ne répond plus comme une IA générique.</p>
+<p>Elle raisonne en exploitant <strong>votre propre corpus intellectuel</strong>.</p>
+<p>Nous obtenons alors quelque chose d&rsquo;intéressant :</p>
+<p><img loading="lazy" decoding="async" width="377" height="26" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-22.png" class="wp-image-5848" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-22.png 377w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-22-300x21.png 300w" sizes="auto, (max-width: 377px) 100vw, 377px" /></p>
+<p>La frontière pertinente n&rsquo;est donc peut-être plus :</p>
+<p><img loading="lazy" decoding="async" width="219" height="24" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-23.png" class="wp-image-5849" /></p>
+<p>mais :</p>
+<p><img loading="lazy" decoding="async" width="523" height="45" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-24.png" class="wp-image-5850" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-24.png 523w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-24-300x26.png 300w" sizes="auto, (max-width: 523px) 100vw, 523px" /></p>
+<p><strong>9. Il existe cependant un paradoxe</strong></p>
+<p>L&rsquo;IA nécessite actuellement des infrastructures gigantesques pour <strong>créer les grands modèles</strong>.</p>
+<p>Entraîner un modèle de pointe demeure une activité industrielle.</p>
+<p>Nous avons donc simultanément deux mouvements :</p>
+<p><img loading="lazy" decoding="async" width="284" height="28" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-25.png" class="wp-image-5851" /></p>
+<p>mais :</p>
+<p><img loading="lazy" decoding="async" width="351" height="31" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-26.png" class="wp-image-5852" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-26.png 351w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-26-300x26.png 300w" sizes="auto, (max-width: 351px) 100vw, 351px" /></p>
+<p>Une RTX 3090 ne permettra évidemment pas d&rsquo;entraîner chez soi un modèle géant comparable aux modèles de frontière. En revanche, elle permet d&rsquo;utiliser, adapter ou parfois affiner des modèles déjà entraînés. C&rsquo;est un peu comparable à l&rsquo;imprimerie : peu de personnes fabriquent une presse, mais énormément de personnes peuvent ensuite produire et diffuser des textes.</p>
+<p><strong>10. La carte TRX 3090 représente une étape historique assez amusante</strong></p>
+<p>On pourrait résumer l&rsquo;histoire ainsi :</p>
+<p><img loading="lazy" decoding="async" width="123" height="33" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-27.png" class="wp-image-5853" /></p>
+<p>conçu pour calculer :</p>
+<p><img loading="lazy" decoding="async" width="178" height="37" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-28.png" class="wp-image-5854" /></p>
+<p>puis utilisé pour :</p>
+<p><img loading="lazy" decoding="async" width="175" height="29" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-29.png" class="wp-image-5855" /></p>
+<p>puis :</p>
+<p><img loading="lazy" decoding="async" width="174" height="29" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-30.png" class="wp-image-5856" /></p>
+<p>puis :</p>
+<p><img loading="lazy" decoding="async" width="205" height="45" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-31.png" class="wp-image-5857" /></p>
+<p>et finalement :</p>
+<p><img loading="lazy" decoding="async" width="388" height="44" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-32.png" class="wp-image-5858" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-32.png 388w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-32-300x34.png 300w" sizes="auto, (max-width: 388px) 100vw, 388px" /></p>
+<p>C&rsquo;est une magnifique illustration d&rsquo;un phénomène fréquent dans l&rsquo;histoire des techniques :</p>
+<p><strong>Une invention devient véritablement révolutionnaire lorsqu&rsquo;elle commence à servir à quelque chose pour laquelle elle n&rsquo;avait pas été initialement conçue.</strong></p>
+<p><strong>Et je pousserais volontiers cette discussion encore un cran plus loin</strong></p>
+<p>Il existe à mon avis une question encore plus fascinante que celle de la RTX 3090 :</p>
+<p><img loading="lazy" decoding="async" width="475" height="47" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-33.png" class="wp-image-5859" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-33.png 475w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-33-300x30.png 300w" sizes="auto, (max-width: 475px) 100vw, 475px" /></p>
+<p>Car on peut tracer une chaîne technologique extraordinaire :</p>
+<p><img loading="lazy" decoding="async" width="808" height="35" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-34.png" class="wp-image-5860" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-34.png 808w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-34-300x13.png 300w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-34-768x33.png 768w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-34-800x35.png 800w" sizes="auto, (max-width: 808px) 100vw, 808px" /></p>
+<p>Et derrière cette chaîne se cache une question philosophique encore plus troublante : <strong>comment quelques opérations mathématiques extrêmement simples — essentiellement multiplications, additions et fonctions non linéaires — répétées des milliards de fois finissent-elles par produire un système capable de discuter avec nous de physique, de philosophie ou de concevoir un programme ?</strong></p>
+<p><strong><em>Celle-là mérite à elle seule une véritable investigation…</em></strong></p>
+<p><strong>Lexique</strong></p>
+<p><strong>CUDA</strong> signifie <strong>Compute Unified Device Architecture</strong>. C’est une technologie et une plateforme logicielle créée par NVIDIA qui permet d’utiliser le <strong>GPU comme un processeur de calcul général</strong>, et pas seulement pour fabriquer des images.La RTX 3090 possède <strong>10 496 cœurs CUDA</strong>, contrairement aux quelques cœurs très puissants d’un CPU, ces milliers d’unités peuvent effectuer énormément d’opérations <strong>en parallèle</strong>.</p>
+<p><strong>GPU</strong> signifie <strong>Graphics Processing Unit</strong>, que l&rsquo;on peut traduire par <strong>processeur graphique</strong>.</p>
+<p>À l&rsquo;origine, son rôle était de calculer très rapidement les images 2D et 3D des jeux vidéo : positions des objets, textures, éclairage, pixels, etc. Pour cela, il devait effectuer <strong>un très grand nombre de calculs similaires simultanément</strong>.C&rsquo;est précisément cette caractéristique qui l&rsquo;a rendu extrêmement intéressant pour l&rsquo;IA.</p>
+<p>Les <strong>Tensor Core</strong> sont des unités de calcul spécialisées intégrées aux GPU NVIDIA récents. Contrairement aux cœurs CUDA, plus généralistes, ils ont été conçus notamment pour effectuer <strong>extrêmement rapidement des calculs sur des matrices</strong>, ce qui les rend particulièrement adaptés à l&rsquo;intelligence artificielle.</p>
+<p>Une <strong>IA générative</strong> est une intelligence artificielle capable de <strong>produire un nouveau contenu</strong>, et pas seulement d&rsquo;analyser ou de classer des données.</p>
+<p>La différence essentielle est la suivante :</p>
+<p><img loading="lazy" decoding="async" width="416" height="80" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-35.png" class="wp-image-5861" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-35.png 416w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5826-35-300x58.png 300w" sizes="auto, (max-width: 416px) 100vw, 416px" /></p>
+<p>Elle peut générer du <strong>texte</strong>, des <strong>images</strong>, de la musique, de la vidéo, du code informatique, etc. ChatGPT est, par exemple, une IA générative spécialisée notamment dans le langage.</p>
+<p>J-P Broillet 09.2026</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2026/09/15/gpu-et-ia/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Josephson</title>
+		<link>https://microclub.ch/2026/09/11/josephson/</link>
+					<comments>https://microclub.ch/2026/09/11/josephson/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Fri, 11 Sep 2026 13:12:18 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5822</guid>
+
+					<description><![CDATA[L&#8217;ordinateur Josephson est-il encore d&#8217;actualité ? Jean-Pierre Broillet 09.2026 Oui — mais sous une forme assez différente du fameux «]]></description>
+										<content:encoded><![CDATA[<p><strong>L&rsquo;ordinateur Josephson est-il encore d&rsquo;actualité ?</strong></p>
+<p><strong>								</strong>Jean-Pierre Broillet  09.2026</p>
+<p><strong><img loading="lazy" decoding="async" width="783" height="511" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5822-1.png" class="wp-image-5823" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5822-1.png 783w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5822-1-300x196.png 300w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5822-1-768x501.png 768w" sizes="auto, (max-width: 783px) 100vw, 783px" /></strong></p>
+<p>Oui — <strong>mais sous une forme assez différente du fameux « ordinateur Josephson » imaginé dans les années 1970–1980</strong>.</p>
+<p>Le projet historique d’<a href="https://www.ibm.com/?utm_source=chatgpt.com" target="_blank">IBM</a> visait à remplacer les transistors par des <strong>jonctions Josephson supraconductrices</strong> afin de construire des ordinateurs classiques extrêmement rapides. IBM y travailla pendant plus d&rsquo;une décennie, mais abandonna le programme en <strong>1983</strong>, principalement parce que les progrès fulgurants du silicium rendaient l&rsquo;avantage du Josephson insuffisant face aux difficultés de fabrication, de mémoire et surtout de cryogénie.</p>
+<p><strong>Et pourtant, l&rsquo;idée revient fortement</strong></p>
+<p>Depuis quelques années, l&rsquo;intérêt pour le calcul supraconducteur à jonctions Josephson augmente de nouveau. Un article IEEE de <strong>février 2026</strong> parle explicitement de calcul supraconducteur « ultra-high-speed, ultra-low-power ».</p>
+<p>La différence essentielle est qu&rsquo;on n&rsquo;utilise généralement plus la logique Josephson « latching » d&rsquo;IBM. On emploie des familles telles que <strong>SFQ (Single Flux Quantum)</strong>, RSFQ, ERSFQ/eSFQ, RQL ou encore AQFP. Elles utilisent toujours la jonction Josephson, mais représentent l&rsquo;information par des <strong>quanta de flux magnétique</strong> et des impulsions extrêmement brèves.</p>
+<p>Le résultat est assez extraordinaire : des circuits SFQ peuvent fonctionner à <strong>plusieurs dizaines de GHz</strong>, et des démonstrations atteignent la région des <strong>100 GHz</strong>, avec des commutations de l&rsquo;ordre de la picoseconde et une énergie de commutation extrêmement faible.</p>
+<p>Il faut toutefois conserver un point crucial en tête : <strong>SFQ est un calcul classique</strong>, malgré le mot « quantum » dans Single Flux Quantum. Ce n&rsquo;est pas un ordinateur quantique.</p>
+<h3>Et il y a maintenant un deuxième Josephson : le calcul quantique</h3>
+<p>C&rsquo;est là que l&rsquo;histoire devient particulièrement intéressante. La jonction Josephson est également devenue un composant fondamental de nombreux <strong>qubits supraconducteurs</strong>. Elle permet de fabriquer un circuit électrique macroscopique possédant des niveaux d&rsquo;énergie quantifiés — en quelque sorte un « atome artificiel ». La recherche reste très active en 2026.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Technologie</strong></th>
+<th><strong>Jonction Josephson</strong></th>
+<th><strong>Type de calcul</strong></th>
+<th><strong>Température</strong></th>
+</tr>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  Ordinateur IBM ~1980</td>
+<td>
+  oui</td>
+<td>
+  classique</td>
+<td>
+  ~4 K</td>
+</tr>
+<tr>
+<td>
+  SFQ / RSFQ moderne</td>
+<td>
+  oui</td>
+<td>
+  classique</td>
+<td>
+  ~4 K</td>
+</tr>
+<tr>
+<td>
+  AQFP</td>
+<td>
+  oui</td>
+<td>
+  classique, ultra-basse énergie</td>
+<td>
+  cryogénique</td>
+</tr>
+<tr>
+<td>
+  Qubit supraconducteur</td>
+<td>
+  oui</td>
+<td><strong>quantique</strong></td>
+<td>
+  ~10–20 mK</td>
+</tr>
+</tbody>
+</table>
+<p>Et les deux branches commencent même à se rejoindre : des chercheurs étudient des circuits numériques Josephson fonctionnant à quelques kelvins pour réaliser <strong>l&rsquo;électronique de commande des ordinateurs quantiques</strong>, afin d&rsquo;éviter de ramener des milliers de connexions jusqu&rsquo;à l&rsquo;électronique située à température ambiante. Un travail publié en août 2026 décrit par exemple un accélérateur supraconducteur à <strong>4 K</strong>, comportant moins de 17 000 jonctions Josephson, destiné à la discrimination de l&rsquo;état des qubits.</p>
+<h3>Ce qui est assez savoureux historiquement</h3>
+<p>L&rsquo;idée d&rsquo;IBM n&rsquo;était donc probablement <strong>pas mauvaise ; elle était trop en avance</strong>.</p>
+<p>En 1983, le silicium progressait si rapidement que Josephson ne pouvait économiquement pas suivre.</p>
+<p>Aujourd&rsquo;hui, les problèmes de consommation électrique, d&rsquo;interconnexions et de dissipation thermique des très grands systèmes de calcul rendent à nouveau intéressantes certaines des propriétés que recherchait IBM il y a près de cinquante ans.</p>
+<p>Et compte tenu de votre intérêt pour l&rsquo;électronique, je pense qu&rsquo;il y a un aspect encore plus intéressant à examiner : <strong>comment fonctionne réellement une porte logique SFQ avec deux ou trois jonctions Josephson</strong>. On peut la suivre électriquement, impulsion par impulsion, et voir comment un quantum de flux</p>
+<p><img loading="lazy" decoding="async" width="755" height="69" src="https://microclub.ch/wp-content/uploads/2026/09/word-image-5822-2.png" class="wp-image-5824" srcset="https://microclub.ch/wp-content/uploads/2026/09/word-image-5822-2.png 755w, https://microclub.ch/wp-content/uploads/2026/09/word-image-5822-2-300x27.png 300w" sizes="auto, (max-width: 755px) 100vw, 755px" /></p>
+<p>devient littéralement <strong>un bit d&rsquo;information</strong>.</p>
+<p>C&rsquo;est une électronique assez fascinante : on retrouve condensateurs, inductances, courants et impulsions, mais avec la phase de la fonction d&rsquo;onde supraconductrice qui intervient directement dans le fonctionnement du circuit.</p>
+<p><a href="https://newwaveparticle.com/josephson-junction-quantum-computer/">https://newwaveparticle.com/josephson-junction-quantum-computer/</a></p>
+<p><a href="https://www.pascalchour.fr/divers/informatique/josephson.html">https://www.pascalchour.fr/divers/informatique/josephson.html</a></p>
+<p><a href="https://science.mainguet.org/quantum/ordiQ/machQ_05.htm">https://science.mainguet.org/quantum/ordiQ/machQ_05.htm</a></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2026/09/11/josephson/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Présentation de Laurent Francey, le vendredi 14 novembre 2025, sur le thème le magnétisme</title>
+		<link>https://microclub.ch/2025/11/07/presentation-de-laurent-francey-le-vendredi-14-novembre-2025-sur-le-theme-le-magnetisme/</link>
+					<comments>https://microclub.ch/2025/11/07/presentation-de-laurent-francey-le-vendredi-14-novembre-2025-sur-le-theme-le-magnetisme/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Fri, 07 Nov 2025 16:34:26 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5702</guid>
+
+					<description><![CDATA[Votre avis S.V.P. Laurent s&#8217;est gentiment proposé pour faire une présentation, le vendredi 14 novembre, sur le thème « le magnétisme ».]]></description>
+										<content:encoded><![CDATA[<p>
+  Votre avis S.V.P.
+</p>
+<p>
+  Laurent s&rsquo;est gentiment proposé pour faire une présentation, le vendredi 14 novembre, sur le thème « le magnétisme ». Pour ceux que cela intéresse, je vous saurais gré de bien vouloir vous manifester en envoyant un mot « Je serai là » sur ma messagerie    <a href="mailto:jean-pierre.broillet@outlook.com">jean-pierre.broillet@outlook.com</a>
+</p>
+<p>
+  Pour ceux qui se sont déjà manifestés, comme Alain, cela n&rsquo;est pas nécessaire.
+</p>
+<p>
+  En vous remerciant, je vous souhaite un bon week-end
+</p>
+<p>
+  Jean-Pierre
+</p>
+
+
+<p class="wp-block-paragraph"></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2025/11/07/presentation-de-laurent-francey-le-vendredi-14-novembre-2025-sur-le-theme-le-magnetisme/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Full Wave Rectifier</title>
+		<link>https://microclub.ch/2025/07/02/full-wave-rectifier/</link>
+					<comments>https://microclub.ch/2025/07/02/full-wave-rectifier/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Wed, 02 Jul 2025 15:52:24 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5655</guid>
+
+					<description><![CDATA[Le circuit suivant génère la valeur absolue du signal d’entrée (Full Wave Rectifier). Deux cas se présentent : Cas 1 : Vi]]></description>
+										<content:encoded><![CDATA[<p><strong>Le circuit suivant génère la valeur absolue du signal d’entrée (Full Wave Rectifier).</strong></p>
+<p><img loading="lazy" decoding="async" width="664" height="236" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-1.png" class="wp-image-5656" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-1.png 664w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-1-300x107.png 300w" sizes="auto, (max-width: 664px) 100vw, 664px" /></p>
+<p>Deux cas se présentent :</p>
+<p><strong>Cas 1 : Vi &gt; 0</strong> :</p>
+<p>Lorsque Vi &gt; 0, la partie « inverseuse » de A1 force sa sortie à être négative, ce qui permet à D1 de conduire et à D2 d’être bloquée. Comme aucun courant ne circule dans la résistance R connectée entre Vn1 et Vp2, les deux sont équipotentielles.</p>
+<p>Vn1 = Vp2 = 0 V</p>
+<p>La figure suivante montre son schéma équivalent</p>
+<p><img loading="lazy" decoding="async" width="575" height="235" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-2.png" class="wp-image-5657" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-2.png 575w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-2-300x123.png 300w" sizes="auto, (max-width: 575px) 100vw, 575px" /></p>
+<p>A partir du circuit équivalent, la tension de sortie peut être calculée :</p>
+<p><strong>Vo = Vi</strong></p>
+<p><strong>Cas 2</strong> <strong>: Vi &lt; 0</strong> : Lorsque Vi &lt; 0, négatif, la tension de sortie de A1 passe au niveau positif, ce qui rend la diode D1 bloquée et la diode D2 conductrice.</p>
+<p>La figure suivante montre son schéma équivalent</p>
+<p><img loading="lazy" decoding="async" width="612" height="272" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-3.png" class="wp-image-5658" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-3.png 612w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-3-300x133.png 300w" sizes="auto, (max-width: 612px) 100vw, 612px" /></p>
+<p>v</p>
+<p>La tension de sortie de l&rsquo;amplificateur A1 est de V. Comme l&rsquo;entrée différentielle de A2 est nulle, la borne d&rsquo;entrée inverseuse est également à la tension V, comme le montre la figure.</p>
+<p>Appliquons la loi de Kirchhoff au nœud a :</p>
+<p><img loading="lazy" decoding="async" width="363" height="192" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-4.png" class="wp-image-5659" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-4.png 363w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-4-300x159.png 300w" sizes="auto, (max-width: 363px) 100vw, 363px" /></p>
+<p>Pour trouver Vo en fonction de V, nous nous concentrons sur le circuit équivalent de A2 (montage non-inverseur), comme le montre la figure.</p>
+<p><strong> = </strong></p>
+<p>En substituant la valeur de V dans l&rsquo;équation ci-dessus, on obtient,</p>
+<p>Par conséquent, pour Vi &lt; 0, la sortie est positive. Ceci est illustré à la figure suivante.</p>
+<p><img loading="lazy" decoding="async" width="457" height="401" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-5.jpeg" class="wp-image-5660" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-5.jpeg 457w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-5-300x263.jpeg 300w" sizes="auto, (max-width: 457px) 100vw, 457px" /></p>
+<p>Examinons ce montage avec la simulation Proteus. Pour ce faire nous appliquerons une tension de 2V DC, de 0V DC et -2V DC sur l’entrée. Si les calculs effectués ci-avant sont corrects, la tension de sortie doit être respectivement de +2 V DC, 0V DC et à nouveau +2V DC.</p>
+<p><strong>Avec + 2V</strong></p>
+<p><img loading="lazy" decoding="async" width="965" height="430" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-6.png" class="wp-image-5661" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-6.png 965w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-6-300x134.png 300w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-6-768x342.png 768w" sizes="auto, (max-width: 965px) 100vw, 965px" /></p>
+<p><strong>Avec 0V</strong></p>
+<p><img loading="lazy" decoding="async" width="964" height="408" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-7.png" class="wp-image-5662" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-7.png 964w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-7-300x127.png 300w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-7-768x325.png 768w" sizes="auto, (max-width: 964px) 100vw, 964px" /></p>
+<p><strong>Avec -2V</strong></p>
+<p><strong><img loading="lazy" decoding="async" width="969" height="413" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-8.png" class="wp-image-5663" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-8.png 969w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-8-300x128.png 300w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-8-768x327.png 768w" sizes="auto, (max-width: 969px) 100vw, 969px" /></strong></p>
+<p><strong>Vo = -Vi, car Vi &lt; 0</strong></p>
+<p><strong><img loading="lazy" decoding="async" width="612" height="410" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-9.jpeg" class="wp-image-5664" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-9.jpeg 612w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-9-300x201.jpeg 300w" sizes="auto, (max-width: 612px) 100vw, 612px" /></strong></p>
+<p><strong>Cerise sur le gâteau….</strong></p>
+<p><strong>Un montage sans diode, avec un comparateur, des amplis op et un switch. Vous ne le trouverez nulle part ailleurs !</strong></p>
+<p><strong><img loading="lazy" decoding="async" width="2064" height="989" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-10.gif" class="wp-image-5665" /></strong></p>
+<p><strong>Fonctionnement du montage</strong></p>
+<p>Quelques mots tout d’abord sur le MAX912.</p>
+<p>Les comparateurs doubles (dual), tels que le MAX912, possèdent grande vitesse de basculement (propagation) 10 ns, une faible consommation, des entrées différentielles et des sorties TTL complémentaires.</p>
+<p>L’alimentation est simple +5V (ou ±5V).</p>
+<p>Les sorties du MAX912 restent stables sur toute la région linéaire. Cette caractéristique élimine l&rsquo;instabilité de sortie commune aux comparateurs à grande vitesse lorsqu&rsquo;ils sont pilotés par un signal d&rsquo;entrée lent.</p>
+<p>Le DG419 est Analog Switch, avec les caractéristiques suivantes :</p>
+<p>Low RDS(ON) (35Ω max)</p>
+<p>Single-Supply Operation +10V to +30V</p>
+<p>Bipolar-Supply Operation ±4.5V to ±20V</p>
+<p>Low Power Consumption (35μW max)</p>
+<p>Rail-to-Rail Signal Handling</p>
+<p>TTL/CMOS-Logic Compatible</p>
+<p>D’apprès son schéma synoptique, il appert qu’un niveau logique 1 (Switch 2 ON) sur la borne 6 (IN) relie, commute, les bornes 1 (D) et 8 (S2), alors qu’un niveau logique 0 (Switch1 ON) sur cette borne IN, reliera la borne D (1) à la borne S1 (2).</p>
+<p><img loading="lazy" decoding="async" width="423" height="424" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-11.jpeg" class="wp-image-5666" srcset="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-11.jpeg 423w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-11-300x300.jpeg 300w, https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-11-150x150.jpeg 150w" sizes="auto, (max-width: 423px) 100vw, 423px" /></p>
+<p>Lorsqu’une tension positive est appliquée sur l’entrée négative du comparateur, sa sortie bascule à l’état négatif (trace rouge), à contrario de la sortie complémentaire (trace bleue). De ce fait, c’est la tension de sortie du suiveur (U4) qui va se retrouver à la sortie du switch analogique. Une tension négative appliquée à l’entrée négative du comparateur va occasionner un basculement à l’état haut dudit comparateur et par conséquent, un passage à l’état bas de la sortie complémentaire.  Cette sortie à l’état bas permet au signal d’entrée inversé (U3) de se retrouver à la sortie du switch. Cette sortie est représentée par la trace verte qui montre bien un comportement de redresseur. Les AOP utilisés pour un test réel ne sont pas des OP05, mais des AD746. Ceux-ci n’étant malheureusement pas encore disponible pour la simulation Proteus, d’où les OP05.</p>
+<p><img loading="lazy" decoding="async" width="805" height="807" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-12.gif" class="wp-image-5667" /></p>
+<p><strong><img loading="lazy" decoding="async" width="797" height="800" src="https://microclub.ch/wp-content/uploads/2025/07/word-image-5655-13.gif" class="wp-image-5668" /></strong></p>
+<p><strong>Ce montage fonctionne sans problème jusqu&rsquo;à 500 kHz…</strong></p>
+<p><strong>Jean-Pierre Broillet, Microclub, juin 2025</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2025/07/02/full-wave-rectifier/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Source de courant à ampli-opérationnel</title>
+		<link>https://microclub.ch/2025/06/17/source-de-courant-a-ampli-operationnel/</link>
+					<comments>https://microclub.ch/2025/06/17/source-de-courant-a-ampli-operationnel/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Tue, 17 Jun 2025 19:23:00 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5634</guid>
+
+					<description><![CDATA[Source de courant à ampli-opérationnel Afin de donner bonne suite à la présentation, de Laurent Francey et moi-même, sur les]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"></p>
+
+
+<p><strong>Source de courant à ampli-opérationnel</strong></p>
+<p>Afin de donner bonne suite à la présentation, de Laurent Francey et moi-même, sur les amplificateurs opérationnels (AOP), je vous propose quelques articles, un par type de montage.</p>
+<p>Pour ce premier article topique nous allons aborder la source de courant à AOP.</p>
+<p>Commençons tout d’abord par la configuration la plus simple.</p>
+<p>Fig.1</p>
+<p><img loading="lazy" decoding="async" width="319" height="303" class="wp-image-5635" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-1.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-1.png 319w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-1-300x285.png 300w" sizes="auto, (max-width: 319px) 100vw, 319px" /></p>
+<p>Nous avons affaire ici à un montage suiveur. Son montage de base est le suivant :</p>
+<p>Fig. 2</p>
+<p><img loading="lazy" decoding="async" width="349" height="185" class="wp-image-5636" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-2.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-2.png 349w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-2-300x159.png 300w" sizes="auto, (max-width: 349px) 100vw, 349px" /></p>
+<p>Avec comme équation de base, V<sub>S</sub> = V<sub>e</sub></p>
+<p>Ainsi, la tension présente sur l’entrée non-inverseuse de l’AOP se retrouve sur son entrée inverseuse, et par conséquent aux bornes de la résistance R (la tension différentielle, dans un fonctionnement linéaire, étant nulle).</p>
+<p>Revenons à la Fig. 1</p>
+<p><img loading="lazy" decoding="async" width="319" height="303" class="wp-image-5637" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-3.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-3.png 319w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-3-300x285.png 300w" sizes="auto, (max-width: 319px) 100vw, 319px" /></p>
+<p>L’entrée positive de l’AOP est reliée au curseur d’un potentiomètre alimenté par une tension bipolaire de ± 10 V CC. Partant, cette tension se retrouvera aux bornes de la résistance R.</p>
+<p>Regardons maintenant la simulation de ce circuit avec une tension d’entrée positive.</p>
+<p>Fig. 3</p>
+<p><img loading="lazy" decoding="async" width="426" height="317" class="wp-image-5638" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-4.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-4.png 426w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-4-300x223.png 300w" sizes="auto, (max-width: 426px) 100vw, 426px" /></p>
+<p>Ladite tension de + 4V se retrouve intégralement aux bornes de la résistance R. Donc le courant y circulant, sera de +4V/R.</p>
+<p>Fig. 4</p>
+<p><img loading="lazy" decoding="async" width="437" height="325" class="wp-image-5639" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-5.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-5.png 437w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-5-300x223.png 300w" sizes="auto, (max-width: 437px) 100vw, 437px" /></p>
+<p>A la fig. 4, c’est cette fois-ci une tension négative de -4V qui est appliquée à l’entrée non-inverseuse de l’AOP. Ce qui implique que le courant dans la résistance R sera de -4V/R et que notre source de courant est bipolaire.…</p>
+<p>Avec un transistor en plus…</p>
+<p>Fig. 5</p>
+<p><img loading="lazy" decoding="async" width="519" height="375" class="wp-image-5640" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-6.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-6.png 519w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-6-300x217.png 300w" sizes="auto, (max-width: 519px) 100vw, 519px" /></p>
+<p>Nous sommes en présence, ici, d’une source de courant avec charge à la masse.</p>
+<p>R2 constituant la résistance de « charge ». La tension appliquée à l’entrée non-inverseuse de l’AOP est égale à : Vcc – la tension de la diode Zener, soit 15V – 3V = 12 V</p>
+<p>Cette tension va se retrouver sur la borne inférieure de la résistance R3. La tension aux bornes de R3 sera de 15V (Vcc) – 12 V = 3 V. Par conséquent le courant circulant dans ladite résistance sera de 3V/3K = 1 mA. Preuve en est, la tension aux bornes de la résistance de charge est 100 Ω * 1 mA = 0.1 V .</p>
+<p><img loading="lazy" decoding="async" width="1113" height="436" class="wp-image-5641" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-7.jpeg" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-7.jpeg 1113w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-7-300x118.jpeg 300w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-7-1024x401.jpeg 1024w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-7-768x301.jpeg 768w" sizes="auto, (max-width: 1113px) 100vw, 1113px" /></p>
+<p>Fig. 6</p>
+<p>Quelques montages avec charge à la masse</p>
+<p>Voici un montage pratique avec charge au Vcc, V<sup>+</sup>.</p>
+<p><img loading="lazy" decoding="async" width="586" height="458" class="wp-image-5642" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-8.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-8.png 586w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-8-300x234.png 300w" sizes="auto, (max-width: 586px) 100vw, 586px" /></p>
+<p>Fig. 7</p>
+<p>Le courant dans la LED est égal à : Vin/Rsense</p>
+<p>Un autre encore</p>
+<p>Fig. 8</p>
+<p><img loading="lazy" decoding="async" width="960" height="706" class="wp-image-5643" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-9.jpeg" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-9.jpeg 960w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-9-300x221.jpeg 300w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-9-768x565.jpeg 768w" sizes="auto, (max-width: 960px) 100vw, 960px" /></p>
+<p>Maintenant, voyons à quoi ressemble une source de courant commandée par une tension. Précisons que nous n’aborderons pas les tensions de commandes alternatives, bien que plusieurs des montages vus ici, y sont compatibles.</p>
+<p><img loading="lazy" decoding="async" width="432" height="235" class="wp-image-5644" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-10.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-10.png 432w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-10-300x163.png 300w" sizes="auto, (max-width: 432px) 100vw, 432px" /></p>
+<p>Fig. 9</p>
+<p>Le principe de la source de courant présentée à la Fig. 9 est basé sur le fait que le courant de sortie est monitoré par la tension aux bornes de R1. De manière à déterminer le courant de sortie, appliquons le KCL (Kirchoff’s Current Law) à l’entrée non-inverseuse, l’entrée inverseuse et à la sortie.</p>
+<p>Fig. 10</p>
+<p><img loading="lazy" decoding="async" width="185" height="114" class="wp-image-5645" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-11.png" /></p>
+<p>V<sub>O </sub> V<sub>N </sub>U<sub>1 </sub>U<sub>2 </sub>I<sub>2 </sub>V<sub>P </sub>R<sub>2</sub><sup>2</sup></p>
+<p>(V<sub>O &#8211; </sub>V<sub>N </sub>)/R<sub>2 </sub>&#8211; V<sub>N</sub>/R<sub>3 </sub>= 0 ;</p>
+<p>(U<sub>1 &#8211; </sub>V<sub>P </sub>)/R<sub>2 </sub>+ ( U<sub>2 &#8211; </sub>V<sub>P </sub>)/R<sub>2 </sub>= 0 ;</p>
+<p>(V<sub>O &#8211; </sub>U<sub>2 </sub>)/R<sub>1 </sub>+ (V<sub>P &#8211; </sub>U<sub>2 </sub>)/R<sub>2 &#8211; </sub>I<sub>2 </sub>= 0 ;</p>
+<p>Comme V<sub>N </sub>= V<sub>P</sub>, nous obtenons pour le courant de sortie <strong>I<sub>2 </sub>=</strong></p>
+<p>Pour une seule valeur de R3, le courant de sortie devient indépendant de la tension de sortie ; c’est le cas où le second terme de l’équation est nul ! Et si</p>
+<p>R3 = <em> <br /></em></p>
+<p>La valeur du courant est</p>
+<p>I2 = U1/(R1//R2)</p>
+<p>En pratique R2 &gt;&gt; R1, et de fait <strong>I2 ~ U1/R1 ce qui est bien indépendant de la tension de sortie, de la charge.</strong></p>
+<p>L’histoire aurait pu s’arrêter là, mais c’était sans compter que les férus d’électronique analogique allaient s’emparer de l’affaire…</p>
+<p>Ce qui est ennuyeux et compliqué à mettre en équation, c’est que nous avons un courant qui circule depuis Vo dans R2 et R3.</p>
+<p>Et, c’est là, que les férus entrent en scène. Ils insèrent un montage suiveur à la borne inférieure de la résistance de setting du courant de sortie !</p>
+<p>Cela donne le circuit suivant, Fig. 11 avec les équations idoines</p>
+<p><img loading="lazy" decoding="async" width="1058" height="569" class="wp-image-5646" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-12.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-12.png 1058w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-12-300x161.png 300w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-12-1024x551.png 1024w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-12-768x413.png 768w" sizes="auto, (max-width: 1058px) 100vw, 1058px" /></p>
+<p>Moins de texte, mais plus d’actes, vérifions avec le simulateur Proteus, la justesse des équations ci-dessus</p>
+<p><img loading="lazy" decoding="async" width="704" height="448" class="wp-image-5647" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-13.jpeg" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-13.jpeg 704w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-13-300x191.jpeg 300w" sizes="auto, (max-width: 704px) 100vw, 704px" /> Fig. 11.</p>
+<p><strong>U1 = 2*U3…U3 = 2.38 V, donc U1 = 4.76 V Ok !</strong></p>
+<p><strong>U3 = (Ue + U2)/2 Ue = 1.2 V, U2 = 3.57 V, donc U3 = (1.2 V + 3.57 V)/2 = 2.38 V OK !</strong></p>
+<p><strong>Ue = U1 – U2 ; 4.77 V – 3.57 V = 1.2 V Ok !</strong></p>
+<p>La tension aux bornes de la résistance de charge RCH (300 Ω) est 3.57 V. Ce qui implique que le courant la traversant est de 3.57 V/0.3 KΩ = 11.9 mA. <strong>I = Ue/Rset = 1.2 V / 100 Ω = 12 mA</strong></p>
+<p>Au vu de ce qui précède, la simulation démontre ladite justesse des équations !</p>
+<p>Etant donné le peu de composants nécessaires à la réalisation de ce montage, il est vivement conseillé de le tester sur une bredboard.</p>
+<p>Un, petit dernier, montage analysé…</p>
+<p><img loading="lazy" decoding="async" width="637" height="470" class="wp-image-5648" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-14.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-14.png 637w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-14-300x221.png 300w" sizes="auto, (max-width: 637px) 100vw, 637px" /> Fig. 12</p>
+<p>Nous avons ici, une source de courant de puissance, unipolaire, avec charge à la masse. L’étage de puissance est composé de deux transistors PNP montés en Darlington (et non pas tête bêche…comme il m’arrive de le dire). La tension d’alimentation (Vcc) est de 20 V. La valeur de la résistance R1 limitera le courant de sortie à 4 A. La tension minimale aux bornes de R1 est de 16 V. On notera que la tension présente sur l’entrée non inverseuse (18 V) se retrouve sur l’émetteur du transistor Q2. Nous sommes donc bien en présence d’un suiveur de tension. Le courant circulant dans ce transistor est donné par l’équation (Vcc – VE<sub>Q2</sub>)/R4. En l’occurrence (20 V – 18V)/1Ω = 2A. Et, la tension aux bornes de R3 est bien de 4V, soit, 2Ω * 2A.</p>
+<p>Quelques montages…trouvés sur la toile</p>
+<p><img loading="lazy" decoding="async" width="900" height="722" class="wp-image-5649" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-15.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-15.png 900w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-15-300x241.png 300w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-15-768x616.png 768w" sizes="auto, (max-width: 900px) 100vw, 900px" /></p>
+<p><img loading="lazy" decoding="async" width="900" height="789" class="wp-image-5650" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-16.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-16.png 900w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-16-300x263.png 300w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-16-768x673.png 768w" sizes="auto, (max-width: 900px) 100vw, 900px" /></p>
+<p><img loading="lazy" decoding="async" width="900" height="700" class="wp-image-5651" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-17.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-17.png 900w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-17-300x233.png 300w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-17-768x597.png 768w" sizes="auto, (max-width: 900px) 100vw, 900px" /></p>
+<p><img loading="lazy" decoding="async" width="963" height="537" class="wp-image-5652" src="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-18.png" srcset="https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-18.png 963w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-18-300x167.png 300w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-18-768x428.png 768w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-18-450x250.png 450w, https://microclub.ch/wp-content/uploads/2025/06/word-image-5634-18-800x445.png 800w" sizes="auto, (max-width: 963px) 100vw, 963px" /></p>
+<p><a href="https://www.analog.com/en/resources/analog-dialogue/articles/a-large-current-source-with-high-accuracy-and-fast-settling.html">https://www.analog.com/en/resources/analog-dialogue/articles/a-large-current-source-with-high-accuracy-and-fast-settling.html</a></p>
+<p>Pour le Microclub Jean-Pierre Broillet, juin 2025</p>]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2025/06/17/source-de-courant-a-ampli-operationnel/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Vous avez dit Raspberry Pi ? Pico ?</title>
+		<link>https://microclub.ch/2025/05/04/vous-avez-dit-raspberry-pi-pico/</link>
+					<comments>https://microclub.ch/2025/05/04/vous-avez-dit-raspberry-pi-pico/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Sun, 04 May 2025 15:35:28 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5577</guid>
+
+					<description><![CDATA[Le Raspberry Pi Pico est une carte à microcontrôleur développée par la fondation Raspberry Pi et lancée en janvier 2021.]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" decoding="async" width="585" height="585" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-1.png" class="wp-image-5578" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-1.png 585w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-1-300x300.png 300w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-1-150x150.png 150w" sizes="auto, (max-width: 585px) 100vw, 585px" /></p>
+<p>Le Raspberry Pi Pico est une carte à microcontrôleur développée par la fondation Raspberry Pi et lancée en janvier 2021. Contrairement aux autres modèles Raspberry Pi, qui sont de véritables nano-ordinateurs, le Pico est conçu pour des applications embarquées et l&rsquo;apprentissage de la programmation électronique.</p>
+<p><strong>Caractéristiques principales :</strong></p>
+<p><strong>Microcontrôleur</strong> : RP2040, conçu par Raspberry Pi, avec deux cœurs ARM Cortex-M0+ cadencés à 133 MHz</p>
+<p><strong>Capteur de température intégré…</strong></p>
+<p><strong>Mémoire vive</strong> (SRAM) : 264 Ko</p>
+<p>Stockage : 2 Mo de mémoire flash externe pour les programmes et les données</p>
+<p><strong>Connectique</strong> :</p>
+<p>26 broches GPIO multifonctions (entrées/sorties numériques et analogiques)</p>
+<p>3 entrées analogiques (ADC)</p>
+<p>2 ports UART, 2 ports I2C, 2 ports SPI, 16 canaux PWM</p>
+<p>Port micro-USB pour l’alimentation et la programmation</p>
+<p><strong>Dimensions</strong> : 21 mm x 51 mm</p>
+<p><strong>Alimentation</strong> : Fonctionne entre 1,8 et 5,5 V DC</p>
+<p><strong>Led embarquée</strong> : Sur la broche GPIO 25, idéale pour les premiers tests</p>
+<p><strong>Versions disponibles</strong> :</p>
+<p><img loading="lazy" decoding="async" width="722" height="209" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-2.jpeg" class="wp-image-5579" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-2.jpeg 722w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-2-300x87.jpeg 300w" sizes="auto, (max-width: 722px) 100vw, 722px" /></p>
+<p><strong>Programmation</strong></p>
+<p>Le Pico se programme principalement en MicroPython, Python, C ou C++. L’IDE Thonny est recommandé pour débuter, mais il est aussi possible d’utiliser Visual Studio Code ou d’autres outils. Le port micro-USB permet de transférer facilement les programmes sur la carte, et le Pico peut également émuler un périphérique USB (clavier, souris, etc.).</p>
+<p><strong>Le Raspberry Pi Pico est utilisé dans de nombreux domaines :</strong></p>
+<p><strong>Education : </strong>Apprentissage de la programmation et de l’électronique, projets scolaires, ateliers de robotique et ateliers Microclub.</p>
+<p><strong>Prototypage</strong> : Idéal pour tester des idées rapidement grâce à ses GPIO et sa simplicité d’utilisation.</p>
+<p><strong>Automatisation </strong>: Contrôle de petits robots, domotique, surveillance environnementale, objets connectés (IoT).</p>
+<p><strong>Projets ludiques</strong> : Création de jeux, claviers personnalisés, capteurs de température, arrosage automatique de plantes, etc.</p>
+<p><strong>Exemples de projets simples</strong> :</p>
+<p>Allumer et éteindre une LED (projet « blink »).</p>
+<p>Mesurer la température avec le capteur intégré.</p>
+<p>Créer un clavier ou une manette USB personnalisée.</p>
+<p>Automatiser l’arrosage d’une plante avec un capteur d’humidité.</p>
+<p>Construire un robot simple ou une station météo miniature.</p>
+<p><strong>Différences avec les autres Raspberry Pi</strong></p>
+<p>Contrairement aux modèles classiques (Raspberry Pi 4, Zero, etc.), le Pico ne fait pas tourner de système d’exploitation comme Linux, n’a pas de sortie HDMI ni de connectivité réseau native (sauf version W), et se rapproche davantage des cartes Arduino ou micro:bit.</p>
+<p><strong>Première conclusion</strong> :</p>
+<p>Le Raspberry Pi Pico est un microcontrôleur polyvalent, abordable (environ 5 €), parfait pour l’initiation à la programmation embarquée, la réalisation de projets électroniques et l’automatisation de tâches simples. Sa communauté active et sa documentation abondante en font un excellent choix pour débuter ou expérimenter dans le domaine de l’électronique.</p>
+<p><strong>Quels sont les avantages du microcontrôleur RP2040 ?</strong></p>
+<p><strong>Faible coût et accessibilité</strong></p>
+<p>Le RP2040 est reconnu pour son prix très bas, ce qui le rend accessible à un large public, des amateurs aux professionnels.</p>
+<p><strong>Bonnes performances</strong></p>
+<p>Il embarque un processeur double cœur ARM Cortex-M0+ cadencé jusqu&rsquo;à 133 MHz, offrant de bonnes capacités de calcul pour un microcontrôleur de cette gamme. Ses performances sont particulièrement élevées pour les traitements impliquant des entiers.</p>
+<p><strong>Grande capacité mémoire</strong></p>
+<p>Il dispose de 264 Ko de SRAM, ce qui est bien supérieur à de nombreux concurrents dans la même gamme de prix (par exemple, un Arduino Uno n’a que 32 Ko).</p>
+<p>Il peut supporter jusqu’à 16 Mo de mémoire flash externe via un bus QSPI dédié, permettant d’étendre facilement la capacité de stockage.</p>
+<p><strong>Richesse des interfaces d’entrées/sorties</strong></p>
+<p>Il propose jusqu’à 30 broches GPIO multifonctions, dont plusieurs peuvent être utilisées pour des interfaces série (UART, SPI, I2C), PWM, ADC et PIO (Programmable I/O).</p>
+<p>Les machines d’état PIO permettent de créer des périphériques personnalisés ou de gérer des protocoles non pris en charge nativement.</p>
+<p><strong>Flexibilité et facilité d’intégration</strong></p>
+<p>Son format compact (7 x 7 mm pour la puce seule) et sa large plage d’alimentation (1,8 à 5,5 V) facilitent son intégration dans de nombreux projets.</p>
+<p>Il est facile à programmer, notamment grâce à la possibilité de le flasher par simple glisser-déposer via USB.</p>
+<p><strong>Polyvalence d’utilisation</strong></p>
+<p>Il convient aussi bien à l’éducation, au prototypage rapide qu’à la production industrielle, grâce à sa disponibilité en tant que composant seul ou intégré sur des cartes comme le Raspberry Pi Pico.</p>
+<p><strong>Communauté et documentation</strong></p>
+<p>Bénéficie d’une communauté active et d’une documentation très complète, facilitant la prise en main et le développement de projets.</p>
+<p>En résumé, le RP2040 combine faible coût, bonnes performances, grande flexibilité d’utilisation et richesse des interfaces, ce qui en fait un microcontrôleur particulièrement attractif pour de nombreux usages.</p>
+<p><strong>Quelles sont les différences entre le Raspberry Pi Pico et une carte Arduino</strong></p>
+<p><img loading="lazy" decoding="async" width="683" height="573" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-3.jpeg" class="wp-image-5580" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-3.jpeg 683w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-3-300x252.jpeg 300w" sizes="auto, (max-width: 683px) 100vw, 683px" /></p>
+<p><strong>Points clés de différenciation</strong></p>
+<p><strong>Puissance de calcul : </strong>Le Pico est beaucoup plus puissant grâce à son processeur double cœur 32 bits, contre un simple cœur 8 bits pour la plupart des Arduino classiques.</p>
+<p><strong>Mémoire : </strong>Le Pico dispose de beaucoup plus de mémoire vive et de stockage, ce qui permet des projets plus complexes</p>
+<p><strong>Programmation</strong> : Le Pico peut être programmé en MicroPython, ce qui facilite l’apprentissage pour les débutants, alors que l’Arduino utilise principalement le C/C++.</p>
+<p><strong>E/S programmables (PIO)</strong> : Le Pico possède un sous-système PIO qui permet de créer des interfaces personnalisées, ce que ne permet pas l’Arduino.</p>
+<p><strong>Convertisseur analogique</strong> : Le Pico propose un ADC 12 bits, plus précis que l’ADC 10 bits de l’Arduino Uno.</p>
+<p><strong>En résumé</strong></p>
+<p>Le Raspberry Pi Pico est plus puissant, plus flexible et plus moderne, idéal pour des projets avancés ou nécessitant plus de ressources.</p>
+<p>Une carte Arduino classique est plus simple à prendre en main pour les débutants, très bien documentée, et parfaitement adaptée aux petits projets de contrôle ou d’automatisation simples.</p>
+<p><strong>Comment la programmation en Python sur le Raspberry Pi Pico se compare-t-elle à celle en C/C++ sur l&rsquo;Arduino ?</strong></p>
+<p><strong>Comparaison de la programmation en Python sur Raspberry Pi Pico et en C/C++ sur Arduino</strong></p>
+<p><strong>Points clés</strong></p>
+<p><strong>Simplicité et rapidité</strong> : Programmer le Raspberry Pi Pico en Python (MicroPython) est beaucoup plus simple et rapide à prendre en main, surtout pour les débutants. Il suffit de brancher la carte, flasher MicroPython et écrire du code dans Thonny ou une console interactive.</p>
+<p><strong>Programmation interactive</strong> : MicroPython permet d&rsquo;exécuter des commandes en temps réel via le REPL, ce qui facilite les tests et le débogage.</p>
+<p><strong>Performance</strong> : Le C/C++ sur Arduino offre de meilleures performances et une gestion plus fine des ressources matérielles, ce qui est crucial pour des applications temps réel ou nécessitant une grande rapidité.</p>
+<p><strong>Écosystème et bibliothèques : </strong>Arduino dispose d&rsquo;une immense bibliothèque de ressources et d&rsquo;exemples, tandis que MicroPython en propose moins, mais reste très adapté pour la plupart des projets courants.</p>
+<p><strong><img loading="lazy" decoding="async" width="690" height="548" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-4.png" class="wp-image-5581" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-4.png 690w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-4-300x238.png 300w" sizes="auto, (max-width: 690px) 100vw, 690px" /></strong></p>
+<p><strong>Installation</strong> : La mise en place d&rsquo;un environnement Python pour le Pico est plus rapide et intuitive, alors que le C/C++ demande plus de configuration, notamment pour le SDK natif.</p>
+<p><strong>Transfert de compétences</strong> : Apprendre le C/C++ sur Arduino facilite l&rsquo;adaptation à d&rsquo;autres microcontrôleurs (ESP32, STM32, etc.), tandis que Python est plus universel pour l&rsquo;apprentissage général de la programmation.</p>
+<p><strong>Finalement </strong>:</p>
+<p><strong>Python/MicroPython sur Pico</strong> : idéal pour débuter, prototyper rapidement, ou pour des projets éducatifs et interactifs.</p>
+<p><strong>C/C++ sur Arduino</strong> : préférable pour des projets nécessitant performance, optimisation, ou compatibilité avec un vaste écosystème matériel et logiciel.</p>
+<p>Le choix dépend donc du niveau de l&rsquo;utilisateur, du type de projet et des besoins en performance ou en simplicité</p>
+<p><strong><img loading="lazy" decoding="async" width="636" height="635" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-5.png" class="wp-image-5582" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-5.png 636w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-5-300x300.png 300w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5577-5-150x150.png 150w" sizes="auto, (max-width: 636px) 100vw, 636px" /></strong></p>
+<p><strong>Jean-Pierre Broillet, Microclub, mai 2025</strong></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2025/05/04/vous-avez-dit-raspberry-pi-pico/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Pour quelle raison 16 2/3 Hz ?</title>
+		<link>https://microclub.ch/2025/05/04/pour-quelle-raison-16-2-3-hz/</link>
+					<comments>https://microclub.ch/2025/05/04/pour-quelle-raison-16-2-3-hz/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Sun, 04 May 2025 14:12:32 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5572</guid>
+
+					<description><![CDATA[La fréquence de 16 2/3 Hz (ou 16,7 Hz) utilisée pour l&#8217;alimentation électrique des trains en Allemagne, en Suisse et]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph"></p>
+
+
+<p>
+  <img loading="lazy" decoding="async" width="1388" height="868" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-1.jpeg" class="wp-image-5573" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-1.jpeg 1388w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-1-300x188.jpeg 300w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-1-1024x640.jpeg 1024w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-1-768x480.jpeg 768w" sizes="auto, (max-width: 1388px) 100vw, 1388px" />
+</p>
+<p>
+  La fréquence de 16 2/3 Hz (ou 16,7 Hz) utilisée pour l&rsquo;alimentation électrique des trains en Allemagne, en Suisse et en Autriche trouve son origine dans des choix historiques et techniques liés à l&rsquo;électrification ferroviaire.
+</p>
+<p><strong>Raisons historiques et techniques du choix de 16 2/3 Hz</strong>
+</p>
+<ul>
+  <li><strong>Origine historique</strong> : Ce choix remonte aux premières électrifications ferroviaires dans ces pays, au début du XXe siècle. À cette époque, la fréquence standard du réseau électrique industriel était de 50 Hz, mais pour la traction ferroviaire, une fréquence plus basse a été adoptée pour des raisons techniques.
+  </li>
+</ul>
+<p><strong>Avantages techniques d&rsquo;une fréquence basse</strong> :
+</p>
+<p>
+  Une fréquence plus basse réduit les pertes dues à l&rsquo;effet de peau dans les conducteurs, notamment les rails, ce qui diminue la résistance et donc les pertes énergétiques lors du transport du courant électrique.
+</p>
+<p>
+  Elle limite aussi la chute de tension liée à l&rsquo;inductance des lignes électriques, ce qui est important sur les longues distances des réseaux ferroviaires.
+</p>
+<p>
+  Le courant alternatif monophasé à basse fréquence (16 2/3 Hz) est plus proche du courant continu en termes de comportement moteur, ce qui facilite la conception et le fonctionnement des moteurs de traction.
+</p>
+<p><strong>Compatibilité avec la récupération d&rsquo;énergie</strong> : Le système à 16 2/3 Hz permettait plus facilement la mise en œuvre du freinage par récupération d&rsquo;énergie, où les moteurs de traction deviennent générateurs lors du freinage et renvoient de l&rsquo;électricité dans la caténaire pour être utilisée par d&rsquo;autres trains. Cette technologie était plus simple à réaliser avec cette fréquence basse qu&rsquo;avec le 50 Hz classique.
+</p>
+<p><strong>Production électrique adaptée</strong> : Les centrales hydrauliques et thermiques utilisées à l&rsquo;époque dans ces pays produisaient naturellement une fréquence plus basse (par exemple 1000 tours/minute pour les turbines, au lieu de 3000 tours/minute pour 50 Hz), ce qui facilitait la génération directe de cette fréquence sans réducteurs complexes.
+</p>
+<p><strong>Conséquences et contraintes</strong>
+</p>
+<p>
+  Ce choix impose la création d&rsquo;un réseau électrique spécifique pour la traction ferroviaire, distinct du réseau industriel classique à 50 Hz, ce qui engendre des coûts et une complexité supplémentaire.
+</p>
+<p>
+  La fréquence a été légèrement ajustée de 16 2/3 Hz à 16,7 Hz pour des raisons de tenue du matériel et de normalisation.
+</p>
+<p>
+  Cette fréquence est devenue une « fréquence spéciale » propre aux chemins de fer de ces pays, et oblige les matériels roulants à être conçus spécifiquement pour ce système.
+</p>
+<p><strong>Synthèse</strong>
+</p>
+<p>
+  La fréquence de 16 2/3 Hz a été choisie pour les trains en Allemagne, Suisse et Autriche car elle offre un compromis technique favorable à l&rsquo;époque de l&rsquo;électrification ferroviaire : réduction des pertes électriques, meilleure compatibilité avec les moteurs de traction et la récupération d&rsquo;énergie, ainsi qu&rsquo;une production électrique adaptée aux centrales existantes. Ce choix historique perdure aujourd&rsquo;hui malgré les contraintes liées à la gestion d&rsquo;un réseau électrique spécifique au ferroviaire.
+</p>
+<p>
+  Les avantages du courant à 16 2/3 Hz (ou 16,7 Hz) par rapport au courant à 50 Hz pour l&rsquo;alimentation des trains reposent principalement sur des considérations techniques liées à la traction ferroviaire et à la gestion de l&rsquo;énergie :
+  <br />
+  À fréquence plus basse, la chute de tension due à l&rsquo;inductance des lignes est moindre, ce qui est un avantage pour les longues distances des réseaux ferroviaires. De plus, l&rsquo;effet de peau (phénomène où le courant circule principalement en surface des conducteurs) est réduit, diminuant ainsi les pertes électriques dans les rails et les câbles.
+  <br />
+  Plus la fréquence est élevée, plus les tensions entre les lames des commutateurs augmentent, ce qui accroît les pertes fer (hystérésis et courants de Foucault) dans les machines électriques. À 16 2/3 Hz, ces effets sont réduits, ce qui améliore la durabilité et la fiabilité des équipements de traction.
+  <br />
+  Le courant monophasé à basse fréquence est plus proche du courant continu en termes de comportement moteur, ce qui facilite la conception des moteurs de traction. Ce système permet aussi une mise en œuvre plus simple du freinage par récupération, où l&rsquo;énergie cinétique du train est transformée en énergie électrique renvoyée dans la caténaire pour être utilisée par d&rsquo;autres trains. Cette technologie était plus difficile à réaliser avec du 50 Hz.
+</p>
+<p>
+  <br />
+  Historiquement, les centrales hydrauliques et thermiques dans ces pays tournaient à des vitesses de rotation (par exemple 1000 tours/min) qui correspondaient naturellement à une fréquence plus basse (16 2/3 Hz) sans nécessiter de réducteurs complexes
+</p>
+<p>
+  <br />
+  Les convertisseurs modernes pour le réseau ferroviaire à 16 2/3 Hz utilisent des topologies multiniveaux et des filtres spécifiques pour minimiser les harmoniques et les pertes, ce qui optimise la qualité de la tension fournie aux trains.
+</p>
+<p>
+  En résumé, la fréquence de 16 2/3 Hz offre un compromis technique favorable pour la traction ferroviaire, avec une réduction des pertes électriques, une meilleure tenue des équipements, une facilité pour le freinage par récupération et une adaptation historique aux moyens de production électrique. Ces avantages expliquent pourquoi certains réseaux ferroviaires européens ont conservé cette fréquence spécifique malgré la généralisation mondiale du 50 Hz.
+</p>
+<p><strong>Comment la fréquence de 16 2/3 Hz impacte-t-elle les pertes en conduction et en commutation</strong>
+</p>
+<p>
+  La fréquence de 16 2/3 Hz (16,7 Hz) influence les pertes en conduction et en commutation dans les systèmes ferroviaires de plusieurs manières, en tirant parti des avantages techniques liés à cette fréquence basse :
+</p><h2><strong></strong><strong>Impact sur les pertes en conduction</strong></h2>
+<p><strong>Réduction de l&rsquo;effet de peau</strong> :
+  <br />
+  À 16,7 Hz, l&rsquo;effet de peau (concentration du courant en surface des conducteurs) est moins marqué qu&rsquo;à 50 Hz. Cela diminue la résistance effective des rails et des câbles, réduisant les pertes par effet Joule.
+</p>
+<p><strong>Diminution des pertes inductives</strong> :
+  <br />
+  La chute de tension due à l&rsquo;inductance des lignes est proportionnelle à la fréquence. Une fréquence basse limite ces pertes, notamment sur les longues distances des réseaux ferroviaires.
+</p>
+<p><strong>Optimisation des pertes fer dans les transformateurs et moteurs</strong> :
+  <br />
+  Les pertes par hysteresis et courants de Foucault dans les noyaux magnétiques (transformateurs, moteurs) sont réduites à fréquence plus basse, améliorant l&rsquo;efficacité énergétique.
+</p><h2><strong></strong><strong>Impact sur les pertes en commutation</strong></h2>
+<p><strong>Utilisation de convertisseurs multiniveaux</strong> :
+  <br />
+  Les convertisseurs modernes (comme ceux d&rsquo;ABB) exploitent des topologies à 3 niveaux ou plus, permettant une fréquence de commutation plus basse tout en minimisant les harmoniques. Cela réduit les pertes liées aux transitions des semi-conducteurs (IGCT, IEGT).
+</p>
+<p><strong>Stratégie de modulation optimisée</strong> :
+  <br />
+  La modulation des convertisseurs à 16 2/3 Hz utilise des harmoniques de rang supérieur (ex : n=12k±1n=12k±1) pour annuler certains harmoniques résiduels, limitant le besoin de filtres actifs et réduisant les pertes associées.
+</p>
+<p><strong>Gestion du bus CC</strong> :
+  <br />
+  Le bus CC intègre des filtres passe-haut (33,4 Hz) et des condensateurs pour absorber les fluctuations de puissance et les harmoniques, réduisant les pertes parasites dans les composants électroniques.
+</p>
+<p>
+  Cette fréquence basse permet un compromis entre efficacité énergétique, durabilité des équipements et complexité des convertisseurs, expliquant son maintien dans les réseaux ferroviaires historiques malgré la généralisation du 50 Hz.
+</p>
+<p><strong>C’est quoi le bus CC ?</strong>
+</p>
+<p>
+  Le <strong>bus CC</strong> (pour <em>bus courant continu</em>) est une barre conductrice commune qui relie plusieurs convertisseurs électriques dans une station de conversion d’énergie ferroviaire. Il joue un rôle central dans la gestion et la distribution de l’énergie entre les différents modules convertisseurs qui assurent la transformation de l’électricité du réseau général (souvent en 50 Hz) vers la fréquence spécifique du réseau ferroviaire (par exemple 16 2/3 Hz).
+</p>
+<p>
+  Il intègre une batterie de condensateurs à couplage direct qui permet de stocker temporairement l’énergie, facilitant la gestion des fluctuations de puissance et améliorant la stabilité du système.
+</p>
+<p>
+  Le bus CC est équipé de filtres, notamment un filtre à 33,4 Hz pour absorber les fluctuations de puissance spécifiques au réseau ferroviaire, ainsi qu’un filtre passe-haut pour éliminer les harmoniques de fréquence plus élevée (notamment de rangs 3 et 5), ce qui protège le matériel et garantit une alimentation plus propre.
+</p>
+<p>
+  Il sert de point de connexion centralisé pour tous les modules convertisseurs, assurant la circulation efficace de l’énergie entre le réseau d’alimentation principal et le réseau ferroviaire.
+</p>
+<p>
+  Dans une station de conversion, le bus CC relie :
+</p>
+<ul>
+  <li>
+    Les convertisseurs côté 50 Hz (réseau général)
+  </li>
+  <li>
+    Les convertisseurs côté 16 2/3 Hz (réseau ferroviaire)
+  </li>
+  <li>
+    Les équipements de filtrage et de stockage (condensateurs, filtres)
+  </li>
+  <li>
+    Les dispositifs de mesure et de protection (mise à la terre, limiteur de tension)
+  </li>
+</ul>
+<p>
+  Le bus CC est donc un élément clé des stations de conversion ferroviaires, permettant d’assurer la stabilité, la qualité et la sécurité de l’alimentation électrique des trains, tout en optimisant la gestion des flux d’énergie entre différentes fréquences et différents réseaux électriques.<strong>Quels sont les impacts environnementaux de l&rsquo;utilisation du 16 2/3 </strong>
+</p>
+<p>
+  L’utilisation du courant à 16 2/3 Hz pour l’alimentation des trains engendre principalement des impacts environnementaux liés aux champs électromagnétiques (CEM) de basse fréquence, comparables à ceux du 50 Hz, mais avec quelques particularités dues à la fréquence plus basse.
+</p>
+<p>
+  Les lignes ferroviaires à 16,7 Hz génèrent des champs magnétiques alternatifs qui traversent facilement les matériaux et le corps humain. Toutefois, les valeurs limites d’immissions (par exemple, 100 microteslas en Suisse) sont fixées pour exclure tout risque avéré pour la santé. À ce jour, aucune preuve scientifique n’a établi d’effets sanitaires pour des expositions faibles et prolongées en dessous de ces seuils.
+</p>
+<p>
+  Les études sur les basses fréquences (y compris 16,7 Hz) n’ont pas démontré de lien causal entre l’exposition à ces champs et des symptômes tels que troubles du sommeil, maux de tête, ou électrosensibilité. Des effets sur le système nerveux central ont été observés à des niveaux d’exposition très élevés (≥ 100 µT), mais ces situations sont rares dans l’environnement ferroviaire. Le risque de leucémie infantile ou d’autres maladies graves reste hypothétique et non confirmé pour les fréquences basses, y compris le 16,7 Hz.
+</p>
+<p>
+  Les effets biologiques connus du 50 Hz (utilisé pour le transport d’électricité domestique) sont similaires à ceux attendus pour le 16,7 Hz, du fait de la proximité des fréquences. Les recommandations et valeurs limites tiennent compte de ces similitudes.
+</p>
+<p>
+  Les rapports d’impact environnemental considèrent aussi les effets sur les écosystèmes, mais aucune spécificité notable n’est attribuée à la fréquence de 16,7 Hz par rapport à d’autres fréquences basses. Les principaux impacts restent liés à l’occupation du sol, la fragmentation des habitats et l’effet visuel des infrastructures ferroviaires plutôt qu’à la fréquence elle-même.
+</p>
+<p>
+  Le bruit généré par les installations ferroviaires n’est pas directement lié à la fréquence de 16,7 Hz, mais plutôt au fonctionnement mécanique et à la circulation des trains.
+</p>
+<p>
+  Les champs électromagnétiques générés par le 16 2/3 Hz sont considérés comme relativement inoffensifs aux niveaux d’exposition rencontrés dans l’environnement ferroviaire, avec des valeurs limites réglementaires conçues pour protéger la santé publique.
+</p>
+<p>
+  Les incertitudes subsistent pour les expositions de très longue durée à des niveaux élevés, mais aucune preuve solide n’existe à ce jour d’un risque spécifique lié à cette fréquence.
+</p>
+<p>
+  Les principaux impacts environnementaux du 16,7 Hz sont donc similaires à ceux des autres basses fréquences, sans spécificité notable, et restent bien encadrés par la réglementation.
+</p>
+<p>
+  En conclusion, l’utilisation du 16 2/3 Hz pour les trains n’entraîne pas d’impact environnemental ou sanitaire distinct ou supérieur à celui des autres fréquences basses utilisées dans le transport d’électricité, sous réserve du respect des normes d’exposition en vigueur.
+</p>
+<p>
+  Jean-Pierre Broillet, Microclub, mai 2025
+</p>
+<p><strong><img loading="lazy" decoding="async" width="1781" height="805" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-2.jpeg" class="wp-image-5574" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-2.jpeg 1781w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-2-300x136.jpeg 300w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-2-1024x463.jpeg 1024w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-2-768x347.jpeg 768w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5572-2-1536x694.jpeg 1536w" sizes="auto, (max-width: 1781px) 100vw, 1781px" /></strong>
+</p>]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2025/05/04/pour-quelle-raison-16-2-3-hz/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Champ électrique rayonné par une antenne</title>
+		<link>https://microclub.ch/2025/05/03/5551/</link>
+					<comments>https://microclub.ch/2025/05/03/5551/#respond</comments>
+		
+		<dc:creator><![CDATA[Jean-Pierre Broillet]]></dc:creator>
+		<pubDate>Sat, 03 May 2025 18:35:32 +0000</pubDate>
+				<category><![CDATA[Microclub]]></category>
+		<guid isPermaLink="false">https://microclub.ch/?p=5551</guid>
+
+					<description><![CDATA[Champ électrique rayonné par une antenne Pour quelle raison c&#8217;est parfois 5/d ou parfois 7/d ? Cette question relative au]]></description>
+										<content:encoded><![CDATA[<h3><strong>Champ électrique rayonné par une antenne</strong></h3>
+<h5>Pour quelle raison c&rsquo;est parfois 5/d ou parfois 7/d ?</h5>
+<h5><em>Cette question relative au calcul de l&rsquo;intensité de champ électrique d&rsquo;une antenne est fréquemment posée dans pléthore de forums topiques. Les réponses qui y sont données manquent, à mon avis, de consistance. J&rsquo;espère que ma réponse sera à même de combler cette lacune.</em></h5>
+<h5>Calcul du champ électrique d&rsquo;un dipôle (en V/m).</h5>
+<p><strong>Préambule</strong></p>
+<p><strong>E se calcule </strong>à partir de la formule suivante:</p>
+<p><strong>E2 = W x R (comme dans la loi connue…P= U<sup>2</sup>/R)</strong>, avec :</p>
+<p><strong>E </strong>= champ électrique en volts par mètre</p>
+<p><strong>W </strong>= puissance rayonnée par unité de surface (watts par mètre carré) à la distance <strong><em>r </em></strong>de l&rsquo;antenne en mètres</p>
+<p><strong>R </strong>= impédance du milieu de propagation en ohms</p>
+<h5>Impédance du milieu de propagation.</h5>
+<p>C&rsquo;est le rapport entre le champ <strong>E </strong>en volts par mètres et le champ <strong>H </strong>en ampères par mètres. En divisant des volts par des ampères, on obtient des ohms.</p>
+<p>A partir des lois de l&rsquo;électromagnétisme, nous avons les relations suivantes :</p>
+<p><strong>E = <em>v</em>.B</strong>,</p>
+<p><strong>B </strong>est l&rsquo;induction magnétique,</p>
+<p><strong><em>v </em></strong>est la vitesse de propagation, soit 3.108m/s dans l&rsquo;air.</p>
+<h2>H = B / µ<sub>0 </sub>.µr</h2>
+<p><strong>µ0 = 4</strong>pi<strong>.10-7 </strong>est la perméabilité magnétique du vide</p>
+<p><strong>µ<sub>r</sub> = 1 </strong>est la perméabilité magnétique relative de l&rsquo;air</p>
+<p><a href="https://pastel.archives-ouvertes.fr/tel-01316557/document"><strong><em>https://pastel.archives-ouvertes.fr/tel-01316557/document</em></strong></a></p>
+<p><a href="http://www.electronique-et-informatique.fr/Electronique-et-Informatique/Electromagnetisme.php"><strong><em>http://www.electronique-et-informatique.fr/Electronique-et-Informatique/Electromagnetisme.php</em></strong></a></p>
+<p>Ainsi <strong>Z = E / H</strong>, soit :</p>
+<p><img loading="lazy" decoding="async" width="236" height="36" class="wp-image-5552" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5551-1.png" /></p>
+<p>Soit les <strong>377 ohms </strong>de l&rsquo;impédance intrinsèque du vide notée Z<sub>0</sub> ou Z<sub>c.</sub></p>
+<p><a href="https://melusine.eu.org/syracuse/immae/mp/physique-chimie/electromagnetisme/12.pdf"><em><strong>https://melusine.eu.org/syracuse/immae/mp/physique-chimie/electromagnetisme/12.pdf</strong></em></a></p>
+<p><em><strong>https://www.ipgp.fr/~grandin/Raphael_Grandin_personal_web_page/Teaching_files/3_EM.pdf</strong></em></p>
+<h5>Calcul de la puissance par unité de surface (dans le cas d&rsquo;un rayonnement isotrope)</h5>
+<p>Il s&rsquo;agit de la surface d&rsquo;une sphère qui est égale à <strong>4pi.<em>r</em>2 </strong>(<strong><em>r </em></strong>étant le rayon de la sphère). Donc pour avoir la puissance rayonnée par unité de surface à la distance <strong><em>r</em></strong>, il suffit de diviser la puissance totale rayonnée par <strong>4pi.<em>r</em>2</strong>.</p>
+<p><strong><em>Pour ceux que la physique ne rebute pas…</em></strong></p>
+<p><em>La puissance totale rayonnée est déterminée par le flux du vecteur de Poynting à travers une surface fermée. Le vecteur de Poynting, qui est un produit vectoriel des champs électriques et magnétiques, indique la densité de puissance rayonnée par unité de surface et par unité de temps. L&rsquo;intégration de ce vecteur sur une surface fermée donne la puissance totale rayonnée par l&rsquo;onde électromagnétique à travers cette surface. </em></p>
+<p><em>En détail: </em></p>
+<p><strong><em>1. Le vecteur de Poynting :</em></strong></p>
+<p><em>Il est défini par la formule S = (E × H) / μ₀, où E est le champ électrique, H est le champ magnétique et μ₀ est la perméabilité du vide. Ce vecteur indique la direction et la magnitude de la densité de flux d&rsquo;énergie, c&rsquo;est-à-dire la puissance rayonnée par unité de surface. </em></p>
+<p><strong><em>2. Le flux du vecteur de Poynting :</em></strong></p>
+<p><em>Le flux est calculé en intégrant le vecteur de Poynting sur une surface. Mathématiquement, cela se traduit par l&rsquo;intégrale du produit scalaire du vecteur de Poynting et du vecteur normal à la surface. </em></p>
+<p><strong><em>3. Puissance totale rayonnée :</em></strong></p>
+<p><em>Le flux du vecteur de Poynting à travers une surface fermée est égal à la puissance totale rayonnée par l&rsquo;onde électromagnétique à travers cette surface. Cela signifie que la puissance rayonnée est égale à la quantité d&rsquo;énergie qui traverse la surface par unité de temps. </em></p>
+<p><strong><em>4. Théorème de Poynting :</em></strong></p>
+<p><em>Le théorème de Poynting établit une relation entre la puissance rayonnée, la variation de l&rsquo;énergie du champ électromagnétique et la puissance dissipée dans une distribution de charges. </em></p>
+<p><strong><em>5. Applications :</em></strong></p>
+<p><em>Le concept du vecteur de Poynting est essentiel dans la compréhension de la propagation des ondes électromagnétiques, ainsi que dans la conception d&rsquo;antennes et d&rsquo;autres dispositifs électroniques. </em></p>
+<p><em>En résumé, le vecteur de Poynting est un outil crucial pour déterminer la puissance rayonnée par une onde électromagnétique. En calculant le flux de ce vecteur à travers une surface, on peut déterminer la quantité d&rsquo;énergie qui traverse cette surface par unité de temps, ce qui correspond à la puissance rayonnée.</em></p>
+<p><strong>Il n&rsquo;est pas indispensable de connaitre le contenu du texte précédent, en italique, pour comprendre l&rsquo;aspect général de cet exposé.</strong></p>
+<h5>Calcul du champ électrique d&rsquo;une antenne isotrope (espace libre).</h5>
+<p>A l&rsquo;aune de ce qui précède, et en appliquant la formule <strong>E2 = W x R</strong>, nous obtenons :</p>
+<p><img loading="lazy" decoding="async" width="424" height="53" class="wp-image-5553" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5551-2.png" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5551-2.png 424w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5551-2-300x38.png 300w" sizes="auto, (max-width: 424px) 100vw, 424px" /></p>
+<p>Le fameux <strong>5</strong></p>
+<p>Dans laquelle <strong>W </strong>est la puissance fournie à l&rsquo;antenne isotrope (rendement 100%).</p>
+<h5>Calcul du champ électrique d&rsquo;un dipôle (espace libre).</h5>
+<p>Il suffit de multiplier le champ <strong>E </strong>calculé pour l&rsquo;antenne isotrope par la racine carrée de la directivité du dipôle (la directivité s&rsquo;exprime en rapport de puissances). Nous obtenons :</p>
+<p><img loading="lazy" decoding="async" width="434" height="53" class="wp-image-5554" src="https://microclub.ch/wp-content/uploads/2025/05/word-image-5551-3.png" srcset="https://microclub.ch/wp-content/uploads/2025/05/word-image-5551-3.png 434w, https://microclub.ch/wp-content/uploads/2025/05/word-image-5551-3-300x37.png 300w" sizes="auto, (max-width: 434px) 100vw, 434px" /></p>
+<p>Dans laquelle <strong>1,64 </strong>est la directivité et <strong>W </strong>est la puissance fournie au dipôle demi onde.</p>
+<p>1,64 correspond à un gain de 2,15 dBi, en effet 10 x log (1.64) = 2.15</p>
+<p><strong>Rappel</strong></p>
+<p><strong>Gain d&rsquo;une antenne :</strong></p>
+<p>Une antenne isotrope n&rsquo;a pas de gain, donc = 0 dB.<br />
+(C&rsquo;est une antenne imaginaire qui rayonne uniformément dans toutes les directions).</p>
+<p>Une antenne dipôle possède un gain de 2,15 dB par rapport à l&rsquo;antenne isotrope. On dit aussi qu&rsquo;elle a un gain de 2,15 dBi.</p>
+<p>Le gain d&rsquo;une antenne est exprimé plus généralement en dBd, c&rsquo;est à dire par rapport au dipôle demi-onde.</p>
+<p>En résumé:<br />
+<strong>gain en dBd = gain en dBi &#8211; 2,15 dB</strong><br />
+<strong>gain en dBi = gain en dBd + 2,15 dB</strong></p>
+<p>Jean-Pierre Broillet, Microclub, mai 2025</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://microclub.ch/2025/05/03/5551/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

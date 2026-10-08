@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commentaires sur : Comment effacer du code	</title>
+	<atom:link href="https://microclub.ch/2008/11/19/comment-effacer-du-code/feed/" rel="self" type="application/rss+xml" />
+	<link>https://microclub.ch/2008/11/19/comment-effacer-du-code/</link>
+	<description>Le plus ancien club informatique de suisse romande</description>
+	<lastBuildDate>Fri, 24 Apr 2015 22:20:20 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+	<item>
+		<title>
+		Par : Yves Masur		</title>
+		<link>https://microclub.ch/2008/11/19/comment-effacer-du-code/#comment-36</link>
+
+		<dc:creator><![CDATA[Yves Masur]]></dc:creator>
+		<pubDate>Tue, 09 Dec 2008 20:52:47 +0000</pubDate>
+		<guid isPermaLink="false">http://microclub.ch/?p=97#comment-36</guid>
+
+					<description><![CDATA[Technique intéressante. Par curiosité j&#039;ai fait une recherche dans mon code pour voir les occurrences de &lt;code&gt; #if 0 &lt;/code&gt;... Pas beaucoup - ouf! En effet, en C/C++ ceci isole du code commenté &#039;normalement&#039; par /* */ ou double slash. Pas accepté en C#, il faut l&#039;écrire &lt;code&gt; #if nul &lt;/code&gt;... le progrès.
+
+Par contre, j&#039;ai souvent utilisé &lt;code&gt; #if TEST &lt;/code&gt; dans lequel figure du code utilisé pour tester les fonctions du module. En effet, il faut parfois des conditions impossible à réunir pour tester son code dans un délai acceptable (changement heure d&#039;été/hiver, nécessité d&#039;avoir des données, etc). Là, un petit main() avec un I/O minimal permet de tester à fond son code avant de le linker avec le reste:
+&lt;code&gt;
+#ifdef TEST
+void main(void)
+{
+  char c;
+  int i, n;
+  float f;
+.
+.
+ while(1)
+     {
+     disp(&quot;\n\rEntree diverses&quot;);
+     cputs(&quot;\n\rTexte:&quot;);
+     n = (int) input_line();
+.
+.
+    printf(&quot;\n\rvaleur:%f&quot;, f);
+     }
+}
+#endif
+&lt;/code&gt;]]></description>
+			<content:encoded><![CDATA[<p>Technique intéressante. Par curiosité j&rsquo;ai fait une recherche dans mon code pour voir les occurrences de <code> #if 0 </code>&#8230; Pas beaucoup &#8211; ouf! En effet, en C/C++ ceci isole du code commenté &lsquo;normalement&rsquo; par /* */ ou double slash. Pas accepté en C#, il faut l&rsquo;écrire <code> #if nul </code>&#8230; le progrès.</p>
+<p>Par contre, j&rsquo;ai souvent utilisé <code> #if TEST </code> dans lequel figure du code utilisé pour tester les fonctions du module. En effet, il faut parfois des conditions impossible à réunir pour tester son code dans un délai acceptable (changement heure d&rsquo;été/hiver, nécessité d&rsquo;avoir des données, etc). Là, un petit main() avec un I/O minimal permet de tester à fond son code avant de le linker avec le reste:<br />
+<code><br />
+#ifdef TEST<br />
+void main(void)<br />
+{<br />
+  char c;<br />
+  int i, n;<br />
+  float f;<br />
+.<br />
+.<br />
+ while(1)<br />
+     {<br />
+     disp("\n\rEntree diverses");<br />
+     cputs("\n\rTexte:");<br />
+     n = (int) input_line();<br />
+.<br />
+.<br />
+    printf("\n\rvaleur:%f", f);<br />
+     }<br />
+}<br />
+#endif<br />
+</code></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : Herve Kabla		</title>
+		<link>https://microclub.ch/2008/11/19/comment-effacer-du-code/#comment-35</link>
+
+		<dc:creator><![CDATA[Herve Kabla]]></dc:creator>
+		<pubDate>Sat, 22 Nov 2008 19:54:17 +0000</pubDate>
+		<guid isPermaLink="false">http://microclub.ch/?p=97#comment-35</guid>
+
+					<description><![CDATA[Excellent article educatif. Il y a une autre façon: c&#039;est quand un morceau de code ressemble furieusement à un autre. Voire... en est la pale copie/coller. Dans ce cas, on efface le bout de code pour le mettre dans une fonction reutilisable ailleurs.]]></description>
+			<content:encoded><![CDATA[<p>Excellent article educatif. Il y a une autre façon: c&rsquo;est quand un morceau de code ressemble furieusement à un autre. Voire&#8230; en est la pale copie/coller. Dans ce cas, on efface le bout de code pour le mettre dans une fonction reutilisable ailleurs.</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

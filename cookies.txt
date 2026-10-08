@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+microclub.ch	TRUE	/wp-content/plugins	FALSE	1999999999	wordpress_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/wp-content/plugins	FALSE	1999999999	wordpress_sec_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/wp-admin	FALSE	1999999999	wordpress_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/wp-admin	FALSE	1999999999	wordpress_sec_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wordpress_logged_in_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wp-settings-0	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wp-settings-time-0	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wordpress_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wordpress_sec_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wordpressuser_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wordpresspass_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wp-postpass_84c1fd34ef1f7afa5b1dbc63457bba7c	%20
+microclub.ch	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP%20Cookie%20check
+

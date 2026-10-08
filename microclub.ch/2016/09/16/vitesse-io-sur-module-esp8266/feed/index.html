@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Commentaires sur : Vitesse IO sur module ESP8266	</title>
+	<atom:link href="https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/feed/" rel="self" type="application/rss+xml" />
+	<link>https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/</link>
+	<description>Le plus ancien club informatique de suisse romande</description>
+	<lastBuildDate>Sun, 04 Dec 2016 10:54:02 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.3</generator>
+	<item>
+		<title>
+		Par : Rolf Ziegler		</title>
+		<link>https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/#comment-1324</link>
+
+		<dc:creator><![CDATA[Rolf Ziegler]]></dc:creator>
+		<pubDate>Sun, 04 Dec 2016 10:54:02 +0000</pubDate>
+		<guid isPermaLink="false">http://microclub.ch/?p=2527#comment-1324</guid>
+
+					<description><![CDATA[En réponse à &lt;a href=&quot;https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/#comment-1319&quot;&gt;Yves Masur&lt;/a&gt;.
+
+il suffit d&#039;ajouter &quot;#include gpio.h&quot; dans l&#039;entête du fichier.]]></description>
+			<content:encoded><![CDATA[<p>En réponse à <a href="https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/#comment-1319">Yves Masur</a>.</p>
+<p>il suffit d&rsquo;ajouter « #include gpio.h » dans l&rsquo;entête du fichier.</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : franic		</title>
+		<link>https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/#comment-1321</link>
+
+		<dc:creator><![CDATA[franic]]></dc:creator>
+		<pubDate>Mon, 19 Sep 2016 18:14:00 +0000</pubDate>
+		<guid isPermaLink="false">http://microclub.ch/?p=2527#comment-1321</guid>
+
+					<description><![CDATA[Très intéressant, j&#039;ai effectué un test identique avec :
+- une carte arduino Uno ATMega328 
+- Arduino 1.6.7
+
+
+TEST 1 :
+Voici le programme :
+
+void setup() {
+  pinMode(3, OUTPUT); // initialize digital pin 13 as an output.
+}
+
+void loop() {
+  digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+}
+
+Résultat :
+la fréquence vaut 94 kHz, le signal est pratiquement carré, 5.08ns à 1 et 5.56ns à 0
+
+
+TEST 2 : 
+Maintenant, comme Rolf, je remplace les fonctions arduino digitalWrite par l&#039;accès direct au registre de sortie du port, soit :
+
+void setup() {
+  pinMode(3, OUTPUT); // initialize digital pin 13 as an output.
+}
+
+void loop() {
+	PORTD &#124;= 0x04;
+	PORTD &amp;= ~0x04;
+}
+
+Résultat : 
+la fréquence passe alors à 992kHz !!! en plus, le signal reste à 1 durant 126ns et à 0 durant 882ns. 
+
+
+TEST 3 :
+Cette fois j&#039;ai utilisé l&#039;environnement AVR Studio au lieu d&#039;Arduino, dont voici le code source :
+
+int main(void)
+{
+  PORTD = 0x0;
+  DDRD  = 0x4;    
+	while(1)
+    {
+        PORTD &#124;= 0x04;
+        PORTD &amp;= ~0x04;
+    }
+}
+
+Si l&#039;on regarde le code assembleur généré, on remarque que le compilateur a vraiment optimisé le code de la boucle en utilisant les fonctions de traitement de bits sbi et cbi:
+	while(1)
+    {
+        PORTD &#124;= 0x04;
+  86:	5a 9a       	sbi	0x0b, 2	; 11
+        PORTD &amp;= ~0x04;
+  88:	5a 98       	cbi	0x0b, 2	; 11
+  8a:	fd cf       	rjmp	.-6      	; 0x86 &lt;main +0x6&gt;
+
+difficile de faire plus court !
+
+Résultat :
+la fréquence est de 2,64MHz période à &quot;1&quot; : 126ns et période à &quot;0&quot; 252ns
+
+Arduino reste un environnement merveilleux, qui a le mérite d&#039;avoir rendu le micro contrôleur accessible à beaucoup de néophytes ainsi qu&#039;à des professionnels. Evidemment, pour certaines applications l&#039;environnement a ses limites.
+Si l&#039;on compare à l&#039;automobile, une grande partie des conducteurs n&#039;ont pas besoin d&#039;une Ferrari pour se rendre au travail  !!! mais leur petite cylindrée leur rend bien service !&lt;/main&gt;]]></description>
+			<content:encoded><![CDATA[<p>Très intéressant, j&rsquo;ai effectué un test identique avec :<br />
+&#8211; une carte arduino Uno ATMega328<br />
+&#8211; Arduino 1.6.7</p>
+<p>TEST 1 :<br />
+Voici le programme :</p>
+<p>void setup() {<br />
+  pinMode(3, OUTPUT); // initialize digital pin 13 as an output.<br />
+}</p>
+<p>void loop() {<br />
+  digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)<br />
+  digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW<br />
+}</p>
+<p>Résultat :<br />
+la fréquence vaut 94 kHz, le signal est pratiquement carré, 5.08ns à 1 et 5.56ns à 0</p>
+<p>TEST 2 :<br />
+Maintenant, comme Rolf, je remplace les fonctions arduino digitalWrite par l&rsquo;accès direct au registre de sortie du port, soit :</p>
+<p>void setup() {<br />
+  pinMode(3, OUTPUT); // initialize digital pin 13 as an output.<br />
+}</p>
+<p>void loop() {<br />
+	PORTD |= 0x04;<br />
+	PORTD &#038;= ~0x04;<br />
+}</p>
+<p>Résultat :<br />
+la fréquence passe alors à 992kHz !!! en plus, le signal reste à 1 durant 126ns et à 0 durant 882ns. </p>
+<p>TEST 3 :<br />
+Cette fois j&rsquo;ai utilisé l&rsquo;environnement AVR Studio au lieu d&rsquo;Arduino, dont voici le code source :</p>
+<p>int main(void)<br />
+{<br />
+  PORTD = 0x0;<br />
+  DDRD  = 0x4;<br />
+	while(1)<br />
+    {<br />
+        PORTD |= 0x04;<br />
+        PORTD &#038;= ~0x04;<br />
+    }<br />
+}</p>
+<p>Si l&rsquo;on regarde le code assembleur généré, on remarque que le compilateur a vraiment optimisé le code de la boucle en utilisant les fonctions de traitement de bits sbi et cbi:<br />
+	while(1)<br />
+    {<br />
+        PORTD |= 0x04;<br />
+  86:	5a 9a       	sbi	0x0b, 2	; 11<br />
+        PORTD &#038;= ~0x04;<br />
+  88:	5a 98       	cbi	0x0b, 2	; 11<br />
+  8a:	fd cf       	rjmp	.-6      	; 0x86 <main +0x6></p>
+<p>difficile de faire plus court !</p>
+<p>Résultat :<br />
+la fréquence est de 2,64MHz période à « 1 » : 126ns et période à « 0 » 252ns</p>
+<p>Arduino reste un environnement merveilleux, qui a le mérite d&rsquo;avoir rendu le micro contrôleur accessible à beaucoup de néophytes ainsi qu&rsquo;à des professionnels. Evidemment, pour certaines applications l&rsquo;environnement a ses limites.<br />
+Si l&rsquo;on compare à l&rsquo;automobile, une grande partie des conducteurs n&rsquo;ont pas besoin d&rsquo;une Ferrari pour se rendre au travail  !!! mais leur petite cylindrée leur rend bien service !</main></p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : Rolf Ziegler		</title>
+		<link>https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/#comment-1320</link>
+
+		<dc:creator><![CDATA[Rolf Ziegler]]></dc:creator>
+		<pubDate>Fri, 16 Sep 2016 21:11:42 +0000</pubDate>
+		<guid isPermaLink="false">http://microclub.ch/?p=2527#comment-1320</guid>
+
+					<description><![CDATA[GPIO_OUT_W1TS_ADDRESS est un registre du processeur ARM, J&#039;ai juste ajouté #include &quot;gpio.h&quot; dans mon code (pour ESP8266). Ne fonctionne bien sure pas pour les cartes Arduino !
+
+Pour info, gpio.h est installée avec la librairie de base. On peut également la trouvé sur git dans le paquet suivant: &lt;a href=&quot;https://github.com/esp8266/&quot; rel=&quot;nofollow&quot;&gt;https://github.com/esp8266/&lt;/a&gt;Arduino/tree/master/tools/sdk/include
+]]></description>
+			<content:encoded><![CDATA[<p>GPIO_OUT_W1TS_ADDRESS est un registre du processeur ARM, J&rsquo;ai juste ajouté #include « gpio.h » dans mon code (pour ESP8266). Ne fonctionne bien sure pas pour les cartes Arduino !</p>
+<p>Pour info, gpio.h est installée avec la librairie de base. On peut également la trouvé sur git dans le paquet suivant: <a href="https://github.com/esp8266/" rel="nofollow">https://github.com/esp8266/</a>Arduino/tree/master/tools/sdk/include</p>
+]]></content:encoded>
+		
+			</item>
+		<item>
+		<title>
+		Par : Yves Masur		</title>
+		<link>https://microclub.ch/2016/09/16/vitesse-io-sur-module-esp8266/#comment-1319</link>
+
+		<dc:creator><![CDATA[Yves Masur]]></dc:creator>
+		<pubDate>Fri, 16 Sep 2016 21:03:59 +0000</pubDate>
+		<guid isPermaLink="false">http://microclub.ch/?p=2527#comment-1319</guid>
+
+					<description><![CDATA[Question: comment doit-on définir: &#039;GPIO_OUT_W1TS_ADDRESS&#039; ?
+Sinon on obtient:  was not declared in this scope]]></description>
+			<content:encoded><![CDATA[<p>Question: comment doit-on définir: &lsquo;GPIO_OUT_W1TS_ADDRESS&rsquo; ?<br />
+Sinon on obtient:  was not declared in this scope</p>
+]]></content:encoded>
+		
+			</item>
+	</channel>
+</rss>

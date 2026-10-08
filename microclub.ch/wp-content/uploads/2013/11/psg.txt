@@ -1,0 +1,159 @@
+#!/bin/bash
+
+#set -x
+
+# -------------------------------------------------------------------------
+#	Check number and values of options and arguments
+# -------------------------------------------------------------------------
+
+usage1="--> Usage : $0 [h(elp)] | [-d(ebug)] [-f(ull)] [-s sortSpec] [string_to_search_for_in_ps_command_output] (all processes by default)"
+usage2="--> sortSpec can be '-k +3 -r' for example, including the quotes"
+
+#echo '$0:' $0
+#echo '$*:' $*
+#echo '$#:' $#
+
+
+ARGS_NBR=$#
+
+FULL_MODE=0
+SORT_MODE=0
+
+ITERS=2
+
+while [ ${ITERS} -gt 0 ]; do
+	if [ "$1" == "-h" ]; then
+		echo "$usage1"
+		echo "$usage2"
+		exit
+	else
+		if [ "$1" == "-d" ]; then
+			set -x
+			shift
+			let ARGS_NBR--
+		else
+			if [ "$1" == "-f" ]; then
+				FULL_MODE=1
+				shift
+				let ARGS_NBR--
+			else
+				if [ "$1" == "-s" ]; then
+					SORT_MODE=1
+					shift
+					let ARGS_NBR--
+					if [ $ARGS_NBR -ge 1 ]; then
+						SORT_SPEC=$1
+						shift
+						let ARGS_NBR--
+					else
+						echo "--> 'sort' will not have any option"
+						SORT_SPEC=""
+					fi
+				else
+					case "$1" in
+						"-"* )
+							echo "--> Sorry, $0 has no '$1' option"
+							echo "$usage1"
+							echo "$usage2"
+							exit
+							;;
+						* )
+#							echo "--> default case clause, \$1 = $1"
+							;;
+					esac
+				fi
+			fi
+		fi
+	fi
+
+	if [ $ARGS_NBR -eq 0 ]; then
+		break
+	fi
+
+	let ITERS--
+done
+
+#echo "--> Non-option arguments: $ARGS_NBR"
+
+if [ $ARGS_NBR -gt 1 ]; then
+	echo "--> Sorry, $0 allows at most one argument"
+	echo "$usage1"
+	echo "$usage2"
+	exit
+fi
+
+
+# -------------------------------------------------------------------------
+#	Let's go!
+# -------------------------------------------------------------------------
+
+SYSTEM_TYPE=$(uname -s)
+
+if [ $FULL_MODE -eq 1 ]; then
+	case "$SYSTEM_TYPE" in
+		"Linux" )
+			ps_options="-eo state,wchan,user,group,pid,ppid,sid,pgrp,lstart,cputime=[DD-]CPUTIME,%cpu,%mem,rss,thcount,command"
+			;;
+		"Darwin" )
+			ps_options="-Ao state,wchan,user,rgid,pid,ppid,sid,pgrp,lstart,time=[DD-]CPUTIME,%cpu,%mem,rss,command -M"
+			;;
+		* )
+			ps_options="-elf"
+			;;
+	esac
+else
+	case "$SYSTEM_TYPE" in
+		"Linux" )
+			ps_options="-e -o state,wchan,user,group,pid,ppid,lstart -o cputime=[DD-]CPUTIME -o %cpu,%mem,thcount,command"
+			;;
+		"Darwin" )
+			ps_options="-A -o state,wchan,user,rgid,pid,ppid,lstart -o time=[DD-]CPUTIME -o %cpu,%mem,command -M"
+			;;
+		"OSF1" )
+			ps_options="-e -o state,wchan,user,group,pid,ppid,lstart -o cputime=[DD-]CPUTIME -o %cpu,%mem,command"
+			;;
+		* )
+			ps_options="-elf"
+			;;
+	esac
+fi
+
+
+if [ $SORT_MODE -eq 1 ]; then
+	SORT_COMMAND="sort $SORT_SPEC"
+	echo "--> SORT_COMMAND: $SORT_COMMAND"
+fi
+
+echo ""
+if [ $ARGS_NBR -eq 0 ]; then
+	echo "--> All running processes:"
+else
+	echo "--> Processes whose description contains '$1':"
+fi
+echo ""
+
+ps  $ps_options | head -1	# for the headers only
+
+if [ $ARGS_NBR -eq 1 ]; then
+	if [ $SORT_MODE -eq 1 ]; then
+		ps $ps_options | tail -n +2 | grep -i "$1" | grep -v psg | grep -v grep | $SORT_COMMAND
+	else
+		ps $ps_options | tail -n +2 | grep -i "$1" | grep -v psg | grep -v grep
+	fi
+else
+	#	Show all processes
+	if [ $SORT_MODE -eq 1 ]; then
+		ps $ps_options | tail -n +2 | grep -v psg | grep -v grep | $SORT_COMMAND
+	else
+		ps $ps_options | tail -n +2 | grep -v psg | grep -v grep
+	fi
+fi
+
+
+# Note also:
+#	caught, blocked: signals masks
+#	flags
+#	tname,tpgid
+
+#echo "<-- That's all!"
+
