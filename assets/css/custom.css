@@ -461,3 +461,8 @@
 .dark .home-next-event__link {
   color: rgb(var(--color-primary-400));
 }
+
+.recent-articles-heading {
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
