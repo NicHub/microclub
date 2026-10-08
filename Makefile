@@ -1,6 +1,6 @@
 .PHONY: serve build check clean
 
-THEME ?= microclub-modern
+THEME ?= blowfish
 HUGO = hugo --theme "$(THEME)"
 
 serve:

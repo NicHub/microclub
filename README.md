@@ -15,7 +15,13 @@ Tous les fichiers de site générés sont regroupés dans `.hugo_nokdrive/` : le
 
 ## Tester un thème
 
-Le thème actif est `themes/microclub-modern/`. Les contenus, médias et paramètres du site restent à la racine, sans `layouts/` ni `assets/` susceptibles d’écraser les fichiers d’un thème alternatif.
+Le thème actif sur cette branche est [Blowfish](https://blowfish.page), installé comme sous-module dans `themes/blowfish/`. Le thème original reste disponible dans `themes/microclub-modern/`.
+
+Après un clonage, initialisez le thème avec :
+
+```sh
+git submodule update --init --recursive
+```
 
 Déposez un autre thème dans `themes/<nom>/`, puis lancez :
 
@@ -25,7 +31,7 @@ make serve THEME=<nom>
 ./scripts/preview-mac.command --theme <nom>
 ```
 
-Le thème choisi pour ce test ne modifie ni `hugo.toml` ni les contenus. Pour rendre un thème permanent, changez la valeur `theme` dans `hugo.toml`.
+Le thème choisi pour ce test ne modifie ni `hugo.toml` ni les contenus. Pour rendre un thème permanent, changez la valeur `theme` dans `hugo.toml`. Les fichiers racine `layouts/` et `assets/css/custom.css` ne contiennent que l’intégration Agenda propre à Blowfish.
 
 ## Contenus
 

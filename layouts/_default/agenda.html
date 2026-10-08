@@ -1,0 +1,85 @@
+{{ define "main" }}
+  {{ $today := now | time.Format "2006-01-02" }}
+  {{/* Une seule source triée en ordre inverse chronologique (desc) ; passé et
+     futur ne sont que des tranches de la même liste => ordre toujours identique. */}}
+  {{ $all := sort hugo.Data.agenda.events.events "date" "desc" }}
+
+  {{/* Validation des données source (ordre du fichier events.yaml) :
+     - chaque date doit être parsable, sinon échec du build ;
+     - l'ordre doit être strictement antichronologique (chaque entrée plus
+       récente que la précédente), sinon échec du build. */}}
+  {{ $prev := "" }}
+  {{ range hugo.Data.agenda.events.events }}
+    {{ $t := try (time.AsTime .date) }}
+    {{ if $t.Err }}
+      {{ errorf "agenda/events.yaml : date invalide %q (statut : %s). Format attendu YYYY-MM-DDTHH:MM:SS, ex. 2026-11-13T19:00:00." .date .status }}
+    {{ else }}
+      {{ if and $prev (gt .date $prev) }}
+        {{ errorf "agenda/events.yaml : ordre antichronologique violé — %q devrait être plus ancien que la date précédente %q." .date $prev }}
+      {{ end }}
+      {{ $prev = .date }}
+    {{ end }}
+  {{ end }}
+
+  {{ $future := where $all "date" ">=" $today }}
+  {{ $past := where $all "date" "<" $today }}
+
+  <div class="max-w-4xl px-1">
+    <header class="mt-5 max-w-prose">
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Agenda • Conférences &amp; évènements
+      </h1>
+    </header>
+
+    {{ .Content }}
+
+    <p class="mt-4 text-sm text-neutral-500 dark:text-neutral-400">
+      Les séances se déroulent en général à l&#39;EPFL, salle de conférence
+      <a class="link" href="https://plan.epfl.ch/?room==MED%201%201815">MED 1 1815</a>,
+      en face du Rolex Learning Center. Elles commencent à 19&nbsp;h et se terminent
+      généralement après 21&nbsp;h. Certaines conférences sont diffusées en direct via
+      l&#39;application <a class="link" href="https://zoom.us/j/6215868709">Zoom</a>.
+      Lien direct vers l&#39;<a class="link" href="https://calendar.google.com/calendar/u/0?cid=NTZvM3V2cm9zMWJlMmk1NDV1OTRvbGJ0Z2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Agenda Google du Microclub</a>.
+    </p>
+
+    {{ if $future }}
+      <div class="agenda-list mt-4">
+        {{ $prevYear := "" }}
+        {{ range $i, $e := $future }}
+          {{ $y := substr .date 0 4 }}
+          {{ if ne $y $prevYear }}
+            <div class="agenda-year mt-8 text-xl font-bold first:mt-0">
+              {{ $y }}
+            </div>
+            {{ $prevYear = $y }}
+          {{ end }}
+          {{ partial "agenda-event.html" (dict "event" $e "today" $today "index" (add $i 1)) }}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ if and $future $past }}
+      <div class="agenda-separator" aria-hidden="true"><i></i></div>
+    {{ end }}
+
+    {{ if $past }}
+      <div class="agenda-list mt-4">
+        {{ $futureYears := dict }}
+        {{ range $future }}{{ $futureYears = $futureYears | merge (dict (substr .date 0 4) true) }}{{ end }}
+        {{ $prevYear := "" }}
+        {{ range $i, $e := $past }}
+          {{ $y := substr .date 0 4 }}
+          {{ if ne $y $prevYear }}
+            {{ if not (index $futureYears $y) }}
+              <div class="agenda-year mt-8 text-xl font-bold first:mt-0">
+                {{ $y }}
+              </div>
+            {{ end }}
+            {{ $prevYear = $y }}
+          {{ end }}
+          {{ partial "agenda-event.html" (dict "event" $e "today" $today "index" (add $i 1) "past" true) }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

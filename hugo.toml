@@ -2,12 +2,26 @@ baseURL = "https://microclub.ch/"
 locale = "fr-CH"
 timeZone = "Europe/Zurich"
 defaultContentLanguage = "fr"
+disableLanguages = ["en"]
 title = "Microclub"
-theme = "microclub-modern"
+theme = "blowfish"
 publishDir = ".hugo_nokdrive/public"
 resourceDir = ".hugo_nokdrive/resources"
 enableRobotsTXT = true
 enableGitInfo = true
+
+[languages.fr]
+  label = "Français"
+  weight = 1
+  title = "Microclub"
+
+  [languages.fr.params]
+    displayName = "Français"
+    isoCode = "fr-CH"
+
+    [languages.fr.params.author]
+      name = "Microclub"
+      headline = "Association de passionnés d’électronique et de micro-informatique."
 
 [pagination]
   pagerSize = 12
@@ -30,6 +44,46 @@ enableGitInfo = true
   description = "Le plus ancien club informatique de Suisse romande. Échanges, électronique, programmation et culture numérique."
   founded = 1976
   repository = ""
+  colorScheme = "noir"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = true
+  enableSearch = true
+  enableCodeCopy = true
+  mainSections = ["articles"]
+
+  [params.header]
+    layout = "floating"
+
+  [params.footer]
+    showMenu = true
+    showCopyright = true
+    showThemeAttribution = true
+    showAppearanceSwitcher = true
+    showScrollToTop = true
+
+  [params.homepage]
+    layout = "landing"
+    showRecent = true
+    showRecentItems = 12
+    showMoreLink = true
+    showMoreLinkDest = "articles"
+    cardView = true
+
+  [params.article]
+    showDate = true
+    showAuthor = true
+    showBreadcrumbs = true
+    showHeadingAnchors = true
+    showPagination = true
+    showReadingTime = true
+    showTableOfContents = true
+    showTaxonomies = true
+
+  [params.list]
+    showSummary = true
+    showCards = true
+    groupByYear = false
+    cardView = true
 
 [[menus.main]]
   name = "Articles"
@@ -51,11 +105,6 @@ enableGitInfo = true
   name = "Contact"
   url = "/contacts/"
   weight = 50
-[[menus.main]]
-  name = "Recherche"
-  url = "/recherche/"
-  weight = 60
-
 [privacy]
   [privacy.youtube]
     privacyEnhanced = true
