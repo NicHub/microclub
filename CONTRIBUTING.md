@@ -7,7 +7,7 @@ Créez le fichier avec `hugo new articles/AAAA/MM/JJ/titre.md`, complétez les m
 Avant de proposer le changement :
 
 ```sh
-hugo --gc --minify --printPathWarnings
+hugo --gc --printPathWarnings
 ```
 
 ## Commentaire

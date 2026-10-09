@@ -7,10 +7,10 @@ serve:
 	$(HUGO) server --buildDrafts --disableFastRender
 
 build:
-	$(HUGO) --gc --minify
+	$(HUGO) --gc
 
 check:
-	$(HUGO) --gc --minify --printPathWarnings
+	$(HUGO) --gc --printPathWarnings
 
 clean:
 	rm -rf .hugo .hugo_nokdrive public resources

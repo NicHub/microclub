@@ -49,7 +49,7 @@ Un commentaire est ajouté dans le fichier de l’article sous `## Commentaires`
 
 ## 8. Recette
 
-1. `hugo --gc --minify --printPathWarnings` réussit.
+1. `hugo --gc --printPathWarnings` réussit.
 2. Les 301 articles, 7 pages et 311 commentaires archivés sont présents.
 3. Les URL historiques principales répondent après génération.
 4. La navigation, la recherche, le RSS et la page 404 fonctionnent.
