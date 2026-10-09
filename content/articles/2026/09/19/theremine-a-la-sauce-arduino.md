@@ -71,7 +71,27 @@ Les deux HC-SR04 ne doivent pas être déclenchés simultanément. Une mesure Pi
 
 Une attente d’une trentaine de millisecondes constituent un bon point de départ pour le prototype.
 
+<!--
 ![word-image-5871-4](/media/2026/09/word-image-5871-4.png)
+-->
+
+{{< katex >}}
+
+$$
+\begin{gathered}
+\text{mesure PITCH} \\\\
+\downarrow \\\\
+\text{attente} \\\\
+\downarrow \\\\
+\text{mesure VOLUME} \\\\
+\downarrow \\\\
+\text{attente} \\\\
+\downarrow \\\\
+\text{traitement} \\\\
+\downarrow \\\\
+\text{nouveau cycle}
+\end{gathered}
+$$
 
 ## 7. Conversion de la distance en hauteur musicale
 
@@ -79,25 +99,55 @@ C’est ici que le projet devient intéressant.
 
 Une conversion simplement linéaire, par exemple :
 
+<!--
 ![word-image-5871-5](/media/2026/09/word-image-5871-5.png)
+-->
+
+$$
+f = ad + b
+$$
 
 fonctionnerait, mais serait musicalement médiocre, parce que notre perception des hauteurs est logarithmique.
 
 Il vaut mieux travailler par octaves :
 
+<!--
 ![word-image-5871-6](/media/2026/09/word-image-5871-6.png)
+-->
+
+$$
+f(d) = f_{\min} 2^{Nx}
+$$
 
 avec
 
+<!--
 ![word-image-5871-7](/media/2026/09/word-image-5871-7.png)
+ -->
+
+$$
+x = \frac{d_{\max} - d}{d_{\max} - d_{\min}}
+$$
 
 et N le nombre d’octaves.
 
+<!--
 ![word-image-5871-8](/media/2026/09/word-image-5871-8.png)
+ -->
+
+$$
+f_{\min} = 110\ \mathrm{Hz}
+$$
 
 et quatre octaves donnent :
 
+<!--
 ![word-image-5871-9](/media/2026/09/word-image-5871-9.png)
+ -->
+
+$$
+110 \rightarrow 220 \rightarrow 440 \rightarrow 880 \rightarrow 1760\ \mathrm{Hz}
+$$
 
 C’est beaucoup plus naturel à jouer.
 
@@ -107,11 +157,23 @@ Les mesures brutes peuvent varier de quelques millimètres à quelques centimèt
 
 Je propose donc un filtre exponentiel :
 
+<!--
 ![word-image-5871-10](/media/2026/09/word-image-5871-10.png)
+ -->
+
+$$
+D_f(n) = \alpha D(n) + (1 - \alpha)D_f(n - 1)
+$$
 
 avec :
 
+<!--
 ![word-image-5871-11](/media/2026/09/word-image-5871-11.png)
+ -->
+
+$$
+\alpha = 0{,}20
+$$
 
 Une petite valeur donne un instrument très stable mais plus lent ; une grande valeur donne un instrument vif mais plus nerveux.
 
@@ -283,11 +345,19 @@ Imaginez un tour complet de cercle correspondant à une période du signal :
 
 ![word-image-5871-16](/media/2026/09/word-image-5871-16.png)
 
+$$
+0^\circ \rightarrow 90^\circ \rightarrow 180^\circ \rightarrow 270^\circ \rightarrow 360^\circ
+$$
+
 À chaque « tic » d’une horloge très régulière, on avance d’une certaine quantité sur ce cercle. Cette position est la **phase**.
 
 On utilise donc une variable entière :
 
 ![word-image-5871-17](/media/2026/09/word-image-5871-17.png)
+
+$$
+\mathrm{phase}_{n+1} = \mathrm{phase}_n + \mathrm{increment}
+$$
 
 C’est cette variable phase que l’on appelle **accumulateur de phase**.
 
@@ -301,15 +371,25 @@ Avec un incrément de 1 :
 
 ![word-image-5871-18](/media/2026/09/word-image-5871-18.png)
 
+$$
+0 \rightarrow 1 \rightarrow 2 \rightarrow 3 \rightarrow 4 \rightarrow \cdots \rightarrow 255 \rightarrow 0 \rightarrow 1 \rightarrow \cdots
+$$
+
 Il faut **256 coups d’horloge** pour effectuer une période.
 
 Avec un incrément de 4 :
 
 ![word-image-5871-19](/media/2026/09/word-image-5871-19.png)
 
+$$
+0 \rightarrow 4 \rightarrow 8 \rightarrow 12 \rightarrow \cdots \rightarrow 252 \rightarrow 0 \rightarrow \cdots
+$$
+
 Il ne faut plus que :
 
-256/4 = 64
+$$
+\frac{256}{4} = 64
+$$
 
 coups d’horloge pour une période.
 
@@ -319,7 +399,9 @@ La fréquence est donc quatre fois plus élevée.
 
 Avec un accumulateur de phase de N bits possède :
 
-**2<sup>N</sup>**
+$$
+2^N
+$$
 
 états.
 
@@ -327,17 +409,29 @@ Si la fréquence d’échantillonnage est Fs et l’incrément de phase vaut K, 
 
 ![word-image-5871-20](/media/2026/09/word-image-5871-20.png)
 
+$$
+F_{\mathrm{son}} = \frac{K F_s}{2^N}
+$$
+
 Prenons par exemple un accumulateur **32 bits** et une interruption audio à :
 
-**F<sub>S</sub> = 31250Hz**
+$$
+F_s = 31250\ \mathrm{Hz}
+$$
 
 Pour produire le La à 440 Hz :
 
-**K = 440 x 2<sup>32</sup>/31250**
+$$
+K = \frac{440 \times 2^{32}}{31250}
+$$
 
 ce qui donne environ :
 
 **![word-image-5871-21](/media/2026/09/word-image-5871-21.png)**
+
+$$
+K = 60\ 472\ 886
+$$
 
 Cela paraît énorme, mais pour un microcontrôleur ce n’est qu’un entier 32 bits.
 
