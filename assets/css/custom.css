@@ -1,3 +1,9 @@
+.logo svg {
+  width: auto;
+  height: 5rem;
+  max-width: 5rem;
+}
+
 .agenda-heading {
   display: flex;
   align-items: center;

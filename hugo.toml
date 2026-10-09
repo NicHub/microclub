@@ -18,7 +18,7 @@ enableGitInfo = true
   [languages.fr.params]
     displayName = "Français"
     isoCode = "fr-CH"
-    logo = "img/blowfish_logo_transparent.png"
+    logo = "images/microclub-logo-led.svg"
 
     [languages.fr.params.author]
       name = "Microclub"
