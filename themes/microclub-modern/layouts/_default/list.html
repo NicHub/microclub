@@ -1,7 +1,0 @@
-{{ define "main" }}
-<header class="page-intro shell"><p class="kicker">Explorer</p><h1>{{ .Title }}</h1>{{ with .Content }}<div class="lead">{{ . }}</div>{{ end }}</header>
-<section class="section shell">
-  <div class="card-grid">{{ range .Paginator.Pages }}{{ partial "article-card.html" . }}{{ end }}</div>
-  {{ template "_internal/pagination.html" . }}
-</section>
-{{ end }}

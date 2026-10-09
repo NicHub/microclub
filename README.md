@@ -1,4 +1,6 @@
 # microclub.ch
 
--   <https://microclub.ch/>
--   <https://nichub.github.io/microclub/>
+-   Site officiel
+    -   <https://microclub.ch/>
+-   Site de test
+    -   <https://nichub.github.io/microclub/>

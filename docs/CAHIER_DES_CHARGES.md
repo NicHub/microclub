@@ -6,20 +6,20 @@ Remplacer le site WordPress archivé par un site Hugo rapide, actuel, accessible
 
 ## 2. Publics et usages
 
-- visiteurs : découvrir le club, consulter l’agenda, lire et rechercher les archives ;
-- membres : publier un article ou corriger un contenu par Git ;
-- mainteneurs : relire, fusionner et déployer une version statique ;
-- moteurs et lecteurs RSS : retrouver des URL stables, un sitemap et un flux.
+-   visiteurs : découvrir le club, consulter l’agenda, lire et rechercher les archives ;
+-   membres : publier un article ou corriger un contenu par Git ;
+-   mainteneurs : relire, fusionner et déployer une version statique ;
+-   moteurs et lecteurs RSS : retrouver des URL stables, un sitemap et un flux.
 
 ## 3. Périmètre fonctionnel
 
-- accueil éditorial et responsive ;
-- articles classés chronologiquement, par auteur, catégorie et mot-clé ;
-- pages Agenda, Présentation, Photos, Ressources et Contact ;
-- recherche locale côté navigateur, sans service tiers ;
-- flux RSS, sitemap, page 404 et métadonnées essentielles ;
-- publication et commentaires par modification de fichiers Markdown ;
-- conservation des anciennes URL `/AAAA/MM/JJ/slug/`.
+-   accueil éditorial et responsive ;
+-   articles classés chronologiquement, par auteur, catégorie et mot-clé ;
+-   pages Agenda, Présentation, Photos, Ressources et Contact ;
+-   recherche locale côté navigateur, sans service tiers ;
+-   flux RSS, sitemap, page 404 et métadonnées essentielles ;
+-   publication et commentaires par modification de fichiers Markdown ;
+-   conservation des anciennes URL `/AAAA/MM/JJ/slug/`.
 
 Sont exclus : comptes utilisateurs, connexion, formulaire dynamique, base de données, suivi publicitaire et ancien forum dynamique.
 
@@ -39,13 +39,13 @@ Un commentaire est ajouté dans le fichier de l’article sous `## Commentaires`
 
 ## 7. Exigences non fonctionnelles
 
-- construction reproductible avec Hugo, sans dépendance de thème distante ;
-- fonctionnement sans JavaScript hors recherche ;
-- HTML sémantique, navigation clavier, lien d’évitement et contraste lisible ;
-- images fluides et chargement sans ressources de pistage ;
-- build sans erreur ni avertissement de chemin ;
-- fichiers générés regroupés et ignorés dans `.hugo_nokdrive/` ;
-- thème par défaut isolé sous `themes/` et remplaçable sans modifier les contenus.
+-   construction reproductible avec Hugo, sans dépendance de thème distante ;
+-   fonctionnement sans JavaScript hors recherche ;
+-   HTML sémantique, navigation clavier, lien d’évitement et contraste lisible ;
+-   images fluides et chargement sans ressources de pistage ;
+-   build sans erreur ni avertissement de chemin ;
+-   fichiers générés regroupés et ignorés dans `.hugo_nokdrive/` ;
+-   thème par défaut isolé sous `themes/` et remplaçable sans modifier les contenus.
 
 ## 8. Recette
 
@@ -58,10 +58,9 @@ Un commentaire est ajouté dans le fichier de l’article sous `## Commentaires`
 
 ## 9. Améliorations recommandées
 
-- ajouter une CI qui compile Hugo et contrôle les liens à chaque proposition ;
-- configurer le dépôt distant dans `params.repository` pour afficher des liens « Modifier cette page » ;
-- automatiser le déploiement atomique (Pages, Netlify ou serveur via rsync) ;
-- convertir progressivement le HTML importé en Markdown propre ;
-- auditer puis remplacer les deux ressources absentes signalées dans `migration-report.json` ;
-- ajouter une licence explicite pour le code et une autre pour les contenus ;
-- formaliser une charte de modération et une politique de conservation des données.
+-   ajouter une CI qui compile Hugo et contrôle les liens à chaque proposition ;
+-   configurer le dépôt distant dans `params.repository` pour afficher des liens « Modifier cette page » ;
+-   automatiser le déploiement atomique (Pages, Netlify ou serveur via rsync) ;
+-   convertir progressivement le HTML importé en Markdown propre ;
+-   ajouter une licence explicite pour le code et une autre pour les contenus ;
+-   formaliser une charte de modération et une politique de conservation des données.
