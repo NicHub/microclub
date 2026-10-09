@@ -107,6 +107,10 @@ enableGitInfo = true
   url = "/articles/"
   weight = 10
 [[menus.main]]
+  name = "Catégories"
+  url = "/categories/"
+  weight = 15
+[[menus.main]]
   name = "Agenda"
   url = "/agenda/"
   weight = 20
