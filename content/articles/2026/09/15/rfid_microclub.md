@@ -3,6 +3,7 @@ title: "RFID_Microclub"
 date: "2026-09-15T13:08:28"
 lastmod: "2026-09-15T13:08:29"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/rfid.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2026/09/15/rfid_microclub/"

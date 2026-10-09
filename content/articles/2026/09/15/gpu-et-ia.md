@@ -3,6 +3,7 @@ title: "GPU et IA"
 date: "2026-09-15T11:19:48"
 lastmod: "2026-09-15T11:19:49"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/gpu-ia.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2026/09/15/gpu-et-ia/"

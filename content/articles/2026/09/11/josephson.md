@@ -3,6 +3,7 @@ title: "Josephson"
 date: "2026-09-11T14:12:18"
 lastmod: "2026-09-11T14:12:18"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/josephson.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2026/09/11/josephson/"

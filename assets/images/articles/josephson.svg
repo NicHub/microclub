@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Calcul supraconducteur à jonction Josephson</title>
+  <desc id="desc">Une puce cryogénique traversée par une impulsion de flux relie calcul classique ultrarapide et qubit supraconducteur.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06111f"/><stop offset=".52" stop-color="#0b2b46"/><stop offset="1" stop-color="#172554"/></linearGradient>
+    <radialGradient id="cold"><stop stop-color="#38bdf8" stop-opacity=".45"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e0f2fe"/><stop offset=".22" stop-color="#64748b"/><stop offset=".5" stop-color="#f8fafc"/><stop offset=".78" stop-color="#475569"/><stop offset="1" stop-color="#bae6fd"/></linearGradient>
+    <linearGradient id="pulse" x1="0" x2="1"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000" flood-opacity=".55"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="13"/></filter>
+    <pattern id="stars" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="8" cy="12" r="2" fill="#e0f2fe" opacity=".25"/><circle cx="67" cy="55" r="1.5" fill="#e0f2fe" opacity=".18"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#stars)"/>
+  <ellipse cx="800" cy="460" rx="680" ry="450" fill="url(#cold)"/>
+  <g fill="#e0f2fe" opacity=".55"><path d="M170 120l8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/><path d="M1425 690l8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/><path d="M1310 130l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/></g>
+  <g transform="translate(285 152)" filter="url(#shadow)">
+    <path d="M90 0h840l90 90v500l-90 90H90L0 590V90z" fill="url(#metal)" stroke="#bae6fd" stroke-width="7"/>
+    <path d="M124 56h772l68 68v432l-68 68H124l-68-68V124z" fill="#0f2940" stroke="#38bdf8" stroke-width="5"/>
+    <g fill="none" stroke="#60a5fa" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M85 160h190v105h125M85 520h205V415h110M935 160H745v105H620M935 520H730V415H620"/>
+      <path d="M510 80v125M510 475v125"/>
+    </g>
+    <g fill="#c4b5fd"><circle cx="85" cy="160" r="19"/><circle cx="85" cy="520" r="19"/><circle cx="935" cy="160" r="19"/><circle cx="935" cy="520" r="19"/><circle cx="510" cy="80" r="19"/><circle cx="510" cy="600" r="19"/></g>
+    <rect x="395" y="205" width="230" height="270" rx="30" fill="#071525" stroke="url(#pulse)" stroke-width="10"/>
+    <path d="M510 242v44m0 108v44" stroke="#f8fafc" stroke-width="16"/>
+    <path d="M445 287h130l-45 53 45 53H445l45-53z" fill="none" stroke="#f472b6" stroke-width="12" stroke-linejoin="round"/>
+    <circle cx="510" cy="340" r="25" fill="#22d3ee"/><circle cx="510" cy="340" r="65" fill="none" stroke="#22d3ee" stroke-width="6" opacity=".45"/>
+    <g stroke="#94a3b8" stroke-width="5"><path d="M150 300h90m-45-45v90M780 300h90m-45-45v90"/></g>
+  </g>
+  <path d="M40 450h340c48 0 65-140 105-140s54 280 95 280 56-280 96-280 56 280 96 280 56-280 96-280 56 280 96 280 56-280 96-280 56 140 105 140h285" fill="none" stroke="url(#pulse)" stroke-width="13" stroke-linecap="round" filter="url(#glow)" opacity=".6"/>
+  <path d="M40 450h340c48 0 65-140 105-140s54 280 95 280 56-280 96-280 56 280 96 280 56-280 96-280 56 280 96 280 56-280 96-280 56 140 105 140h285" fill="none" stroke="url(#pulse)" stroke-width="6" stroke-linecap="round"/>
+  <g transform="translate(1250 170)" filter="url(#shadow)">
+    <circle cx="125" cy="125" r="112" fill="#081629" stroke="#7dd3fc" stroke-width="7"/>
+    <circle cx="125" cy="125" r="72" fill="none" stroke="#a78bfa" stroke-width="10" stroke-dasharray="22 12"/>
+    <path d="M50 125c35-85 115-85 150 0-35 85-115 85-150 0z" fill="none" stroke="#22d3ee" stroke-width="10"/>
+    <circle cx="125" cy="125" r="18" fill="#f472b6"/>
+  </g>
+  <g transform="translate(1260 610)" fill="none" stroke="#bae6fd" stroke-width="9" stroke-linecap="round"><path d="M0 65h75l25-45 42 90 34-65h104"/><path d="M205 0v130" opacity=".45"/></g>
+  <g transform="translate(75 665)" fill="#e0f2fe" opacity=".9"><path d="M100 0v185M20 46l160 93M20 139l160-93M100 0l-22 25m22-25 22 25M20 46l34 4M20 46l13 31M20 139l34-4M20 139l13-31M100 185l-22-25m22 25 22-25M180 139l-34-4m34 4-13-31M180 46l-34 4m34-4-13 31" stroke="#e0f2fe" stroke-width="9" stroke-linecap="round"/></g>
+</svg>

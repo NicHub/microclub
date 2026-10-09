@@ -3,6 +3,7 @@ title: "Thérémine à la sauce Arduino"
 date: "2026-09-19T18:44:40"
 lastmod: "2026-09-19T18:44:40"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/theremine-arduino.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2026/09/19/theremine-a-la-sauce-arduino/"

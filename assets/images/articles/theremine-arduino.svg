@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Thérémine ultrasonique piloté par Arduino</title>
+  <desc id="desc">Une carte Arduino reliée à deux capteurs ultrasoniques détecte les mains et produit une onde musicale.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".55" stop-color="#102b42"/><stop offset="1" stop-color="#27134a"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#22d3ee" stop-opacity=".42"/><stop offset="1" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
+    <linearGradient id="board" x1="0" x2="1"><stop stop-color="#087b8c"/><stop offset="1" stop-color="#0e596d"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0v48" fill="none" stroke="#8be9fd" stroke-opacity=".06"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="800" cy="460" rx="590" ry="400" fill="url(#glow)" filter="url(#blur)"/>
+  <g opacity=".28" fill="none" stroke="#c084fc" stroke-width="4">
+    <path d="M0 670c90-160 180 160 270 0s180 160 270 0 180 160 270 0 180 160 270 0 180 160 270 0 180 160 270 0"/>
+    <path d="M0 702c90-100 180 100 270 0s180 100 270 0 180 100 270 0 180 100 270 0 180 100 270 0 180 100 270 0"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="565" y="270" width="470" height="360" rx="42" fill="url(#board)" stroke="#67e8f9" stroke-width="5"/>
+    <rect x="600" y="307" width="206" height="132" rx="14" fill="#082f49" stroke="#38bdf8" stroke-width="4"/>
+    <rect x="633" y="335" width="140" height="77" rx="8" fill="#091827" stroke="#94a3b8" stroke-width="3"/>
+    <g fill="#d9f99d"><circle cx="652" cy="354" r="5"/><circle cx="676" cy="354" r="5"/><circle cx="700" cy="354" r="5"/><circle cx="724" cy="354" r="5"/><circle cx="748" cy="354" r="5"/></g>
+    <rect x="850" y="324" width="135" height="82" rx="10" fill="#dbeafe"/><rect x="876" y="346" width="85" height="38" rx="5" fill="#64748b"/>
+    <circle cx="955" cy="465" r="15" fill="#fbbf24"/><circle cx="910" cy="465" r="10" fill="#fb7185"/>
+    <path d="M615 504h105v62h-105zm145 0h220v62H760z" fill="#0b3346" stroke="#7dd3fc" stroke-width="3"/>
+    <g fill="#f8fafc"><circle cx="645" cy="535" r="8"/><circle cx="680" cy="535" r="8"/></g>
+    <g fill="#fbbf24"><circle cx="790" cy="535" r="7"/><circle cx="820" cy="535" r="7"/><circle cx="850" cy="535" r="7"/><circle cx="880" cy="535" r="7"/><circle cx="910" cy="535" r="7"/><circle cx="940" cy="535" r="7"/></g>
+  </g>
+  <g filter="url(#shadow)">
+    <g transform="translate(230 305)"><rect width="250" height="170" rx="24" fill="#e2e8f0" stroke="#67e8f9" stroke-width="5"/><circle cx="75" cy="82" r="52" fill="#334155" stroke="#94a3b8" stroke-width="7"/><circle cx="175" cy="82" r="52" fill="#334155" stroke="#94a3b8" stroke-width="7"/><circle cx="75" cy="82" r="34" fill="#0f172a"/><circle cx="175" cy="82" r="34" fill="#0f172a"/><path d="M45 146h160" stroke="#64748b" stroke-width="6"/></g>
+    <g transform="translate(1120 305)"><rect width="250" height="170" rx="24" fill="#e2e8f0" stroke="#c084fc" stroke-width="5"/><circle cx="75" cy="82" r="52" fill="#334155" stroke="#94a3b8" stroke-width="7"/><circle cx="175" cy="82" r="52" fill="#334155" stroke="#94a3b8" stroke-width="7"/><circle cx="75" cy="82" r="34" fill="#0f172a"/><circle cx="175" cy="82" r="34" fill="#0f172a"/><path d="M45 146h160" stroke="#64748b" stroke-width="6"/></g>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M474 390C525 390 532 420 565 420" stroke="#22d3ee" stroke-width="9"/><path d="M1035 420c34 0 41-30 86-30" stroke="#c084fc" stroke-width="9"/>
+    <path d="M185 255q90-100 180 0M145 220q130-155 260 0M1415 255q-90-100-180 0M1455 220q-130-155-260 0" stroke-width="11" opacity=".75"/>
+    <path d="M185 255q90-100 180 0M145 220q130-155 260 0" stroke="#22d3ee"/>
+    <path d="M1415 255q-90-100-180 0M1455 220q-130-155-260 0" stroke="#c084fc"/>
+  </g>
+  <g fill="#f8fafc" opacity=".9" filter="url(#shadow)">
+    <path d="M53 130c22-18 48-9 57 12l30 69 3-100c1-23 36-24 39-1l7 91 13-85c4-23 38-19 36 5l-8 99 29-55c11-21 43-8 34 15l-45 112c-15 38-56 62-98 54l-25-5c-35-7-61-33-69-67L35 173c-6-24 0-34 18-43z"/>
+    <path d="M1547 130c-22-18-48-9-57 12l-30 69-3-100c-1-23-36-24-39-1l-7 91-13-85c-4-23-38-19-36 5l8 99-29-55c-11-21-43-8-34 15l45 112c15 38 56 62 98 54l25-5c35-7 61-33 69-67l21-101c6-24 0-34-18-43z"/>
+  </g>
+  <g transform="translate(1180 630)" fill="none" stroke="#fbbf24" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"><path d="M75 5v155c0 48-78 55-91 15-12-39 58-73 91-39V54l135-30v114c0 49-78 56-91 15-12-39 58-72 91-38V5z"/></g>
+</svg>
