@@ -2,20 +2,20 @@
   {{ $today := now | time.Format "2006-01-02" }}
   {{/* Une seule source triée en ordre inverse chronologique (desc) ; passé et
      futur ne sont que des tranches de la même liste => ordre toujours identique. */}}
-  {{ $all := sort hugo.Data.agenda.events.events "date" "desc" }}
+  {{ $all := sort hugo.Data.agenda.agenda.events "date" "desc" }}
 
-  {{/* Validation des données source (ordre du fichier events.yaml) :
+  {{/* Validation des données source (ordre du fichier agenda.yaml) :
      - chaque date doit être parsable, sinon échec du build ;
      - l'ordre doit être strictement antichronologique (chaque entrée plus
        récente que la précédente), sinon échec du build. */}}
   {{ $prev := "" }}
-  {{ range hugo.Data.agenda.events.events }}
+  {{ range hugo.Data.agenda.agenda.events }}
     {{ $t := try (time.AsTime .date) }}
     {{ if $t.Err }}
-      {{ errorf "agenda/events.yaml : date invalide %q (statut : %s). Format attendu YYYY-MM-DDTHH:MM:SS, ex. 2026-11-13T19:00:00." .date .status }}
+      {{ errorf "agenda/agenda.yaml : date invalide %q (statut : %s). Format attendu YYYY-MM-DDTHH:MM:SS, ex. 2026-11-13T19:00:00." .date .status }}
     {{ else }}
       {{ if and $prev (gt .date $prev) }}
-        {{ errorf "agenda/events.yaml : ordre antichronologique violé — %q devrait être plus ancien que la date précédente %q." .date $prev }}
+        {{ errorf "agenda/agenda.yaml : ordre antichronologique violé — %q devrait être plus ancien que la date précédente %q." .date $prev }}
       {{ end }}
       {{ $prev = .date }}
     {{ end }}

@@ -1,5 +1,5 @@
 {{ $next := dict }}
-{{ range sort hugo.Data.agenda.events.events "date" "asc" }}
+{{ range sort hugo.Data.agenda.agenda.events "date" "asc" }}
   {{ $eventDate := time.AsTime .date }}
   {{ if and (not $next) (ge $eventDate now) (ne .status "canceled") }}
     {{ $next = . }}
