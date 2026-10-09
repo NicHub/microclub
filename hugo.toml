@@ -3,7 +3,7 @@ locale = "fr-CH"
 timeZone = "Europe/Zurich"
 defaultContentLanguage = "fr"
 disableLanguages = ["en"]
-title = "Microclub"
+title = "MICRoCLUB"
 theme = "blowfish"
 publishDir = ".hugo_nokdrive/public"
 resourceDir = ".hugo_nokdrive/resources"
@@ -13,7 +13,7 @@ enableGitInfo = true
 [languages.fr]
   label = "Français"
   weight = 1
-  title = "Microclub"
+  title = "MICRoCLUB"
 
   [languages.fr.params]
     displayName = "Français"
