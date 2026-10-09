@@ -12,18 +12,71 @@
     {{ end }}
   </header>
 
-  <section class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3" aria-label="Liste des catégories">
-    {{ range .Data.Terms.Alphabetical }}
-      <a
-        class="group flex min-h-32 flex-col justify-between rounded-xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-primary-500"
-        href="{{ .Page.RelPermalink }}">
-        <h2 class="text-xl font-bold text-neutral-800 transition group-hover:text-primary-600 dark:text-neutral-100 dark:group-hover:text-primary-400">
-          {{ .Page.LinkTitle }}
-        </h2>
-        <p class="mt-6 text-sm text-neutral-500 dark:text-neutral-400">
-          {{ .Count }} {{ cond (eq .Count 1) "article" "articles" }}
-        </p>
-      </a>
-    {{ end }}
+  <section aria-labelledby="categories-heading">
+    <h2 id="categories-heading" class="mb-4 text-2xl font-bold text-neutral-800 dark:text-neutral-100">
+      Catégories principales
+    </h2>
+    <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {{ range .Data.Terms.Alphabetical }}
+        <a
+          class="group flex min-h-32 flex-col justify-between rounded-xl border border-neutral-200 bg-neutral-50 p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-primary-400 hover:shadow-md dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-primary-500"
+          href="{{ .Page.RelPermalink }}">
+          <h3 class="text-xl font-bold text-neutral-800 transition group-hover:text-primary-600 dark:text-neutral-100 dark:group-hover:text-primary-400">
+            {{ .Page.LinkTitle }}
+          </h3>
+          <p class="mt-6 text-sm text-neutral-500 dark:text-neutral-400">
+            {{ .Count }} {{ cond (eq .Count 1) "article" "articles" }}
+          </p>
+        </a>
+      {{ end }}
+    </div>
   </section>
+
+  {{ $tags := site.Taxonomies.tags.Alphabetical }}
+  <section class="mt-14" aria-labelledby="tags-heading">
+    <header class="mb-5">
+      <h2 id="tags-heading" class="text-2xl font-bold text-neutral-800 dark:text-neutral-100">Mots-clés</h2>
+      <p class="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
+        Retrouvez un sujet parmi les {{ len $tags }} mots-clés utilisés dans les articles.
+      </p>
+    </header>
+
+    <div class="mb-6 max-w-xl">
+      <label for="taxonomy-filter" class="mb-2 block text-sm font-semibold text-neutral-700 dark:text-neutral-300">
+        Rechercher un mot-clé
+      </label>
+      <input
+        id="taxonomy-filter"
+        type="search"
+        autocomplete="off"
+        placeholder="Par exemple : programmation, Arduino, hardware…"
+        class="w-full rounded-lg border border-neutral-300 bg-white px-4 py-3 text-neutral-800 shadow-sm outline-none transition placeholder:text-neutral-400 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/30 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-100 dark:placeholder:text-neutral-500">
+      <p id="taxonomy-filter-count" class="mt-2 text-sm text-neutral-500 dark:text-neutral-400" aria-live="polite">
+        {{ len $tags }} mots-clés affichés
+      </p>
+    </div>
+
+    <div id="taxonomy-tag-grid" class="grid w-full gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {{ range $tags }}
+        <a
+          class="taxonomy-tag group flex items-center justify-between gap-3 rounded-lg border border-neutral-200 bg-neutral-50 px-4 py-3 transition hover:border-primary-400 hover:bg-primary-50 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:border-primary-500 dark:hover:bg-primary-950"
+          data-taxonomy-name="{{ .Page.LinkTitle | plainify }}"
+          href="{{ .Page.RelPermalink }}">
+          <span class="min-w-0 truncate font-semibold text-neutral-700 group-hover:text-primary-700 dark:text-neutral-200 dark:group-hover:text-primary-300">
+            {{ .Page.LinkTitle }}
+          </span>
+          <span class="shrink-0 rounded-full bg-neutral-200 px-2 py-0.5 text-xs text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
+            {{ .Count }}
+          </span>
+        </a>
+      {{ end }}
+    </div>
+
+    <p id="taxonomy-filter-empty" class="hidden rounded-lg border border-dashed border-neutral-300 p-6 text-center text-neutral-500 dark:border-neutral-700 dark:text-neutral-400">
+      Aucun mot-clé ne correspond à cette recherche.
+    </p>
+  </section>
+
+  {{ $filterJS := resources.Get "js/taxonomy-filter.js" | minify | fingerprint }}
+  <script defer src="{{ $filterJS.RelPermalink }}" integrity="{{ $filterJS.Data.Integrity }}"></script>
 {{ end }}
