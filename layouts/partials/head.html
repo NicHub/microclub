@@ -34,7 +34,11 @@
   {{- with .Params.robots }}
     <meta name="robots" content="{{ . }}">
   {{- end }}
-  <link rel="canonical" href="{{ .Permalink }}">
+  {{- if .IsHome }}
+    <link rel="canonical" href="https://microclub.ch/">
+  {{- else }}
+    <link rel="canonical" href="{{ .Permalink }}">
+  {{- end }}
   {{- if .IsTranslated }}
     {{- range .AllTranslations }}
       {{ $hreflang := .Language.Locale | default .Language.Lang }}
