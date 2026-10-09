@@ -1,7 +1,7 @@
 ---
-title: "Microclub"
-heroCaption: "D'électronique & de microinformatique"
-heroLead: "Depuis 1976, des passionnés se retrouvent pour bricoler, échanger et apprendre ensemble."
+title: "MICRoCLUB"
+heroCaption: "• Électronique •<br>microinformatique"
+heroLead: "Le club pour bricoler, échanger & apprendre<br>EPFL • Lausanne"
 ---
 
 <section class="home-next-event-section">

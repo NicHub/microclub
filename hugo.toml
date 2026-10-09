@@ -23,7 +23,7 @@ enableGitInfo = true
     [languages.fr.params.author]
       name = "Microclub"
       image = "images/microclub-avatar.png"
-      headline = "Association de passionnés d’électronique et de microinformatique"
+      headline = "passionnés d’électronique et de microinformatique"
       bio = "Le premier club informatique de Suisse romande, fondé en 1976."
       links = [
         { email = "mailto:info@microclub.ch" },
