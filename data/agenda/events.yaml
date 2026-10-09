@@ -80,13 +80,17 @@ events:
       description: ""
       links: []
     - date: "2026-09-21T19:00:00"
-      status: tobeconfirmed
-      title: Sortie du lundi du Jeune fédéral Météo Suisse
+      status: confirmed
+      title: Sortie du lundi du Jeûne
+      speaker: Jean-Marc Paratte
       location:
-          name: MED 1 1815
-          url: https://plan.epfl.ch/?room=MED%201%201815
-      description: ""
-      links: []
+          name: Météo Suisse Payerne
+          url: https://maps.app.goo.gl/YAPsL9xDdaXxEy9LA
+      description:
+        "Visite de Météo Suisse à Payerne,
+        <br>suivie d’un repas au restaurant La Scala à côté de la gare.
+        <br>Plus de détails sur WhatsApp."
+      links: [https://lascala-payerne.ch/le-restaurant/]
     - date: "2026-09-04T19:00:00"
       status: confirmed
       title: Reprise du Microclub au Florissant
