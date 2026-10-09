@@ -1,0 +1,3 @@
+<a data-page-nav="home" href="{{ site.Home.RelPermalink }}" hidden></a>
+{{ $siteBehaviors := resources.Get "js/site-behaviors.js" | minify | fingerprint }}
+<script defer src="{{ $siteBehaviors.RelPermalink }}" integrity="{{ $siteBehaviors.Data.Integrity }}"></script>
