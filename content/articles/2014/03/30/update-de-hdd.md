@@ -20,7 +20,7 @@ comment_count: 0
 </ul>
 <h3>Station d’accueil pour HDD</h3>
 <p>La connexion est faite par un dispositif que j’ai trouvé chez Conrad: <a href="http://www.conrad.ch/ce/fr/product/971937/" target="_blank" title="Lien Conrad"><code>http://www.conrad.ch/ce/fr/product/971937/</code></a></p>
-<p><img alt="" height="360" src="http://www.conrad.fr/medias/global/ce/9000_9999/9700/9710/9719/971937_AB_00_FB.EPS_1000.jpg" width="360"/></p>
+<p><img alt="Station d’accueil pour disque dur" height="360" src="/images/articles/hdd-docking-station.jpg" width="360"/></p>
 <p>Ce bidule permet de connecter un disque dur 3’1/2 ou 2’1/2 via USB sur le PC. Une alimentation et un bouton permettent son enclenchement; le PC le voit comme <em>un périphérique de stockage de masse</em>. Ce qu’il nous faut, quoi.</p>
 <h3>Copier les données</h3>
 <p>Après l’inévitable formatage (NTFS, please), pour lequel le nouveau HDD via la station d’accueil a pris la lettre F:, il faut faire attention à <strong>tout</strong> copier du disque D: à F:, si l’on veut que les liens symboliques fonctionnent. Tout, c’est les droits, les fichiers cachés, les ACL, les liens symboliques (et non les fichiers sous-jacents).</p>

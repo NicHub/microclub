@@ -213,10 +213,19 @@ function executeQuery(term) {
           "</span>"
         : value.item.title;
       var permalink = value.item.permalink;
-      if (!/^[a-z][a-z\d+.-]*:/i.test(permalink)) {
-        var searchRoot = new URL(searchBaseURL, window.location.origin);
-        permalink = new URL(permalink.replace(/^\/+/, ""), searchRoot).href;
+      var searchRoot = new URL(searchBaseURL, window.location.href);
+      var target = new URL(permalink, searchRoot);
+      var sitePath = searchRoot.pathname.replace(/\/?$/, "/");
+      var targetPath = target.pathname;
+
+      // Search indexes can contain absolute URLs generated from Hugo's baseURL.
+      // Keep internal results on the origin/path currently serving the site
+      // (for example GitHub Pages at /microclub/), rather than redirecting to
+      // the canonical production domain.
+      if (!targetPath.startsWith(sitePath)) {
+        targetPath = sitePath + targetPath.replace(/^\/+/, "");
       }
+      permalink = targetPath + target.search + target.hash;
       var linkconfig = value.item.externalUrl
         ? 'target="_blank" rel="noopener" href="' + value.item.externalUrl + '"'
         : 'href="' + permalink + '"';
