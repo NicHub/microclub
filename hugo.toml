@@ -77,7 +77,7 @@ enableGitInfo = true
 
   [params.homepage]
     layout = "landing"
-    homepageImage = "images/site-background.png"
+    homepageImage = "images/blowfish-welcome.png"
     layoutBackgroundBlur = true
     showRecent = true
     showRecentItems = 12
