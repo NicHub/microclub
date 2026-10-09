@@ -103,6 +103,37 @@ resolve_preview_context() {
     BASE_URL="http://$IP"
 }
 
+# A theme kept as a Git submodule may be absent after a non-recursive clone.
+# In that case Hugo starts successfully but emits one misleading "no layout
+# file" warning for every page kind. Initialise the configured theme before
+# Hugo gets a chance to render the site.
+ensure_theme() {
+    local theme_name="${THEME:-blowfish}"
+    local theme_path="themes/$theme_name"
+    local theme_dir="$PROJECT_DIR/themes/$theme_name"
+
+    if find "$theme_dir" -type f -print -quit 2>/dev/null | grep -q .; then
+        return
+    fi
+
+    # `submodule status` prints an entry even when the submodule is not yet
+    # checked out (the line starts with '-'), while returning no entry for a
+    # regular, locally managed theme. This keeps the fallback error useful
+    # instead of trying to fetch an unrelated directory.
+    if [ -f "$PROJECT_DIR/.gitmodules" ] && command -v git >/dev/null 2>&1 && \
+        git -C "$PROJECT_DIR" submodule status -- "$theme_path" 2>/dev/null | grep -q .; then
+        printf 'Initialisation du sous-module Hugo « %s »…\n' "$theme_name"
+        if git -C "$PROJECT_DIR" submodule update --init --recursive -- "$theme_path"; then
+            return
+        fi
+    fi
+
+    printf 'Thème Hugo « %s » introuvable ou vide dans %s.\n' \
+        "$theme_name" "$theme_dir" >&2
+    printf 'Lancez « git submodule update --init --recursive » puis réessayez.\n' >&2
+    exit 1
+}
+
 # Prints the first free port starting at PREFERRED_PORT, probed on the bind
 # IP; at most PORT_SCAN_LIMIT ports are tested (network_utils.sh).
 resolve_port() {
@@ -203,6 +234,7 @@ main() {
     parse_arguments "$@"
     resolve_preview_context
     resolve_port "$PREFERRED_PORT"
+    ensure_theme
     resolve_hugo
     remove_generated_files
     display_preview_address "$BASE_URL:$PORT"
