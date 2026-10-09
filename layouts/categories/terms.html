@@ -13,7 +13,7 @@
   </header>
 
   <section aria-labelledby="categories-heading">
-    <h2 id="categories-heading" class="mb-4 text-2xl font-bold text-neutral-800 dark:text-neutral-100">
+    <h2 id="categories-heading" class="mt-10 mb-7 text-2xl font-bold text-neutral-800 dark:text-neutral-100">
       Catégories principales
     </h2>
     <div class="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -33,10 +33,10 @@
   </section>
 
   {{ $tags := site.Taxonomies.tags.Alphabetical }}
-  <section class="mt-14" aria-labelledby="tags-heading">
-    <header class="mb-5">
-      <h2 id="tags-heading" class="text-2xl font-bold text-neutral-800 dark:text-neutral-100">Mots-clés</h2>
-      <p class="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
+  <section class="mt-20" aria-labelledby="tags-heading">
+    <header class="mb-8">
+      <h2 id="tags-heading" class="mb-4 text-2xl font-bold text-neutral-800 dark:text-neutral-100">Mots-clés</h2>
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
         Retrouvez un sujet parmi les {{ len $tags }} mots-clés utilisés dans les articles.
       </p>
     </header>

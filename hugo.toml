@@ -105,15 +105,15 @@ enableGitInfo = true
 [[menus.main]]
   name = "Articles"
   url = "/articles/"
-  weight = 10
+  weight = 20
 [[menus.main]]
   name = "Catégories"
   url = "/categories/"
-  weight = 15
+  weight = 30
 [[menus.main]]
   name = "Agenda"
   url = "/agenda/"
-  weight = 20
+  weight = 10
 [[menus.main]]
   name = "Présentation"
   url = "/presentation/"
