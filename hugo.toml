@@ -61,7 +61,9 @@ enableGitInfo = true
   enableSearch = true
   enableCodeCopy = true
   mainSections = ["articles"]
-  defaultBackgroundImage = "images/site-background.png"
+  # Source: https://cdn.eso.org/images/original/vlt-mw-potw.tif
+  # Switch to images/site-background.png to restore the previous background.
+  defaultBackgroundImage = "images/site-background.webp"
   defaultFeaturedImage = "/img/featured.svg"
   backgroundCanvas = true
 
@@ -77,8 +79,8 @@ enableGitInfo = true
 
   [params.homepage]
     layout = "landing"
-    homepageImage = "images/microclub-stratosphere.webp"
-    homepageImageMobile = "images/microclub-stratosphere-mobile.webp"
+    homepageImage = "images/site-background.webp"
+    homepageImageMobile = "images/site-background.webp"
     layoutBackgroundBlur = true
     showRecent = true
     showRecentItems = 12
