@@ -77,7 +77,8 @@ enableGitInfo = true
 
   [params.homepage]
     layout = "landing"
-    homepageImage = "images/blowfish-welcome.png"
+    homepageImage = "images/microclub-stratosphere.webp"
+    homepageImageMobile = "images/microclub-stratosphere-mobile.webp"
     layoutBackgroundBlur = true
     showRecent = true
     showRecentItems = 12

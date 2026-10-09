@@ -4,6 +4,46 @@
   max-width: 5rem;
 }
 
+/* The stratosphere illustration is already dark; keep its depth and rim light. */
+.dark body:has(.home-cosmos) {
+  background-color: #030508;
+}
+
+.home-cosmos .home-cosmos__background {
+  height: clamp(48rem, 100svh, 72rem);
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to bottom, black 76%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 76%, transparent 100%);
+}
+
+.home-cosmos__picture img {
+  object-position: 65% center;
+}
+
+.home-cosmos__veil {
+  background: rgb(255 255 255 / 85%);
+}
+
+.dark .home-cosmos__veil {
+  background: radial-gradient(ellipse at 49% 33%, rgb(2 4 7 / 26%), transparent 58%);
+}
+
+@media (max-width: 1023px) {
+  .home-cosmos__picture img {
+    object-position: 84% center;
+  }
+}
+
+@media print {
+  .home-cosmos__background {
+    display: none;
+  }
+
+  .dark body:has(.home-cosmos) {
+    background-color: #fff;
+  }
+}
+
 .agenda-heading {
   display: flex;
   align-items: center;

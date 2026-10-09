@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1600" viewBox="0 0 1000 1600">
+  <title>Radiosonde dans la stratosphère — illustration originale Microclub</title>
+  <desc>Ballon nacré, suspente, capteur météorologique, carte embarquée et antenne radio, éclairés par les étoiles.</desc>
+  <defs>
+    <radialGradient id="balloon" cx="30%" cy="24%" r="76%">
+      <stop stop-color="#aab2b7"/>
+      <stop offset=".18" stop-color="#7f8b94"/>
+      <stop offset=".48" stop-color="#465461"/>
+      <stop offset=".76" stop-color="#1b2631"/>
+      <stop offset=".94" stop-color="#0a1018"/>
+      <stop offset="1" stop-color="#273747"/>
+    </radialGradient>
+    <radialGradient id="balloonLight" cx="27%" cy="19%" r="66%">
+      <stop stop-color="#dbe1df" stop-opacity=".16"/>
+      <stop offset=".6" stop-color="#dbe1df" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cord" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#536774"/>
+      <stop offset=".55" stop-color="#273848"/>
+      <stop offset="1" stop-color="#667a87"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2=".9" y2="1">
+      <stop stop-color="#748990"/>
+      <stop offset=".12" stop-color="#c1c8bc"/>
+      <stop offset=".18" stop-color="#697d7f"/>
+      <stop offset=".42" stop-color="#30434d"/>
+      <stop offset="1" stop-color="#0c161f"/>
+    </linearGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2=".8">
+      <stop stop-color="#52616a"/>
+      <stop offset=".32" stop-color="#293a45"/>
+      <stop offset="1" stop-color="#111b24"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#1d2b36"/>
+      <stop offset="1" stop-color="#060c13"/>
+    </linearGradient>
+    <linearGradient id="pcb" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#27483f"/>
+      <stop offset=".5" stop-color="#112f2a"/>
+      <stop offset="1" stop-color="#091d1d"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1e2930"/>
+      <stop offset=".25" stop-color="#0d161b"/>
+      <stop offset="1" stop-color="#02070c"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#ab9f73"/>
+      <stop offset=".4" stop-color="#605b3f"/>
+      <stop offset="1" stop-color="#302f23"/>
+    </linearGradient>
+    <radialGradient id="led">
+      <stop stop-color="#d7fff4"/>
+      <stop offset=".16" stop-color="#88dbc8"/>
+      <stop offset=".4" stop-color="#48aaab" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#48aaab" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- The shading and grazing rim light create volume without an outline. -->
+  <path d="M570 91 C691 91 782 186 778 309 C775 420 699 486 611 523 L597 553 L579 562 L560 551 L549 523 C443 490 359 421 356 310 C352 184 446 91 570 91Z" fill="url(#balloon)"/>
+  <path d="M570 91 C691 91 782 186 778 309 C775 420 699 486 611 523 L597 553 L579 562 L560 551 L549 523 C443 490 359 421 356 310 C352 184 446 91 570 91Z" fill="url(#balloonLight)"/>
+  <path d="M390 200 C422 121 520 78 602 96" fill="none" stroke="#b8c3c8" stroke-opacity=".45" stroke-width="1.4"/>
+  <path d="M739 402 C711 455 667 493 611 523" fill="none" stroke="#516a7b" stroke-opacity=".55" stroke-width="1.1"/>
+  <path d="M466 139 C409 275 455 435 549 523 M540 104 C493 285 505 435 568 539 M616 108 C638 298 623 450 586 545 M704 158 C737 305 674 443 603 531" fill="none" stroke="#99a8ae" stroke-opacity=".045" stroke-width="3"/>
+  <path d="M561 549 L598 551 L594 560 L568 559Z" fill="#53616a"/>
+  <path d="M570 561 Q572 590 556 618" fill="none" stroke="url(#cord)" stroke-width="2.1"/>
+  <path d="M548 607 L567 609 L574 644 L555 650 L544 639Z" fill="#6a433a"/>
+  <path d="M549 609 L554 644 M560 611 L565 645" stroke="#a67f65" stroke-opacity=".45" stroke-width="2"/>
+  <path id="suspension" d="M558 650 C539 752 570 873 532 1017" fill="none" stroke="url(#cord)" stroke-width="1.7"/>
+
+  <!-- A tilted, open-sided enclosure reveals the embedded electronics. -->
+  <g id="payload" transform="translate(429 1018) rotate(-13 100 120)">
+    <path d="M92 4 L104 -24 L115 -25 L133 3" fill="none" stroke="#6c7d86" stroke-width="2"/>
+    <path d="M34 14 L193 20 L238 68 L238 244 L193 273 L31 231Z" fill="url(#side)" stroke="#3d515d" stroke-width="1"/>
+    <path d="M34 14 L193 20 L238 68 L71 59Z" fill="url(#metal)"/>
+    <path d="M31 52 L197 65 L195 272 L31 231Z" fill="url(#shell)"/>
+    <path d="M197 65 L238 68 L238 244 L195 272Z" fill="#0c151e"/>
+    <path d="M34 14 L193 20 L238 68 M34 14 L31 52 L31 231 L195 272" fill="none" stroke="#8b9b9e" stroke-opacity=".6" stroke-width="1.5"/>
+    <path d="M46 68 L181 80 L179 246 L47 213Z" fill="#020a0e" stroke="#6a7b7e" stroke-opacity=".5" stroke-width="1"/>
+    <path d="M51 74 L174 85 L172 236 L53 208Z" fill="url(#pcb)"/>
+    <g fill="none" stroke="#69826a" stroke-opacity=".55" stroke-width="1.2">
+      <path d="M60 88 L78 90 L86 101 L86 129 L96 141 M64 104 L73 105 L77 111 L77 149 L88 159 L88 189 L66 184"/>
+      <path d="M153 97 L143 95 L136 101 L136 127 L125 139 M163 110 L150 108 L147 115 L147 175 L128 188 L128 215"/>
+      <path d="M65 195 L74 197 L101 176 L117 180 L142 204 L163 209 M65 118 L68 119 L68 155 L61 161 L61 173"/>
+      <path d="M158 221 L144 218 L141 212 L114 205 L105 209 L105 219 M100 102 L110 103 L110 119 M119 103 L127 104 L127 120"/>
+    </g>
+    <g fill="url(#gold)">
+      <path d="M82 130 L89 131 L89 135 L82 134Z M82 138 L89 139 L89 143 L82 142Z M82 146 L89 147 L89 151 L82 150Z M82 154 L89 155 L89 159 L82 158Z M82 162 L89 163 L89 167 L82 166Z"/>
+      <path d="M127 138 L135 139 L135 143 L127 142Z M127 146 L135 147 L135 151 L127 150Z M127 154 L135 155 L135 159 L127 158Z M127 162 L135 163 L135 167 L127 166Z M127 170 L135 171 L135 175 L127 174Z"/>
+      <path d="M94 122 L98 123 L98 130 L94 129Z M102 123 L106 124 L106 131 L102 130Z M110 124 L114 125 L114 132 L110 131Z M118 125 L122 126 L122 133 L118 132Z"/>
+      <path d="M94 167 L98 168 L98 177 L94 176Z M102 169 L106 170 L106 179 L102 178Z M110 171 L114 172 L114 181 L110 180Z M118 173 L122 174 L122 183 L118 182Z"/>
+    </g>
+    <path d="M89 128 L127 134 L127 175 L89 166Z" fill="url(#chip)" stroke="#4a6060" stroke-width=".8"/>
+    <path d="M92 130 L125 135" stroke="#697570" stroke-opacity=".6" stroke-width=".7"/>
+    <circle cx="95" cy="136" r="1.6" fill="#758a7e"/>
+    <g fill="#8b998d" opacity=".28">
+      <path d="M98 147 L118 150 L118 151 L98 148Z M98 151 L112 153 L112 154 L98 152Z M98 158 L117 162 L117 163 L98 159Z"/>
+    </g>
+    <g fill="url(#metal)" stroke="#22323a" stroke-width=".8">
+      <path d="M95 91 L124 94 L124 106 L95 103Z"/>
+      <path d="M57 132 L65 133 L65 148 L57 146Z M150 130 L157 131 L157 147 L150 145Z"/>
+      <path d="M143 188 L159 191 L159 202 L143 198Z"/>
+    </g>
+    <g fill="#b0a78a">
+      <path d="M66 159 L74 161 L74 166 L66 164Z M66 175 L74 177 L74 182 L66 180Z M136 155 L143 156 L143 162 L136 161Z M136 169 L143 170 L143 176 L136 175Z"/>
+    </g>
+    <g fill="#172228" stroke="#61747a" stroke-width=".8">
+      <ellipse cx="91" cy="194" rx="5" ry="7"/>
+      <ellipse cx="106" cy="198" rx="5" ry="7"/>
+      <ellipse cx="121" cy="201" rx="5" ry="7"/>
+    </g>
+    <path d="M85 190 L96 192 M100 194 L111 196 M115 197 L126 199" stroke="#89948d" stroke-width="1"/>
+    <path d="M143 87 L163 90 L162 106 L142 103Z" fill="#111b20"/>
+    <g fill="url(#gold)">
+      <circle cx="146" cy="91" r="1.3"/><circle cx="152" cy="92" r="1.3"/><circle cx="158" cy="93" r="1.3"/>
+      <circle cx="146" cy="98" r="1.3"/><circle cx="152" cy="99" r="1.3"/><circle cx="158" cy="100" r="1.3"/>
+    </g>
+    <circle cx="160" cy="228" r="13" fill="url(#led)"/>
+    <circle cx="160" cy="228" r="1.7" fill="#c9f1df"/>
+    <g fill="#b1bbb2" stroke="#526570" stroke-width="1">
+      <circle cx="40" cy="62" r="3"/><circle cx="187" cy="77" r="3"/>
+      <circle cx="40" cy="220" r="3"/><circle cx="187" cy="257" r="3"/>
+    </g>
+    <g stroke="#22333e" stroke-width="1">
+      <path d="M38 62 L42 62 M185 77 L189 77 M38 220 L42 220 M185 257 L189 257"/>
+    </g>
+    <path d="M206 103 L225 102 L225 127 L206 130Z" fill="#23323c" stroke="#5a6b74" stroke-width="1"/>
+    <path d="M210 109 L221 108 M210 114 L221 113 M210 119 L221 118" stroke="#0b141c" stroke-width="2"/>
+
+    <!-- Platinum temperature/humidity probe and a fine whip antenna. -->
+    <path d="M71 23 L62 -13 L33 -59 L29 -72" fill="none" stroke="#899a98" stroke-width="4"/>
+    <path d="M69 21 L60 -12 L31 -58" fill="none" stroke="#c4ccba" stroke-opacity=".65" stroke-width="1"/>
+    <path d="M20 -95 L32 -99 L45 -68 L31 -63Z" fill="url(#metal)"/>
+    <path d="M23 -92 L33 -70 M27 -94 L37 -71" stroke="#1b2e38" stroke-width="1.5"/>
+    <path d="M216 69 L249 34 L269 -177" fill="none" stroke="#8b9a9e" stroke-width="1.6"/>
+    <path d="M214 70 L221 59 L228 64 L221 73Z" fill="url(#metal)"/>
+    <path d="M58 237 L49 304 L21 328" fill="none" stroke="#3d5564" stroke-width="2"/>
+  </g>
+</svg>
