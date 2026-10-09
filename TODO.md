@@ -1,5 +1,17 @@
 # À faire
 
+## Médias regroupés avec les articles
+
+Adopter les *page bundles* Hugo pour que les nouveaux articles contiennent leurs propres dossiers `images/` et `docs/`, tout en conservant les anciennes URL `/media/…`.
+
+- [ ] Mettre en place les bundles pour les nouveaux articles.
+- [ ] Adapter l’archétype et la documentation de contribution.
+- [ ] Valider un article d’essai avec une image et un PDF.
+- [ ] Réaliser éventuellement un pilote sur quelques articles récents.
+- [ ] Ne lancer aucune migration historique globale avant d’avoir validé une stratégie de compatibilité des anciennes URL.
+
+Plan détaillé : [`docs/PLAN_BUNDLES_ARTICLES.md`](docs/PLAN_BUNDLES_ARTICLES.md).
+
 ## Fiches utilisateur, avatars et commentaires
 
 À étudier ultérieurement.
