@@ -34,7 +34,7 @@ events:
       links: []
     - date: "2026-11-27T19:00:00"
       status: confirmed
-      title: Les condensateurs
+      title: Conférence — Les condensateurs
       speaker: Jean-Pierre Broillet
       location:
           name: MED 1 1815
@@ -43,7 +43,7 @@ events:
       links: []
     - date: "2026-11-13T19:00:00"
       status: confirmed
-      title: Site Web avec Hugo
+      title: Conférence — Créer un site web avec Hugo et la technique du <em>vibe coding</em>
       speaker: Nicolas Jeanmonod
       location:
           name: MED 1 1815
@@ -54,7 +54,7 @@ events:
           - https://microclub.ch/posts/site-web-avec-hugo/
     - date: "2026-10-30T19:00:00"
       status: confirmed
-      title: IA programmation
+      title: Conférence — IA programmation
       speaker: Laurent Francey
       location:
           name: MED 1 1815
@@ -63,7 +63,7 @@ events:
       links: []
     - date: "2026-10-16T19:00:00"
       status: confirmed
-      title: Ballon-sonde et radiosonde
+      title: Conférence — Ballon-sonde et radiosonde
       speaker: Jean-Marc Paratte
       location:
           name: MED 1 1815
@@ -72,7 +72,7 @@ events:
       links: []
     - date: "2026-10-02T19:00:00"
       status: confirmed
-      title: Smaky 6
+      title: Conférence — Smaky 6
       speaker: Pierre-Yves Rochat
       location:
           name: MED 1 1815
@@ -133,7 +133,7 @@ events:
       links: []
     - date: "2026-03-13T19:00:00"
       status: confirmed
-      title: IA, oui mais… RFID, théorie et application Arduino
+      title: Conférence — IA, oui mais… RFID, théorie et application Arduino
       location:
           name: MED 1 1815
           url: https://plan.epfl.ch/?room=MED%201%201815
@@ -141,7 +141,7 @@ events:
       links: []
     - date: "2026-03-06T19:00:00"
       status: confirmed
-      title: À 38 km d’altitude avec des ballons expérimentaux
+      title: Conférence — À 38 km d’altitude avec des ballons expérimentaux
       speaker: Mathieu Leuppi
       location:
           name: MED 1 1815
@@ -175,7 +175,7 @@ events:
       status: canceled
     - date: "2026-02-06T19:00:00"
       status: confirmed
-      title: Découverte de la création de pages HTML à l’aide de Claude AI
+      title: Conférence — Découverte de la création de pages HTML à l’aide de Claude AI
       speaker: Jean-Marc Paratte
       location:
           name: MED 1 1815
@@ -217,7 +217,7 @@ events:
       links: []
     - date: "2025-11-14T19:00:00"
       status: confirmed
-      title: Le magnétisme
+      title: Conférence — Le magnétisme
       speaker: Laurent Francey
       location:
           name: ""
@@ -226,7 +226,7 @@ events:
       links: []
     - date: "2025-10-31T19:00:00"
       status: confirmed
-      title: Meshtastic
+      title: Conférence — Meshtastic
       speaker: Johannes David
       location:
           name: ""
@@ -235,7 +235,7 @@ events:
       links: []
     - date: "2025-10-17T19:00:00"
       status: confirmed
-      title: Kicad, questions-réponses
+      title: Atelier — Kicad, questions-réponses
       speaker: C. Balmer
       location:
           name: ""
@@ -244,7 +244,7 @@ events:
       links: []
     - date: "2025-10-03T19:00:00"
       status: confirmed
-      title: Kicad, premier objet
+      title: Atelier — Kicad, premier objet
       speaker: C. Balmer
       location:
           name: ""
@@ -253,7 +253,7 @@ events:
       links: []
     - date: "2025-09-19T19:00:00"
       status: confirmed
-      title: Kicad premiers pas, introduction et installation
+      title: Atelier — Kicad premiers pas, introduction et installation
       speaker: C. Balmer
       location:
           name: ""
@@ -278,7 +278,7 @@ events:
       links: []
     - date: "2025-06-06T19:00:00"
       status: confirmed
-      title: Démarrer avec un Raspberry PICO
+      title: Conférence — Démarrer avec un Raspberry PICO
       speaker: Laurent Francey
       location:
           name: ""
@@ -287,7 +287,7 @@ events:
       links: []
     - date: "2025-05-09T19:00:00"
       status: confirmed
-      title: Amplificateurs opérationnels
+      title: Conférence — Amplificateurs opérationnels
       speaker: Jean-Pierre Broillet / Laurent Francey
       location:
           name: ""
@@ -296,7 +296,7 @@ events:
       links: []
     - date: "2025-04-11T19:00:00"
       status: confirmed
-      title: "Atelier IA/2 : reconnaissance par caméra d’objets"
+      title: "Atelier — IA/2 : reconnaissance par caméra d’objets"
       speaker: Laurent Francey
       location:
           name: ""
@@ -305,7 +305,7 @@ events:
       links: []
     - date: "2025-04-04T19:00:00"
       status: confirmed
-      title: "Atelier IA/1 : reconnaissance par caméra d’objets"
+      title: "Atelier — IA/1 : reconnaissance par caméra d’objets"
       speaker: Laurent Francey
       location:
           name: ""
@@ -314,7 +314,7 @@ events:
       links: []
     - date: "2025-03-14T19:00:00"
       status: confirmed
-      title: 49ème Assemblée générale
+      title: 49e Assemblée Générale
       location:
           name: ""
           url: ""
@@ -340,7 +340,7 @@ events:
       links: []
     - date: "2022-11-25T19:00:00"
       status: confirmed
-      title: Voiture électrique
+      title: Conférence — Voiture électrique
       speaker: Yves Masur
       location:
           name: ""
@@ -349,7 +349,7 @@ events:
       links: []
     - date: "2022-11-11T19:00:00"
       status: confirmed
-      title: Micropython ou Raspberry
+      title: Conférence — Micropython ou Raspberry
       speaker: J.M. Paratte
       location:
           name: ""
@@ -358,7 +358,7 @@ events:
       links: []
     - date: "2022-10-28T19:00:00"
       status: confirmed
-      title: Radio amateurs
+      title: Conférence — Radio amateurs
       speaker: Michel Vonlanten
       location:
           name: ""
@@ -367,7 +367,7 @@ events:
       links: []
     - date: "2022-10-14T19:00:00"
       status: confirmed
-      title: Automatisation d’un télescope
+      title: Conférence — Automatisation d’un télescope
       speaker: Johannes David
       location:
           name: ""
@@ -376,7 +376,7 @@ events:
       links: []
     - date: "2022-09-30T19:00:00"
       status: confirmed
-      title: Algorithme « gestion de listes »
+      title: Conférence — Algorithme « gestion de listes »
       speaker: Claude Balmer
       location:
           name: ""
@@ -385,10 +385,10 @@ events:
       links: []
     - date: "2022-09-19T19:00:00"
       status: confirmed
-      title: Sortie au mini-train de Pully
+      title: Sortie du lundi du Jeûne
       speaker: Jonathan
       location:
-          name: ""
+          name: "Mini-train de Pully"
           url: ""
       description: ""
       links: []
@@ -410,21 +410,21 @@ events:
       links: []
     - date: "2022-06-17T19:00:00"
       status: confirmed
-      title: Les dB (comment les additionner et les multiplier) et comment calculer une intensité de champ électrique (en V/m)
+      title: Conférence — Les décibels
       speaker: Jean-Pierre Broillet
       location:
           name: ""
           url: ""
-      description: ""
+      description: "comment additionner et multiplier les dB et comment calculer une intensité de champ électrique (en V/m)"
       links: []
     - date: "2022-06-03T19:00:00"
       status: confirmed
-      title: gestion d’interrupteurs, anti-rebonds & Cie, utilisation de touches click, double click, clik court, long etc.
+      title: Conférence — Gestion d’interrupteurs
       speaker: Claude Balmer
       location:
           name: ""
           url: ""
-      description: ""
+      description: "Gestion d’interrupteurs, anti-rebonds & Cie, utilisation de touches click, double click, clik court, long etc."
       links: []
     - date: "2022-05-20T19:00:00"
       status: confirmed
@@ -436,7 +436,7 @@ events:
       links: []
     - date: "2022-05-06T19:00:00"
       status: confirmed
-      title: Plateforme de Stewart sur ESP32
+      title: Conférence — Plateforme de Stewart sur ESP32
       speaker: Nicolas Jeanmonod
       location:
           name: ""
@@ -445,7 +445,7 @@ events:
       links: []
     - date: "2022-04-08T19:00:00"
       status: confirmed
-      title: introduction à micropython 2
+      title: Conférence — Introduction à micropython 2
       speaker: Jean-Marc Paratte
       location:
           name: ""
@@ -454,7 +454,7 @@ events:
       links: []
     - date: "2022-03-25T19:00:00"
       status: confirmed
-      title: Arkanoid sur ESP32
+      title: Conférence — Arkanoid sur ESP32
       speaker: Nicolas Jeanmonod
       location:
           name: ""
@@ -463,7 +463,7 @@ events:
       links: []
     - date: "2022-03-11T19:00:00"
       status: confirmed
-      title: Recettes pour bien réussir un montage à uC
+      title: Conférence — Recettes pour bien réussir un montage à µC
       speaker: Laurent Francey
       location:
           name: ""
@@ -472,7 +472,7 @@ events:
       links: []
     - date: "2022-02-25T19:00:00"
       status: confirmed
-      title: GitHub pour les débutants
+      title: Conférence — GitHub pour les débutants
       speaker: Nicolas Jeanmonod
       location:
           name: ""
@@ -481,7 +481,7 @@ events:
       links: []
     - date: "2022-02-11T19:00:00"
       status: confirmed
-      title: l’introduction orientée Python et IDE Thonny, avec une démo ESP32
+      title: Conférence — l’introduction orientée Python et IDE Thonny, avec une démo ESP32
       speaker: Jean-Marc Paratte
       location:
           name: ""
@@ -490,7 +490,7 @@ events:
       links: []
     - date: "2022-01-28T19:00:00"
       status: confirmed
-      title: Windows 11, les nouveautés
+      title: Conférence — Windows 11, les nouveautés
       speaker: Laurent Francey
       location:
           name: ""
