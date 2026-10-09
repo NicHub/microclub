@@ -9,11 +9,12 @@ url: "/2009/11/18/wireshark-operationnel-sous-w7/"
 wordpress_id: 247
 comment_count: 0
 ---
-<p>Wireshark 1.2.4 (stable) has been released – ça fait plaisir! Enfin on peut utiliser cet analyseur de réseau sous Windows 7. Et il s’installe sans coup férir (32 bits – je n’ai plus la 64 bits…)</p>
-<p>En effet, pour le projet « Barrette écologique »,  j’avais besoin de sniffer ce qui se passe entre le module MXBOARD. Jusqu’ici, je devais passer par le débugger et voir ainsi les trames reçues/envoyées, via ligne série!</p>
-<p>Le but est de trouver une requête régulière que ferait un PC, pour lancer un timer de prolongation de durée de l’enclenchement du secteur.</p>
-<p>//Yves</p>
+Wireshark 1.2.4 (stable) has been released – ça fait plaisir! Enfin on peut utiliser cet analyseur de réseau sous Windows 7. Et il s’installe sans coup férir (32 bits – je n’ai plus la 64 bits…)
 
-## Commentaires
+En effet, pour le projet « Barrette écologique »,  j’avais besoin de sniffer ce qui se passe entre le module MXBOARD. Jusqu’ici, je devais passer par le débugger et voir ainsi les trames reçues/envoyées, via ligne série!
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+Le but est de trouver une requête régulière que ferait un PC, pour lancer un timer de prolongation de durée de l’enclenchement du secteur.
+
+//Yves
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

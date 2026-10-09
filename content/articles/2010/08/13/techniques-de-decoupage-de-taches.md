@@ -9,11 +9,10 @@ url: "/2010/08/13/techniques-de-decoupage-de-taches/"
 wordpress_id: 310
 comment_count: 0
 ---
-<p><strong>Techniques de découpage de tâches.</strong><br/>
-Ou : comment faire fonctionner un système plutôt spartiate comme si il était doté d’un véritable OS? Basé sur l’expérience de la barrette et du processeur PIC.<br/>
-Comme j’ai inséré des images directement dans le texte, et qu’il y a aussi des tableaux, voir le PDF sur mon site <a href="http://yvesmasur.ch/articles/Mxboard/task_splitting.pdf" target="_blank"> http://yvesmasur.ch/articles/Mxboard/task_splitting.pdf </a></p>
-<p>Commentaires bienvenus!</p>
+**Techniques de découpage de tâches.**\
+Ou : comment faire fonctionner un système plutôt spartiate comme si il était doté d’un véritable OS? Basé sur l’expérience de la barrette et du processeur PIC.\
+Comme j’ai inséré des images directement dans le texte, et qu’il y a aussi des tableaux, voir le PDF sur mon site <http://yvesmasur.ch/articles/Mxboard/task_splitting.pdf>
 
-## Commentaires
+Commentaires bienvenus!
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

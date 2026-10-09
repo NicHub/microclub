@@ -9,9 +9,8 @@ url: "/2011/03/10/fete-de-linformatique-retro-a-lepfl/"
 wordpress_id: 449
 comment_count: 0
 ---
-<p>Le 25 mars prochain, l’association des amis du<a href="http://ic.epfl.ch/site/ic/page-37545-fr.html" target="_blank"> Bolo’s Computer Museum</a> fête<a href="http://www.abcm.ch/ballade.html" target="_blank"> ses 10 ans</a>. Et pour l’occasion, ces <a href="http://www.bolo.ch/" target="_blank">férus de l’informatique</a> vous invitent à partager avec eux leur passion pour les jeux vidéo rétro, les vieilles bécanes de compète comme le Commodore 64 et autres Macintosh Spartacus, le tout dans un tournoi débridé de Pong en regardant de <a href="http://www.youtube.com/watch?v=jBJXGA_a4XM" target="_blank">vieilles pubs informatiques</a> et en écoutant la conférence d’Olivier Glassey sur le thème « informatique et société : histoire commune et influences mutuelles ». Ça commence à 20h30 au <a href="http://plan.epfl.ch/?lang=fr&amp;room=polydome" target="_blank">Polydôme</a> de l’EPFL et ça dure jusqu’à minuit en compagnie d’un disc-jockey et d’un bar.</p>
-<p><em>(honteusement <a href="http://www.nouvo.ch/2011/03/f%C3%AAte-de-l%E2%80%99informatique-r%C3%A9tro-%C3%A0-l%E2%80%99epfl" target="_blank">copié de nouvo.ch</a>)</em></p>
+Le 25 mars prochain, l’association des amis du [Bolo’s Computer Museum](http://ic.epfl.ch/site/ic/page-37545-fr.html) fête [ses 10 ans](http://www.abcm.ch/ballade.html). Et pour l’occasion, ces [férus de l’informatique](http://www.bolo.ch/) vous invitent à partager avec eux leur passion pour les jeux vidéo rétro, les vieilles bécanes de compète comme le Commodore 64 et autres Macintosh Spartacus, le tout dans un tournoi débridé de Pong en regardant de [vieilles pubs informatiques](http://www.youtube.com/watch?v=jBJXGA_a4XM) et en écoutant la conférence d’Olivier Glassey sur le thème « informatique et société : histoire commune et influences mutuelles ». Ça commence à 20h30 au [Polydôme](http://plan.epfl.ch/?lang=fr&room=polydome) de l’EPFL et ça dure jusqu’à minuit en compagnie d’un disc-jockey et d’un bar.
 
-## Commentaires
+*(honteusement [copié de nouvo.ch](http://www.nouvo.ch/2011/03/f%C3%AAte-de-l%E2%80%99informatique-r%C3%A9tro-%C3%A0-l%E2%80%99epfl))*
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

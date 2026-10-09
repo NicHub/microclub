@@ -19,11 +19,11 @@ comment_count: 7
 <p>J’ai ainsi pu sauvegarder mon système Vista complet sous forme d’un très gros fichier sur un disque USB, puis installé Seven x64  sur une autre partition que Vista par prudence ( mais ça ne s’est pas révélé utile, j’aurais tout aussi bien pu écraser la partition Vista tout de suite)</p>
 <p>Ensuite il ne reste plus qu’à installer VMWare sur Seven, le lancer, charger la machine virtuelle Vista et tadaaammm! :</p>
 <figure aria-describedby="caption-attachment-190"><img alt="" height="350" src="/media/2009/05/sevenvista.png" title="Seven+Vista" width="560"/><figcaption>Seven et Vista (cliquez pour agrandir)</figcaption></figure>
-<p>Je me retrouve avec mon nouveau système tout <span>neuf </span>sept, tout propre et dedans dans une fenêtre mon vieux système pourri mais bien utile d’ici à ce que j’aie tout migré.</p>
+<p>Je me retrouve avec mon nouveau système tout neuf sept, tout propre et dedans dans une fenêtre mon vieux système pourri mais bien utile d’ici à ce que j’aie tout migré.</p>
 <h3>Premières impressions de Seven:</h3>
 <p>En fait c’est les deuxièmes parce que j’avais déjà installé la Beta dans un VMware sous Vista, pour voir. Donc:</p>
 <ol>
-<li>Seven = ce que Vista aurait du être : plus petit, plus simple. Plus rapide ? c’est toujours plus rapide quand c’est <span>neuf </span>sept. Faudra voir à l’usage.</li>
+<li>Seven = ce que Vista aurait du être : plus petit, plus simple. Plus rapide ? c’est toujours plus rapide quand c’est neuf sept. Faudra voir à l’usage.</li>
 <li>ils ont encore changé la « barre des tâches » et ça bouleverse (encore) nos habitudes, mais le nouveau système n’est pas mauvais.</li>
 </ol>
 <p><strong>Note* </strong>: convertir une machine Windows 98 est apparemment aussi possible, mais en utilisant une<a href="http://communities.vmware.com/message/596144#596144" target="_blank"> combine avec Norton Ghost </a></p>

@@ -9,14 +9,13 @@ url: "/2012/11/05/materiel-a-donner/"
 wordpress_id: 1063
 comment_count: 0
 ---
-<p>Dernier appel avant déchetterie:<br/>
-Matériel en état de marche à donner.<br/>
-A prendre sur place à Bussigny.<br/>
-Voir ici:<br/>
-http://www.hb9afo.ch</p>
-<p>Amitiés<br/>
-michel vonlanthen</p>
+Dernier appel avant déchetterie:\
+Matériel en état de marche à donner.\
+A prendre sur place à Bussigny.\
+Voir ici:\
+<http://www.hb9afo.ch>
 
-## Commentaires
+Amitiés\
+michel vonlanthen
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

@@ -9,9 +9,8 @@ url: "/2017/12/14/joyeux-noel-et-bonne-annee/"
 wordpress_id: 3569
 comment_count: 0
 ---
-<p> </p>
-<p><a href="/2017/12/14/joyeux-noel-et-bonne-annee/tree/" rel="attachment wp-att-3575"><img alt="" height="288" src="/media/2017/12/tree-300x225.jpg" width="384"/></a></p>
+ 
 
-## Commentaires
+[![](/media/2017/12/tree-300x225.jpg)](/2017/12/14/joyeux-noel-et-bonne-annee/tree/)
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

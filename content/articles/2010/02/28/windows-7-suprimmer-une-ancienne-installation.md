@@ -9,7 +9,7 @@ url: "/2010/02/28/windows-7-suprimmer-une-ancienne-installation/"
 wordpress_id: 277
 comment_count: 3
 ---
-<p>Sur une partition restait une ancienne installation de Windows 7. Impossible de la supprimer, même comme <span>administrateur </span>– c’est un comble, non? Si je pouvais changer son nom, pas moyen de retrouver les environ 8 Go de ce répertoire. Bon, formater la partition est toujours possible, mais y a-t-il plus simple? Ou plus élégant? Un essais ce jour m’indiquait qu’il fallait une autorisation « <strong>Trustedinstaller</strong>« , comme si j’étais un installateur de pacotille!</p>
+<p>Sur une partition restait une ancienne installation de Windows 7. Impossible de la supprimer, même comme administrateur – c’est un comble, non? Si je pouvais changer son nom, pas moyen de retrouver les environ 8 Go de ce répertoire. Bon, formater la partition est toujours possible, mais y a-t-il plus simple? Ou plus élégant? Un essais ce jour m’indiquait qu’il fallait une autorisation « <strong>Trustedinstaller</strong>« , comme si j’étais un installateur de pacotille!</p>
 <p>La solution est de s’approprier les droits pour ce faire. Soit: clic droit, Propriété, onglet Sécurité, bouton [Avancé] (sinon vous pouvez voir les droits, mais rien changer), Modifier les autorisations et une nouvelle boîte de dialogue vient.</p>
 <figure aria-describedby="caption-attachment-278"><a href="/media/2010/02/autorisations.jpg"><img alt="autorisations" height="238" src="/media/2010/02/autorisations.jpg?w=300" title="autorisations" width="300"/></a><figcaption>autorisations</figcaption></figure>
 <p>Il s’agit ensuite de s’approprier les autorisations, en cliquant sur le groupe « Utilisateurs » et allant dans l’onglet « Autorisation effectives ».</p>

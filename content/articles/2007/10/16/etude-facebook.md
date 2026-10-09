@@ -9,10 +9,10 @@ url: "/2007/10/16/etude-facebook/"
 wordpress_id: 375
 comment_count: 0
 ---
-<p><img align="left" height="200" hspace="3" src="http://www.fabernovel.com/news/research-paper-facebook/image" vspace="3" width="200"/>Très intéressante étude sur le <a href="http://www.fabernovel.com/news/research-paper-facebook/">business de Facebook par faberNovel</a>. Très complète, j’y ai appris plein de choses et je suis encore plus convaincu : Facebook va faire un carton, un camion, un cargo de dollars.</p>
-<p>Le fichier pdf contenant l’étude sous forme de slides est <a href="http://www.fabernovel.com/facebook_en.pdf" target="_blank">ici </a></p>
-<p>Ils sont aussi <a href="http://www.slideshare.net/misteroo/facebook-analysis-and-study" target="_blank">disponible sur Slideshare</a>, un site qu’il faudra que je regarde de plus près : il permet de partager des présentations PowerPoint.</p>
+![](http://www.fabernovel.com/news/research-paper-facebook/image)Très intéressante étude sur le [business de Facebook par faberNovel](http://www.fabernovel.com/news/research-paper-facebook/). Très complète, j’y ai appris plein de choses et je suis encore plus convaincu : Facebook va faire un carton, un camion, un cargo de dollars.
 
-## Commentaires
+Le fichier pdf contenant l’étude sous forme de slides est [ici](http://www.fabernovel.com/facebook_en.pdf)
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+Ils sont aussi [disponible sur Slideshare](http://www.slideshare.net/misteroo/facebook-analysis-and-study), un site qu’il faudra que je regarde de plus près : il permet de partager des présentations PowerPoint.
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

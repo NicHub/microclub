@@ -9,11 +9,12 @@ url: "/2015/04/19/impression3d/"
 wordpress_id: 1674
 comment_count: 0
 ---
-<p><strong>Téléchargement des présentations:</strong></p>
-<p><a href="/media/2015/04/Limpression_3d_v1.0.pdf">1. L’impression3d, bases</a></p>
-<p><a href="/media/2015/04/Design-Spark_Mechanical_v1.0.pdf">2. Design-Spark-Mechanical, introduction</a></p>
-<p><a href="/media/2015/04/impression3d2.jpg"><img alt="impression3d" height="308" src="/media/2015/04/impression3d2-1024x576.jpg" width="548"/></a></p>
+**Téléchargement des présentations:**
 
-## Commentaires
+[1. L’impression3d, bases](/media/2015/04/Limpression_3d_v1.0.pdf)
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+[2. Design-Spark-Mechanical, introduction](/media/2015/04/Design-Spark_Mechanical_v1.0.pdf)
+
+[![impression3d](/media/2015/04/impression3d2-1024x576.jpg)](/media/2015/04/impression3d2.jpg)
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

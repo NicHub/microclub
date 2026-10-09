@@ -9,9 +9,8 @@ url: "/2019/10/07/p19-commande-de-neoleds-pour-reveil-ebauche/"
 wordpress_id: 4638
 comment_count: 0
 ---
-<p>Présentation du 4.10.2019 – Yves Masur</p>
-<p><a href="/media/2019/10/neoled.pdf">Cliquez ici pour télécharger.</a></p>
+Présentation du 4.10.2019 – Yves Masur
 
-## Commentaires
+[Cliquez ici pour télécharger.](/media/2019/10/neoled.pdf)
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

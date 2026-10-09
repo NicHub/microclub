@@ -9,25 +9,22 @@ url: "/2018/06/02/les-finesses-de-python/"
 wordpress_id: 3868
 comment_count: 0
 ---
-<p>Le « notebook <a href="http://jupyter.org/" rel="noopener" target="_blank">Jupyter</a> » de la présentation d’hier soir <a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb" rel="noopener" target="_blank">se trouve ici.</a></p>
-<p>Les sujets abordés étaient</p>
-<ul>
-<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#objs" rel="noopener" target="_blank">Objets et Types (Classes)¶</a></li>
-<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#iter" rel="noopener" target="_blank">Générateurs, iterateurs et programmation fonctionnelle</a></li>
-<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#intro" rel="noopener" target="_blank">Introspection</a></li>
-<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#deco" rel="noopener" target="_blank">Décorateurs</a>
-<ul>
-<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#memo" rel="noopener" target="_blank">Memoïsation</a></li>
-<li><a href="http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#stop" rel="noopener" target="_blank">Timeout</a></li>
-<li>Prédéfinis et « multiméthodes »</li>
-</ul>
-</li>
-</ul>
-<p>edit du 23.6 : je viens de découvrir comment intégrer un notebook Jupyter à WordPress, alors voilà:</p>
-<p>https://gist.github.com/goulu/e0a39091eaed677aa9c9a75669750a11</p>
-<p>(tiens… <a href="https://www.drgoulu.com/2018/06/23/les-finesses-de-python/" rel="noopener" target="_blank">ça marche chez moi</a> mais pas ici…)</p>
-<p> </p>
+Le « notebook [Jupyter](http://jupyter.org/) » de la présentation d’hier soir [se trouve ici.](http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb)
 
-## Commentaires
+Les sujets abordés étaient
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+- [Objets et Types (Classes)¶](http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#objs)
+- [Générateurs, iterateurs et programmation fonctionnelle](http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#iter)
+- [Introspection](http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#intro)
+- [Décorateurs](http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#deco)
+  - [Memoïsation](http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#memo)
+  - [Timeout](http://nbviewer.jupyter.org/github/Goulu/python_finesses/blob/master/python_finesses.ipynb#stop)
+  - Prédéfinis et « multiméthodes »
+
+edit du 23.6 : je viens de découvrir comment intégrer un notebook Jupyter à WordPress, alors voilà:
+
+<https://gist.github.com/goulu/e0a39091eaed677aa9c9a75669750a11>
+
+(tiens… [ça marche chez moi](https://www.drgoulu.com/2018/06/23/les-finesses-de-python/) mais pas ici…)
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

@@ -5,4 +5,4 @@ lastmod: "2016-11-19T17:07:43"
 url: "/forum/"
 weight: 60
 ---
-<p>[bbp-forum-index]</p>
+[bbp-forum-index]

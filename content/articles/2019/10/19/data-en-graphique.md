@@ -9,12 +9,14 @@ url: "/2019/10/19/data-en-graphique/"
 wordpress_id: 4645
 comment_count: 0
 ---
-<p>Comment mettre des données sous forme graphique sur une page WEB? Voici une solution, avec Chart.js. </p>
-<p> Pour voir la présentation, <a href="/?attachment_id=4647">cliquez ici</a>. </p>
-<p>Lien sur Chart.js: <a href="https://www.chartjs.org/">https://www.chartjs.org/</a></p>
-<p>Graphique d’eau chaude sanitaire (ECS): <a href="http://ecs.yvesmasur.ch">ecs.yvesmasur.ch</a></p>
-<p>Graphique à barre, données de compteur Geiger: <a href="http://geiger.yvesmasur.ch">geiger.yvesmasur.ch</a><br/></p>
+Comment mettre des données sous forme graphique sur une page WEB? Voici une solution, avec Chart.js.
 
-## Commentaires
+Pour voir la présentation, [cliquez ici](/?attachment_id=4647).
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+Lien sur Chart.js: <https://www.chartjs.org/>
+
+Graphique d’eau chaude sanitaire (ECS): [ecs.yvesmasur.ch](http://ecs.yvesmasur.ch)
+
+Graphique à barre, données de compteur Geiger: [geiger.yvesmasur.ch](http://geiger.yvesmasur.ch)\
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

@@ -9,15 +9,20 @@ url: "/2012/06/18/e-cockpit-une-representation-intelligente/"
 wordpress_id: 796
 comment_count: 0
 ---
-<h1>Une analyse comptable par contenu</h1>
-<p>C’est un soft enclenchable gratuitement si vous avez un compte à La Poste (www.postfinance.ch). Simple et de bon goût!</p>
-<p><a href="/media/2012/06/e-cokpit.jpg"><img alt="" height="298" src="/media/2012/06/e-cokpit-300x298.jpg" title="e-cokpit" width="300"/></a></p>
-<p>A moins que vous ne payez vos factures en monnaie sonnante et trébuchante à partir d’un bas de laine, le simple fait de remplir un BV ou  de régler par carte de débit/crédit enregistre la dépense auprès du dépositaire de vos sous. Et tous ces fournisseur, imposeur, créancier, quémandeur d’argent sont inscrits avec une activité ou un secteur dans lequel ils sont actifs. Les magasin de moyens vitaux (auf deutch: Lebensmittel) vont plus loin. Comme la TVA change en fonction du produit, le type est donné.</p>
-<p>Tout ceci peut être assez facilement catégorisé, et représenté dans un joli gâteau comme ci-dessus, en exprimant la tranche occupée dans vos dépenses, voir revenus. Le plein d’essence (mobilité), la nourriture (ménage), les assurances (assurance: tiens, ça ne change pas), le téléphone et internet (télécommunications).</p>
-<p>Si l’affectation ne vous plaît pas, ou que vous voulez créer une catégorie, il est possible de créer/modifier une affectation. Cette nouveau filtre sera repris par la suite.</p>
-<p>Décidément, pourquoi ma banque n’offre pas aussi ce service?</p>
-<p>Yves Masur (6/2012)</p>
+# Une analyse comptable par contenu
 
-## Commentaires
+C’est un soft enclenchable gratuitement si vous avez un compte à La Poste (<www.postfinance.ch>). Simple et de bon goût!
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+[![](/media/2012/06/e-cokpit-300x298.jpg "e-cokpit")](/media/2012/06/e-cokpit.jpg)
+
+A moins que vous ne payez vos factures en monnaie sonnante et trébuchante à partir d’un bas de laine, le simple fait de remplir un BV ou  de régler par carte de débit/crédit enregistre la dépense auprès du dépositaire de vos sous. Et tous ces fournisseur, imposeur, créancier, quémandeur d’argent sont inscrits avec une activité ou un secteur dans lequel ils sont actifs. Les magasin de moyens vitaux (auf deutch: Lebensmittel) vont plus loin. Comme la TVA change en fonction du produit, le type est donné.
+
+Tout ceci peut être assez facilement catégorisé, et représenté dans un joli gâteau comme ci-dessus, en exprimant la tranche occupée dans vos dépenses, voir revenus. Le plein d’essence (mobilité), la nourriture (ménage), les assurances (assurance: tiens, ça ne change pas), le téléphone et internet (télécommunications).
+
+Si l’affectation ne vous plaît pas, ou que vous voulez créer une catégorie, il est possible de créer/modifier une affectation. Cette nouveau filtre sera repris par la suite.
+
+Décidément, pourquoi ma banque n’offre pas aussi ce service?
+
+Yves Masur (6/2012)
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

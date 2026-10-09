@@ -9,10 +9,10 @@ url: "/2016/08/10/archive-de-magasines-nostalgie-40-ans-du-microclub/"
 wordpress_id: 2457
 comment_count: 0
 ---
-<p>Revivre les années 80 et le début des PC’s en lisant les magasines de l’époque c’est possible gratuitement sur:</p>
-<p><a href="https://archive.org/details/computermagazines"><img alt="computer-magazine" height="563" src="/media/2016/08/computer-magazine.jpg" width="995"/></a></p>
-<p>rz 10.08.2016</p>
+Revivre les années 80 et le début des PC’s en lisant les magasines de l’époque c’est possible gratuitement sur:
 
-## Commentaires
+[![computer-magazine](/media/2016/08/computer-magazine.jpg)](https://archive.org/details/computermagazines)
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+rz 10.08.2016
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

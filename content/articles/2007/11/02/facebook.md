@@ -9,9 +9,8 @@ url: "/2007/11/02/facebook/"
 wordpress_id: 7
 comment_count: 0
 ---
-<p>Si vous avez déjà un compte sur <a href="http://www.facebook.com/group.php?gid=19410373760" target="_blank">facebook.com</a> , vous pouvez rejoindre le <a href="http://www.facebook.com/group.php?gid=6110323433" target="_blank">groupe Microclub</a> que j’y ai fondé.</p>
-<p>Si vous ne savez pas ce qu’est facebook (la honte…) ou si vous croyez que c’est un gadget de djeunz (ça l’est en apparence), lisez <a href="/category/facebook/" target="_blank">ce que je pense de facebook</a>.</p>
+Si vous avez déjà un compte sur [facebook.com](http://www.facebook.com/group.php?gid=19410373760) , vous pouvez rejoindre le [groupe Microclub](http://www.facebook.com/group.php?gid=6110323433) que j’y ai fondé.
 
-## Commentaires
+Si vous ne savez pas ce qu’est facebook (la honte…) ou si vous croyez que c’est un gadget de djeunz (ça l’est en apparence), lisez [ce que je pense de facebook](/category/facebook/).
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

@@ -62,7 +62,7 @@ for i in range(20):
 <ul>
 <li>l’introspection : les éléments du langage (classes, méthodes…) sont des objets qui peuvent être parcourus à l’aide de la fonction <a href="http://python.developpez.com/cours/DiveIntoPython/php/frdiveintopython/power_of_introspection/getattr.php" target="_blank">getattr</a></li>
 </ul>
-<p><span>def info(object, spacing=10, collapse=1):</span></p>
+<p>def info(object, spacing=10, collapse=1):</p>
 <pre>    """Print methods and doc strings.Takes module, class, list, dictionary, or string."""
     methodList = [method for method in dir(object) if callable(getattr(object, method))]
     processFunc = collapse and (lambda s: " ".join(s.split())) or (lambda s: s)
@@ -103,11 +103,11 @@ for i in range(20):
 </ul>
 <pre>@decorateur
 def fonction(parametre):
-  code() 
+  code()
   return resultat</pre>
 <p>est fonctionnellement équivalent à</p>
 <pre>def fonction(parametre):
-  parametre=decorateur(parametre,entree) 
+  parametre=decorateur(parametre,entree)
   code()
   return decorateur(resultat,sortie)</pre>
 <p>les décorateurs permettent de réaliser très facilement des logs, du profilage ou du chronométrage de temps d’exécution. Ils permettent aussi d’implanter des mécanismes existant dans d’autres langages, comme les propriétés à la Delphi/C#, ou des mécanismes utiles en programmation concurrente, ou encore d’améliorer les performances par des caches de « memoization ». Une <a href="http://wiki.python.org/moin/PythonDecoratorLibrary" target="_blank">librairie de décorateurs</a> est disponible.</p>

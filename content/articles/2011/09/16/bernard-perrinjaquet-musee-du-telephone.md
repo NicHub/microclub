@@ -9,11 +9,12 @@ url: "/2011/09/16/bernard-perrinjaquet-musee-du-telephone/"
 wordpress_id: 525
 comment_count: 0
 ---
-<p>Notre ami Bernard a eu – hélas a titre posthume – les honneurs d’un article de Simon Vermot, paru dans l’Echo Magasine n°37, du 15 septembre 2011. Il est vrai que son musée du téléphone était un trésor, une merveille qui nous a enchanté à plus d’un titre!</p>
-<p>Yves Masur</p>
-<p><a href="/media/2011/09/perrinjaquet-p1.pdf">Perrinjaquet – p1 – musée du téléphone</a></p>
-<p><a href="/media/2011/09/perrinjaquet-p2.pdf">Perrinjaquet – p2 – musée du téléphone</a></p>
+Notre ami Bernard a eu – hélas a titre posthume – les honneurs d’un article de Simon Vermot, paru dans l’Echo Magasine n°37, du 15 septembre 2011. Il est vrai que son musée du téléphone était un trésor, une merveille qui nous a enchanté à plus d’un titre!
 
-## Commentaires
+Yves Masur
 
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+[Perrinjaquet – p1 – musée du téléphone](/media/2011/09/perrinjaquet-p1.pdf)
+
+[Perrinjaquet – p2 – musée du téléphone](/media/2011/09/perrinjaquet-p2.pdf)
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

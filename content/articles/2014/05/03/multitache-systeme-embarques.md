@@ -9,8 +9,6 @@ url: "/2014/05/03/multitache-systeme-embarques/"
 wordpress_id: 1462
 comment_count: 0
 ---
-<p><a href="/media/2014/05/Multitâche-Systeme-Embarqué-pdf1.pdf"><img alt="frontpage" height="413" src="/media/2014/05/frontpage1-1024x716.jpg" width="591"/></a></p>
+[![frontpage](/media/2014/05/frontpage1-1024x716.jpg)](/media/2014/05/Multitâche-Systeme-Embarqué-pdf1.pdf)
 
-## Commentaires
-
-<!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
