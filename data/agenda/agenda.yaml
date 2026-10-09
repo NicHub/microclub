@@ -24,7 +24,7 @@
 ##
 
 events:
-    - date: "2026-12-11T19:00:00"
+    - date: 2026-12-11T19:00:00
       status: confirmed
       title: Repas de clôture au Florissant
       location:
@@ -32,7 +32,7 @@ events:
           url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
       description: ""
       links: []
-    - date: "2026-11-27T19:00:00"
+    - date: 2026-11-27T19:00:00
       status: confirmed
       title: Conférence — Les condensateurs
       speaker: Jean-Pierre Broillet
@@ -41,7 +41,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-11-13T19:00:00"
+    - date: 2026-11-13T19:00:00
       status: confirmed
       title: Conférence — Créer un site web avec Hugo et la technique du <em>vibe coding</em>
       speaker: Nicolas Jeanmonod
@@ -52,7 +52,7 @@ events:
       links:
           - https://blowfish.page
           - https://microclub.ch/posts/site-web-avec-hugo/
-    - date: "2026-10-30T19:00:00"
+    - date: 2026-10-30T19:00:00
       status: confirmed
       title: Conférence — IA programmation
       speaker: Laurent Francey
@@ -61,16 +61,16 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-10-16T19:00:00"
+    - date: 2026-10-16T19:00:00
       status: confirmed
-      title: Conférence — Ballon-sonde et radiosonde
+      title: Conférence — Ballons-sondes et radiosondes
       speaker: Jean-Marc Paratte
       location:
           name: MED 1 1815
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-10-02T19:00:00"
+    - date: 2026-10-02T19:00:00
       status: confirmed
       title: Conférence — Smaky 6
       speaker: Pierre-Yves Rochat
@@ -79,7 +79,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-09-21T19:00:00"
+    - date: 2026-09-21T19:00:00
       status: confirmed
       title: Sortie du lundi du Jeûne
       speaker: Jean-Marc Paratte
@@ -91,7 +91,7 @@ events:
         <br>suivie d’un repas au restaurant La Scala à côté de la gare.
         <br>Plus de détails sur WhatsApp."
       links: [https://lascala-payerne.ch/le-restaurant/]
-    - date: "2026-09-04T19:00:00"
+    - date: 2026-09-04T19:00:00
       status: confirmed
       title: Reprise du Microclub au Florissant
       location:
@@ -99,7 +99,7 @@ events:
           url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
       description: ""
       links: []
-    - date: "2026-07-03T19:00:00"
+    - date: 2026-07-03T19:00:00
       status: confirmed
       title: Repas au Florissant pour la fin du premier semestre
       location:
@@ -107,7 +107,7 @@ events:
           url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
       description: ""
       links: []
-    - date: "2026-06-19T19:00:00"
+    - date: 2026-06-19T19:00:00
       status: confirmed
       title: Assemblée Générale
       location:
@@ -115,7 +115,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-06-05T19:00:00"
+    - date: 2026-06-05T19:00:00
       status: confirmed
       title: Discussion et projets
       location:
@@ -123,7 +123,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-03-27T19:00:00"
+    - date: 2026-03-27T19:00:00
       status: tobeconfirmed
       title: A définir ultérieurement
       location:
@@ -131,7 +131,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-03-13T19:00:00"
+    - date: 2026-03-13T19:00:00
       status: confirmed
       title: Conférence — IA, oui mais… RFID, théorie et application Arduino
       location:
@@ -139,7 +139,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-03-06T19:00:00"
+    - date: 2026-03-06T19:00:00
       status: confirmed
       title: Conférence — À 38 km d’altitude avec des ballons expérimentaux
       speaker: Mathieu Leuppi
@@ -148,7 +148,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-02-27T19:00:00"
+    - date: 2026-02-27T19:00:00
       title: Séance déplacée au 06.03.2026
       location:
           name: MED 1 1815
@@ -156,7 +156,7 @@ events:
       description: ""
       links: []
       status: canceled
-    - date: "2026-02-20T19:00:00"
+    - date: 2026-02-20T19:00:00
       title: Déplacée au 13.03.2026
       speaker: Jean-Pierre Broillet
       location:
@@ -165,7 +165,7 @@ events:
       description: ""
       links: []
       status: canceled
-    - date: "2026-02-13T19:00:00"
+    - date: 2026-02-13T19:00:00
       title: Séance déplacée exceptionnellement au 20.02.2026
       location:
           name: MED 1 1815
@@ -173,7 +173,7 @@ events:
       description: ""
       links: []
       status: canceled
-    - date: "2026-02-06T19:00:00"
+    - date: 2026-02-06T19:00:00
       status: confirmed
       title: Conférence — Découverte de la création de pages HTML à l’aide de Claude AI
       speaker: Jean-Marc Paratte
@@ -182,7 +182,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2026-01-30T19:00:00"
+    - date: 2026-01-30T19:00:00
       title: Séance déplacée exceptionnellement au 06.02.2026
       location:
           name: MED 1 1815
@@ -190,7 +190,7 @@ events:
       description: ""
       links: []
       status: canceled
-    - date: "2026-01-16T19:00:00"
+    - date: 2026-01-16T19:00:00
       status: confirmed
       title: Présentation des bricolages des membres
       location:
@@ -198,7 +198,7 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: ""
       links: []
-    - date: "2025-12-12T19:00:00"
+    - date: 2025-12-12T19:00:00
       status: confirmed
       title: Vin chaud de Noël au Florissant
       location:
@@ -206,7 +206,7 @@ events:
           url: https://maps.app.goo.gl/x2JbcKPiwYwEoEEJA
       description: ""
       links: []
-    - date: "2025-11-28T19:00:00"
+    - date: 2025-11-28T19:00:00
       status: confirmed
       title: Docker sur Raspberry Pi4
       speaker: C. Balmer
@@ -215,7 +215,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-11-14T19:00:00"
+    - date: 2025-11-14T19:00:00
       status: confirmed
       title: Conférence — Le magnétisme
       speaker: Laurent Francey
@@ -224,7 +224,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-10-31T19:00:00"
+    - date: 2025-10-31T19:00:00
       status: confirmed
       title: Conférence — Meshtastic
       speaker: Johannes David
@@ -233,7 +233,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-10-17T19:00:00"
+    - date: 2025-10-17T19:00:00
       status: confirmed
       title: Atelier — Kicad, questions-réponses
       speaker: C. Balmer
@@ -242,7 +242,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-10-03T19:00:00"
+    - date: 2025-10-03T19:00:00
       status: confirmed
       title: Atelier — Kicad, premier objet
       speaker: C. Balmer
@@ -251,7 +251,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-09-19T19:00:00"
+    - date: 2025-09-19T19:00:00
       status: confirmed
       title: Atelier — Kicad premiers pas, introduction et installation
       speaker: C. Balmer
@@ -260,7 +260,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-09-05T19:00:00"
+    - date: 2025-09-05T19:00:00
       status: confirmed
       title: La soirée raclette est remplacée par un repas au Florissant
       location:
@@ -268,7 +268,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-07-04T19:00:00"
+    - date: 2025-07-04T19:00:00
       status: confirmed
       title: Souper de fin de semestre
       location:
@@ -276,7 +276,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-06-06T19:00:00"
+    - date: 2025-06-06T19:00:00
       status: confirmed
       title: Conférence — Démarrer avec un Raspberry PICO
       speaker: Laurent Francey
@@ -285,7 +285,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-05-09T19:00:00"
+    - date: 2025-05-09T19:00:00
       status: confirmed
       title: Conférence — Amplificateurs opérationnels
       speaker: Jean-Pierre Broillet / Laurent Francey
@@ -294,7 +294,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-04-11T19:00:00"
+    - date: 2025-04-11T19:00:00
       status: confirmed
       title: "Atelier — IA/2 : reconnaissance par caméra d’objets"
       speaker: Laurent Francey
@@ -303,7 +303,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-04-04T19:00:00"
+    - date: 2025-04-04T19:00:00
       status: confirmed
       title: "Atelier — IA/1 : reconnaissance par caméra d’objets"
       speaker: Laurent Francey
@@ -312,7 +312,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2025-03-14T19:00:00"
+    - date: 2025-03-14T19:00:00
       status: confirmed
       title: 49e Assemblée Générale
       location:
@@ -320,7 +320,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2023-01-20T19:00:00"
+    - date: 2023-01-20T19:00:00
       status: confirmed
       title: Reprise, Pic & AVR, projets divers
       speaker: Laurent
@@ -329,7 +329,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-12-16T19:00:00"
+    - date: 2022-12-16T19:00:00
       status: confirmed
       title: Apéritif de fin d’année au Florissant
       speaker: Laurent
@@ -338,7 +338,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-11-25T19:00:00"
+    - date: 2022-11-25T19:00:00
       status: confirmed
       title: Conférence — Voiture électrique
       speaker: Yves Masur
@@ -347,7 +347,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-11-11T19:00:00"
+    - date: 2022-11-11T19:00:00
       status: confirmed
       title: Conférence — Micropython ou Raspberry
       speaker: J.M. Paratte
@@ -356,7 +356,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-10-28T19:00:00"
+    - date: 2022-10-28T19:00:00
       status: confirmed
       title: Conférence — Radio amateurs
       speaker: Michel Vonlanten
@@ -365,7 +365,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-10-14T19:00:00"
+    - date: 2022-10-14T19:00:00
       status: confirmed
       title: Conférence — Automatisation d’un télescope
       speaker: Johannes David
@@ -374,7 +374,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-09-30T19:00:00"
+    - date: 2022-09-30T19:00:00
       status: confirmed
       title: Conférence — Algorithme « gestion de listes »
       speaker: Claude Balmer
@@ -383,7 +383,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-09-19T19:00:00"
+    - date: 2022-09-19T19:00:00
       status: confirmed
       title: Sortie du lundi du Jeûne
       speaker: Jonathan
@@ -392,7 +392,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-09-02T19:00:00"
+    - date: 2022-09-02T19:00:00
       status: confirmed
       title: Traditionnelle raclette chez JD Freymann
       location:
@@ -400,7 +400,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-07-01T19:00:00"
+    - date: 2022-07-01T19:00:00
       status: confirmed
       title: Clôture 1er semestre, repas au Florissant
       location:
@@ -408,7 +408,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-06-17T19:00:00"
+    - date: 2022-06-17T19:00:00
       status: confirmed
       title: Conférence — Les décibels
       speaker: Jean-Pierre Broillet
@@ -417,7 +417,7 @@ events:
           url: ""
       description: "comment additionner et multiplier les dB et comment calculer une intensité de champ électrique (en V/m)"
       links: []
-    - date: "2022-06-03T19:00:00"
+    - date: 2022-06-03T19:00:00
       status: confirmed
       title: Conférence — Gestion d’interrupteurs
       speaker: Claude Balmer
@@ -426,7 +426,7 @@ events:
           url: ""
       description: "Gestion d’interrupteurs, anti-rebonds & Cie, utilisation de touches click, double click, clik court, long etc."
       links: []
-    - date: "2022-05-20T19:00:00"
+    - date: 2022-05-20T19:00:00
       status: confirmed
       title: Assemblée générale
       location:
@@ -434,7 +434,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-05-06T19:00:00"
+    - date: 2022-05-06T19:00:00
       status: confirmed
       title: Conférence — Plateforme de Stewart sur ESP32
       speaker: Nicolas Jeanmonod
@@ -443,7 +443,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-04-08T19:00:00"
+    - date: 2022-04-08T19:00:00
       status: confirmed
       title: Conférence — Introduction à micropython 2
       speaker: Jean-Marc Paratte
@@ -452,7 +452,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-03-25T19:00:00"
+    - date: 2022-03-25T19:00:00
       status: confirmed
       title: Conférence — Arkanoid sur ESP32
       speaker: Nicolas Jeanmonod
@@ -461,7 +461,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-03-11T19:00:00"
+    - date: 2022-03-11T19:00:00
       status: confirmed
       title: Conférence — Recettes pour bien réussir un montage à µC
       speaker: Laurent Francey
@@ -470,7 +470,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-02-25T19:00:00"
+    - date: 2022-02-25T19:00:00
       status: confirmed
       title: Conférence — GitHub pour les débutants
       speaker: Nicolas Jeanmonod
@@ -479,7 +479,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-02-11T19:00:00"
+    - date: 2022-02-11T19:00:00
       status: confirmed
       title: Conférence — l’introduction orientée Python et IDE Thonny, avec une démo ESP32
       speaker: Jean-Marc Paratte
@@ -488,7 +488,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-01-28T19:00:00"
+    - date: 2022-01-28T19:00:00
       status: confirmed
       title: Conférence — Windows 11, les nouveautés
       speaker: Laurent Francey
@@ -497,7 +497,7 @@ events:
           url: ""
       description: ""
       links: []
-    - date: "2022-01-14T19:00:00"
+    - date: 2022-01-14T19:00:00
       status: confirmed
       title: Bricolages d’hiver 2021/2022
       location:
