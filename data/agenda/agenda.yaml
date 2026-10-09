@@ -124,7 +124,7 @@ events:
       description: ""
       links: []
     - date: 2026-03-27T19:00:00
-      status: tobeconfirmed
+      status: canceled
       title: A définir ultérieurement
       location:
           name: MED 1 1815
