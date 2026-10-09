@@ -23,6 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.167.0
+      HUGO_CANONIFYURLS: true
       TZ: Europe/Zurich
     steps:
       - name: Checkout
