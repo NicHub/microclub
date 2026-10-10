@@ -65,9 +65,9 @@ Une virtuose du thérémine :
 
 ```mermaid
 graph TD
-    MG[Main gauche] --> P[volume] --> HCV[HC-SR04 VOLUME] --> A[Arduino UNO]
-    MD[Main droite] --> V[hauteur / fréquence] --> HCP[HC-SR04 PITCH] --> A
-    A --> AMP[Amplificateur] --> HP[HP]
+    MG@{ shape: text, label: "MAIN GAUCHE" } --> P@{ shape: text, label: "volume" } --> HCV[HC-SR04 VOLUME] --> A[Arduino UNO]
+    MD@{ shape: text, label: "MAIN DROITE" } --> V@{ shape: text, label: "hauteur / fréquence" } --> HCP[HC-SR04 PITCH] --> A
+    A --> AMP@{ shape: text, label: "Amplificateur" } --> HP@{ shape: text, label: "HP" }
 ```
 
 Les deux capteurs doivent être suffisamment séparés et, si possible, orientés selon des axes différents. Cela diminue les risques qu’un HC-SR04 reçoive l’écho de l’impulsion émise par l’autre.
@@ -320,6 +320,39 @@ Le projet devient beaucoup plus intéressant avec cette chaîne :
 
 {{< figure src="images/word-image-5871-12.png" alt="word-image-5871-12" class="verif" >}}
 
+```mermaid
+block-beta
+    columns 3
+    %% Chaîne verticale à gauche, entrée Volume à droite.
+    P["HC-SR04 PITCH"]          space:2
+    space:3
+    F["Filtrage distance"]      space:2
+    space:3
+    C["Calcul de fréquence"]    space:2
+    space:3
+    O["Oscillateur numérique"]  space:2
+    space:3
+    W["Forme d’onde audio"]     space:2
+    space:3
+    V["Contrôle volume"]                           space Q["HC-SR04 VOLUME"]
+    space:3
+    FL["Filtre"]                space:2
+    space:3
+    A["Amplificateur"]          space:2
+    space:3
+    HP["Haut-parleur"]          space:2
+
+    P --> F
+    F --> C
+    C --> O
+    O --> W
+    W --> V
+    Q --> V
+    V --> FL
+    FL --> A
+    A --> HP
+```
+
 On pourrait générer une onde triangulaire ou une combinaison sinusoïde + harmoniques donnant un timbre beaucoup plus agréable.
 
 ## 12. Le « calage » que je recommande
@@ -331,6 +364,25 @@ Plutôt que d’imposer définitivement 5 et 50 cm dans le programme, le théré
 Au démarrage :
 
 {{< figure src="images/word-image-5871-13.png" alt="word-image-5871-13" class="verif" >}}
+
+```mermaid
+flowchart TD
+    subgraph PITCH[CALAGE PITCH]
+        PB[Main position BASSE] --> PM[Mesure distance]
+        PM --> PMin[Mémorisation DPmin]
+        PH[Main position HAUTE] --> PX[Mesure distance]
+        PX --> PMax[Mémorisation DPmax]
+    end
+
+    subgraph VOLUME[CALAGE VOLUME]
+        VS[Position silence] --> VM[Mesure DVmin]
+        VV[Position volume maximum] --> VX[Mesure DVmax]
+    end
+
+    style PITCH fill:transparent,stroke:transparent
+    style VOLUME fill:transparent,stroke:transparent
+    PITCH ~~~ VOLUME
+```
 
 On peut ajouter **deux boutons-poussoirs**, ou mieux encore un bouton CALIBRATION et utiliser le moniteur série pour guider l’utilisateur.
 
