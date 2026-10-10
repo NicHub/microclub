@@ -390,6 +390,23 @@ Je verrais volontiers :
 
 {{< figure src="images/word-image-5871-14.png" alt="word-image-5871-14" class="verif" >}}
 
+```mermaid
+flowchart LR
+    PITCH["PITCH<br/>HC-SR04"] --> THEREMINE
+    VOLUME["VOLUME<br/>HC-SR04"] --> THEREMINE
+
+    subgraph THEREMINE[THEREMINE]
+        direction TB
+        CALIB["[ CALIB ]"]
+        MUTE["[ MUTE ]"]
+        HP(("HP"))
+        CALIB ~~~ MUTE
+        MUTE ~~~ HP
+    end
+
+    style THEREMINE fill:transparent,stroke:currentColor,stroke-width:1px
+```
+
 Le bouton **MUTE** serait particulièrement pratique : un thérémine sans moyen simple de couper le son devient vite pénible pendant les essais.
 
 ## 13. Une amélioration très importante
@@ -401,6 +418,47 @@ Dans le programme précédent, `pulseIn()` est bloquant. Cela suffit pour une d�
 La version évoluée pourrait fonctionner ainsi :
 
 {{< figure src="images/word-image-5871-15.png" alt="word-image-5871-15" class="verif" >}}
+
+```mermaid
+block-beta
+    columns 3
+
+    space                                ARDUINO["ARDUINO UNO"]                       space
+    J_MESURES((" "))                     J_TRAITEMENT((" "))                          J_AUDIO((" "))
+    MESURES["MESURES<br/>ultrason"]      TRAITEMENT["TRAITEMENT<br/>numérique"]       AUDIO["AUDIO<br/>timer"]
+    space                                space                                        space
+    DISTANCE["distance"]                 FILTRAGE["filtrage"]                         OSCILLATEUR["oscillateur"]
+    J_DISTANCE((" "))                    FREQUENCE["fréquence"]                       J_FREQUENCE((" "))
+    space                                VOLUME["volume"]                             J_VOLUME((" "))
+    space                                space                                        PWM["sortie PWM"]
+
+    ARDUINO      --- J_TRAITEMENT
+    J_MESURES    --- J_TRAITEMENT
+    J_TRAITEMENT --- J_AUDIO
+
+    J_MESURES    --- MESURES
+    J_TRAITEMENT --- TRAITEMENT
+    J_AUDIO      --- AUDIO
+    MESURES      --- DISTANCE
+    TRAITEMENT   --- FILTRAGE
+    AUDIO        --- OSCILLATEUR
+
+    DISTANCE     --- J_DISTANCE
+    J_DISTANCE   --- FREQUENCE
+    FILTRAGE     --- FREQUENCE
+    FREQUENCE    --- VOLUME
+
+    FREQUENCE    --- J_FREQUENCE
+    VOLUME       --- J_VOLUME
+    OSCILLATEUR  --- J_FREQUENCE
+    J_FREQUENCE  --- J_VOLUME
+    J_VOLUME     --- PWM
+
+    classDef texte fill:transparent,stroke:transparent
+    classDef jonction fill:none,stroke:none
+    class ARDUINO,MESURES,TRAITEMENT,AUDIO,DISTANCE,FILTRAGE,OSCILLATEUR,FREQUENCE,VOLUME,PWM texte
+    class J_MESURES,J_TRAITEMENT,J_AUDIO,J_DISTANCE,J_FREQUENCE,J_VOLUME jonction
+```
 
 La génération sonore par **Timer1 avec accumulateur de phase** serait nettement supérieure : l’audio continuerait à être généré régulièrement pendant les calculs et les acquisitions.
 
