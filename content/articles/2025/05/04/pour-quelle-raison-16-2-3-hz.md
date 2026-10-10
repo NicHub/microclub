@@ -1,5 +1,5 @@
 ---
-title: "Pour quelle raison 16 2/3 Hz ?"
+title: "Pour quelle raison 16 2/3 Hz ?"
 date: "2025-05-04T15:12:32"
 lastmod: "2025-05-04T15:12:33"
 author: "Jean-Pierre Broillet"
