@@ -35,7 +35,7 @@
     <meta name="robots" content="{{ . }}">
   {{- end }}
   {{- if .IsHome }}
-    <link rel="canonical" href="https://microclub.ch/">
+    <link rel="canonical" href="{{ .Permalink }}">
   {{- else }}
     <link rel="canonical" href="{{ .Permalink }}">
   {{- end }}
