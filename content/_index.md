@@ -1,7 +1,7 @@
 ---
 title: "MICRoCLUB"
 heroCaption: "EPFL • Lausanne"
-heroLead: "Le club des fans d’électronique et d’informatique"
+heroLead: "Le club d’électronique et d’informatique"
 ---
 
 <section class="home-next-event-section">
