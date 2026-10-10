@@ -26,6 +26,18 @@
   text-align: center;
 }
 
+.youtube-embed {
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+}
+
+.youtube-embed iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .mermaid svg {
   display: block;
   margin-inline: auto;

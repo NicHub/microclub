@@ -57,7 +57,9 @@ L’intérêt pédagogique est important : acquisition ultrasonore, filtrage nu
 
 Une virtuose du thérémine :
 
+<div class="youtube-embed">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lY7sXKGZl2w?si=1b4cQyzCR3A848Id" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## 2. Architecture générale
 
