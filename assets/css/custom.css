@@ -1,8 +1,46 @@
+/* -------------------------------------------------------------------------- */
+/* Mermaid and shared fonts                                                   */
+/* -------------------------------------------------------------------------- */
+/* Mermaid rendering and themes are configured in assets/js/mermaid.js.       */
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/fonts/FiraCode-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+.mermaid,
+.mermaid svg,
+.mermaid svg * {
+  font-family: "Fira Code", cursive;
+  font-variant-ligatures: normal;
+  font-feature-settings: "calt" 1, "liga" 1;
+}
+
+.mermaid {
+  text-align: center;
+}
+
+.mermaid svg {
+  display: block;
+  margin-inline: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Logo                                                                       */
+/* -------------------------------------------------------------------------- */
+
 .logo svg {
   width: auto;
   height: 5rem;
   max-width: 5rem;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Home: stratosphere illustration                                             */
+/* -------------------------------------------------------------------------- */
 
 /* The stratosphere illustration is already dark; keep its depth and rim light. */
 .dark body:has(.home-cosmos) {
@@ -43,6 +81,10 @@
     background-color: #fff;
   }
 }
+
+/* -------------------------------------------------------------------------- */
+/* Agenda                                                                     */
+/* -------------------------------------------------------------------------- */
 
 .agenda-heading {
   display: flex;
@@ -482,6 +524,10 @@
   }
 }
 
+/* -------------------------------------------------------------------------- */
+/* Home: next event                                                           */
+/* -------------------------------------------------------------------------- */
+
 .home-next-event-section {
   margin-top: 10rem;
 }
@@ -507,6 +553,10 @@
 .dark .home-next-event__link {
   color: rgb(var(--color-primary-400));
 }
+
+/* -------------------------------------------------------------------------- */
+/* Home: recent articles                                                      */
+/* -------------------------------------------------------------------------- */
 
 .recent-articles-heading {
   margin-top: 5rem;

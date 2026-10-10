@@ -132,3 +132,11 @@ enableGitInfo = true
 [privacy]
   [privacy.youtube]
     privacyEnhanced = true
+
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+
+[[module.mounts]]
+  source = "content/articles/2026/09/19/images"
+  target = "assets/images"
