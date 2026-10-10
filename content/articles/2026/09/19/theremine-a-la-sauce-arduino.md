@@ -98,7 +98,7 @@ Les deux capteurs doivent être suffisamment séparés et, si possible, orienté
 
 ## 5. Schéma électrique de base
 
-{{< figure src="images/word-image-5871-3.png" alt="word-image-5871-3" class="verif" >}}
+{{< figure src="images/word-image-5871-3.png" alt="word-image-5871-3" >}}
 
 Important : ne pas brancher directement un haut-parleur de 8 Ω sur une sortie de l’Arduino. La broche ne peut pas fournir le courant nécessaire. Pour les premiers essais, un étage transistor peut suffire, mais un LM386 ou un petit amplificateur audio est préférable.
 
