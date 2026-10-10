@@ -5,7 +5,10 @@
 
 @font-face {
   font-family: "Fira Code";
-  src: url("/fonts/FiraCode-Regular.woff2") format("woff2");
+  /* The stylesheet is emitted under /css/, so ../fonts works both at the
+     domain root during local development and under GitHub Pages' /microclub/
+     project path. */
+  src: url("../fonts/FiraCode-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
