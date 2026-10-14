@@ -1,5 +1,5 @@
 {{/* Compléments inspirés du projet CNL. Blowfish conserve toutes ses balises natives. */}}
-{{ if not .IsHome }}{{ hugo.Generator }}{{ end }}
+{{ hugo.Generator }}
 <meta name="generator-date" content="{{ now.UTC.Format "2006-01-02T15:04:05Z" }}">
 {{ if not hugo.IsProduction }}<meta name="robots" content="noindex, nofollow">{{ end }}
 
