@@ -25,14 +25,16 @@
       {{- with (index $latest 0).Lastmod }}<lastBuildDate>{{ .Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
     {{- end }}
     {{- with .OutputFormats.Get "RSS" }}
-      {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+      {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .RelPermalink .MediaType | safeHTML }}
     {{- end }}
     {{- range $pages }}
+    {{- $pubDate := .Date -}}
+    {{- if lt .Date.Year 1990 }}{{ $pubDate = .Lastmod }}{{ end -}}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <guid>{{ .Permalink }}</guid>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <pubDate>{{ $pubDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
       <atom:updated>{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}</atom:updated>
       {{- $authors := .Params.author -}}
       {{- with .Params.authors }}{{ $authors = delimit . ", " }}{{ end -}}
