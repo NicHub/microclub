@@ -1,0 +1,159 @@
+{{ define "main" }}
+<article class="xml-browser mx-auto max-w-6xl px-4 py-8" data-feed-url="{{ "index.xml" | relURL }}">
+  <header class="mb-8 max-w-3xl">
+    <p class="mb-2 text-sm font-semibold uppercase tracking-widest text-primary-600 dark:text-primary-400">Lecture du flux</p>
+    <h1 class="mb-3 text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <p class="text-lg text-neutral-600 dark:text-neutral-300">{{ .Description }}</p>
+  </header>
+
+  <div class="prose dark:prose-invert mb-8 max-w-none">
+    {{ .Content }}
+  </div>
+
+  <section class="xml-browser__filters mb-8 rounded-2xl border border-neutral-200 bg-neutral-50 p-4 shadow-sm dark:border-neutral-700 dark:bg-neutral-800/60" aria-label="Filtres du flux">
+    <div class="grid gap-4 md:grid-cols-12">
+      <label class="md:col-span-5">
+        <span class="mb-1 block text-sm font-semibold">Mots-clés</span>
+        <input id="feed-search" class="xml-browser__input" type="search" placeholder="Titre ou contenu…" autocomplete="off">
+      </label>
+      <label class="md:col-span-2">
+        <span class="mb-1 block text-sm font-semibold">Depuis</span>
+        <input id="feed-from" class="xml-browser__input" type="date">
+      </label>
+      <label class="md:col-span-2">
+        <span class="mb-1 block text-sm font-semibold">Jusqu’au</span>
+        <input id="feed-to" class="xml-browser__input" type="date">
+      </label>
+      <label class="md:col-span-3">
+        <span class="mb-1 block text-sm font-semibold">Ordre</span>
+        <select id="feed-sort" class="xml-browser__input">
+          <option value="newest">Plus récent d’abord</option>
+          <option value="oldest">Plus ancien d’abord</option>
+        </select>
+      </label>
+    </div>
+    <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+      <p id="feed-status" class="text-sm text-neutral-500 dark:text-neutral-400" role="status">Chargement du flux…</p>
+      <button id="feed-reset" class="xml-browser__reset" type="button">Réinitialiser les filtres</button>
+    </div>
+  </section>
+
+  <div id="feed-error" class="hidden rounded-xl border border-red-300 bg-red-50 p-4 text-red-800 dark:border-red-800 dark:bg-red-950/40 dark:text-red-200" role="alert"></div>
+  <section id="feed-list" class="grid gap-5 md:grid-cols-2" aria-live="polite"></section>
+</article>
+
+<style>
+  .xml-browser__input { width: 100%; border: 1px solid rgb(212 212 216); border-radius: .65rem; background: white; padding: .65rem .75rem; color: inherit; }
+  .dark .xml-browser__input { border-color: rgb(82 82 91); background: rgb(39 39 42); }
+  .xml-browser__input:focus { outline: 2px solid rgb(37 99 235); outline-offset: 1px; }
+  .xml-browser__reset { border: 1px solid rgb(161 161 170); border-radius: .65rem; padding: .55rem .8rem; font-size: .875rem; font-weight: 600; }
+  .xml-browser__reset:hover { background: rgb(228 228 231); }
+  .dark .xml-browser__reset:hover { background: rgb(63 63 70); }
+  .xml-browser__card { display: flex; min-height: 12rem; flex-direction: column; border: 1px solid rgb(228 228 231); border-radius: 1rem; padding: 1.25rem; background: rgb(250 250 250 / .8); }
+  .dark .xml-browser__card { border-color: rgb(63 63 70); background: rgb(39 39 42 / .65); }
+  .xml-browser__card h2 { margin: 0; font-size: 1.25rem; line-height: 1.3; font-weight: 700; }
+  .xml-browser__card h2 a:hover { text-decoration: underline; }
+  .xml-browser__date { margin-top: .5rem; font-size: .8rem; color: rgb(82 82 91); }
+  .dark .xml-browser__date { color: rgb(161 161 170); }
+  .xml-browser__summary { margin-top: .9rem; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 4; color: rgb(82 82 91); }
+  .dark .xml-browser__summary { color: rgb(212 212 216); }
+  .xml-browser__more { margin-top: auto; padding-top: 1rem; font-size: .9rem; font-weight: 600; color: rgb(37 99 235); }
+  .dark .xml-browser__more { color: rgb(147 197 253); }
+  .rss-feed-address { display: inline-flex; align-items: center; flex-wrap: wrap; gap: .5rem; }
+  .rss-copy-button { display: inline-flex; align-items: center; gap: .35rem; border: 1px solid rgb(161 161 170); border-radius: .5rem; padding: .35rem .55rem; font-size: .8rem; font-weight: 600; }
+  .rss-copy-button:hover { background: rgb(228 228 231); }
+  .rss-copy-button svg { width: 1rem; height: 1rem; }
+  .dark .rss-copy-button:hover { background: rgb(63 63 70); }
+</style>
+
+<script>
+(() => {
+  const root = document.querySelector('.xml-browser');
+  const list = document.querySelector('#feed-list');
+  const status = document.querySelector('#feed-status');
+  const error = document.querySelector('#feed-error');
+  const search = document.querySelector('#feed-search');
+  const from = document.querySelector('#feed-from');
+  const to = document.querySelector('#feed-to');
+  const sort = document.querySelector('#feed-sort');
+  const reset = document.querySelector('#feed-reset');
+  let items = [];
+
+  const escapeHTML = (value) => String(value || '').replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const dateValue = (value) => {
+    const date = new Date(value);
+    return Number.isNaN(date.valueOf()) ? null : date;
+  };
+  const formatDate = (value) => {
+    const date = dateValue(value);
+    return date ? new Intl.DateTimeFormat('fr-CH', { dateStyle: 'long', timeStyle: 'short' }).format(date) : value;
+  };
+
+  function render() {
+    const needle = search.value.trim().toLocaleLowerCase('fr');
+    const start = from.value ? new Date(`${from.value}T00:00:00`) : null;
+    const end = to.value ? new Date(`${to.value}T23:59:59.999`) : null;
+    const filtered = items.filter((item) => {
+      const date = dateValue(item.date);
+      const haystack = `${item.title} ${item.description}`.toLocaleLowerCase('fr');
+      return (!needle || haystack.includes(needle)) && (!start || (date && date >= start)) && (!end || (date && date <= end));
+    }).sort((a, b) => (sort.value === 'oldest' ? a.timestamp - b.timestamp : b.timestamp - a.timestamp));
+
+    status.textContent = `${filtered.length} article${filtered.length === 1 ? '' : 's'} affiché${filtered.length === 1 ? '' : 's'} sur ${items.length}`;
+    list.innerHTML = filtered.map((item) => `
+      <article class="xml-browser__card">
+        <h2><a href="${escapeHTML(item.link)}">${escapeHTML(item.title)}</a></h2>
+        <p class="xml-browser__date"><time datetime="${escapeHTML(item.date)}">${escapeHTML(formatDate(item.date))}</time></p>
+        ${item.description ? `<p class="xml-browser__summary">${escapeHTML(item.description)}</p>` : ''}
+        <a class="xml-browser__more" href="${escapeHTML(item.link)}">Lire l’article&nbsp;→</a>
+      </article>`).join('');
+  }
+
+  function parseFeed(xml) {
+    return [...xml.querySelectorAll('item')].map((node) => {
+      const value = (name) => node.querySelector(name)?.textContent.trim() || '';
+      const date = value('pubDate') || value('date');
+      return { title: value('title') || 'Sans titre', link: value('link'), date, description: value('description'), timestamp: dateValue(date)?.valueOf() || 0 };
+    }).filter((item) => item.link && item.date);
+  }
+
+  [search, from, to, sort].forEach((control) => control.addEventListener('input', render));
+  reset.addEventListener('click', () => { search.value = ''; from.value = ''; to.value = ''; sort.value = 'newest'; render(); });
+  const copyText = async (value) => {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(value);
+      return;
+    }
+    const textarea = document.createElement('textarea');
+    textarea.value = value;
+    textarea.setAttribute('readonly', '');
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    const copied = document.execCommand('copy');
+    textarea.remove();
+    if (!copied) throw new Error('Copie non disponible');
+  };
+  document.querySelectorAll('[data-copy-url]').forEach((button) => button.addEventListener('click', async () => {
+    const label = button.querySelector('.rss-copy-button__label');
+    try {
+      await copyText(button.dataset.copyUrl);
+      label.textContent = 'Copié !';
+      window.setTimeout(() => { label.textContent = 'Copier'; }, 1800);
+    } catch (_) {
+      label.textContent = 'Copie impossible';
+      window.setTimeout(() => { label.textContent = 'Copier'; }, 1800);
+    }
+  }));
+  fetch(root.dataset.feedUrl, { headers: { Accept: 'application/rss+xml, application/xml, text/xml' } })
+    .then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.text(); })
+    .then((text) => {
+      const xml = new DOMParser().parseFromString(text, 'application/xml');
+      if (xml.querySelector('parsererror')) throw new Error('Le flux XML est invalide.');
+      items = parseFeed(xml); render();
+    })
+    .catch((reason) => { status.textContent = ''; error.textContent = `Impossible de charger le flux : ${reason.message}`; error.classList.remove('hidden'); });
+})();
+</script>
+{{ end }}

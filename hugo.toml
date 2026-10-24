@@ -126,6 +126,10 @@ enableGitInfo = true
   url = "/liens/"
   weight = 40
 [[menus.main]]
+  name = "RSS"
+  url = "/rss/"
+  weight = 45
+[[menus.main]]
   name = "Contact"
   url = "/contacts/"
   weight = 50
