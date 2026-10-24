@@ -33,14 +33,23 @@
 
     {{ .Content }}
 
-    <p class="mt-4 text-sm text-neutral-500 dark:text-neutral-400">
+    <p class="mt-4 text-sm text-neutral-400 dark:text-neutral-300">
       Les séances se déroulent en général à l&#39;EPFL, salle de conférence
       <a class="link" href="https://plan.epfl.ch/?room==MED%201%201815">MED 1 1815</a>,
       en face du Rolex Learning Center. Elles commencent à 19&nbsp;h et se terminent
       généralement après 21&nbsp;h. Certaines conférences sont diffusées en direct via
       l&#39;application <a class="link" href="https://zoom.us/j/6215868709">Zoom</a>.
-      Lien direct vers l&#39;<a class="link" href="https://calendar.google.com/calendar/u/0?cid=NTZvM3V2cm9zMWJlMmk1NDV1OTRvbGJ0Z2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Agenda Google du Microclub</a>.
     </p>
+
+    <div class="mt-6 flex justify-center">
+      <a class="inline-flex items-center gap-2 text-center !rounded-md bg-primary-800 px-4 py-2 !no-underline hover:!bg-primary-700 dark:bg-primary-900 dark:hover:!bg-primary-800" style="color: rgba(var(--color-neutral-200), 1);" href="https://calendar.google.com/calendar/u/0?cid=NTZvM3V2cm9zMWJlMmk1NDV1OTRvbGJ0Z2dAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="_blank" rel="noopener" role="button">
+        <svg style="width: 1em; height: 1em;" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="4" width="18" height="17" rx="2" />
+          <path d="M16 2v4M8 2v4M3 10h18" />
+        </svg>
+        S&#39;abonner à l&#39;agenda Google du Microclub
+      </a>
+    </div>
 
     {{ if $future }}
       <div class="agenda-list mt-4">
