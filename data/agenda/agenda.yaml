@@ -20,7 +20,7 @@
 #   notes       : liste de brèves (markdown), affichées en puces.
 #
 # La clé "date" sert de clé de tri (ordre inverse chronologique) : la garder
-# au format ci-dessus et descendre pour les événements passés.
+# au format ci-dessus et descendre pour les évènements passés.
 ##
 
 events:
@@ -50,8 +50,112 @@ events:
           url: https://plan.epfl.ch/?room=MED%201%201815
       description: Découvrez comment créer un site web statique avec <b>Hugo, le générateur de site le plus rapide au monde</b>. Nous verrons l’installation, la configuration, le thème Blowfish et la mise en ligne. Apportez votre ordinateur portable pour suivre les manipulations en direct.
       links:
-          - https://blowfish.page
-          - https://microclub.ch/posts/site-web-avec-hugo/
+           - https://blowfish.page
+           - https://microclub.ch/posts/site-web-avec-hugo/
+    - date: 2026-11-12T19:00:00
+      status: confirmed
+      title: Conférence — Le grand retour des disquettes quantiques
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-11T19:00:00
+      status: confirmed
+      title: Conférence — Programmer un grille-pain autonome
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-10T19:00:00
+      status: confirmed
+      title: Conférence — Wi-Fi pour plantes vertes
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-09T19:00:00
+      status: confirmed
+      title: Conférence — L’algorithme secret du café parfait
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-08T19:00:00
+      status: confirmed
+      title: Conférence — Réparer Internet avec du ruban adhésif
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-07T19:00:00
+      status: confirmed
+      title: "Conférence — Raspberry Pi contre grille-pain : le duel"
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-06T19:00:00
+      status: confirmed
+      title: Conférence — Les chaussettes connectées passent au Bluetooth
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-05T19:00:00
+      status: confirmed
+      title: Conférence — Dompter le bug qui ne veut pas mourir
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-04T19:00:00
+      status: confirmed
+      title: Conférence — Intelligence artificielle, bêtise naturelle
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-03T19:00:00
+      status: confirmed
+      title: Conférence — Le mystérieux langage des câbles emmêlés
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-02T19:00:00
+      status: confirmed
+      title: Conférence — Overclocker une calculatrice solaire
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-11-01T19:00:00
+      status: confirmed
+      title: Conférence — Halloween chez les microcontrôleurs
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
+    - date: 2026-10-31T19:00:00
+      status: confirmed
+      title: Conférence — Le fantôme dans la machine
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: "PIPO — évènement fictif de test."
+      links: []
     - date: 2026-10-30T19:00:00
       status: confirmed
       title: Conférence — IA programmation
