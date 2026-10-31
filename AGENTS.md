@@ -17,3 +17,10 @@ Travaille exclusivement dans ta sandbox et avec les permissions déjà accordée
 4. Si nécessaire, l’action manuelle que je pourrais effectuer pour débloquer la situation.
 
 Je déciderai au cas par cas s’il convient de modifier les permissions. Ne sollicite pas ces modifications de ta propre initiative.
+
+## Avertissements Hugo non bloquants
+
+Il n’est pas nécessaire de m’avertir de l’avertissement préexistant concernant
+la compatibilité du module Blowfish avec certaines versions de Hugo tant que
+ce problème ne bloque pas le build et ne provoque pas de comportement
+problématique.
