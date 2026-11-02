@@ -142,3 +142,7 @@ module:
       target: assets
     - source: content/articles/2026/09/19/images
       target: assets/images
+    - source: static
+      target: static
+    - source: data/agenda/agenda.yaml
+      target: static/data/agenda/agenda.yaml
