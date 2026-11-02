@@ -4,8 +4,8 @@ on:
   push:
     branches: [blowfish]
   schedule:
-    # 03 h 17 UTC : 04 h 17 en hiver, 05 h 17 en été en Suisse.
-    - cron: '17 3 * * *'
+    # Minuit UTC : 01 h en hiver, 02 h en été en Suisse.
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 permissions:
