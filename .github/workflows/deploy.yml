@@ -3,6 +3,9 @@ name: Build and deploy
 on:
   push:
     branches: [blowfish]
+  schedule:
+    # 03 h 17 UTC : 04 h 17 en hiver, 05 h 17 en été en Suisse.
+    - cron: '17 3 * * *'
   workflow_dispatch:
 
 permissions:
