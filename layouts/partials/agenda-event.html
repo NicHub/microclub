@@ -51,11 +51,12 @@
       </ul>
     {{ end }}
     {{ with $e.links }}
-      <div class="agenda-links">
-        {{ range $index, $link := . }}
-          <a href="{{ $link }}" target="_blank" rel="noopener">{{ if $index }}<span class="agenda-links__separator" aria-hidden="true">·</span>{{ end }}{{ $link }}</a>
-        {{ end }}
-      </div>
+        <div class="agenda-links">
+          {{ range $index, $link := . }}
+          {{ $url := replaceRE `^<(.+)>$` "$1" $link }}
+          <a href="{{ $url }}" target="_blank" rel="noopener">{{ if $index }}<span class="agenda-links__separator" aria-hidden="true">·</span>{{ end }}{{ $url }}</a>
+          {{ end }}
+        </div>
     {{ end }}
   </div>
 </article>

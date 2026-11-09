@@ -311,6 +311,29 @@ h2 > a.heading-self-link {
   line-height: 1.35;
 }
 
+.agenda-description a,
+.agenda-links a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
+.agenda-description a:hover,
+.agenda-links a:hover {
+  color: #1d4ed8;
+}
+
+.dark .agenda-description a,
+.dark .agenda-links a {
+  color: #60a5fa;
+}
+
+.dark .agenda-description a:hover,
+.dark .agenda-links a:hover {
+  color: #93c5fd;
+}
+
 .agenda-location {
   margin-top: 0.4rem;
 }

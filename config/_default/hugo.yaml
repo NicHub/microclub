@@ -51,7 +51,7 @@ markup:
       unsafe: true
 
 params:
-  description: Le plus ancien club informatique de Suisse romande. Échanges, électronique, programmation et culture numérique.
+  description: Le premier club informatique de Suisse romande, fondé en 1976. Échanges, électronique, programmation et culture numérique.
   founded: 1976
   repository: ""
   productionBaseURL: https://microclub.ch
