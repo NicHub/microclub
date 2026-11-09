@@ -2,6 +2,7 @@
 /.hugo_nokdrive/
 /public/
 /resources/
+/scripts/animated-ad/out/
 .DS_Store
 hugo_stats.json
 .hugo_build.lock
