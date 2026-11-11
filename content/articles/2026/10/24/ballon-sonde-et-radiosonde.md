@@ -3,6 +3,7 @@ title: "Ballon-sonde et radiosonde"
 date: "2026-10-24T13:03:40"
 lastmod: "2026-10-24T13:03:41"
 author: "Jean-Marc Paratte"
+featureimage: "images/articles/ballon-sonde.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2026/10/24/ballon-sonde-et-radiosonde/"

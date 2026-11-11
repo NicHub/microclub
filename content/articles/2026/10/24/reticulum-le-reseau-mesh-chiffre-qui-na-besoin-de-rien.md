@@ -3,6 +3,7 @@ title: "Reticulum… Le réseau mesh chiffré qui n’a besoin de rien"
 date: "2026-10-24T19:01:41"
 lastmod: "2026-10-24T19:01:41"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/reticulum.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2026/10/24/reticulum-le-reseau-mesh-chiffre-qui-na-besoin-de-rien/"

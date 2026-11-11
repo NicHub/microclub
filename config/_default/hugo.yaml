@@ -142,6 +142,9 @@ menus:
     - name: Contact
       url: /contacts/
       weight: 50
+    - name: Crédits
+      url: /credits/
+      weight: 60
 
 privacy:
   youtube:
