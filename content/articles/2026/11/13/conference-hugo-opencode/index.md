@@ -20,17 +20,23 @@ showPagination: false
 
 ![Affiche de la conférence HUGO & OPENCODE](images/featured.jpg)
 
-Nicolas Jeanmonod · Microclub · EPFL · 13 novembre 2026
-
----
-
-![The Road to Homo Sapiens, illustration de 1965](images/route-vers-homo-sapiens-1965.jpg)
+> Nicolas Jeanmonod · Microclub · EPFL · 13 novembre 2026
 
 ---
 
 ![La marche du progrès, illustration de 1965](images/marche-du-progres-1965.jpg)
 
-*La marche du progrès*, Rudolph Zallinger, 1965.
+---
+
+![The Road to Homo Sapiens, illustration de 1965](images/route-vers-homo-sapiens-1965.jpg)
+
+_La marche du progrès_, Rudolph Zallinger, 1965.
+
+> Ce qu’on a appris à l’école et qui n’est plus vrai aujourd’hui\
+> Scilabus\
+> <https://www.youtube.com/watch?v=rB-s51uPACc>
+<!--
+-->
 
 ---
 
@@ -66,14 +72,14 @@ Et un humain qui décide.
 
 ## Le site, en chiffres
 
-| Élément | Valeur |
-| --- | --- |
-| Articles | 304 |
-| Médias | 720 fichiers, 288 Mo |
-| Commentaires | plus de 300 |
-| Pages générées | 615 |
-| Build complet | 2 secondes |
-| Base de données | 0 |
+| Élément         | Valeur               |
+| --------------- | -------------------- |
+| Articles        | 304                  |
+| Médias          | 720 fichiers, 288 Mo |
+| Commentaires    | plus de 300          |
+| Pages générées  | 615                  |
+| Build complet   | 2 secondes           |
+| Base de données | 0                    |
 
 ---
 
@@ -81,10 +87,10 @@ Et un humain qui décide.
 
 WordPress, quinze ans d’archives.
 
-- 304 articles
-- 720 médias
-- plus de 300 commentaires
-- des URL historiques à préserver
+-   304 articles
+-   720 médias
+-   plus de 300 commentaires
+-   des URL historiques à préserver
 
 Et une dette : mises à jour, plugins, sécurité.
 
@@ -96,10 +102,10 @@ Un site statique.
 
 Des fichiers, rien de plus.
 
-- pas de base de données
-- pas de serveur applicatif
-- pas de mise à jour de sécurité
-- pas de mot de passe à retenir
+-   pas de base de données
+-   pas de serveur applicatif
+-   pas de mise à jour de sécurité
+-   pas de mot de passe à retenir
 
 ---
 
@@ -107,36 +113,36 @@ Des fichiers, rien de plus.
 
 Un générateur de site statique, écrit en Go.
 
-- 304 articles deviennent 615 pages
-- en 2 secondes sur un laptop
-- un seul binaire
-- aucun réseau nécessaire
+-   304 articles deviennent 615 pages
+-   en 2 secondes sur un laptop
+-   un seul binaire
+-   aucun réseau nécessaire
 
 ---
 
 ## Hugo en trois dossiers
 
-~~~text
+```text
 content/     les textes, en Markdown
 layouts/     les gabarits
 config/      les réglages
 themes/      Blowfish
               ↓
 public/      le site, prêt à servir
-~~~
+```
 
 ---
 
 ## Le contenu, c’est du texte
 
-~~~markdown
+```markdown
 ## Un titre
 
 Un paragraphe avec **du gras** et [un lien](https://microclub.ch).
 
 - une puce
 - une autre
-~~~
+```
 
 Pas d’interface. Pas de base de données.
 
@@ -148,11 +154,11 @@ Un fichier, un article.
 
 Un thème Hugo.
 
-- responsive
-- mode sombre
-- recherche locale
-- RSS, taxonomies, i18n
-- galeries, alertes, cartes
+-   responsive
+-   mode sombre
+-   recherche locale
+-   RSS, taxonomies, i18n
+-   galeries, alertes, cartes
 
 Un thème, pas un CMS.
 
@@ -176,7 +182,7 @@ On peut signer.
 
 ## De mon clavier à votre écran
 
-~~~text
+```text
 git push
    ↓
 GitHub Actions
@@ -186,7 +192,7 @@ hugo build  (2 s)
 GitHub Pages
    ↓
 microclub.ch
-~~~
+```
 
 Le déploiement est aussi planifié chaque nuit à minuit UTC.
 
@@ -210,12 +216,12 @@ Dans le terminal, avec le modèle de son choix.
 
 ## Chatbot ou agent ?
 
-| Un chatbot | Un agent |
-| --- | --- |
-| te donne du code | modifie tes fichiers |
-| ne connaît pas ton projet | lit ton dépôt |
-| tu copies-colles | il exécute et vérifie |
-| une réponse | une boucle |
+| Un chatbot                | Un agent              |
+| ------------------------- | --------------------- |
+| te donne du code          | modifie tes fichiers  |
+| ne connaît pas ton projet | lit ton dépôt         |
+| tu copies-colles          | il exécute et vérifie |
+| une réponse               | une boucle            |
 
 ---
 
@@ -247,18 +253,20 @@ Bien outiller.
 
 ## Le contexte, c’est un fichier
 
-~~~markdown
+```markdown
 # Instructions pour les agents
 
 ## Langue
+
 - Répondre en français.
 - Tutoyer.
 
 ## Typographie
+
 - Espaces insécables avant : ; ! ? %
 - Guillemets anglais “ ”
 - Apostrophes typographiques ’
-~~~
+```
 
 L’agent le lit à chaque session.
 
@@ -270,22 +278,22 @@ Ce n’est pas de la magie, c’est de la mémoire.
 
 Ce qui entoure le modèle.
 
-- des outils : lire, écrire, exécuter
-- des skills : des procédures réutilisables
-- des serveurs MCP : des connecteurs
-- des permissions : une sandbox
-- une boucle : essayer, vérifier, corriger
+-   des outils : lire, écrire, exécuter
+-   des skills : des procédures réutilisables
+-   des serveurs MCP : des connecteurs
+-   des permissions : une sandbox
+-   une boucle : essayer, vérifier, corriger
 
 ---
 
 ## Tous les modèles ne se valent pas
 
-| Besoin | Modèle | Analogie |
-| --- | --- | --- |
-| simple | Haiku | le stagiaire rapide |
-| courant | Sonnet | le collègue polyvalent |
-| stratégique | Opus | l’expert |
-| frontière | Fable | l’architecte |
+| Besoin      | Modèle | Analogie               |
+| ----------- | ------ | ---------------------- |
+| simple      | Haiku  | le stagiaire rapide    |
+| courant     | Sonnet | le collègue polyvalent |
+| stratégique | Opus   | l’expert               |
+| frontière   | Fable  | l’architecte           |
 
 On ne paie pas le même prix pour ranger des virgules que pour refactorer un site.
 
@@ -293,12 +301,12 @@ On ne paie pas le même prix pour ranger des virgules que pour refactorer un sit
 
 ## Démo 1 — Un article
 
-~~~text
+```text
 Crée l’article de la conférence de vendredi.
 Respecte l’archétype, les conventions de nommage
 et la typographie française.
 Vérifie le build avant de conclure.
-~~~
+```
 
 L’agent lit `AGENTS.md`, lit l’archétype, crée le bundle, écrit le front matter, lance `hugo`, corrige, recommence.
 
@@ -308,9 +316,9 @@ L’agent lit `AGENTS.md`, lit l’archétype, crée le bundle, écrit le front 
 
 <img src="microclub-gif-ad/microclub_hugo_opencode_13_novembre.gif" alt="Publicité animée annonçant la conférence" />
 
-~~~sh
+```sh
 python scripts/animated-ad/animated-ad.py --date 2026-11-13 --format mp4
-~~~
+```
 
 `agenda.yaml` → Pillow → GIF et MP4 → WhatsApp.
 
@@ -334,26 +342,26 @@ C’est l’inventaire.
 
 ## Ce qui marche très bien
 
-- le contenu et sa mise en forme
-- le refactoring
-- les scripts et l’outillage
-- la documentation
-- les migrations répétitives
-- les vérifications automatiques
+-   le contenu et sa mise en forme
+-   le refactoring
+-   les scripts et l’outillage
+-   la documentation
+-   les migrations répétitives
+-   les vérifications automatiques
 
 ---
 
 ## Les pièges
 
-- il invente un fichier qui n’existe pas
-- il “corrige” ce qui n’était pas cassé
-- il optimise pour le prompt, pas pour le résultat
-- il oublie le contexte de la veille
-- il va vite, parfois trop vite
+-   il invente un fichier qui n’existe pas
+-   il “corrige” ce qui n’était pas cassé
+-   il optimise pour le prompt, pas pour le résultat
+-   il oublie le contexte de la veille
+-   il va vite, parfois trop vite
 
 ---
 
-## L’IA propose. L’humain dispose.
+## L’IA propose. L’humain dispose
 
 Je décide de ce qui est publié.
 
@@ -365,10 +373,10 @@ Je signe ce qui est en ligne.
 
 ## Combien ça coûte ?
 
-- un abonnement ou des jetons
-- quelques heures de relecture
-- un dépôt Git gratuit
-- un hébergement gratuit
+-   un abonnement ou des jetons
+-   quelques heures de relecture
+-   un dépôt Git gratuit
+-   un hébergement gratuit
 
 Le poste le plus cher reste le temps humain.
 
@@ -376,10 +384,10 @@ Le poste le plus cher reste le temps humain.
 
 ## Ce que ça change au Microclub
 
-- un membre qui ne code pas peut contribuer
-- le site devient un projet collectif
-- la revue reste humaine
-- les archives restent accessibles
+-   un membre qui ne code pas peut contribuer
+-   le site devient un projet collectif
+-   la revue reste humaine
+-   les archives restent accessibles
 
 ---
 
@@ -407,10 +415,10 @@ La différence, c’est la responsabilité.
 
 ## Questions
 
-- <https://microclub.ch>
-- <https://gohugo.io>
-- <https://blowfish.page>
-- <https://opencode.ai>
-- <https://github.com/NicHub/microclub>
+-   <https://microclub.ch>
+-   <https://gohugo.io>
+-   <https://blowfish.page>
+-   <https://opencode.ai>
+-   <https://github.com/NicHub/microclub>
 
 Nicolas Jeanmonod · Microclub · 13 novembre 2026
