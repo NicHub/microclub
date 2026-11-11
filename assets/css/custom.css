@@ -38,6 +38,26 @@
   height: 100%;
 }
 
+/* Accès automatique à la vue présentation des articles qui en disposent. */
+.presentation-switch {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1.5rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid rgb(var(--color-primary-400));
+  border-radius: 0.4rem;
+  background: rgb(var(--color-neutral-900) / 0.9);
+  color: rgb(var(--color-primary-300));
+  font-size: 0.85rem;
+  text-decoration: none;
+  backdrop-filter: blur(4px);
+}
+
+.presentation-switch:hover {
+  background: rgb(var(--color-primary-800) / 0.95);
+  color: rgb(var(--color-primary-100));
+}
+
 .mermaid svg {
   display: block;
   margin-inline: auto;

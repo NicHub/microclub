@@ -1,0 +1,340 @@
+/* Vue « présentation » d’un article (sortie Hugo « slides »).
+   Le contenu est le même que l’article : chaque <hr> du Markdown devient une
+   diapositive. Le rendu reprend l’esprit du thème noir d’Obsidian. */
+
+:root {
+  color-scheme: dark;
+  --deck-bg: #191919;
+  --deck-bg-soft: #202020;
+  --deck-fg: #e9e9e9;
+  --deck-muted: #9aa0a6;
+  --deck-accent: rgb(96, 172, 246);
+  --deck-rule: #333;
+  --deck-font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --deck-mono: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("../fonts/FiraCode-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body.deck-body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--deck-bg);
+  color: var(--deck-fg);
+  font-family: var(--deck-font);
+  line-height: 1.45;
+}
+
+.deck {
+  position: fixed;
+  inset: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Diapositives                                                               */
+/* -------------------------------------------------------------------------- */
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: clamp(1.5rem, 5vh, 4rem) clamp(1.5rem, 6vw, 6rem);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(2vw);
+  transition: opacity 220ms ease, transform 220ms ease, visibility 220ms;
+  /* Filet de sécurité : une diapositive trop dense défile au lieu d’être
+     tronquée. La barre est masquée pour ne pas trahir la mise en scène. */
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.slide::-webkit-scrollbar {
+  display: none;
+}
+
+.slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.slide > :first-child {
+  margin-top: 0;
+}
+
+.slide > :last-child {
+  margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Typographie                                                                */
+/* -------------------------------------------------------------------------- */
+
+.slide h1 {
+  margin: 0 0 0.35em;
+  color: #fff;
+  font-size: clamp(1.6rem, 3.6vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.slide h2 {
+  margin: 0.7em 0 0.15em;
+  color: var(--deck-accent);
+  font-size: clamp(1rem, 1.7vw, 1.5rem);
+  font-weight: 700;
+}
+
+.slide p {
+  margin: 0.35em 0;
+  max-width: 62ch;
+  font-size: clamp(0.95rem, 1.6vw, 1.45rem);
+}
+
+.slide ul,
+.slide ol {
+  margin: 0.4em 0;
+  padding-inline-start: 1.3em;
+  max-width: 62ch;
+  text-align: start;
+  font-size: clamp(0.9rem, 1.5vw, 1.35rem);
+}
+
+.slide li {
+  margin: 0.25em 0;
+}
+
+.slide li::marker {
+  color: var(--deck-accent);
+}
+
+.slide blockquote {
+  margin: 0.5em 0;
+  padding: 0.2em 1.1em;
+  max-width: 62ch;
+  border-inline-start: 3px solid var(--deck-accent);
+  text-align: start;
+  font-style: italic;
+}
+
+.slide blockquote p {
+  font-size: inherit;
+}
+
+.slide em {
+  opacity: 0.75;
+}
+
+.slide a {
+  color: var(--deck-accent);
+  text-decoration: none;
+}
+
+.slide a:hover {
+  text-decoration: underline;
+}
+
+/* Les titres rendus par le thème contiennent un lien d’ancrage : dans une
+   diapositive, il ne doit pas capter le clic ni changer le fragment d’URL. */
+.slide .heading-self-link {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+.slide .anchor {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Médias                                                                     */
+/* -------------------------------------------------------------------------- */
+
+.slide img {
+  max-width: 100%;
+  max-height: 60vh;
+  height: auto;
+  border-radius: 6px;
+  background: transparent;
+}
+
+/* Une diapositive qui porte un titre laisse moins de place à l’image. */
+.slide:has(h1) img,
+.slide:has(h2) img {
+  max-height: 46vh;
+}
+
+.slide figure {
+  margin: 0;
+}
+
+.slide figcaption {
+  margin-top: 0.5em;
+  color: var(--deck-muted);
+  font-size: clamp(0.75rem, 1.1vw, 1rem);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Code et tableaux                                                           */
+/* -------------------------------------------------------------------------- */
+
+.slide .highlight-wrapper,
+.slide pre {
+  max-width: min(92ch, 100%);
+}
+
+.slide pre {
+  margin: 0.5em 0;
+  padding: 0.9em 1.1em;
+  overflow-x: auto;
+  border: 1px solid var(--deck-rule);
+  border-radius: 8px;
+  font-family: var(--deck-mono);
+  font-size: clamp(0.7rem, 1.15vw, 1.05rem);
+  line-height: 1.4;
+  text-align: start;
+}
+
+.slide pre code {
+  font-family: inherit;
+}
+
+.slide table {
+  margin: 0.5em auto;
+  border-collapse: collapse;
+  font-size: clamp(0.7rem, 1.15vw, 1.05rem);
+}
+
+.slide th,
+.slide td {
+  padding: 0.35em 0.75em;
+  border: 1px solid var(--deck-rule);
+  text-align: start;
+}
+
+.slide th {
+  background: var(--deck-bg-soft);
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Habillage : progression, compteur, retour                                  */
+/* -------------------------------------------------------------------------- */
+
+.deck-hud {
+  position: fixed;
+  inset-inline: 0;
+  inset-block-end: 0;
+  pointer-events: none;
+}
+
+.deck-progress {
+  height: 3px;
+  background: rgb(255 255 255 / 0.08);
+}
+
+.deck-progress-bar {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--deck-accent);
+  transition: width 200ms ease;
+}
+
+.deck-counter {
+  position: fixed;
+  inset-inline-end: 1rem;
+  inset-block-end: 0.85rem;
+  margin: 0;
+  color: var(--deck-muted);
+  font-family: var(--deck-mono);
+  font-size: 0.75rem;
+}
+
+.deck-back {
+  position: fixed;
+  inset-inline-start: 1rem;
+  inset-block-end: 0.8rem;
+  color: var(--deck-muted);
+  font-size: 0.75rem;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.deck-back:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Impression et PDF                                                          */
+/* -------------------------------------------------------------------------- */
+
+@media print {
+  body.deck-body {
+    overflow: visible;
+    background: #fff;
+    color: #000;
+  }
+
+  .deck {
+    position: static;
+  }
+
+  .slide {
+    position: static;
+    height: 100vh;
+    padding: 1.5cm 2cm;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    overflow: hidden;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .slide h1 {
+    color: #000;
+  }
+
+  .slide h2,
+  .slide a {
+    color: #1d4ed8;
+  }
+
+  .deck-hud,
+  .deck-back {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide,
+  .deck-progress-bar {
+    transition: none;
+  }
+}

@@ -45,6 +45,17 @@ outputs:
     - RSS
     - JSON
 
+# Vue « présentation » d’un article, activée au cas par cas avec
+# `outputs: ["HTML", "slides"]` dans le front matter.
+# Elle produit <url de l’article>/slides/ à partir du même Markdown.
+outputFormats:
+  slides:
+    mediaType: text/html
+    baseName: index
+    path: slides
+    isHTML: true
+    notAlternative: true
+
 markup:
   goldmark:
     renderer:

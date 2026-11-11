@@ -1,0 +1,3 @@
+# Originaux des médias : conservés sur le disque, ni publiés ni versionnés.
+# Hugo ignore déjà les dossiers cachés ; cette règle évite en plus d’alourdir le dépôt.
+.originals/

@@ -1,0 +1,43 @@
+{{- $slides := split .Content "<hr>" -}}
+{{- $articleURL := "" -}}
+{{- range .OutputFormats -}}
+  {{- if eq (lower .Name) "html" -}}
+    {{- $articleURL = .RelPermalink -}}
+  {{- end -}}
+{{- end -}}
+{{- $css := resources.Get "css/slides.css" | minify | fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") -}}
+{{- $js := resources.Get "js/slides.js" | minify | fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") -}}
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="robots" content="noindex, follow">
+    <title>{{ .Title | plainify }} — présentation</title>
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  </head>
+  <body class="deck-body">
+    <main class="deck" id="deck">
+      {{- range $index, $slide := $slides }}
+        <section
+          class="slide{{ if eq $index 0 }} is-active{{ end }}"
+          data-slide="{{ add $index 1 }}"
+          aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
+          {{ $slide | safeHTML }}
+        </section>
+      {{- end }}
+    </main>
+
+    <div class="deck-hud" aria-hidden="true">
+      <div class="deck-progress"><span class="deck-progress-bar"></span></div>
+      <p class="deck-counter"><span class="deck-current">1</span> / {{ len $slides }}</p>
+    </div>
+
+    {{- with $articleURL }}
+      <a class="deck-back" href="{{ . }}">← Retour à l’article</a>
+    {{- end }}
+
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{{- if .Params.showPresentation -}}
+  {{- $slidesURL := printf "slides%s" .RelPermalink | relURL -}}
+  <a
+    class="presentation-switch"
+    href="{{ $slidesURL }}"
+    data-presentation-url="{{ $slidesURL }}"
+    accesskey="v"
+    title="Afficher en mode présentation (touche V)">Afficher en mode présentation</a>
+  {{- $switchJS := resources.Get "js/presentation-switch.js" | minify | fingerprint -}}
+  <script defer src="{{ $switchJS.RelPermalink }}" integrity="{{ $switchJS.Data.Integrity }}"></script>
+{{- end -}}
