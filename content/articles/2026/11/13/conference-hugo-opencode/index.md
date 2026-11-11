@@ -38,7 +38,7 @@ Nicolas Jeanmonod · Microclub · EPFL · 13 novembre 2026
 
 ---
 
-# Et en 2026 ?
+## Et en 2026 ?
 
 ![Évolution de l’homme vers le smartphone](images/evolution-apple.jpg)
 
@@ -46,13 +46,13 @@ Le sommet de l’évolution, c’est un smartphone.
 
 ---
 
-# Ce soir, une seule question
+## Ce soir, une seule question
 
 Comment un club de micro-informatique de 1976 fait-il son site web en 2026 ?
 
 ---
 
-# Réponse courte
+## Réponse courte
 
 Un site statique.
 
@@ -64,7 +64,7 @@ Et un humain qui décide.
 
 ---
 
-# Le site, en chiffres
+## Le site, en chiffres
 
 | Élément | Valeur |
 | --- | --- |
@@ -77,7 +77,7 @@ Et un humain qui décide.
 
 ---
 
-# D’où l’on vient
+## D’où l’on vient
 
 WordPress, quinze ans d’archives.
 
@@ -90,7 +90,7 @@ Et une dette : mises à jour, plugins, sécurité.
 
 ---
 
-# L’idée
+## L’idée
 
 Un site statique.
 
@@ -103,7 +103,7 @@ Des fichiers, rien de plus.
 
 ---
 
-# Hugo
+## Hugo
 
 Un générateur de site statique, écrit en Go.
 
@@ -114,7 +114,7 @@ Un générateur de site statique, écrit en Go.
 
 ---
 
-# Hugo en trois dossiers
+## Hugo en trois dossiers
 
 ~~~text
 content/     les textes, en Markdown
@@ -127,7 +127,7 @@ public/      le site, prêt à servir
 
 ---
 
-# Le contenu, c’est du texte
+## Le contenu, c’est du texte
 
 ~~~markdown
 ## Un titre
@@ -144,7 +144,7 @@ Un fichier, un article.
 
 ---
 
-# Blowfish
+## Blowfish
 
 Un thème Hugo.
 
@@ -158,7 +158,7 @@ Un thème, pas un CMS.
 
 ---
 
-# Git, c’est la base de données
+## Git, c’est la base de données
 
 Chaque article est un fichier.
 
@@ -174,7 +174,7 @@ On peut signer.
 
 ---
 
-# De mon clavier à votre écran
+## De mon clavier à votre écran
 
 ~~~text
 git push
@@ -192,7 +192,7 @@ Le déploiement est aussi planifié chaque nuit à minuit UTC.
 
 ---
 
-# OpenCode
+## OpenCode
 
 Un agent de code open source.
 
@@ -208,7 +208,7 @@ Dans le terminal, avec le modèle de son choix.
 
 ---
 
-# Chatbot ou agent ?
+## Chatbot ou agent ?
 
 | Un chatbot | Un agent |
 | --- | --- |
@@ -219,23 +219,23 @@ Dans le terminal, avec le modèle de son choix.
 
 ---
 
-# Les UX des IA
+## Les UX des IA
 
-## Prompt engineering
+### Prompt engineering
 
 Bien demander.
 
-## Context engineering
+### Context engineering
 
 Bien informer.
 
-## Harness engineering
+### Harness engineering
 
 Bien outiller.
 
 ---
 
-# À regarder
+## À regarder
 
 > Ce que j’apprendrais à la place du Prompt Engineering en 2027.
 >
@@ -245,7 +245,7 @@ Bien outiller.
 
 ---
 
-# Le contexte, c’est un fichier
+## Le contexte, c’est un fichier
 
 ~~~markdown
 # Instructions pour les agents
@@ -266,7 +266,7 @@ Ce n’est pas de la magie, c’est de la mémoire.
 
 ---
 
-# Le harnais
+## Le harnais
 
 Ce qui entoure le modèle.
 
@@ -278,7 +278,7 @@ Ce qui entoure le modèle.
 
 ---
 
-# Tous les modèles ne se valent pas
+## Tous les modèles ne se valent pas
 
 | Besoin | Modèle | Analogie |
 | --- | --- | --- |
@@ -291,7 +291,7 @@ On ne paie pas le même prix pour ranger des virgules que pour refactorer un sit
 
 ---
 
-# Démo 1 — Un article
+## Démo 1 — Un article
 
 ~~~text
 Crée l’article de la conférence de vendredi.
@@ -304,7 +304,7 @@ L’agent lit `AGENTS.md`, lit l’archétype, crée le bundle, écrit le front 
 
 ---
 
-# Démo 2 — La publicité animée
+## Démo 2 — La publicité animée
 
 <img src="microclub-gif-ad/microclub_hugo_opencode_13_novembre.gif" alt="Publicité animée annonçant la conférence" />
 
@@ -316,7 +316,7 @@ python scripts/animated-ad/animated-ad.py --date 2026-11-13 --format mp4
 
 ---
 
-# Démo 3 — La migration
+## Démo 3 — La migration
 
 304 articles WordPress deviennent du Markdown.
 
@@ -332,7 +332,7 @@ C’est l’inventaire.
 
 ---
 
-# Ce qui marche très bien
+## Ce qui marche très bien
 
 - le contenu et sa mise en forme
 - le refactoring
@@ -343,7 +343,7 @@ C’est l’inventaire.
 
 ---
 
-# Les pièges
+## Les pièges
 
 - il invente un fichier qui n’existe pas
 - il “corrige” ce qui n’était pas cassé
@@ -353,7 +353,7 @@ C’est l’inventaire.
 
 ---
 
-# L’IA propose. L’humain dispose.
+## L’IA propose. L’humain dispose.
 
 Je décide de ce qui est publié.
 
@@ -363,7 +363,7 @@ Je signe ce qui est en ligne.
 
 ---
 
-# Combien ça coûte ?
+## Combien ça coûte ?
 
 - un abonnement ou des jetons
 - quelques heures de relecture
@@ -374,7 +374,7 @@ Le poste le plus cher reste le temps humain.
 
 ---
 
-# Ce que ça change au Microclub
+## Ce que ça change au Microclub
 
 - un membre qui ne code pas peut contribuer
 - le site devient un projet collectif
@@ -383,7 +383,7 @@ Le poste le plus cher reste le temps humain.
 
 ---
 
-# Pour essayer ce soir
+## Pour essayer ce soir
 
 1. Installe Hugo.
 2. Installe OpenCode.
@@ -395,7 +395,7 @@ Le reste, c’est de la pratique.
 
 ---
 
-# Conclusion
+## Conclusion
 
 Ce site n’a pas été écrit par une IA.
 
@@ -405,7 +405,7 @@ La différence, c’est la responsabilité.
 
 ---
 
-# Questions
+## Questions
 
 - <https://microclub.ch>
 - <https://gohugo.io>

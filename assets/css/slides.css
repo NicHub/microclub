@@ -93,7 +93,8 @@ body.deck-body {
 /* Typographie                                                                */
 /* -------------------------------------------------------------------------- */
 
-.slide h1 {
+.slide h1,
+.slide h2 {
   margin: 0 0 0.35em;
   color: #fff;
   font-size: clamp(1.6rem, 3.6vw, 3.4rem);
@@ -102,7 +103,7 @@ body.deck-body {
   letter-spacing: -0.02em;
 }
 
-.slide h2 {
+.slide h3 {
   margin: 0.7em 0 0.15em;
   color: var(--deck-accent);
   font-size: clamp(1rem, 1.7vw, 1.5rem);
@@ -177,7 +178,9 @@ body.deck-body {
 .slide img {
   max-width: 100%;
   max-height: 60vh;
-  height: auto;
+  width: auto;
+  height: auto !important;
+  object-fit: contain;
   border-radius: 6px;
   background: transparent;
 }
