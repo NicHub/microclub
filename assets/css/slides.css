@@ -244,6 +244,11 @@ body.deck-body {
   font-weight: 700;
 }
 
+/* Réduit le contenu qui suit immédiatement un titre de niveau 4. */
+.slide h4 + * {
+  font-size: clamp(0.8rem, 1.2vw, 1.1rem);
+}
+
 /* -------------------------------------------------------------------------- */
 /* Habillage : progression, compteur, retour                                  */
 /* -------------------------------------------------------------------------- */
