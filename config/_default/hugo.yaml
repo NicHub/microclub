@@ -61,6 +61,12 @@ markup:
     renderer:
       unsafe: true
 
+# Autorise les pages HTML autonomes dans content/ (par exemple cover/index.html).
+# Le format Org reste bloqué par défaut.
+security:
+  allowContent:
+    - '! ^text/org$'
+
 params:
   description: Le premier club informatique de Suisse romande, fondé en 1976. Échanges, électronique, programmation et culture numérique.
   founded: 1976

@@ -24,7 +24,7 @@
           class="slide{{ if eq $index 0 }} is-active{{ end }}"
           data-slide="{{ add $index 1 }}"
           aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}">
-          {{ $slide | safeHTML }}
+          {{ $slide | replaceRE `loading="lazy"` `loading="eager"` | safeHTML }}
         </section>
       {{- end }}
     </main>

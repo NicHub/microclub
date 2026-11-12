@@ -18,25 +18,108 @@ showHeadingAnchors: false
 showPagination: false
 ---
 
-![Affiche de la conférence HUGO & OPENCODE](images/featured.jpg)
+![Cover](images/cover.png)
+
+---
+
+## MICRoCLUB
+
+![Logo HUGO](images/hugo-logo-wide.webp)
+
+![Logo opencode](images/opencode-wordmark-dark.svg)
 
 > Nicolas Jeanmonod · Microclub · EPFL · 13 novembre 2026
 
 ---
 
-![La marche du progrès, illustration de 1965](images/marche-du-progres-1965.jpg)
+![Logo HUGO](images/hugo-logo-wide.webp)
+
+-   Hugo est un générateur de sites statiques.
 
 ---
 
-![The Road to Homo Sapiens, illustration de 1965](images/route-vers-homo-sapiens-1965.jpg)
+## Quelques façons de générer des sites web
 
-_La marche du progrès_, Rudolph Zallinger, 1965.
+---
+
+### À la main, en écrivant chaque fichier
+
+HTML, CSS, JS
+
+![Créer un site web à la main](images/categorie-a-la-main.png)
+
+---
+
+### Avec un CMS
+
+WordPress, Joomla,...
+
+![Créer un site avec un CMS](images/categorie-cms.png)
+
+---
+
+### Avec un constructeur visuel / no-code
+
+Wix, Squarespace, Webflow, Framer,...
+
+![Créer un site avec un constructeur visuel](images/categorie-no-code.png)
+
+---
+
+### Avec un générateur de sites statiques
+
+Hugo, Jekyll, Quarto,...
+
+![Générer un site statique](images/categorie-site-statique.png)
+
+---
+
+## Avantages d’un générateur de sites statiques
+
+-   Simple à comprendre et à maintenir\
+    _Les pages sont de simples documents textes_
+-   Les fichiers textes rendent l’utilisation de git possible
+    -   versionnage
+    -   collaboration
+    -   synchronisation
+-   Rapide à générer et à servir\
+    _surtout avec Hugo_
+-   Peu couteux à héberger\
+    _Un “petit” site est hébergé gratuitement sur des forges comme GitHub_
+-   Plus sûr : pas de base de données ni de code serveur à protéger\
+    _Par ex. insensible à “php2shell” : deux failles critiques permettant l’exécution de code à distance sans authentification_
+-   Très rapide à servir puisque les fichiers sont générés à l’avance
+
+---
+
+![Logo opencode](images/opencode-wordmark-dark.svg)
+
+---
+
+## l’IA aujourd’hui
+
+---
+
+<!--
+
+## La marche du progrès de Rudolph F. Zallinger, 1965
+
+-   <https://en.wikipedia.org/wiki/March_of_Progress>
+-   <https://fr.wikipedia.org/wiki/Marche_du_Progr%C3%A8s>
+
+Voir aussi:
 
 > Ce qu’on a appris à l’école et qui n’est plus vrai aujourd’hui\
 > Scilabus\
 > <https://www.youtube.com/watch?v=rB-s51uPACc>
-<!--
--->
+
+ -->
+
+![La marche du progrès en 6 étapes](images/la-marche-du-progres-1965-6-etapes.jpg)
+
+---
+
+![La marche du progrès en 15 étapes](images/la-marche-du-progres-1965-15-etapes.jpg)
 
 ---
 
