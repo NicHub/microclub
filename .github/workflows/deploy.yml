@@ -2,7 +2,7 @@ name: Build and deploy
 
 on:
   push:
-    branches: [blowfish]
+    branches: [main]
   schedule:
     # Minuit UTC : 01 h en hiver, 02 h en été en Suisse.
     - cron: '0 0 * * *'
