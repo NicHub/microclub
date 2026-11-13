@@ -3,6 +3,7 @@ title: "Camera gigapixel?"
 date: "2009-03-09T22:13:23"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/03/09/camera-gigapixel.svg"
 categories: ["Microclub"]
 tags: ["photos", "securite"]
 url: "/2009/03/09/camera-gigapixel/"

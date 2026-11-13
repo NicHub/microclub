@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Palmarès des virus de l&#x27;année 2007</title>
+  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : Palmarès des virus de l&#x27;année 2007. Catégorie : SÉCURITÉ.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1a0713"/><stop offset=".52" stop-color="#3b0a2a"/><stop offset="1" stop-color="#4c0519"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#f43f5e" stop-opacity=".42"/><stop offset="1" stop-color="#f43f5e" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#fb7185"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#f472b6" opacity=".14"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
+  <g fill="none" stroke="#fb7185" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="460" ry="230" /><ellipse cx="800" cy="310" rx="565" ry="305" /><ellipse cx="800" cy="310" rx="670" ry="380" /></g>
+  <circle cx="541" cy="376" r="3" fill="#f472b6" opacity="0.5"/><circle cx="668" cy="335" r="5" fill="#f472b6" opacity="0.65"/><circle cx="235" cy="351" r="5" fill="#f472b6" opacity="0.5"/><circle cx="1111" cy="698" r="4" fill="#f472b6" opacity="0.35"/><circle cx="1042" cy="82" r="4" fill="#f472b6" opacity="0.35"/><circle cx="878" cy="790" r="3" fill="#f472b6" opacity="0.35"/><circle cx="1357" cy="819" r="4" fill="#f472b6" opacity="0.35"/><circle cx="551" cy="261" r="3" fill="#f472b6" opacity="0.65"/><circle cx="523" cy="173" r="4" fill="#f472b6" opacity="0.65"/><circle cx="1172" cy="586" r="3" fill="#f472b6" opacity="0.5"/>
+  <g fill="#f8fafc" opacity=".45">
+    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  </g>
+  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
+  <circle cx="800" cy="270" r="150" fill="none" stroke="#fb7185" stroke-width="3" opacity=".65"/>
+  <circle cx="800" cy="270" r="168" fill="none" stroke="#f472b6" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
+  <circle cx="800" cy="270" r="126" fill="#f43f5e" opacity=".18" filter="url(#glow)"/>
+  <g transform="translate(800 270)">
+      <path d="M0-98l82 34v68c0 50-38 82-82 96-44-14-82-46-82-96v-68z" fill="none" stroke="#fb7185" stroke-width="10" stroke-linejoin="round"/>
+      <path d="M-35 0l25 27 49-60" fill="none" stroke="#f472b6" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <rect x="740" y="510.3" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="800" y="586.8" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">Palmarès des virus de l&#x27;année</tspan><tspan x="800" dy="90.5">2007</tspan></text>
+  <path d="M150 820H1450" stroke="#fb7185" stroke-width="2" opacity=".24"/>
+  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#fb7185">MICROCLUB</text>
+  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">SÉCURITÉ</text>
+</svg>

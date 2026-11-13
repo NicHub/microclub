@@ -3,6 +3,7 @@ title: "Python : un petit Sudoku pour commencer"
 date: "2008-10-12T11:24:46"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/10/12/python-un-petit-sudoku-pour-commencer.svg"
 categories: ["Microclub"]
 tags: ["programmation", "python"]
 url: "/2008/10/12/python-un-petit-sudoku-pour-commencer/"

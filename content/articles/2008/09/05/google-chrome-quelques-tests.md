@@ -3,6 +3,7 @@ title: "Google Chrome – quelques tests"
 date: "2008-09-05T20:46:50"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/09/05/google-chrome-quelques-tests.svg"
 categories: ["Microclub"]
 tags: ["chrome", "google", "web"]
 url: "/2008/09/05/google-chrome-quelques-tests/"

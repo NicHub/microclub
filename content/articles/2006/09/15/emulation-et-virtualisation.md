@@ -3,6 +3,7 @@ title: "Emulation et Virtualisation"
 date: "2006-09-15T19:37:25"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2006/09/15/emulation-et-virtualisation.svg"
 categories: ["Microclub"]
 tags: ["emulation", "systeme-dexploitation", "vmware"]
 url: "/2006/09/15/emulation-et-virtualisation/"

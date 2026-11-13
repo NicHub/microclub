@@ -3,6 +3,7 @@ title: "P19 ça avance"
 date: "2019-02-18T20:42:35"
 lastmod: "2019-02-26T17:06:01"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/02/18/p19-ca-avance.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/02/18/p19-ca-avance/"

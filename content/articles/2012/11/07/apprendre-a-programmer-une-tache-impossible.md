@@ -3,6 +3,7 @@ title: "Apprendre à programmer : une tâche impossible ?"
 date: "2012-11-07T07:10:50"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2012/11/07/apprendre-a-programmer-une-tache-impossible.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2012/11/07/apprendre-a-programmer-une-tache-impossible/"

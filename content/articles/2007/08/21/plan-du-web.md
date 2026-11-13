@@ -3,6 +3,7 @@ title: "Plan du Web"
 date: "2007-08-21T22:08:08"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/08/21/plan-du-web.svg"
 categories: ["Microclub"]
 tags: ["divers"]
 url: "/2007/08/21/plan-du-web/"

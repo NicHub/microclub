@@ -3,6 +3,7 @@ title: "P19 le premier proto est parti en production !"
 date: "2019-02-26T17:12:42"
 lastmod: "2019-02-27T09:10:40"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/02/26/p19-le-premier-proto-est-parti-en-production.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/02/26/p19-le-premier-proto-est-parti-en-production/"

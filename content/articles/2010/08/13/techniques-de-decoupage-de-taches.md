@@ -3,6 +3,7 @@ title: "Techniques de découpage de tâches"
 date: "2010-08-13T21:25:07"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2010/08/13/techniques-de-decoupage-de-taches.svg"
 categories: ["Microclub"]
 tags: ["embarque", "hardware", "parallele", "programmation", "software", "systeme-dexploitation"]
 url: "/2010/08/13/techniques-de-decoupage-de-taches/"

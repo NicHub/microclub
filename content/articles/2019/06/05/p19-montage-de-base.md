@@ -3,6 +3,7 @@ title: "P19 Montage de base"
 date: "2019-06-05T10:20:11"
 lastmod: "2019-06-05T10:20:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/06/05/p19-montage-de-base.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/06/05/p19-montage-de-base/"

@@ -3,6 +3,7 @@ title: "La Macro F"
 date: "2025-03-20T18:45:12"
 lastmod: "2025-03-20T19:33:46"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/auto/2025/03/20/la-macro-f.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/03/20/la-macro-f/"

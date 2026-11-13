@@ -3,6 +3,7 @@ title: "Récupération d’un ancien programme BASIC"
 date: "2013-12-27T20:36:40"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/12/27/recuperation-dun-ancien-programme-basic.svg"
 categories: ["Microclub"]
 tags: ["basic", "langage", "lpc", "programmation", "python", "systeme-dexploitation", "windows"]
 url: "/2013/12/27/recuperation-dun-ancien-programme-basic/"

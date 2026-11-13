@@ -3,6 +3,7 @@ title: "Festival de robotique – photos de Michel Vonlanthen"
 date: "2009-01-18T10:53:24"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/01/18/festival-de-robotique-photos-de-michel-vonlanthen.svg"
 categories: ["Microclub"]
 tags: ["epfl", "hardware", "initiation", "photos", "radio-amateur", "robot"]
 url: "/2009/01/18/festival-de-robotique-photos-de-michel-vonlanthen/"

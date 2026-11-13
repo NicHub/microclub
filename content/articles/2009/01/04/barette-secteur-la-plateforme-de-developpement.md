@@ -3,6 +3,7 @@ title: "Barrette secteur – la plateforme de développement"
 date: "2009-01-04T21:21:58"
 lastmod: "2015-11-28T17:43:07"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/01/04/barette-secteur-la-plateforme-de-developpement.svg"
 categories: ["Microclub"]
 tags: ["ecologie", "hardware", "linux", "processeurs", "programmation"]
 url: "/2009/01/04/barette-secteur-la-plateforme-de-developpement/"

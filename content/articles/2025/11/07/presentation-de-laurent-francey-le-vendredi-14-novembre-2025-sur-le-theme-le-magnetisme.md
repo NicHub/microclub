@@ -3,6 +3,7 @@ title: "Présentation de Laurent Francey, le vendredi 14 novembre 2025, sur le t
 date: "2025-11-07T17:34:26"
 lastmod: "2025-11-07T17:34:27"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/magnetisme.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/11/07/presentation-de-laurent-francey-le-vendredi-14-novembre-2025-sur-le-theme-le-magnetisme/"

@@ -3,6 +3,7 @@ title: "Petit Lexique INTERNET à l'usage des mal branchés."
 date: "1996-04-08T15:44:14"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/1996/04/08/petit-lexique-internet-a-lusage-des-mal-branches.svg"
 categories: ["Microclub"]
 tags: []
 url: "/1996/04/08/petit-lexique-internet-a-lusage-des-mal-branches/"

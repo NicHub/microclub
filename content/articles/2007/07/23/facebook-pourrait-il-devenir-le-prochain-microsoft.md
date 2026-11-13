@@ -3,6 +3,7 @@ title: "Facebook pourrait-il devenir le prochain Microsoft?"
 date: "2007-07-23T18:22:38"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/07/23/facebook-pourrait-il-devenir-le-prochain-microsoft.svg"
 categories: ["Microclub"]
 tags: ["divers", "facebook"]
 url: "/2007/07/23/facebook-pourrait-il-devenir-le-prochain-microsoft/"

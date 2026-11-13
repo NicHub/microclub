@@ -3,6 +3,7 @@ title: "Les jours noirs de la crypto-monnaie – Agence Science-Presse"
 date: "2014-03-05T09:59:32"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2014/03/05/les-jours-noirs-de-la-crypto-monnaie-agence-science-presse.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2014/03/05/les-jours-noirs-de-la-crypto-monnaie-agence-science-presse/"

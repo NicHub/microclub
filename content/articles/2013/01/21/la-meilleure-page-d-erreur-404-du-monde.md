@@ -3,6 +3,7 @@ title: "La meilleure page d’ « erreur 404 » du monde"
 date: "2013-01-21T07:25:22"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/01/21/la-meilleure-page-d-erreur-404-du-monde.svg"
 categories: ["Microclub"]
 tags: ["javascript"]
 url: "/2013/01/21/la-meilleure-page-d-erreur-404-du-monde/"

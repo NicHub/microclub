@@ -3,6 +3,7 @@ title: "De la mailing list à Twitter"
 date: "2011-11-04T17:14:07"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/11/04/de-la-mailing-list-a-twitter.svg"
 categories: ["Microclub"]
 tags: ["blog", "forum", "mailing-list", "twitter"]
 url: "/2011/11/04/de-la-mailing-list-a-twitter/"

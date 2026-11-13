@@ -3,6 +3,7 @@ title: "Ajout d'un routeur WiFi"
 date: "2008-05-27T18:00:25"
 lastmod: "2015-04-24T23:21:15"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/05/27/ajout-dun-routeur-wifi.svg"
 categories: ["Microclub"]
 tags: ["reseau"]
 url: "/2008/05/27/ajout-dun-routeur-wifi/"

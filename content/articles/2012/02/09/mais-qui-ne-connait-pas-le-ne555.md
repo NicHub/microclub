@@ -3,6 +3,7 @@ title: "Mais qui ne connaît pas le NE555"
 date: "2012-02-09T12:08:44"
 lastmod: "2015-04-24T23:22:39"
 author: "franic"
+featureimage: "images/articles/auto/2012/02/09/mais-qui-ne-connait-pas-le-ne555.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2012/02/09/mais-qui-ne-connait-pas-le-ne555/"

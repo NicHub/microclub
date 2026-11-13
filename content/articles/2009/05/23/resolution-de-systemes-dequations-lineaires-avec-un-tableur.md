@@ -3,6 +3,7 @@ title: "Résolution de systèmes d'équations linéaires avec un tableur"
 date: "2009-05-23T13:51:09"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/05/23/resolution-de-systemes-dequations-lineaires-avec-un-tableur.svg"
 categories: ["Microclub"]
 tags: ["excel", "google-docs", "maths", "open-office"]
 url: "/2009/05/23/resolution-de-systemes-dequations-lineaires-avec-un-tableur/"

@@ -3,6 +3,7 @@ title: "Une chaine HiFi Spotify à base de Raspberry Pi | Korben"
 date: "2013-04-04T11:15:40"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/04/04/une-chaine-hifi-spotify-a-base-de-raspberry-pi-korben.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2013/04/04/une-chaine-hifi-spotify-a-base-de-raspberry-pi-korben/"

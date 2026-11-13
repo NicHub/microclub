@@ -3,6 +3,7 @@ title: "Idée reçue : Comparer la puissance de deux ordinateurs, c’est facile
 date: "2013-04-22T11:28:29"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/04/22/idee-recue-comparer-la-puissance-de-deux-ordinateurs-cest-facile.svg"
 categories: ["Microclub"]
 tags: ["ordinateurs", "puissance"]
 url: "/2013/04/22/idee-recue-comparer-la-puissance-de-deux-ordinateurs-cest-facile/"

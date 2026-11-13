@@ -3,6 +3,7 @@ title: "Vive Bill!"
 date: "1995-09-03T15:36:51"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/1995/09/03/vive-bill.svg"
 categories: ["Microclub"]
 tags: []
 url: "/1995/09/03/vive-bill/"

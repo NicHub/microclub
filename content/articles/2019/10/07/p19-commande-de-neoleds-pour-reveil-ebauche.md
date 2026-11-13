@@ -3,6 +3,7 @@ title: "P19 – Commande de NEOLEDs pour réveil (ébauche)"
 date: "2019-10-07T19:58:24"
 lastmod: "2019-10-07T20:14:08"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/10/07/p19-commande-de-neoleds-pour-reveil-ebauche.svg"
 categories: ["Microclub"]
 tags: ["esp32", "neoled", "p19"]
 url: "/2019/10/07/p19-commande-de-neoleds-pour-reveil-ebauche/"

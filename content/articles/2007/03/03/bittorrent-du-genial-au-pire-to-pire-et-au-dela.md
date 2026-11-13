@@ -3,6 +3,7 @@ title: "BitTorrent : du génial au pire-to-pire et au delà"
 date: "2007-03-03T22:02:32"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/03/03/bittorrent-du-genial-au-pire-to-pire-et-au-dela.svg"
 categories: ["Microclub"]
 tags: ["bittorrent", "p2p"]
 url: "/2007/03/03/bittorrent-du-genial-au-pire-to-pire-et-au-dela/"

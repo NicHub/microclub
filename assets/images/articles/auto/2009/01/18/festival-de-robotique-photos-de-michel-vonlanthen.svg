@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Festival de robotique – photos de Michel Vonlanthen</title>
+  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : Festival de robotique – photos de Michel Vonlanthen. Catégorie : VIE DU CLUB.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1a1206"/><stop offset=".52" stop-color="#3a2408"/><stop offset="1" stop-color="#451a03"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#f59e0b" stop-opacity=".42"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#f59e0b" opacity=".14"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
+  <g fill="none" stroke="#fbbf24" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="505" ry="305" /><ellipse cx="800" cy="310" rx="610" ry="380" /><ellipse cx="800" cy="310" rx="715" ry="455" /></g>
+  <circle cx="794" cy="555" r="5" fill="#f59e0b" opacity="0.65"/><circle cx="1032" cy="462" r="3" fill="#f59e0b" opacity="0.5"/><circle cx="628" cy="335" r="3" fill="#f59e0b" opacity="0.5"/><circle cx="690" cy="286" r="5" fill="#f59e0b" opacity="0.5"/><circle cx="973" cy="702" r="4" fill="#f59e0b" opacity="0.35"/><circle cx="1268" cy="518" r="4" fill="#f59e0b" opacity="0.5"/><circle cx="835" cy="589" r="3" fill="#f59e0b" opacity="0.35"/><circle cx="1026" cy="623" r="5" fill="#f59e0b" opacity="0.35"/><circle cx="1091" cy="403" r="5" fill="#f59e0b" opacity="0.35"/><circle cx="1155" cy="678" r="5" fill="#f59e0b" opacity="0.65"/>
+  <g fill="#f8fafc" opacity=".45">
+    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  </g>
+  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
+  <circle cx="800" cy="270" r="150" fill="none" stroke="#fbbf24" stroke-width="3" opacity=".65"/>
+  <circle cx="800" cy="270" r="168" fill="none" stroke="#f59e0b" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
+  <circle cx="800" cy="270" r="126" fill="#f59e0b" opacity=".18" filter="url(#glow)"/>
+  <g transform="translate(800 270)">
+      <rect x="-84" y="-64" width="168" height="148" rx="20" fill="none" stroke="#fbbf24" stroke-width="9"/>
+      <path d="M-84-18h168" stroke="#fbbf24" stroke-width="9"/>
+      <path d="M-42-88v36M42-88v36" stroke="#f59e0b" stroke-width="9" stroke-linecap="round"/>
+      <g fill="#f59e0b"><circle cx="-46" cy="18" r="8"/><circle cx="0" cy="18" r="8"/><circle cx="46" cy="18" r="8"/><circle cx="-46" cy="56" r="8"/><circle cx="0" cy="56" r="8"/></g>
+      <circle cx="46" cy="56" r="8" fill="#fb7185"/></g>
+  <rect x="740" y="510.3" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="800" y="586.8" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">Festival de robotique – photos</tspan><tspan x="800" dy="90.5">de Michel Vonlanthen</tspan></text>
+  <path d="M150 820H1450" stroke="#fbbf24" stroke-width="2" opacity=".24"/>
+  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#fbbf24">MICROCLUB</text>
+  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">VIE DU CLUB</text>
+</svg>

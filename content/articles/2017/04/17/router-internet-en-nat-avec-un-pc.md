@@ -3,6 +3,7 @@ title: "Router Internet en NAT avec un PC"
 date: "2017-04-17T21:05:53"
 lastmod: "2017-05-01T17:37:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2017/04/17/router-internet-en-nat-avec-un-pc.svg"
 categories: ["Articles", "Microclub"]
 tags: ["embarque", "ethernet", "lan", "linux", "nat", "reseau", "software", "systeme-dexploitation", "web", "wi-fi", "windows"]
 url: "/2017/04/17/router-internet-en-nat-avec-un-pc/"

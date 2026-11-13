@@ -3,6 +3,7 @@ title: "Newsletter robotique – décembre 2012"
 date: "2012-12-18T22:23:07"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2012/12/18/newsletter-robotique-decembre-2012.svg"
 categories: ["Microclub"]
 tags: ["non-classe", "robotique"]
 url: "/2012/12/18/newsletter-robotique-decembre-2012/"

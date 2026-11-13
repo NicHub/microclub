@@ -3,6 +3,7 @@ title: "Enfer CPL"
 date: "2007-11-26T13:03:48"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/11/26/enfer-cpl.svg"
 categories: ["Microclub"]
 tags: ["hardware", "reseau"]
 url: "/2007/11/26/enfer-cpl/"

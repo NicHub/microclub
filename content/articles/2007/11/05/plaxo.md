@@ -3,6 +3,7 @@ title: "Plaxo"
 date: "2007-11-05T23:07:44"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/11/05/plaxo.svg"
 categories: ["Microclub"]
 tags: ["plaxo", "social"]
 url: "/2007/11/05/plaxo/"

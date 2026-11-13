@@ -3,6 +3,7 @@ title: "les bases du marketing sur facebook"
 date: "2007-12-10T15:14:02"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/12/10/les-bases-du-marketing-sur-facebook.svg"
 categories: ["Microclub"]
 tags: ["facebook", "marketing"]
 url: "/2007/12/10/les-bases-du-marketing-sur-facebook/"

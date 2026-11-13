@@ -3,6 +3,7 @@ title: "TV connectée"
 date: "2015-05-06T20:59:46"
 lastmod: "2016-02-02T20:06:52"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2015/05/06/tv-connectee.svg"
 categories: ["Articles", "Microclub"]
 tags: ["4k", "dlna", "gadgets", "hdmi", "m4v", "musique", "nas", "nfc", "photos", "reseau", "samsung", "scart", "tv", "usb", "vhs", "video", "web", "wifi", "yuv"]
 url: "/2015/05/06/tv-connectee/"

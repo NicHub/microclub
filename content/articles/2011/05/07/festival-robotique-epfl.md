@@ -3,6 +3,7 @@ title: "Festival Robotique EPFL"
 date: "2011-05-07T22:00:04"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/05/07/festival-robotique-epfl.svg"
 categories: ["Microclub"]
 tags: ["non-classe", "robot-festival-stand"]
 url: "/2011/05/07/festival-robotique-epfl/"

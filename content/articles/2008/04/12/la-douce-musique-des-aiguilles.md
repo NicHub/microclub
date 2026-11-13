@@ -3,6 +3,7 @@ title: "La douce musique des aiguilles"
 date: "2008-04-12T07:08:22"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/04/12/la-douce-musique-des-aiguilles.svg"
 categories: ["Microclub"]
 tags: ["hardware", "musique", "nostalgie", "printer"]
 url: "/2008/04/12/la-douce-musique-des-aiguilles/"

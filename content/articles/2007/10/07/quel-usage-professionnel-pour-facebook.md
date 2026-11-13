@@ -3,6 +3,7 @@ title: "Quel usage professionnel pour Facebook ?"
 date: "2007-10-07T17:35:54"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/10/07/quel-usage-professionnel-pour-facebook.svg"
 categories: ["Microclub"]
 tags: ["facebook", "linkedin", "social"]
 url: "/2007/10/07/quel-usage-professionnel-pour-facebook/"

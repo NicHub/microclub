@@ -3,6 +3,7 @@ title: "Conférence \"vidéo surveillance\" – lieu de rendez-vous"
 date: "2010-03-16T19:58:43"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2010/03/16/conference-video-surveillance-lieu-de-rendez-vous.svg"
 categories: ["Microclub"]
 tags: ["histoire", "site", "video"]
 url: "/2010/03/16/conference-video-surveillance-lieu-de-rendez-vous/"

@@ -3,6 +3,7 @@ title: "Echanger le SSD sur PC portable"
 date: "2019-10-27T20:04:05"
 lastmod: "2019-10-27T20:04:06"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/10/27/echanger-le-ssd-sur-pc-portable.svg"
 categories: ["Articles", "Microclub"]
 tags: []
 url: "/2019/10/27/echanger-le-ssd-sur-pc-portable/"

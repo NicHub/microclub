@@ -3,6 +3,7 @@ title: "WiFi versus PowerLine"
 date: "2008-06-01T15:56:21"
 lastmod: "2015-04-24T23:21:15"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/06/01/wifi-versus-powerline.svg"
 categories: ["Microclub"]
 tags: ["performances", "plc", "reseau", "site", "wifi"]
 url: "/2008/06/01/wifi-versus-powerline/"

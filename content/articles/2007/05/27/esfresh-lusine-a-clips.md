@@ -3,6 +3,7 @@ title: "esFresh, l'usine à clips"
 date: "2007-05-27T18:12:58"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/05/27/esfresh-lusine-a-clips.svg"
 categories: ["Microclub"]
 tags: ["esfresh", "finetune", "ilike", "last-fm", "mashup", "musique", "non-classe", "video", "youtube"]
 url: "/2007/05/27/esfresh-lusine-a-clips/"

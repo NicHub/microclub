@@ -3,6 +3,7 @@ title: "Les Finesses de Python"
 date: "2018-06-02T08:40:33"
 lastmod: "2018-06-23T10:16:21"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2018/06/02/les-finesses-de-python.svg"
 categories: ["Présentations"]
 tags: ["python"]
 url: "/2018/06/02/les-finesses-de-python/"

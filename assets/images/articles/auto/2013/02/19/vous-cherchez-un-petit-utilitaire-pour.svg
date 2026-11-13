@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Vous cherchez un petit utilitaire pour ….</title>
+  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : Vous cherchez un petit utilitaire pour ….. Catégorie : PROGRAMMATION.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#04140f"/><stop offset=".52" stop-color="#0b2f26"/><stop offset="1" stop-color="#064e3b"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#10b981" stop-opacity=".42"/><stop offset="1" stop-color="#10b981" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#34d399"/><stop offset="1" stop-color="#6ee7b7"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#6ee7b7" opacity=".14"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
+  <g fill="none" stroke="#34d399" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="483" ry="253" /><ellipse cx="800" cy="310" rx="588" ry="328" /><ellipse cx="800" cy="310" rx="693" ry="403" /></g>
+  <circle cx="1456" cy="751" r="4" fill="#6ee7b7" opacity="0.65"/><circle cx="328" cy="800" r="4" fill="#6ee7b7" opacity="0.5"/><circle cx="1006" cy="123" r="3" fill="#6ee7b7" opacity="0.35"/><circle cx="555" cy="373" r="4" fill="#6ee7b7" opacity="0.5"/><circle cx="688" cy="416" r="3" fill="#6ee7b7" opacity="0.35"/><circle cx="652" cy="273" r="3" fill="#6ee7b7" opacity="0.5"/><circle cx="646" cy="501" r="3" fill="#6ee7b7" opacity="0.35"/><circle cx="692" cy="753" r="4" fill="#6ee7b7" opacity="0.5"/><circle cx="1432" cy="169" r="4" fill="#6ee7b7" opacity="0.35"/><circle cx="1247" cy="144" r="5" fill="#6ee7b7" opacity="0.65"/>
+  <g fill="#f8fafc" opacity=".45">
+    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  </g>
+  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
+  <circle cx="800" cy="270" r="150" fill="none" stroke="#34d399" stroke-width="3" opacity=".65"/>
+  <circle cx="800" cy="270" r="168" fill="none" stroke="#6ee7b7" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
+  <circle cx="800" cy="270" r="126" fill="#10b981" opacity=".18" filter="url(#glow)"/>
+  <g transform="translate(800 270)">
+      <g fill="none" stroke="#34d399" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M-48-58l-58 58 58 58M48-58l58 58-58 58"/>
+      </g>
+      <path d="M20-82l-40 164" fill="none" stroke="#6ee7b7" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="-84" cy="0" r="6" fill="#fbbf24"/><circle cx="84" cy="0" r="6" fill="#fbbf24"/></g>
+  <rect x="740" y="510.3" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="800" y="586.8" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">Vous cherchez un petit</tspan><tspan x="800" dy="90.5">utilitaire pour ….</tspan></text>
+  <path d="M150 820H1450" stroke="#34d399" stroke-width="2" opacity=".24"/>
+  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#34d399">MICROCLUB</text>
+  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">PROGRAMMATION</text>
+</svg>

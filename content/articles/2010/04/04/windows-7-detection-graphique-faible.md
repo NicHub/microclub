@@ -3,6 +3,7 @@ title: "Windows 7 – détection graphique faible?"
 date: "2010-04-04T21:10:44"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2010/04/04/windows-7-detection-graphique-faible.svg"
 categories: ["Microclub"]
 tags: ["consoles", "hardware", "systeme-dexploitation", "vista", "windows"]
 url: "/2010/04/04/windows-7-detection-graphique-faible/"

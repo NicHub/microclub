@@ -3,6 +3,7 @@ title: "Arduino Yun et sources de temps"
 date: "2020-08-22T07:50:13"
 lastmod: "2020-08-22T07:50:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2020/08/22/arduino-yun-et-sources-de-temps.svg"
 categories: ["Articles", "Microclub"]
 tags: ["arduino", "enregistrements", "horodatage", "log", "ntp", "rtc", "synchronisation"]
 url: "/2020/08/22/arduino-yun-et-sources-de-temps/"

@@ -3,6 +3,7 @@ title: "Mon \"Google Phone\" HTC Magic"
 date: "2009-06-21T15:53:36"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/06/21/mon-google-phone-htc-magic.svg"
 categories: ["Microclub"]
 tags: ["google", "google-phone", "htc-magic", "telephone"]
 url: "/2009/06/21/mon-google-phone-htc-magic/"

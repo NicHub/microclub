@@ -3,6 +3,7 @@ title: "How I became a youtuber par Andreas Spiess"
 date: "2018-04-29T18:29:04"
 lastmod: "2018-04-29T18:30:45"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2018/04/29/how-i-became-a-youtuber-par-andreas-spiess.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2018/04/29/how-i-became-a-youtuber-par-andreas-spiess/"

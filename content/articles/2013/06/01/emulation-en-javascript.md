@@ -3,6 +3,7 @@ title: "Emulation en JavaScript"
 date: "2013-06-01T18:47:58"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/06/01/emulation-en-javascript.svg"
 categories: ["Microclub"]
 tags: ["emulation", "javascript"]
 url: "/2013/06/01/emulation-en-javascript/"

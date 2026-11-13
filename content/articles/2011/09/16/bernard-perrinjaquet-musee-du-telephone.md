@@ -3,6 +3,7 @@ title: "Bernard Perrinjaquet – musée du téléphone"
 date: "2011-09-16T19:32:01"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/09/16/bernard-perrinjaquet-musee-du-telephone.svg"
 categories: ["Microclub"]
 tags: ["hardware", "telecom"]
 url: "/2011/09/16/bernard-perrinjaquet-musee-du-telephone/"

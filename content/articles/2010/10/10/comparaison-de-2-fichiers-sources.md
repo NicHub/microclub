@@ -3,6 +3,7 @@ title: "Comparaison de 2 fichiers sources"
 date: "2010-10-10T17:34:40"
 lastmod: "2015-04-24T23:22:39"
 author: "franic"
+featureimage: "images/articles/auto/2010/10/10/comparaison-de-2-fichiers-sources.svg"
 categories: ["Microclub"]
 tags: ["programmation", "windows"]
 url: "/2010/10/10/comparaison-de-2-fichiers-sources/"

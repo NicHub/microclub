@@ -3,6 +3,7 @@ title: "Des PICs – pourquoi faire ? – comment faire ?"
 date: "2003-11-11T08:57:29"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2003/11/11/des-pics-pourquoi-faire-comment-faire.svg"
 categories: ["Microclub"]
 tags: ["pic"]
 url: "/2003/11/11/des-pics-pourquoi-faire-comment-faire/"

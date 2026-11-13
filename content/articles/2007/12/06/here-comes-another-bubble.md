@@ -3,6 +3,7 @@ title: "Here Comes Another Bubble"
 date: "2007-12-06T15:14:39"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/12/06/here-comes-another-bubble.svg"
 categories: ["Microclub"]
 tags: ["fun"]
 url: "/2007/12/06/here-comes-another-bubble/"

@@ -3,6 +3,7 @@ title: "Yun – Monitoring de l’eau solaire"
 date: "2014-10-11T13:38:05"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2014/10/11/yun-monitoring-de-leau-solaire.svg"
 categories: ["Microclub"]
 tags: ["arduino", "ecologie", "embarque", "graphiques", "hardware", "linux", "programmation", "software"]
 url: "/2014/10/11/yun-monitoring-de-leau-solaire/"

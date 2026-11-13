@@ -3,6 +3,7 @@ title: "Multitâche, Système Embarqués"
 date: "2014-05-03T09:34:50"
 lastmod: "2016-02-02T20:10:20"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2014/05/03/multitache-systeme-embarques.svg"
 categories: ["Articles", "Microclub"]
 tags: ["freertos", "muti-tache", "systeme-embarque"]
 url: "/2014/05/03/multitache-systeme-embarques/"

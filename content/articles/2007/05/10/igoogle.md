@@ -3,6 +3,7 @@ title: "iGoogle"
 date: "2007-05-10T18:27:25"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/05/10/igoogle.svg"
 categories: ["Microclub"]
 tags: ["google", "rss"]
 url: "/2007/05/10/igoogle/"

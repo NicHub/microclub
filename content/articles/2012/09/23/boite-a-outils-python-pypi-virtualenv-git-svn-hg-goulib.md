@@ -3,6 +3,7 @@ title: "Boite à outils Python : PyPI, virtualenv, Git SVN Hg, Goulib"
 date: "2012-09-23T17:16:00"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2012/09/23/boite-a-outils-python-pypi-virtualenv-git-svn-hg-goulib.svg"
 categories: ["Microclub"]
 tags: ["python"]
 url: "/2012/09/23/boite-a-outils-python-pypi-virtualenv-git-svn-hg-goulib/"

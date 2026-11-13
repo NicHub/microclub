@@ -3,6 +3,7 @@ title: "Archive de magasines, nostalgie 40 ans du microclub"
 date: "2016-08-10T12:33:06"
 lastmod: "2016-08-10T12:38:21"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2016/08/10/archive-de-magasines-nostalgie-40-ans-du-microclub.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2016/08/10/archive-de-magasines-nostalgie-40-ans-du-microclub/"

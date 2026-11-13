@@ -3,6 +3,7 @@ title: "Projet « Barrette » livrable!"
 date: "2011-03-25T21:55:00"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/03/25/projet-barrette-livrable.svg"
 categories: ["Microclub"]
 tags: ["barrette", "embarque", "hardware", "programmation", "web"]
 url: "/2011/03/25/projet-barrette-livrable/"

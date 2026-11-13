@@ -3,6 +3,7 @@ title: "Tutoriel Processing"
 date: "2011-10-07T17:00:37"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/10/07/tutoriel-processing.svg"
 categories: ["Microclub"]
 tags: ["processing", "programmation"]
 url: "/2011/10/07/tutoriel-processing/"

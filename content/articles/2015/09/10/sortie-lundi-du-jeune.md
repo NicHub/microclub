@@ -3,6 +3,7 @@ title: "Sortie du lundi du Jeûne"
 date: "2015-09-10T22:08:20"
 lastmod: "2015-09-10T22:28:06"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2015/09/10/sortie-lundi-du-jeune.svg"
 categories: ["non classé"]
 tags: []
 url: "/2015/09/10/sortie-lundi-du-jeune/"

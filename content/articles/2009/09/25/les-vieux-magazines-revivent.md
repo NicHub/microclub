@@ -3,6 +3,7 @@ title: "Les vieux magazines revivent!"
 date: "2009-09-25T09:52:16"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/09/25/les-vieux-magazines-revivent.svg"
 categories: ["Microclub"]
 tags: ["histoire"]
 url: "/2009/09/25/les-vieux-magazines-revivent/"

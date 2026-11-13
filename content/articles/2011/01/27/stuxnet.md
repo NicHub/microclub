@@ -3,6 +3,7 @@ title: "Stuxnet"
 date: "2011-01-27T22:59:49"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/01/27/stuxnet.svg"
 categories: ["Microclub"]
 tags: ["non-classe", "stuxnet", "virus"]
 url: "/2011/01/27/stuxnet/"

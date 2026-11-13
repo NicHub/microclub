@@ -3,6 +3,7 @@ title: "les 10 meilleures applications Web"
 date: "2008-04-25T09:43:41"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/04/25/les-10-meilleures-applications-web.svg"
 categories: ["Microclub"]
 tags: ["amazon", "apple", "bittorrent", "blog", "box", "divers", "ebay", "facebook", "fichiers", "finetune", "firefox", "flickr", "friendster", "google", "ilike", "last-fm", "meebo", "messaging", "microsoft", "miro", "musique", "non-classe", "pandora", "paypal", "skype", "social", "twitter", "video", "wikipedia", "wordpress", "youtube"]
 url: "/2008/04/25/les-10-meilleures-applications-web/"

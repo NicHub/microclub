@@ -3,6 +3,7 @@ title: "Liens –  jusqu'ou?"
 date: "2009-06-23T21:06:39"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/06/23/liens-jusquou.svg"
 categories: ["Microclub"]
 tags: ["consoles", "initiation", "systeme-dexploitation", "windows"]
 url: "/2009/06/23/liens-jusquou/"

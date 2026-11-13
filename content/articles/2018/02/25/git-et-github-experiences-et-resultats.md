@@ -3,6 +3,7 @@ title: "GIt et GitHub – expériences et résultats"
 date: "2018-02-25T16:05:12"
 lastmod: "2018-02-25T16:16:20"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2018/02/25/git-et-github-experiences-et-resultats.svg"
 categories: ["Articles", "Microclub"]
 tags: ["git", "github", "initiation", "programmation", "software"]
 url: "/2018/02/25/git-et-github-experiences-et-resultats/"

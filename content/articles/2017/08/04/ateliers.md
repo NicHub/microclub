@@ -3,6 +3,7 @@ title: "Nouveaux ateliers au Microclub !"
 date: "2017-08-04T09:40:28"
 lastmod: "2017-12-14T17:30:03"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2017/08/04/ateliers.svg"
 categories: ["Ateliers"]
 tags: []
 url: "/2017/08/04/ateliers/"

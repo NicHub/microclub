@@ -3,6 +3,7 @@ title: "Echec à Deep Blue"
 date: "1996-04-08T16:04:12"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/1996/04/08/echec-a-deep-blue.svg"
 categories: ["Microclub"]
 tags: []
 url: "/1996/04/08/echec-a-deep-blue/"

@@ -3,6 +3,7 @@ title: "Les géniales pendules de Marcel Bétrisey"
 date: "2011-09-20T20:09:23"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/09/20/les-geniales-pendules-de-marcel-betrisey.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2011/09/20/les-geniales-pendules-de-marcel-betrisey/"

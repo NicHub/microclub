@@ -3,6 +3,7 @@ title: "Windows 8"
 date: "2012-10-21T21:51:16"
 lastmod: "2012-10-21T21:51:30"
 author: "Von"
+featureimage: "images/articles/auto/2012/10/21/windows-8.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2012/10/21/windows-8/"

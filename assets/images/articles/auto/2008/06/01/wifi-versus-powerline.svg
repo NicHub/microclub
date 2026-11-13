@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">WiFi versus PowerLine</title>
+  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : WiFi versus PowerLine. Catégorie : ÉLECTRONIQUE.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#071a26"/><stop offset=".52" stop-color="#12344a"/><stop offset="1" stop-color="#0b3b3a"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#2dd4bf" stop-opacity=".42"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#67e8f9"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#67e8f9" opacity=".14"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
+  <g fill="none" stroke="#5eead4" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="433" ry="293" /><ellipse cx="800" cy="310" rx="538" ry="368" /><ellipse cx="800" cy="310" rx="643" ry="443" /></g>
+  <circle cx="884" cy="470" r="5" fill="#67e8f9" opacity="0.35"/><circle cx="613" cy="142" r="3" fill="#67e8f9" opacity="0.65"/><circle cx="210" cy="439" r="4" fill="#67e8f9" opacity="0.65"/><circle cx="641" cy="654" r="3" fill="#67e8f9" opacity="0.5"/><circle cx="947" cy="681" r="4" fill="#67e8f9" opacity="0.35"/><circle cx="911" cy="251" r="3" fill="#67e8f9" opacity="0.5"/><circle cx="924" cy="757" r="4" fill="#67e8f9" opacity="0.5"/><circle cx="1021" cy="819" r="4" fill="#67e8f9" opacity="0.35"/><circle cx="350" cy="122" r="3" fill="#67e8f9" opacity="0.65"/><circle cx="1034" cy="649" r="5" fill="#67e8f9" opacity="0.5"/>
+  <g fill="#f8fafc" opacity=".45">
+    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  </g>
+  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
+  <circle cx="800" cy="270" r="150" fill="none" stroke="#5eead4" stroke-width="3" opacity=".65"/>
+  <circle cx="800" cy="270" r="168" fill="none" stroke="#67e8f9" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
+  <circle cx="800" cy="270" r="126" fill="#2dd4bf" opacity=".18" filter="url(#glow)"/>
+  <g transform="translate(800 270)">
+      <g fill="none" stroke="#5eead4" stroke-width="9" stroke-linecap="round">
+        <rect x="-72" y="-72" width="144" height="144" rx="22"/>
+        <rect x="-32" y="-32" width="64" height="64" rx="10" stroke="#67e8f9"/>
+        <path d="M-72-44h-26M-72-15h-26M-72 15h-26M-72 44h-26M72-44h26M72-15h26M72 15h26M72 44h26"/>
+        <path d="M-44-72v-26M-15-72v-26M15-72v-26M44-72v-26M-44 72v26M-15 72v26M15 72v26M44 72v26"/>
+      </g><circle r="7" fill="#fbbf24"/></g>
+  <rect x="740" y="555.6" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="800" y="632.0" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">WiFi versus PowerLine</tspan></text>
+  <path d="M150 820H1450" stroke="#5eead4" stroke-width="2" opacity=".24"/>
+  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#5eead4">MICROCLUB</text>
+  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">ÉLECTRONIQUE</text>
+</svg>

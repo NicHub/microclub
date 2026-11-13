@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">flux RSS</title>
+  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : flux RSS. Catégorie : WEB &amp; INTERNET.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#0b0718"/><stop offset=".52" stop-color="#251243"/><stop offset="1" stop-color="#2e1065"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#8b5cf6" stop-opacity=".42"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#c4b5fd"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#a78bfa" opacity=".14"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
+  <g fill="none" stroke="#c4b5fd" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="465" ry="265" /><ellipse cx="800" cy="310" rx="570" ry="340" /><ellipse cx="800" cy="310" rx="675" ry="415" /></g>
+  <circle cx="803" cy="672" r="4" fill="#a78bfa" opacity="0.65"/><circle cx="182" cy="223" r="4" fill="#a78bfa" opacity="0.65"/><circle cx="1077" cy="185" r="5" fill="#a78bfa" opacity="0.35"/><circle cx="967" cy="198" r="5" fill="#a78bfa" opacity="0.35"/><circle cx="555" cy="241" r="3" fill="#a78bfa" opacity="0.35"/><circle cx="222" cy="609" r="3" fill="#a78bfa" opacity="0.65"/><circle cx="1114" cy="563" r="4" fill="#a78bfa" opacity="0.5"/><circle cx="661" cy="655" r="5" fill="#a78bfa" opacity="0.65"/><circle cx="389" cy="699" r="5" fill="#a78bfa" opacity="0.35"/><circle cx="1073" cy="726" r="3" fill="#a78bfa" opacity="0.35"/>
+  <g fill="#f8fafc" opacity=".45">
+    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  </g>
+  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
+  <circle cx="800" cy="270" r="150" fill="none" stroke="#c4b5fd" stroke-width="3" opacity=".65"/>
+  <circle cx="800" cy="270" r="168" fill="none" stroke="#a78bfa" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
+  <circle cx="800" cy="270" r="126" fill="#8b5cf6" opacity=".18" filter="url(#glow)"/>
+  <g transform="translate(800 270)">
+      <circle r="92" fill="none" stroke="#c4b5fd" stroke-width="9"/>
+      <ellipse rx="38" ry="92" fill="none" stroke="#a78bfa" stroke-width="6"/>
+      <path d="M-92-32h184M-92 32h184M-92 0h184" fill="none" stroke="#c4b5fd" stroke-width="5" opacity=".65"/>
+      <path d="M-58-70c40 30 40 110 0 140M58-70c-40 30-40 110 0 140" fill="none" stroke="#a78bfa" stroke-width="5" opacity=".65"/></g>
+  <rect x="740" y="555.6" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="800" y="632.0" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">flux RSS</tspan></text>
+  <path d="M150 820H1450" stroke="#c4b5fd" stroke-width="2" opacity=".24"/>
+  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#c4b5fd">MICROCLUB</text>
+  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">WEB &amp; INTERNET</text>
+</svg>

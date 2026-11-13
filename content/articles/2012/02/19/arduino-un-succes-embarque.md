@@ -3,6 +3,7 @@ title: "Arduino: un succès embarqué"
 date: "2012-02-19T18:20:22"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2012/02/19/arduino-un-succes-embarque.svg"
 categories: ["Microclub"]
 tags: ["arduino", "embarque", "hardware", "initiation", "processeurs", "programmation"]
 url: "/2012/02/19/arduino-un-succes-embarque/"

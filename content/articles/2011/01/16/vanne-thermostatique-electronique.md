@@ -3,6 +3,7 @@ title: "Vanne thermostatique électronique"
 date: "2011-01-16T18:02:48"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/01/16/vanne-thermostatique-electronique.svg"
 categories: ["Microclub"]
 tags: ["ecologie", "hardware"]
 url: "/2011/01/16/vanne-thermostatique-electronique/"

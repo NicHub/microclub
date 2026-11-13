@@ -3,6 +3,7 @@ title: "Impression3d"
 date: "2015-04-19T20:12:23"
 lastmod: "2016-02-02T20:10:49"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2015/04/19/impression3d.svg"
 categories: ["Articles", "Microclub"]
 tags: []
 url: "/2015/04/19/impression3d/"

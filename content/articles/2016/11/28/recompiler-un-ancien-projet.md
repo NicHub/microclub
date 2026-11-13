@@ -3,6 +3,7 @@ title: "Recompiler un ancien projet"
 date: "2016-11-28T21:34:53"
 lastmod: "2016-11-29T10:08:26"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2016/11/28/recompiler-un-ancien-projet.svg"
 categories: ["Microclub"]
 tags: ["embarque", "processeurs", "programmation", "software"]
 url: "/2016/11/28/recompiler-un-ancien-projet/"

@@ -3,6 +3,7 @@ title: "Bitcoin pour les nuls"
 date: "2013-03-20T10:33:19"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/03/20/bitcoin-pour-les-nuls.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2013/03/20/bitcoin-pour-les-nuls/"

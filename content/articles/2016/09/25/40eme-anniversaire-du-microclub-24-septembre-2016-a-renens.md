@@ -3,6 +3,7 @@ title: "40ème anniversaire du Microclub, 24 septembre 2016 à Renens"
 date: "2016-09-25T16:03:50"
 lastmod: "2016-11-21T20:10:44"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2016/09/25/40eme-anniversaire-du-microclub-24-septembre-2016-a-renens.svg"
 categories: ["Microclub"]
 tags: ["40ans", "anniversaire", "epfl", "microclub-2"]
 url: "/2016/09/25/40eme-anniversaire-du-microclub-24-septembre-2016-a-renens/"

@@ -3,6 +3,7 @@ title: "PlatformIO 5.0.1 : Où se trouve le bouton « Upload File System Image�
 date: "2020-10-04T15:45:07"
 lastmod: "2020-10-27T21:29:10"
 author: "franic"
+featureimage: "images/articles/auto/2020/10/04/platformio-5-0-1-ou-se-trouve-le-bouton-upload-file-system-image.svg"
 categories: ["Microclub"]
 tags: ["esp32", "esp8266", "platformio"]
 url: "/2020/10/04/platformio-5-0-1-ou-se-trouve-le-bouton-upload-file-system-image/"

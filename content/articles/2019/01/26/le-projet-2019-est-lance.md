@@ -3,6 +3,7 @@ title: "Le projet 2019 est lancé"
 date: "2019-01-26T11:18:24"
 lastmod: "2019-02-12T11:30:13"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/01/26/le-projet-2019-est-lance.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/01/26/le-projet-2019-est-lance/"

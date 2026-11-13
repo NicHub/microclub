@@ -3,6 +3,7 @@ title: "Piratez votre aspirateur ! (Roomba)"
 date: "2008-02-27T17:08:37"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/02/27/roomba-xmas-by-todbot-revver-online-video-sharing-network.svg"
 categories: ["Microclub"]
 tags: ["gadgets", "hardware", "robot"]
 url: "/2008/02/27/roomba-xmas-by-todbot-revver-online-video-sharing-network/"

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Investir, un apprentissage</title>
+  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : Investir, un apprentissage. Catégorie : ÉCONOMIE.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#071a26"/><stop offset=".52" stop-color="#12344a"/><stop offset="1" stop-color="#0b3b3a"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#2dd4bf" stop-opacity=".42"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#67e8f9"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#67e8f9" opacity=".14"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
+  <g fill="none" stroke="#5eead4" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="414" ry="244" /><ellipse cx="800" cy="310" rx="519" ry="319" /><ellipse cx="800" cy="310" rx="624" ry="394" /></g>
+  <circle cx="874" cy="732" r="4" fill="#67e8f9" opacity="0.5"/><circle cx="1320" cy="783" r="5" fill="#67e8f9" opacity="0.65"/><circle cx="855" cy="279" r="3" fill="#67e8f9" opacity="0.35"/><circle cx="345" cy="632" r="3" fill="#67e8f9" opacity="0.65"/><circle cx="447" cy="748" r="3" fill="#67e8f9" opacity="0.65"/><circle cx="236" cy="216" r="5" fill="#67e8f9" opacity="0.35"/><circle cx="594" cy="243" r="4" fill="#67e8f9" opacity="0.35"/><circle cx="1017" cy="326" r="4" fill="#67e8f9" opacity="0.35"/><circle cx="298" cy="634" r="3" fill="#67e8f9" opacity="0.35"/><circle cx="1243" cy="507" r="3" fill="#67e8f9" opacity="0.65"/>
+  <g fill="#f8fafc" opacity=".45">
+    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  </g>
+  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
+  <circle cx="800" cy="270" r="150" fill="none" stroke="#5eead4" stroke-width="3" opacity=".65"/>
+  <circle cx="800" cy="270" r="168" fill="none" stroke="#67e8f9" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
+  <circle cx="800" cy="270" r="126" fill="#2dd4bf" opacity=".18" filter="url(#glow)"/>
+  <g transform="translate(800 270)">
+      <path d="M-88 82V-92M-88 82H92" fill="none" stroke="#5eead4" stroke-width="8" stroke-linecap="round"/>
+      <g fill="#67e8f9"><rect x="-58" y="22" width="28" height="58" rx="4"/><rect x="-10" y="-14" width="28" height="94" rx="4"/><rect x="38" y="-46" width="28" height="126" rx="4"/></g>
+      <path d="M-70 2l40-42 36 18 58-60" fill="none" stroke="#fbbf24" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="64" cy="-82" r="7" fill="#fbbf24"/></g>
+  <rect x="740" y="555.6" width="120" height="5" rx="2.5" fill="url(#accent)"/>
+  <text x="800" y="632.0" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">Investir, un apprentissage</tspan></text>
+  <path d="M150 820H1450" stroke="#5eead4" stroke-width="2" opacity=".24"/>
+  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#5eead4">MICROCLUB</text>
+  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">ÉCONOMIE</text>
+</svg>

@@ -3,6 +3,7 @@ title: "« Disparition Programmée » au musée Bolo"
 date: "2011-10-15T09:11:05"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/10/15/disparition-programmee-au-musee-bolo.svg"
 categories: ["Microclub"]
 tags: ["bolo", "epfl", "evenement", "non-classe"]
 url: "/2011/10/15/disparition-programmee-au-musee-bolo/"

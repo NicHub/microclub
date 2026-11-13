@@ -3,6 +3,7 @@ title: "Transformation d’un ancien récepteur radio par une radio internet"
 date: "2020-01-16T17:28:45"
 lastmod: "2020-01-16T17:53:49"
 author: "franic"
+featureimage: "images/articles/auto/2020/01/16/transformation-dun-ancien-recepteur-radio-par-une-radio-internet.svg"
 categories: ["Microclub", "Nostalgique"]
 tags: ["mediator", "radio-internet", "raspberry"]
 url: "/2020/01/16/transformation-dun-ancien-recepteur-radio-par-une-radio-internet/"

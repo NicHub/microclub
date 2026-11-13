@@ -3,6 +3,7 @@ title: "Breadboard et simulateurs de circuits électroniques"
 date: "2015-03-02T10:06:35"
 lastmod: "2016-02-02T20:10:39"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2015/03/02/breadboard-et-simulateurs-de-circuits-electroniques.svg"
 categories: ["Articles", "Microclub"]
 tags: ["non-classe"]
 url: "/2015/03/02/breadboard-et-simulateurs-de-circuits-electroniques/"

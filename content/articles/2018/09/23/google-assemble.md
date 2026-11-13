@@ -3,6 +3,7 @@ title: "Google assemble"
 date: "2018-09-23T21:58:08"
 lastmod: "2018-10-01T19:08:15"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2018/09/23/google-assemble.svg"
 categories: ["Articles"]
 tags: ["google", "gps", "histoire", "map", "mobile", "photos"]
 url: "/2018/09/23/google-assemble/"

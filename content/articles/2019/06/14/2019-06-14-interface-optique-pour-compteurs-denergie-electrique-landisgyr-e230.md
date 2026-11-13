@@ -3,6 +3,7 @@ title: "2019-06-14 – Interface optique pour compteurs d’énergie électrique
 date: "2019-06-14T19:07:05"
 lastmod: "2019-06-14T19:11:30"
 author: "Jean-Marc Paratte"
+featureimage: "images/articles/auto/2019/06/14/2019-06-14-interface-optique-pour-compteurs-denergie-electrique-landisgyr-e230.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/06/14/2019-06-14-interface-optique-pour-compteurs-denergie-electrique-landisgyr-e230/"

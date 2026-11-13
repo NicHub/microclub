@@ -3,6 +3,7 @@ title: "Full Wave Rectifier"
 date: "2025-07-02T16:52:24"
 lastmod: "2025-07-02T16:52:25"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/auto/2025/07/02/full-wave-rectifier.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/07/02/full-wave-rectifier/"

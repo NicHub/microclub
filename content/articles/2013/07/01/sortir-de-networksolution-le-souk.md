@@ -3,6 +3,7 @@ title: "Sortir de NetworkSolution, le souk!"
 date: "2013-07-01T20:28:29"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/07/01/sortir-de-networksolution-le-souk.svg"
 categories: ["Microclub"]
 tags: ["histoire", "initiation", "reseau", "securite", "site", "web"]
 url: "/2013/07/01/sortir-de-networksolution-le-souk/"

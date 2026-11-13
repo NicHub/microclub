@@ -3,6 +3,7 @@ title: "Linux (2)"
 date: "2013-11-16T11:16:33"
 lastmod: "2013-11-16T11:16:33"
 author: "Marcel Bruchez"
+featureimage: "images/articles/auto/2013/11/16/linux-2.svg"
 categories: ["Microclub"]
 tags: ["linux"]
 url: "/2013/11/16/linux-2/"

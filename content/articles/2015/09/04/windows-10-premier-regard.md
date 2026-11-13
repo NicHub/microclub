@@ -3,6 +3,7 @@ title: "Windows 10 – premier regard"
 date: "2015-09-04T22:30:53"
 lastmod: "2016-02-02T20:07:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2015/09/04/windows-10-premier-regard.svg"
 categories: ["Articles", "Microclub"]
 tags: ["consoles", "graphiques", "musique", "systeme-dexploitation", "windows"]
 url: "/2015/09/04/windows-10-premier-regard/"

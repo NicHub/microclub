@@ -3,6 +3,7 @@ title: "Décharge mobile: Samsung et I-Phone"
 date: "2015-08-19T21:07:10"
 lastmod: "2016-02-02T20:07:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2015/08/19/decharge-mobile-samsung-et-i-phone.svg"
 categories: ["Articles", "Microclub"]
 tags: ["alimentation", "batterie", "energie", "test"]
 url: "/2015/08/19/decharge-mobile-samsung-et-i-phone/"

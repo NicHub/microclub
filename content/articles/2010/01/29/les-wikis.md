@@ -3,6 +3,7 @@ title: "Les Wikis"
 date: "2010-01-29T18:00:08"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2010/01/29/les-wikis.svg"
 categories: ["Microclub"]
 tags: ["wikipedia", "wikis"]
 url: "/2010/01/29/les-wikis/"

@@ -3,6 +3,7 @@ title: "Bienvenue sur le nouveau site microclub.ch"
 date: "2011-01-26T18:38:04"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/01/26/bienvenue-sur-le-nouveau-site-microclub-ch.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2011/01/26/bienvenue-sur-le-nouveau-site-microclub-ch/"

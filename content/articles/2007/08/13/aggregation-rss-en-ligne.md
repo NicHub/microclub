@@ -3,6 +3,7 @@ title: "Aggrégation RSS en ligne"
 date: "2007-08-13T18:13:07"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/08/13/aggregation-rss-en-ligne.svg"
 categories: ["Microclub"]
 tags: ["mashup", "rss"]
 url: "/2007/08/13/aggregation-rss-en-ligne/"

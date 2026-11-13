@@ -3,6 +3,7 @@ title: "Windows 7 – video impossible"
 date: "2009-06-05T21:57:26"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/06/05/windows-7-video-impossible.svg"
 categories: ["Microclub"]
 tags: ["systeme-dexploitation", "vista", "windows"]
 url: "/2009/06/05/windows-7-video-impossible/"

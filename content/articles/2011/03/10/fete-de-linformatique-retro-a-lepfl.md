@@ -3,6 +3,7 @@ title: "Fête de l’informatique rétro à l’EPFL"
 date: "2011-03-10T18:32:11"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/03/10/fete-de-linformatique-retro-a-lepfl.svg"
 categories: ["Microclub"]
 tags: ["bolo", "epfl", "non-classe"]
 url: "/2011/03/10/fete-de-linformatique-retro-a-lepfl/"

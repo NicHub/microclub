@@ -3,6 +3,7 @@ title: "Melissa et les Captchas"
 date: "2007-11-09T17:17:08"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/11/09/melissa-et-les-captchas.svg"
 categories: ["Microclub"]
 tags: ["securite"]
 url: "/2007/11/09/melissa-et-les-captchas/"

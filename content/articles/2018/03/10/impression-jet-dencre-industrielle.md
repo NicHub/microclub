@@ -3,6 +3,7 @@ title: "Impression jet d’encre industrielle"
 date: "2018-03-10T11:21:28"
 lastmod: "2018-03-10T11:23:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2018/03/10/impression-jet-dencre-industrielle.svg"
 categories: ["Présentations"]
 tags: []
 url: "/2018/03/10/impression-jet-dencre-industrielle/"

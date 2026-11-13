@@ -3,6 +3,7 @@ title: "Pandora : La boite à musique qui explose tout !"
 date: "2007-01-07T22:16:57"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/01/07/pandora-la-boite-a-musique-qui-explose-tout.svg"
 categories: ["Microclub"]
 tags: ["musique", "pandora"]
 url: "/2007/01/07/pandora-la-boite-a-musique-qui-explose-tout/"

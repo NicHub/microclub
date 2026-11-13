@@ -3,6 +3,7 @@ title: "Lecture 230VAC par Arduino (ou autre CPU)"
 date: "2020-03-01T18:49:36"
 lastmod: "2020-03-01T18:51:41"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2020/03/01/lecture-230vac-par-arduino-ou-autre-cpu.svg"
 categories: ["Articles", "Microclub"]
 tags: []
 url: "/2020/03/01/lecture-230vac-par-arduino-ou-autre-cpu/"

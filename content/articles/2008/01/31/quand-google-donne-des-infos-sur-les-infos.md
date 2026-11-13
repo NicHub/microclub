@@ -3,6 +3,7 @@ title: "Quand Google donne des infos sur les infos"
 date: "2008-01-31T07:42:26"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/01/31/quand-google-donne-des-infos-sur-les-infos.svg"
 categories: ["Microclub"]
 tags: ["futur", "google", "web"]
 url: "/2008/01/31/quand-google-donne-des-infos-sur-les-infos/"

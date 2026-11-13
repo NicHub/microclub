@@ -3,6 +3,7 @@ title: "Pour quelle raison 16 2/3 Hz ?"
 date: "2025-05-04T15:12:32"
 lastmod: "2025-05-04T15:12:33"
 author: "Jean-Pierre Broillet"
+featureimage: "images/articles/auto/2025/05/04/pour-quelle-raison-16-2-3-hz.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/05/04/pour-quelle-raison-16-2-3-hz/"

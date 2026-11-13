@@ -3,6 +3,7 @@ title: "Bienvenue sur le Blog du Microclub !"
 date: "2007-11-01T18:03:50"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/11/01/bienvenue-sur-le-blog-du-microclub.svg"
 categories: ["Microclub"]
 tags: ["site"]
 url: "/2007/11/01/bienvenue-sur-le-blog-du-microclub/"

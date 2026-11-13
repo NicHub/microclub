@@ -3,6 +3,7 @@ title: "Quel est le nom du programme dans cette vieille carte?"
 date: "2017-10-24T22:44:29"
 lastmod: "2017-11-04T11:27:50"
 author: "Jean-Daniel Nicoud"
+featureimage: "images/articles/auto/2017/10/24/quel-est-le-nom-du-programme-dans-cette-vieille-carte.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2017/10/24/quel-est-le-nom-du-programme-dans-cette-vieille-carte/"

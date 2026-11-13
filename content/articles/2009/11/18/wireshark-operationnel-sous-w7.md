@@ -3,6 +3,7 @@ title: "Wireshark opérationnel sous W7"
 date: "2009-11-18T22:09:03"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/11/18/wireshark-operationnel-sous-w7.svg"
 categories: ["Microclub"]
 tags: ["ecologie", "pic", "programmation", "reseau", "windows"]
 url: "/2009/11/18/wireshark-operationnel-sous-w7/"

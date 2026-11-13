@@ -3,6 +3,7 @@ title: "Worms!"
 date: "2005-09-03T15:34:03"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2005/09/03/worms.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2005/09/03/worms/"

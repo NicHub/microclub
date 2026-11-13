@@ -3,6 +3,7 @@ title: "Agenda du Microclub sur Google et en RSS"
 date: "2007-11-04T16:41:57"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/11/04/agenda-du-microclub-sur-google-et-en-rss.svg"
 categories: ["Microclub"]
 tags: ["rss", "social"]
 url: "/2007/11/04/agenda-du-microclub-sur-google-et-en-rss/"

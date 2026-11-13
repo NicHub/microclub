@@ -3,6 +3,7 @@ title: "10 ans de Google"
 date: "2008-09-25T20:18:00"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/09/25/10-ans-de-google.svg"
 categories: ["Microclub"]
 tags: ["divers", "google"]
 url: "/2008/09/25/10-ans-de-google/"

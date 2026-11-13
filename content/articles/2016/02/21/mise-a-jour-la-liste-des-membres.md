@@ -3,6 +3,7 @@ title: "Mise à jour de la liste des membres"
 date: "2016-02-21T12:28:54"
 lastmod: "2016-04-21T18:44:49"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2016/02/21/mise-a-jour-la-liste-des-membres.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2016/02/21/mise-a-jour-la-liste-des-membres/"

@@ -3,6 +3,7 @@ title: "Slides KiCad"
 date: "2025-10-21T09:45:43"
 lastmod: "2025-10-21T09:47:06"
 author: "Johannes"
+featureimage: "images/articles/auto/2025/10/21/slides-kicad.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/10/21/slides-kicad/"

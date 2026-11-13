@@ -3,6 +3,7 @@ title: "OLED avec platformIO"
 date: "2023-06-20T16:56:15"
 lastmod: "2023-07-02T08:09:09"
 author: "franic"
+featureimage: "images/articles/auto/2023/06/20/oled-avec-platformio.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2023/06/20/oled-avec-platformio/"

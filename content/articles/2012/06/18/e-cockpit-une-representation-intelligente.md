@@ -3,6 +3,7 @@ title: "e-cockpit: une représentation intelligente"
 date: "2012-06-18T20:35:17"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2012/06/18/e-cockpit-une-representation-intelligente.svg"
 categories: ["Microclub"]
 tags: ["gadgets", "graphiques", "web"]
 url: "/2012/06/18/e-cockpit-une-representation-intelligente/"

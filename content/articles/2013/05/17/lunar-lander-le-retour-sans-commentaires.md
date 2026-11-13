@@ -3,6 +3,7 @@ title: "Lunar Lander : le retour (sans commentaires)"
 date: "2013-05-17T17:37:13"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/05/17/lunar-lander-le-retour-sans-commentaires.svg"
 categories: ["Microclub"]
 tags: ["basic", "nostalgie"]
 url: "/2013/05/17/lunar-lander-le-retour-sans-commentaires/"

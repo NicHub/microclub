@@ -3,6 +3,7 @@ title: "les jeux de 2008 à 2009"
 date: "2008-12-24T14:08:31"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/12/24/les-jeux-de-2008-a-2009.svg"
 categories: ["Microclub"]
 tags: ["games"]
 url: "/2008/12/24/les-jeux-de-2008-a-2009/"

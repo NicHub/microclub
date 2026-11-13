@@ -3,6 +3,7 @@ title: "Adieu iTunes, bonjour Spotify !"
 date: "2012-09-26T19:21:36"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2012/09/26/adieu-itunes-bonjour-spotify.svg"
 categories: ["Microclub"]
 tags: ["musique"]
 url: "/2012/09/26/adieu-itunes-bonjour-spotify/"

@@ -3,6 +3,7 @@ title: "Internet et les images, c’est l’acrobatie"
 date: "2013-06-13T09:57:18"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/06/13/internet-et-les-images-cest-lacrobatie.svg"
 categories: ["Microclub"]
 tags: ["internet", "photos", "securite", "wordpress"]
 url: "/2013/06/13/internet-et-les-images-cest-lacrobatie/"

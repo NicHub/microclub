@@ -3,6 +3,7 @@ title: "VMWare – un update difficile"
 date: "2009-01-02T21:42:36"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/01/02/vmware-update-difficile.svg"
 categories: ["Microclub"]
 tags: ["histoire", "systeme-dexploitation", "windows"]
 url: "/2009/01/02/vmware-update-difficile/"

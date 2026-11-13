@@ -3,6 +3,7 @@ title: "Des graphiques facilement sur votre site web !"
 date: "2007-12-08T07:58:50"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/12/08/des-graphiques-facilement-sur-votre-site-web.svg"
 categories: ["Microclub"]
 tags: ["google", "site", "web"]
 url: "/2007/12/08/des-graphiques-facilement-sur-votre-site-web/"

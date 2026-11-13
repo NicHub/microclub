@@ -3,6 +3,7 @@ title: "Ancienne Présentation"
 date: "2023-02-18T14:12:44"
 lastmod: "2023-02-18T14:12:45"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2023/02/18/ancienne-presentation.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2023/02/18/ancienne-presentation/"

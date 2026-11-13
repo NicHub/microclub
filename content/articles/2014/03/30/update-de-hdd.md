@@ -3,6 +3,7 @@ title: "Update de HDD"
 date: "2014-03-30T19:51:07"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2014/03/30/update-de-hdd.svg"
 categories: ["Microclub"]
 tags: ["disque-dur", "hardware", "lien-symbolique", "systeme-dexploitation", "windows"]
 url: "/2014/03/30/update-de-hdd/"

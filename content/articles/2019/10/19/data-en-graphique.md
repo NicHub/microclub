@@ -3,6 +3,7 @@ title: "Data en graphique"
 date: "2019-10-19T14:01:42"
 lastmod: "2019-10-19T14:08:29"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/10/19/data-en-graphique.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/10/19/data-en-graphique/"

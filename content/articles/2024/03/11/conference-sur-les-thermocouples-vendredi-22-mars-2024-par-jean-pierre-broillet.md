@@ -3,6 +3,7 @@ title: "Conférence sur les thermocouples vendredi 22 mars 2024 par Jean-Pierre 
 date: "2024-03-11T21:04:21"
 lastmod: "2024-03-11T21:05:23"
 author: "franic"
+featureimage: "images/articles/auto/2024/03/11/conference-sur-les-thermocouples-vendredi-22-mars-2024-par-jean-pierre-broillet.svg"
 categories: ["Présentations"]
 tags: []
 url: "/2024/03/11/conference-sur-les-thermocouples-vendredi-22-mars-2024-par-jean-pierre-broillet/"

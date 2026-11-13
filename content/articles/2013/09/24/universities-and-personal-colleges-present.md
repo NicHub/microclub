@@ -3,6 +3,7 @@ title: "Universities and personal colleges present numerous online learning oppo
 date: "2013-09-24T11:50:57"
 lastmod: "2017-09-22T19:55:31"
 author: "Burgener"
+featureimage: "images/articles/auto/2013/09/24/universities-and-personal-colleges-present.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2013/09/24/universities-and-personal-colleges-present/"

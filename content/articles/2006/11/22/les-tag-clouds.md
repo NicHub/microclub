@@ -3,6 +3,7 @@ title: "les \"Tag Clouds\""
 date: "2006-11-22T20:19:57"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2006/11/22/les-tag-clouds.svg"
 categories: ["Microclub"]
 tags: ["tags"]
 url: "/2006/11/22/les-tag-clouds/"

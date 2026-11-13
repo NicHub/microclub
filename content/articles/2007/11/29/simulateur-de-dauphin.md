@@ -3,6 +3,7 @@ title: "Simulateur de Dauphin"
 date: "2007-11-29T19:39:16"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/11/29/simulateur-de-dauphin.svg"
 categories: ["Microclub"]
 tags: ["hardware", "histoire", "initiation", "programmation"]
 url: "/2007/11/29/simulateur-de-dauphin/"

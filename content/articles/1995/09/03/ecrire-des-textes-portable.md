@@ -3,6 +3,7 @@ title: "Ecrire des textes \"portables\""
 date: "1995-09-03T14:49:49"
 lastmod: "2015-04-24T23:20:26"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/1995/09/03/ecrire-des-textes-portable.svg"
 categories: ["Microclub"]
 tags: ["histoire", "initiation"]
 url: "/1995/09/03/ecrire-des-textes-portable/"

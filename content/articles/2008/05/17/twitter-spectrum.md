@@ -3,6 +3,7 @@ title: "Twitter Spectrum"
 date: "2008-05-17T15:37:58"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2008/05/17/twitter-spectrum.svg"
 categories: ["Microclub"]
 tags: ["mashup", "tags", "twitter"]
 url: "/2008/05/17/twitter-spectrum/"

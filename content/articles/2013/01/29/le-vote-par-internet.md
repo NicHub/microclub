@@ -3,6 +3,7 @@ title: "le vote par internet"
 date: "2013-01-29T07:57:56"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/01/29/le-vote-par-internet.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2013/01/29/le-vote-par-internet/"

@@ -3,6 +3,7 @@ title: "GitHub mania"
 date: "2013-04-16T19:08:42"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/04/16/github-mania.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2013/04/16/github-mania/"

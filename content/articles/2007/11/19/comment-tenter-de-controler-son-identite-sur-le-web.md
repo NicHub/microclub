@@ -3,6 +3,7 @@ title: "Comment (tenter de) contrôler son identité sur le web"
 date: "2007-11-19T13:21:49"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/11/19/comment-tenter-de-controler-son-identite-sur-le-web.svg"
 categories: ["Microclub"]
 tags: ["facebook", "google", "linkedin", "social", "ziki"]
 url: "/2007/11/19/comment-tenter-de-controler-son-identite-sur-le-web/"

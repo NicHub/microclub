@@ -3,6 +3,7 @@ title: "Windows 7 – suprimmer une ancienne installation"
 date: "2010-02-28T11:36:03"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2010/02/28/windows-7-suprimmer-une-ancienne-installation.svg"
 categories: ["Microclub"]
 tags: ["systeme-dexploitation", "windows"]
 url: "/2010/02/28/windows-7-suprimmer-une-ancienne-installation/"

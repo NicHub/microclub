@@ -3,6 +3,7 @@ title: "Nouvelle salle de conférence ME D2 2423"
 date: "2019-01-06T17:00:30"
 lastmod: "2019-01-07T12:59:08"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2019/01/06/nouvelle-salle-de-conference-me-d2-2423.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/01/06/nouvelle-salle-de-conference-me-d2-2423/"

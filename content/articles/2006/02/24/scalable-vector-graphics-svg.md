@@ -3,6 +3,7 @@ title: "Scalable Vector Graphics (SVG)"
 date: "2006-02-24T12:46:17"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2006/02/24/scalable-vector-graphics-svg.svg"
 categories: ["Microclub"]
 tags: ["graphiques", "non-classe", "svg", "web"]
 url: "/2006/02/24/scalable-vector-graphics-svg/"

@@ -3,6 +3,7 @@ title: "Twitter, le retour…"
 date: "2011-01-26T20:30:41"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/01/26/twitter-le-retour.svg"
 categories: ["Microclub"]
 tags: ["non-classe", "twitter"]
 url: "/2011/01/26/twitter-le-retour/"

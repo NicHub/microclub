@@ -3,6 +3,7 @@ title: "Javascript : le langage de programmation le plus incompris du monde"
 date: "2012-10-21T09:33:47"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2012/10/21/javascript-le-langage-de-programmation-le-plus-incompris-du-monde.svg"
 categories: ["Microclub"]
 tags: ["histoire", "javascript"]
 url: "/2012/10/21/javascript-le-langage-de-programmation-le-plus-incompris-du-monde/"

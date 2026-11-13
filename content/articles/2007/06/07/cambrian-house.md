@@ -3,6 +3,7 @@ title: "Cambrian House"
 date: "2007-06-07T18:20:06"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/06/07/cambrian-house.svg"
 categories: ["Microclub"]
 tags: ["cambrian-house", "crowdsourcing"]
 url: "/2007/06/07/cambrian-house/"

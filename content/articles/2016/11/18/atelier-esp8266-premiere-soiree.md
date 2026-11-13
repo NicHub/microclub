@@ -3,6 +3,7 @@ title: "Atelier ESP8266 première soirée"
 date: "2016-11-18T14:04:09"
 lastmod: "2016-11-21T20:13:08"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2016/11/18/atelier-esp8266-premiere-soiree.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2016/11/18/atelier-esp8266-premiere-soiree/"

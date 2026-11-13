@@ -3,6 +3,7 @@ title: "Le Microclub est en deuil."
 date: "2016-04-25T17:41:28"
 lastmod: "2016-06-27T17:41:49"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2016/04/25/le-microclub-est-en-deuil.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2016/04/25/le-microclub-est-en-deuil/"

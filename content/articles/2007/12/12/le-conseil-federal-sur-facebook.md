@@ -3,6 +3,7 @@ title: "le Conseil Fédéral sur facebook"
 date: "2007-12-12T13:24:16"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2007/12/12/le-conseil-federal-sur-facebook.svg"
 categories: ["Microclub"]
 tags: ["facebook", "social"]
 url: "/2007/12/12/le-conseil-federal-sur-facebook/"

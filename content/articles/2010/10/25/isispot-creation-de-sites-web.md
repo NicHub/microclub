@@ -3,6 +3,7 @@ title: "IsiSpot – création de sites WEB"
 date: "2010-10-25T09:43:48"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2010/10/25/isispot-creation-de-sites-web.svg"
 categories: ["Microclub"]
 tags: ["programmation", "site", "web"]
 url: "/2010/10/25/isispot-creation-de-sites-web/"

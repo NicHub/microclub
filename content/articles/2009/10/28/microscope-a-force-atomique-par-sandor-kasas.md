@@ -3,6 +3,7 @@ title: "Microscope à force atomique par Sandor Kasas"
 date: "2009-10-28T23:16:58"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/10/28/microscope-a-force-atomique-par-sandor-kasas.svg"
 categories: ["Microclub"]
 tags: ["epfl"]
 url: "/2009/10/28/microscope-a-force-atomique-par-sandor-kasas/"

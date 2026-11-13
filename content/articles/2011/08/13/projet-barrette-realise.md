@@ -3,6 +3,7 @@ title: "Projet barrette: réalisé!"
 date: "2011-08-13T20:36:59"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2011/08/13/projet-barrette-realise.svg"
 categories: ["Microclub"]
 tags: ["barrette", "embarque", "energy-saving", "hardware", "lan", "mxboard", "pic", "web"]
 url: "/2011/08/13/projet-barrette-realise/"

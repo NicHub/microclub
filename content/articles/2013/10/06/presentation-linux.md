@@ -3,6 +3,7 @@ title: "Présentation Linux"
 date: "2013-10-06T15:32:13"
 lastmod: "2013-10-06T15:32:13"
 author: "Marcel Bruchez"
+featureimage: "images/articles/auto/2013/10/06/presentation-linux.svg"
 categories: ["Microclub"]
 tags: ["linux", "programmation", "systeme-dexploitation", "unix"]
 url: "/2013/10/06/presentation-linux/"

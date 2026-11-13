@@ -3,6 +3,7 @@ title: "DrGoulu.com a été hacké !"
 date: "2013-01-18T16:36:45"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2013/01/18/drgoulu-com-a-ete-hacke.svg"
 categories: ["Microclub"]
 tags: ["javascript", "securite", "wordpress"]
 url: "/2013/01/18/drgoulu-com-a-ete-hacke/"

@@ -3,6 +3,7 @@ title: "Synchroniser Mozilla Sunbird et Google Calendar dans les 2 sens"
 date: "2009-03-08T17:15:36"
 lastmod: "2015-04-24T23:22:39"
 author: "franic"
+featureimage: "images/articles/auto/2009/03/08/synchroniser-mozilla-sunbird-et-google-calendar-dans-les-2-sens.svg"
 categories: ["Microclub"]
 tags: ["sunbird-calendrier-google"]
 url: "/2009/03/08/synchroniser-mozilla-sunbird-et-google-calendar-dans-les-2-sens/"

@@ -3,6 +3,7 @@ title: "Fabrication de prototypes PCB mon marché, finition avec une CNC"
 date: "2017-04-16T21:30:54"
 lastmod: "2017-04-21T23:01:21"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2017/04/16/fabrication-de-prototypes-pcb-mon-marche-finition-avec-une-cnc.svg"
 categories: ["Articles", "Microclub"]
 tags: ["circuit-imprime", "cnc", "decoupe", "fusion", "fusion-360", "pcb", "seeedstudio"]
 url: "/2017/04/16/fabrication-de-prototypes-pcb-mon-marche-finition-avec-une-cnc/"

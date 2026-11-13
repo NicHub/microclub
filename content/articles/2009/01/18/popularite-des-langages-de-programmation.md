@@ -3,6 +3,7 @@ title: "Popularité des langages de programmation"
 date: "2009-01-18T20:53:35"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/2009/01/18/popularite-des-langages-de-programmation.svg"
 categories: ["Microclub"]
 tags: ["programmation"]
 url: "/2009/01/18/popularite-des-langages-de-programmation/"

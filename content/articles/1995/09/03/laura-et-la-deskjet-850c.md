@@ -3,6 +3,7 @@ title: "Laura et la DeskJet 850C"
 date: "1995-09-03T15:31:44"
 lastmod: "2015-04-24T23:20:26"
 author: "Rolf Ziegler"
+featureimage: "images/articles/auto/1995/09/03/laura-et-la-deskjet-850c.svg"
 categories: ["Microclub"]
 tags: []
 url: "/1995/09/03/laura-et-la-deskjet-850c/"
