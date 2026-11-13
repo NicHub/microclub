@@ -18,23 +18,23 @@ showHeadingAnchors: false
 showPagination: false
 ---
 
-![Cover](images/cover.png)
+![Cover][cover]
 
 ---
 
 ## MICRoCLUB
 
-![Logo HUGO](images/hugo-logo-wide.webp)
+![Logo HUGO][logo-hugo]
 
-![Logo opencode](images/opencode-wordmark-dark.svg)
+![Logo OpenCode][logo-opencode]
 
 > Nicolas Jeanmonod · Microclub · EPFL · 13 novembre 2026
 
 ---
 
-![Logo HUGO](images/hugo-logo-wide.webp)
+![Logo HUGO][logo-hugo]
 
--   Hugo est un générateur de sites statiques.
+[gohugo.io]
 
 ---
 
@@ -46,7 +46,7 @@ showPagination: false
 
 HTML, CSS, JS
 
-![Créer un site web à la main](images/categorie-a-la-main.png)
+![Créer un site web à la main][categorie-a-la-main]
 
 ---
 
@@ -56,7 +56,7 @@ Desktop : Microsoft FrontPage, Adobe Dreamweaver, Pinegrow,...
 
 Cloud : Wix, Squarespace, Webflow, Framer,...
 
-![Créer un site avec un constructeur visuel](images/categorie-no-code.png)
+![Créer un site avec un constructeur visuel][categorie-no-code]
 
 ---
 
@@ -64,7 +64,7 @@ Cloud : Wix, Squarespace, Webflow, Framer,...
 
 WordPress, Joomla,...
 
-![Créer un site avec un CMS](images/categorie-cms.png)
+![Créer un site avec un CMS][categorie-cms]
 
 ---
 
@@ -72,7 +72,7 @@ WordPress, Joomla,...
 
 Hugo, Jekyll, Quarto,...
 
-![Générer un site statique](images/categorie-site-statique.png)
+![Générer un site statique][categorie-site-statique]
 
 ---
 
@@ -82,9 +82,9 @@ Hugo, Jekyll, Quarto,...
 
 ### Simple à comprendre et à maintenir
 
-_Les pages sont de simples fichiers texte._
+_Les pages sont de simples fichiers texte au [format Markdown]._
 
-![Simplicité d’un générateur de sites statiques](images/avantage-simplicite.png)
+![De Markdown à HTML, CSS et JavaScript avec Hugo][md-hugo-html-css-js]
 
 ---
 
@@ -96,7 +96,7 @@ Les fichiers texte rendent l’utilisation de Git possible :
 -   collaboration
 -   synchronisation
 
-![Collaboration et versionnage avec Git](images/avantage-git.png)
+![Logo Git][logo-git]
 
 ---
 
@@ -104,7 +104,7 @@ Les fichiers texte rendent l’utilisation de Git possible :
 
 _Surtout avec Hugo._
 
-![Rapidité d’un générateur de sites statiques](images/avantage-rapidite.png)
+![Rapidité d’un générateur de sites statiques][avantage-rapidite]
 
 ---
 
@@ -112,7 +112,7 @@ _Surtout avec Hugo._
 
 _Un “petit” site est hébergé gratuitement sur des forges comme GitHub._
 
-![Faible coût d’hébergement](images/avantage-cout.png)
+![Faible coût d’hébergement][avantage-cout]
 
 ---
 
@@ -122,7 +122,7 @@ Pas de base de données ni de code serveur à protéger.
 
 _Par exemple, insensible à “php2shell” : deux failles critiques permettant l’exécution de code à distance sans authentification._
 
-![Sécurité d’un site statique](images/avantage-securite.png)
+![Sécurité d’un site statique][avantage-securite]
 
 ---
 
@@ -130,7 +130,7 @@ _Par exemple, insensible à “php2shell” : deux failles critiques permettan
 
 Les fichiers sont générés à l’avance.
 
-![Diffusion rapide de fichiers statiques](images/avantage-diffusion.png)
+![Diffusion rapide de fichiers statiques][avantage-diffusion]
 
 ---
 
@@ -172,7 +172,40 @@ Je vous conseille aussi d’installer ces programmes
 
 ---
 
-![Logo opencode](images/opencode-wordmark-dark.svg)
+![Logo OpenCode][logo-opencode]
+
+[opencode.ai]
+
+---
+
+### OpenCode
+
+[OpenCode] est un agent de codage fondé sur l’IA.
+
+Il est comparable à [Codex], [Claude Code] ou [Gemini CLI], mais s’en distingue par une possibilité fondamentale :
+
+**il permet de choisir parmi plusieurs fournisseurs de modèles d’IA.**
+
+Le catalogue [models.dev] utilisé par [OpenCode] recense actuellement plus de **9 000 modèles** proposés par plus de **230 fournisseurs**.
+
+Au 13 novembre 2026, il comptabilise précisément **9 136 modèles** et **236 fournisseurs**. Ces chiffres évoluent
+continuellement ; le catalogue à jour est consultable sur [models.dev].
+
+On peut ainsi passer d’un fournisseur à l’autre au cours d’une même conversation.
+
+_**Attention à une limitation !**_
+
+[Anthropic] n’autorise l’accès qu’au moyen de son API, et non par authentification directe.
+
+---
+
+### Installation de OpenCode
+
+Télécharger depuis
+
+<https://opencode.ai/product>
+
+N.B. La version Desktop contient la version terminal.
 
 ---
 
@@ -302,6 +335,95 @@ popularisé en 2026
 | Mode d’interaction     |     tu copies-colles      |                 | il exécute et vérifie |
 | Fonctionnement         |        une réponse        |                 |      une boucle       |
 
+Dans cette classification, [OpenCode] est donc un agent.
+
+---
+
+## Note sur le type d’agents
+
+[OpenCode] est un agent de codage.
+
+Il peut orchestrer plusieurs agents spécialisés, notamment _Plan_ pour concevoir et _Build_ pour réaliser.
+
+On peut voir [OpenCode] comme le système d’orchestration, et _Build_ et _Plan_ comme deux modes de fonctionnement agentiques configurables.
+
+---
+
+<!--
+
+## La marche du progrès de Rudolph F. Zallinger, 1965
+
+-   <https://en.wikipedia.org/wiki/March_of_Progress>
+-   <https://fr.wikipedia.org/wiki/Marche_du_Progr%C3%A8s>
+
+Voir aussi:
+
+> Ce qu’on a appris à l’école et qui n’est plus vrai aujourd’hui\
+> Scilabus\
+> <https://www.youtube.com/watch?v=rB-s51uPACc>
+
+ -->
+
+## Aparté sur l’évolution ultra rapides de l’intelligence artificielle
+
+![La marche du progrès en 6 étapes][marche-du-progres-6]
+
+L’évolution humaine est souvent présentée avec cette frise en 6 étapes
+
+---
+
+![La marche du progrès en 15 étapes][marche-du-progres-15]
+
+On oublie que la frise originale de 1965 réalisée par Zallinger comportait en fait 15 étapes.
+
+Mais cette frise nous induit en erreur d’au moins trois façons :
+
+-   Seuls des mâles sont représentés.
+-   Certaines espèces ont évolué sans laisser de descendance et ne peuvent donc pas être représentées dans une lignée unique, mais plutôt comme des embranchements.
+-   Certaines espèces ont coexisté et ont pu se reproduire entre elles. Elles ne devraient pas être représentées à la suite, mais côte-à-côte.
+
+---
+
+![La marche du progrès — version réaliste][marche-du-progres-2026]
+
+La vérité est un peu plus complexe...
+
+> **Conclusion de l’aparté**
+>
+> Prenez avec des pincettes mes explications sur les IA, elles sont déjà très simplifiées aujourd’hui et seront probablement obsolètes dans pas longtemps.
+
+---
+
+## Et nous aussi peut-être
+
+![La marche du progrès en 7 étapes][marche-du-progres-7]
+
+_En fait on aura peu-être même plus besoin d’ordi si elles font tout à notre place..._ 🤭
+
+---
+
+## Herdr
+
+![Logo HERDR][logo-herdr]
+
+[herdr.dev]
+
+---
+
+[Herdr] est un multiplexeur de terminal.
+
+Il remplace des solutions traditionnelles comme [GNU Screen] ou [tmux].
+
+Des compétiteurs sérieux se pressent au portillon :
+
+-   [cmux]
+-   [tuios]
+-   [rex]
+
+---
+
+## Démo
+
 ---
 
 <!--
@@ -321,47 +443,6 @@ popularisé en 2026
 -
 
 -->
-
-<!--
-
-## La marche du progrès de Rudolph F. Zallinger, 1965
-
--   <https://en.wikipedia.org/wiki/March_of_Progress>
--   <https://fr.wikipedia.org/wiki/Marche_du_Progr%C3%A8s>
-
-Voir aussi:
-
-> Ce qu’on a appris à l’école et qui n’est plus vrai aujourd’hui\
-> Scilabus\
-> <https://www.youtube.com/watch?v=rB-s51uPACc>
-
-## Les erreurs de ces frises
-
--   Seuls des mâles sont représentés.
--   Certaines espèces ont évolué sans laisser de descendance et ne peuvent donc pas être représentées dans une lignée unique, mais plutôt comme des embranchements.
--   Certaines espèces ont coexisté et ont pu se reproduire entre elles.
-
- -->
-
-![La marche du progrès en 6 étapes](images/la-marche-du-progres-1965-6-etapes.jpg)
-
----
-
-![La marche du progrès en 15 étapes](images/la-marche-du-progres-1965-15-etapes.jpg)
-
----
-
-![This is what evolution looks like](images/evolution-2026.jpg)
-
----
-
-## Et en 2026 ?
-
-![Évolution de l’homme vers le smartphone](images/evolution-apple.jpg)
-
-Le sommet de l’évolution, c’est un smartphone.
-
----
 
 ## Ce soir, une seule question
 
@@ -449,7 +530,7 @@ public/      le site, prêt à servir
 ```markdown
 ## Un titre
 
-Un paragraphe avec **du gras** et [un lien](https://microclub.ch).
+Un paragraphe avec **du gras** et [un lien][microclub.ch].
 
 - une puce
 - une autre
@@ -722,3 +803,39 @@ La différence, c’est la responsabilité.
 -   <https://github.com/NicHub/microclub>
 
 Nicolas Jeanmonod · Microclub · 13 novembre 2026
+
+[gohugo.io]: https://gohugo.io/
+[OpenCode]: https://opencode.ai/
+[opencode.ai]: https://opencode.ai/
+[herdr.dev]: https://herdr.dev/
+[Herdr]: https://github.com/steipete/herdr
+[GNU Screen]: https://www.gnu.org/software/screen/
+[tmux]: https://github.com/tmux/tmux
+[cmux]: https://github.com/manaflow-ai/cmux
+[tuios]: https://tuios.dev/
+[rex]: https://www.superlogical.com/rex
+
+[cover]: images/cover.png
+[logo-hugo]: images/logo-hugo.webp
+[logo-opencode]: images/opencode-wordmark-dark.svg
+[categorie-a-la-main]: images/categorie-a-la-main.png
+[categorie-no-code]: images/categorie-no-code.png
+[categorie-cms]: images/categorie-cms.png
+[categorie-site-statique]: images/categorie-site-statique.png
+[logo-git]: images/logo-git.svg
+[avantage-rapidite]: images/avantage-rapidite.png
+[avantage-cout]: images/avantage-cout.png
+[avantage-securite]: images/avantage-securite.png
+[avantage-diffusion]: images/avantage-diffusion.png
+[marche-du-progres-6]: images/la-marche-du-progres-1965-6-etapes.jpg
+[marche-du-progres-15]: images/la-marche-du-progres-1965-15-etapes.jpg
+[marche-du-progres-2026]: images/la-marche-du-progres-2026.jpg
+[marche-du-progres-7]: images/la-marche-du-progres-2000-7-etapes.jpg
+[logo-herdr]: images/logo-herdr.svg
+[md-hugo-html-css-js]: images/md-hugo-html-css-js.png
+[Codex]: https://openai.com/codex/
+[Claude Code]: https://www.anthropic.com/claude-code
+[Gemini CLI]: https://github.com/google-gemini/gemini-cli
+[Anthropic]: https://www.anthropic.com/
+[models.dev]: https://models.dev/
+[format Markdown]: https://www.markdownlang.com/fr/extended/

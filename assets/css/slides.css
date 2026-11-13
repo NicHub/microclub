@@ -191,6 +191,12 @@ body.deck-body {
   max-height: 46vh;
 }
 
+.slide img[alt="Logo HTML"],
+.slide img[alt="Logo CSS"],
+.slide img[alt="Logo JavaScript"] {
+  width: clamp(4rem, 10vw, 8rem);
+}
+
 .slide figure {
   margin: 0;
 }
