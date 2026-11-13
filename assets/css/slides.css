@@ -259,6 +259,11 @@ body.deck-body {
   font-size: clamp(0.8rem, 1.2vw, 1.1rem);
 }
 
+/* Conserve le texte entre underscores sans l’effet italique dans les citations. */
+.slide blockquote em {
+  font-style: normal;
+}
+
 /* -------------------------------------------------------------------------- */
 /* Habillage : progression, compteur, retour                                  */
 /* -------------------------------------------------------------------------- */

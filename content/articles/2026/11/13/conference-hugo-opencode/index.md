@@ -262,7 +262,7 @@ _³ TUI (interface en terminal)_
 #### Exemples
 
 -   ChatGPT avec recherche web ¹ ²
--   Claude Desktop avec MCP ²
+-   Claude Desktop avec [MCP] ²
 -   Gemini avec extensions ¹
 
 ####
@@ -364,6 +364,20 @@ On peut voir [OpenCode] comme le système d’orchestration, et _Build_ et _Plan
 
 ---
 
+## Avantage décisif
+
+S’il ne fallait retenir qu’une chose de cette conférence, ce serait celle-ci :
+
+### Un agent peut utiliser un programme en ligne de commande (CLI)
+
+Et cela sans qu’on lui explique à l’avance chaque étape.
+
+Il peut ~~RTFM~~ consulter la documentation du logiciel, découvrir les commandes utiles et les exécuter pour vous.
+
+Pas besoin d’intégrations spécialisées comme [MCP], des plugins ou des API dédiées.
+
+---
+
 <!--
 
 ## La marche du progrès de Rudolph F. Zallinger, 1965
@@ -395,10 +409,9 @@ L’évolution humaine est souvent présentée avec cette frise en 6 étapes
 
 ![La marche du progrès en 15 étapes][marche-du-progres-15]
 
-On oublie que la frise originale de 1965 réalisée par Zallinger comportait en fait 15 étapes.
+Cette frise célèbre nous induit en erreur de plusieurs façons :
 
-Mais cette frise nous induit en erreur d’au moins trois façons :
-
+-   On oublie que la frise originale de 1965 réalisée par Zallinger comportait en fait 15 étapes.
 -   Seuls des mâles sont représentés.
 -   Certaines espèces ont évolué sans laisser de descendance et ne peuvent donc pas être représentées dans une lignée unique, mais plutôt comme des embranchements.
 -   Certaines espèces ont coexisté et ont même pu se reproduire entre elles.\
@@ -419,7 +432,7 @@ Mais rappelons nous que la réalité est un peu plus complexe.
 
 ---
 
-### Conclusion de l’aparté
+### En attendant l’IApocalypse…
 
 ![La marche du progrès inversée en 7 étapes][marche-du-progres-2026-inversee-v3]
 
@@ -440,26 +453,6 @@ N.B. La version Desktop contient la version terminal.
 
 ---
 
-## Herdr
-
-![Logo HERDR][logo-herdr]
-
-[herdr.dev]
-
----
-
-[Herdr] est un multiplexeur de terminal.
-
-Il remplace des solutions traditionnelles comme [GNU Screen] ou [tmux].
-
-Des compétiteurs sérieux se pressent au portillon :
-
--   [cmux]
--   [tuios]
--   [rex]
-
----
-
 ## SiteSucker & httrack
 
 ---
@@ -476,7 +469,27 @@ Des compétiteurs sérieux se pressent au portillon :
 
 [SiteSucker] et [HTTrack] sont des [aspirateurs de sites Web][aspirateur-de-site-web] que j’ai utilisés pour préparer la génération des sites que je vais vous montrer.
 
-J’utilise [SiteSucker] depuis longtemps et il marche super bien, mais avec [opencode], je privilégie les programmes en ligne de commande et c’est pour ça que j’essaie [HTTrack].
+J’utilise [SiteSucker] depuis longtemps et il marche super bien, mais avec [opencode], je privilégie les programmes en ligne de commande et c’est pour ça que j’essaie [HTTrack] (_cf. avantage décisif_).
+
+---
+
+## Herdr
+
+![Logo HERDR][logo-herdr]
+
+[herdr.dev]
+
+---
+
+[Herdr] est un multiplexeur de terminal.
+
+Il remplace des solutions traditionnelles comme [GNU Screen] ou [tmux].
+
+Des compétiteurs sérieux se pressent au portillon :
+
+-   [tuios]
+-   [rex]
+-   [cmux] _(macOS)_
 
 ---
 
@@ -719,7 +732,7 @@ Ce qui entoure le modèle.
 
 -   des outils : lire, écrire, exécuter
 -   des skills : des procédures réutilisables
--   des serveurs MCP : des connecteurs
+-   des serveurs [MCP] : des connecteurs
 -   des permissions : une sandbox
 -   une boucle : essayer, vérifier, corriger
 
@@ -850,28 +863,39 @@ Il a été écrit par un membre du Microclub, avec une IA.
 
 La différence, c’est la responsabilité.
 
+> Et si ChatGPT le dit, c’est que ça doit être vrai _🤭_
+
 ---
 
 ## Ressources
 
--   <https://microclub.ch>
--   <https://gohugo.io>
--   <https://blowfish.page>
--   <https://opencode.ai>
--   <https://github.com/NicHub/microclub>
--   <https://hypnodingues.org/posts/2026-03-30-l-echelle-dalia/>
--   <https://hypnodingues.org/posts/2026-04-10-les-dangers-des-ia/>
+-   [microclub.ch][microclub.ch]
+-   [gohugo.io][gohugo.io]
+-   [blowfish.page][blowfish.page]
+-   [opencode.ai][opencode.ai]
+-   [github.com/NicHub/microclub][github-microclub]
+-   [hypnodingues.org/posts/2026-03-30-l-echelle-dalia/][echelle-dalia]
+-   [hypnodingues.org/posts/2026-04-10-les-dangers-des-ia/][dangers-des-ia]
 
-Nicolas Jeanmonod · Microclub · 13 novembre 2026
+---
+
+> Nicolas Jeanmonod • MICRoCLUB • 13 novembre 2026
+>
+> [Dalia D3][echelle-dalia]
 
 [gohugo.io]: https://gohugo.io/
+[microclub.ch]: https://microclub.ch
+[blowfish.page]: https://blowfish.page
 [Hugo]: https://gohugo.io/
 [Jekyll]: https://jekyllrb.com/
 [Quarto]: https://quarto.org/
 [OpenCode]: https://opencode.ai/
 [opencode.ai]: https://opencode.ai/
+[github-microclub]: https://github.com/NicHub/microclub
+[echelle-dalia]: https://hypnodingues.org/posts/2026-03-30-l-echelle-dalia/
+[dangers-des-ia]: https://hypnodingues.org/posts/2026-04-10-les-dangers-des-ia/
 [herdr.dev]: https://herdr.dev/
-[Herdr]: https://github.com/steipete/herdr
+[Herdr]: https://herdr.dev/
 [GNU Screen]: https://www.gnu.org/software/screen/
 [tmux]: https://github.com/tmux/tmux
 [cmux]: https://github.com/manaflow-ai/cmux
@@ -907,4 +931,5 @@ Nicolas Jeanmonod · Microclub · 13 novembre 2026
 [source-marche-du-progres]: https://caglecartoons.com/sku/302452?utm_source=chatgpt.com
 [aspirateur-de-site-web]: https://fr.wikipedia.org/wiki/Aspirateur_de_site_web
 [php2shell]: https://php2shell.com/
+[MCP]: https://fr.wikipedia.org/wiki/Model_Context_Protocol
 [format Markdown]: https://www.markdownlang.com/fr/extended/
