@@ -1,75 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Le magnétisme</title>
-  <desc id="desc">Un aimant en fer à cheval aux pôles nord et sud, entouré de lignes de champ magnétique lumineuses et d’une boussole.</desc>
+  <title id="title">Présentation de Laurent Francey, le vendredi 14 novembre 2025, sur le thème le magnétisme</title>
+  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : Présentation de Laurent Francey, le vendredi 14 novembre 2025, sur le thème le magnétisme. Catégorie : VIE DU CLUB.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#071a26"/><stop offset=".5" stop-color="#12344a"/><stop offset="1" stop-color="#0b3b3a"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a26"/><stop offset=".55" stop-color="#12344a"/><stop offset="1" stop-color="#0b3b3a"/></linearGradient>
     <radialGradient id="halo"><stop stop-color="#2dd4bf" stop-opacity=".38"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
-    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2e8f0"/><stop offset=".22" stop-color="#64748b"/><stop offset=".5" stop-color="#f8fafc"/><stop offset=".78" stop-color="#475569"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
-    <linearGradient id="pole" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f87171"/><stop offset=".5" stop-color="#dc2626"/><stop offset="1" stop-color="#7f1d1d"/></linearGradient>
-    <linearGradient id="field" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#818cf8"/><stop offset="1" stop-color="#f472b6"/></linearGradient>
-    <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="25" flood-color="#000" flood-opacity=".55"/></filter>
-    <filter id="glow"><feGaussianBlur stdDeviation="12"/></filter>
-    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
-    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#99f6e4" opacity=".14"/></pattern>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#67e8f9"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#5eead4" stroke-width="1" opacity=".09"/>
+    </pattern>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
-  <ellipse cx="800" cy="430" rx="700" ry="430" fill="url(#halo)"/>
-  <g fill="none" stroke="#5eead4" opacity=".12" stroke-width="3">
-    <ellipse cx="800" cy="320" rx="430" ry="240"/><ellipse cx="800" cy="320" rx="540" ry="320"/><ellipse cx="800" cy="320" rx="650" ry="400"/>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="1220" cy="420" rx="520" ry="480" fill="url(#halo)"/>
+  <ellipse cx="330" cy="520" rx="430" ry="380" fill="none" stroke="#5eead4" stroke-width="2" opacity=".07"/>
+  <circle cx="442" cy="320" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="1278" cy="514" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="996" cy="186" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="1274" cy="757" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="86" cy="620" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="616" cy="475" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="66" cy="567" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="1437" cy="384" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="242" cy="420" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="1495" cy="563" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="145" cy="346" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="380" cy="828" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="419" cy="294" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="343" cy="653" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="911" cy="177" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="1028" cy="706" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="1514" cy="720" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="791" cy="546" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="90" cy="592" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="469" cy="654" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="1419" cy="111" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="336" cy="230" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="1512" cy="565" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="335" cy="208" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="1095" cy="530" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="816" cy="674" r="3" fill="#67e8f9" opacity="0.3"/>
+  <g>
+    <rect x="120" y="317.6" width="255.8" height="46.0" rx="23.0" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity=".75"/>
+    <text x="247.9" y="348.6" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25.0" font-weight="600" letter-spacing="4.5" fill="#67e8f9">VIE DU CLUB</text>
   </g>
-  <g fill="#e0f2fe" opacity=".5">
-    <path d="M210 150l8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/>
-    <path d="M1360 210l8 20 20 8-20 8-8 20-8-20-20-8 20-8z"/>
-    <path d="M1210 110l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
-    <path d="M370 790l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
-  </g>
-  <ellipse cx="800" cy="800" rx="245" ry="30" fill="#02080d" opacity=".65" filter="url(#soft)"/>
-  <g filter="url(#shadow)">
-    <path d="M600 300v320c0 110 90 170 200 170s200-60 200-170V300H880v320c0 50-35 70-80 70s-80-20-80-70V300z" fill="url(#metal)" stroke="#dbeafe" stroke-width="6"/>
-    <path d="M628 330v288c0 88 76 140 172 140s172-52 172-140V330" fill="none" stroke="#ffffff" stroke-width="7" opacity=".22"/>
-    <path d="M600 555h120M880 555h120" stroke="#94a3b8" stroke-width="4" opacity=".55"/>
-    <rect x="590" y="268" width="140" height="132" rx="22" fill="url(#pole)" stroke="#fecaca" stroke-width="5"/>
-    <rect x="870" y="268" width="140" height="132" rx="22" fill="url(#pole)" stroke="#fecaca" stroke-width="5"/>
-    <path d="M614 292h92M894 292h92" stroke="#fee2e2" stroke-width="6" opacity=".55" stroke-linecap="round"/>
-    <text x="660" y="356" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="68" font-weight="700" fill="#ffffff">N</text>
-    <text x="940" y="356" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="68" font-weight="700" fill="#ffffff">S</text>
-  </g>
-  <g fill="none" stroke="url(#field)" stroke-linecap="round">
-    <path d="M660 262C660 120 940 120 940 262" stroke-width="16" opacity=".18" filter="url(#glow)"/>
-    <path d="M660 262C570 70 1030 70 940 262" stroke-width="16" opacity=".18" filter="url(#glow)"/>
-    <path d="M660 262C480 20 1120 20 940 262" stroke-width="16" opacity=".18" filter="url(#glow)"/>
-    <path d="M660 262C660 120 940 120 940 262" stroke-width="6"/>
-    <path d="M660 262C570 70 1030 70 940 262" stroke-width="6"/>
-    <path d="M660 262C480 20 1120 20 940 262" stroke-width="6"/>
-  </g>
-  <g fill="none" stroke="#c7d2fe" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" opacity=".9">
-    <path d="M786 149l15 9-15 9"/>
-    <path d="M786 112l15 9-15 9"/>
-    <path d="M786 74l15 9-15 9"/>
-  </g>
-  <g fill="#a5f3fc" opacity=".65">
-    <circle cx="445" cy="310" r="5"/><circle cx="515" cy="205" r="4"/><circle cx="1085" cy="190" r="4"/>
-    <circle cx="1160" cy="330" r="5"/><circle cx="1040" cy="470" r="4"/><circle cx="520" cy="470" r="4"/>
-  </g>
-  <g transform="translate(1240 615)" filter="url(#shadow)">
-    <circle cx="90" cy="90" r="92" fill="#0b2233" stroke="#94a3b8" stroke-width="6"/>
-    <circle cx="90" cy="90" r="72" fill="#071824" stroke="#5eead4" stroke-width="3"/>
-    <g stroke="#5eead4" stroke-width="4" opacity=".7">
-      <path d="M90 26v12M90 142v12M26 90h12M142 90h12"/>
-      <path d="M45 45l9 9M126 126l9 9M135 45l-9 9M54 126l-9 9" opacity=".5"/>
+  <path d="M96 400.5H102V687.2H96Z" fill="url(#accent)" opacity=".9"/>
+  <text x="120" y="455.6" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="64" font-weight="700" fill="#f8fafc"><tspan x="120" dy="0.0">Présentation de Laurent</tspan><tspan x="120" dy="74.2">Francey, le vendredi 14</tspan><tspan x="120" dy="74.2">novembre 2025, sur le</tspan><tspan x="120" dy="74.2">thème le magnétisme</tspan></text>
+  <g>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="#060c16" opacity=".55"/>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="none" stroke="#5eead4" stroke-width="2" opacity=".28"/>
+    <rect x="968" y="178" width="504" height="504" rx="38" fill="none" stroke="#67e8f9" stroke-width="2" opacity=".28" stroke-dasharray="8 14"/>
+    <g stroke="#67e8f9" stroke-width="3" opacity=".55" stroke-linecap="round">
+      <path d="M940 250V202h48M1500 250V202h-48M940 610v48h48M1500 610v48h-48"/>
     </g>
-    <path d="M90 118l-20 24h40z" fill="#e2e8f0"/>
-    <path d="M90 62l-20-24h40z" fill="#f87171"/>
-    <circle cx="90" cy="90" r="8" fill="#fbbf24" stroke="#fef3c7" stroke-width="3"/>
+    <circle cx="1220" cy="430" r="150" fill="#2dd4bf" opacity=".2" filter="url(#glow)"/>
+    <circle cx="1220" cy="430" r="258" fill="none" stroke="#5eead4" stroke-width="1.5" opacity=".12"/>
+    <g transform="translate(1220 430) scale(1.75)">
+      <rect x="-34" y="-92" width="68" height="112" rx="34" fill="none" stroke="#5eead4" stroke-width="9"/>
+      <path d="M-64-10c0 42 28 64 64 64s64-22 64-64M0 54v46M-42 100h84" fill="none" stroke="#67e8f9" stroke-width="9" stroke-linecap="round"/>
+      <path d="M-18-52h36M-18-26h36" stroke="#67e8f9" stroke-width="5" opacity=".6" stroke-linecap="round"/></g>
   </g>
-  <g transform="translate(250 655)">
-    <rect x="0" y="30" width="250" height="64" rx="32" fill="#1e293b" stroke="#94a3b8" stroke-width="5"/>
-    <rect x="18" y="45" width="214" height="10" rx="5" fill="#94a3b8" opacity=".35"/>
-    <g fill="none" stroke="#fbbf24" stroke-width="8" opacity=".9">
-      <ellipse cx="50" cy="62" rx="18" ry="53"/><ellipse cx="90" cy="62" rx="18" ry="53"/><ellipse cx="130" cy="62" rx="18" ry="53"/><ellipse cx="170" cy="62" rx="18" ry="53"/><ellipse cx="210" cy="62" rx="18" ry="53"/>
-    </g>
-    <g fill="none" stroke="#67e8f9" stroke-width="4" opacity=".6" stroke-linecap="round">
-      <path d="M-12 62h-52"/><path d="M-50 51l-12 11 12 11"/>
-    </g>
+  <g fill="#f8fafc" opacity=".35">
+    <path d="M1050 96l6 15 15 6-15 6-6 15-6-15-15-6 15-6z"/>
+    <path d="M840 720l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/>
   </g>
+  <path d="M120 812H1480" stroke="#5eead4" stroke-width="2" opacity=".22"/>
+  <text x="120" y="856" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#5eead4">MICROCLUB</text>
+  <g fill="#67e8f9" opacity=".5">
+    <rect x="742" y="846" width="10" height="10" rx="2"/>
+    <rect x="762" y="846" width="10" height="10" rx="2" opacity=".7"/>
+    <rect x="782" y="846" width="10" height="10" rx="2" opacity=".4"/>
+  </g>
+  <text x="1480" y="856" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="3" fill="#cbd5e1" opacity=".6">microclub.ch</text>
 </svg>

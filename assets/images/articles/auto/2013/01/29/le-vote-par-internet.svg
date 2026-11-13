@@ -2,34 +2,50 @@
   <title id="title">le vote par internet</title>
   <desc id="desc">Vignette éditoriale du MicroClub consacrée à : le vote par internet. Catégorie : WEB &amp; INTERNET.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#0b0718"/><stop offset=".52" stop-color="#251243"/><stop offset="1" stop-color="#2e1065"/></linearGradient>
-    <radialGradient id="halo"><stop stop-color="#8b5cf6" stop-opacity=".42"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
-    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#c4b5fd"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
-    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
-    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#a78bfa" opacity=".14"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b0718"/><stop offset=".55" stop-color="#251243"/><stop offset="1" stop-color="#2e1065"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#8b5cf6" stop-opacity=".38"/><stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c4b5fd"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#c4b5fd" stroke-width="1" opacity=".09"/>
+    </pattern>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)"/>
-  <rect width="1600" height="900" fill="url(#dots)"/>
-  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
-  <g fill="none" stroke="#c4b5fd" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="510" ry="280" /><ellipse cx="800" cy="310" rx="615" ry="355" /><ellipse cx="800" cy="310" rx="720" ry="430" /></g>
-  <circle cx="1173" cy="482" r="4" fill="#a78bfa" opacity="0.5"/><circle cx="1452" cy="393" r="5" fill="#a78bfa" opacity="0.5"/><circle cx="660" cy="810" r="5" fill="#a78bfa" opacity="0.5"/><circle cx="653" cy="593" r="3" fill="#a78bfa" opacity="0.5"/><circle cx="1086" cy="725" r="3" fill="#a78bfa" opacity="0.5"/><circle cx="181" cy="141" r="4" fill="#a78bfa" opacity="0.5"/><circle cx="173" cy="618" r="4" fill="#a78bfa" opacity="0.5"/><circle cx="893" cy="400" r="4" fill="#a78bfa" opacity="0.35"/><circle cx="728" cy="598" r="3" fill="#a78bfa" opacity="0.5"/><circle cx="1408" cy="483" r="3" fill="#a78bfa" opacity="0.65"/>
-  <g fill="#f8fafc" opacity=".45">
-    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
-    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="1220" cy="420" rx="520" ry="480" fill="url(#halo)"/>
+  <ellipse cx="330" cy="520" rx="430" ry="380" fill="none" stroke="#c4b5fd" stroke-width="2" opacity=".07"/>
+  <circle cx="1113" cy="462" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="1392" cy="373" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="1521" cy="586" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="1086" cy="90" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="1351" cy="108" r="3" fill="#a78bfa" opacity="0.18"/><circle cx="182" cy="507" r="3" fill="#a78bfa" opacity="0.18"/><circle cx="1136" cy="387" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="700" cy="426" r="2" fill="#a78bfa" opacity="0.3"/><circle cx="1097" cy="294" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="176" cy="804" r="2" fill="#a78bfa" opacity="0.3"/><circle cx="1072" cy="577" r="3" fill="#a78bfa" opacity="0.18"/><circle cx="1292" cy="428" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="604" cy="230" r="3" fill="#a78bfa" opacity="0.18"/><circle cx="204" cy="706" r="2" fill="#a78bfa" opacity="0.3"/><circle cx="818" cy="140" r="2" fill="#a78bfa" opacity="0.18"/><circle cx="828" cy="743" r="3" fill="#a78bfa" opacity="0.18"/><circle cx="1523" cy="451" r="2" fill="#a78bfa" opacity="0.18"/><circle cx="1084" cy="527" r="2" fill="#a78bfa" opacity="0.3"/><circle cx="445" cy="641" r="3" fill="#a78bfa" opacity="0.3"/><circle cx="471" cy="492" r="2" fill="#a78bfa" opacity="0.18"/><circle cx="501" cy="387" r="2" fill="#a78bfa" opacity="0.18"/><circle cx="488" cy="441" r="3" fill="#a78bfa" opacity="0.18"/><circle cx="444" cy="254" r="2" fill="#a78bfa" opacity="0.18"/><circle cx="147" cy="105" r="2" fill="#a78bfa" opacity="0.18"/><circle cx="682" cy="461" r="2" fill="#a78bfa" opacity="0.3"/><circle cx="1235" cy="390" r="3" fill="#a78bfa" opacity="0.3"/>
+  <g>
+    <rect x="120" y="368.1" width="328.5" height="46.0" rx="23.0" fill="none" stroke="#a78bfa" stroke-width="2.5" opacity=".75"/>
+    <text x="284.3" y="399.1" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25.0" font-weight="600" letter-spacing="4.5" fill="#a78bfa">WEB &amp; INTERNET</text>
   </g>
-  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
-  <circle cx="800" cy="270" r="150" fill="none" stroke="#c4b5fd" stroke-width="3" opacity=".65"/>
-  <circle cx="800" cy="270" r="168" fill="none" stroke="#a78bfa" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
-  <circle cx="800" cy="270" r="126" fill="#8b5cf6" opacity=".18" filter="url(#glow)"/>
-  <g transform="translate(800 270)">
+  <path d="M96 449.2H102V635.0H96Z" fill="url(#accent)" opacity=".9"/>
+  <text x="120" y="523.2" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="86" font-weight="700" fill="#f8fafc"><tspan x="120" dy="0.0">le vote par</tspan><tspan x="120" dy="99.8">internet</tspan></text>
+  <g>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="#060c16" opacity=".55"/>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="none" stroke="#c4b5fd" stroke-width="2" opacity=".28"/>
+    <rect x="968" y="178" width="504" height="504" rx="38" fill="none" stroke="#a78bfa" stroke-width="2" opacity=".28" stroke-dasharray="8 14"/>
+    <g stroke="#a78bfa" stroke-width="3" opacity=".55" stroke-linecap="round">
+      <path d="M940 250V202h48M1500 250V202h-48M940 610v48h48M1500 610v48h-48"/>
+    </g>
+    <circle cx="1220" cy="430" r="150" fill="#8b5cf6" opacity=".2" filter="url(#glow)"/>
+    <circle cx="1220" cy="430" r="258" fill="none" stroke="#c4b5fd" stroke-width="1.5" opacity=".12"/>
+    <g transform="translate(1220 430) scale(1.75)">
       <circle r="92" fill="none" stroke="#c4b5fd" stroke-width="9"/>
       <ellipse rx="38" ry="92" fill="none" stroke="#a78bfa" stroke-width="6"/>
       <path d="M-92-32h184M-92 32h184M-92 0h184" fill="none" stroke="#c4b5fd" stroke-width="5" opacity=".65"/>
       <path d="M-58-70c40 30 40 110 0 140M58-70c-40 30-40 110 0 140" fill="none" stroke="#a78bfa" stroke-width="5" opacity=".65"/></g>
-  <rect x="740" y="555.6" width="120" height="5" rx="2.5" fill="url(#accent)"/>
-  <text x="800" y="632.0" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">le vote par internet</tspan></text>
-  <path d="M150 820H1450" stroke="#c4b5fd" stroke-width="2" opacity=".24"/>
-  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#c4b5fd">MICROCLUB</text>
-  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">WEB &amp; INTERNET</text>
+  </g>
+  <g fill="#f8fafc" opacity=".35">
+    <path d="M1050 96l6 15 15 6-15 6-6 15-6-15-15-6 15-6z"/>
+    <path d="M840 720l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/>
+  </g>
+  <path d="M120 812H1480" stroke="#c4b5fd" stroke-width="2" opacity=".22"/>
+  <text x="120" y="856" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#c4b5fd">MICROCLUB</text>
+  <g fill="#a78bfa" opacity=".5">
+    <rect x="742" y="846" width="10" height="10" rx="2"/>
+    <rect x="762" y="846" width="10" height="10" rx="2" opacity=".7"/>
+    <rect x="782" y="846" width="10" height="10" rx="2" opacity=".4"/>
+  </g>
+  <text x="1480" y="856" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="3" fill="#cbd5e1" opacity=".6">microclub.ch</text>
 </svg>

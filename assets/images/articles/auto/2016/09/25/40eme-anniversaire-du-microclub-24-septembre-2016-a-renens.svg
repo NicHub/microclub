@@ -2,35 +2,51 @@
   <title id="title">40ème anniversaire du Microclub, 24 septembre 2016 à Renens</title>
   <desc id="desc">Vignette éditoriale du MicroClub consacrée à : 40ème anniversaire du Microclub, 24 septembre 2016 à Renens. Catégorie : VIE DU CLUB.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#1a1206"/><stop offset=".52" stop-color="#3a2408"/><stop offset="1" stop-color="#451a03"/></linearGradient>
-    <radialGradient id="halo"><stop stop-color="#f59e0b" stop-opacity=".42"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
-    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
-    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
-    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#f59e0b" opacity=".14"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1206"/><stop offset=".55" stop-color="#3a2408"/><stop offset="1" stop-color="#451a03"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#f59e0b" stop-opacity=".38"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbbf24"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#fbbf24" stroke-width="1" opacity=".09"/>
+    </pattern>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)"/>
-  <rect width="1600" height="900" fill="url(#dots)"/>
-  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
-  <g fill="none" stroke="#fbbf24" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="472" ry="272" /><ellipse cx="800" cy="310" rx="577" ry="347" /><ellipse cx="800" cy="310" rx="682" ry="422" /></g>
-  <circle cx="1033" cy="733" r="4" fill="#f59e0b" opacity="0.35"/><circle cx="862" cy="241" r="4" fill="#f59e0b" opacity="0.65"/><circle cx="434" cy="454" r="5" fill="#f59e0b" opacity="0.5"/><circle cx="351" cy="144" r="5" fill="#f59e0b" opacity="0.65"/><circle cx="919" cy="679" r="4" fill="#f59e0b" opacity="0.5"/><circle cx="663" cy="185" r="3" fill="#f59e0b" opacity="0.5"/><circle cx="252" cy="196" r="4" fill="#f59e0b" opacity="0.35"/><circle cx="724" cy="345" r="4" fill="#f59e0b" opacity="0.5"/><circle cx="863" cy="634" r="5" fill="#f59e0b" opacity="0.35"/><circle cx="333" cy="208" r="4" fill="#f59e0b" opacity="0.35"/>
-  <g fill="#f8fafc" opacity=".45">
-    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
-    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="1220" cy="420" rx="520" ry="480" fill="url(#halo)"/>
+  <ellipse cx="330" cy="520" rx="430" ry="380" fill="none" stroke="#fbbf24" stroke-width="2" opacity=".07"/>
+  <circle cx="973" cy="713" r="3" fill="#f59e0b" opacity="0.18"/><circle cx="802" cy="801" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="1397" cy="217" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="291" cy="124" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="910" cy="331" r="2" fill="#f59e0b" opacity="0.18"/><circle cx="886" cy="126" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="329" cy="362" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="597" cy="431" r="2" fill="#f59e0b" opacity="0.18"/><circle cx="317" cy="517" r="2" fill="#f59e0b" opacity="0.18"/><circle cx="891" cy="363" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="704" cy="712" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="1340" cy="685" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="1396" cy="693" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="376" cy="195" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="277" cy="473" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="1431" cy="508" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="957" cy="131" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="1498" cy="127" r="2" fill="#f59e0b" opacity="0.18"/><circle cx="1012" cy="584" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="946" cy="157" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="1009" cy="810" r="3" fill="#f59e0b" opacity="0.3"/><circle cx="1042" cy="455" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="1014" cy="594" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="485" cy="516" r="2" fill="#f59e0b" opacity="0.18"/><circle cx="1363" cy="69" r="2" fill="#f59e0b" opacity="0.3"/><circle cx="571" cy="309" r="3" fill="#f59e0b" opacity="0.3"/>
+  <g>
+    <rect x="120" y="286.3" width="255.8" height="46.0" rx="23.0" fill="none" stroke="#f59e0b" stroke-width="2.5" opacity=".75"/>
+    <text x="247.9" y="317.3" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25.0" font-weight="600" letter-spacing="4.5" fill="#f59e0b">VIE DU CLUB</text>
   </g>
-  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
-  <circle cx="800" cy="270" r="150" fill="none" stroke="#fbbf24" stroke-width="3" opacity=".65"/>
-  <circle cx="800" cy="270" r="168" fill="none" stroke="#f59e0b" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
-  <circle cx="800" cy="270" r="126" fill="#f59e0b" opacity=".18" filter="url(#glow)"/>
-  <g transform="translate(800 270)">
+  <path d="M96 368.0H102V717.5H96Z" fill="url(#accent)" opacity=".9"/>
+  <text x="120" y="435.1" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc"><tspan x="120" dy="0.0">40ème anniversaire</tspan><tspan x="120" dy="90.5">du Microclub, 24</tspan><tspan x="120" dy="90.5">septembre 2016 à</tspan><tspan x="120" dy="90.5">Renens</tspan></text>
+  <g>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="#060c16" opacity=".55"/>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="none" stroke="#fbbf24" stroke-width="2" opacity=".28"/>
+    <rect x="968" y="178" width="504" height="504" rx="38" fill="none" stroke="#f59e0b" stroke-width="2" opacity=".28" stroke-dasharray="8 14"/>
+    <g stroke="#f59e0b" stroke-width="3" opacity=".55" stroke-linecap="round">
+      <path d="M940 250V202h48M1500 250V202h-48M940 610v48h48M1500 610v48h-48"/>
+    </g>
+    <circle cx="1220" cy="430" r="150" fill="#f59e0b" opacity=".2" filter="url(#glow)"/>
+    <circle cx="1220" cy="430" r="258" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity=".12"/>
+    <g transform="translate(1220 430) scale(1.75)">
       <rect x="-84" y="-64" width="168" height="148" rx="20" fill="none" stroke="#fbbf24" stroke-width="9"/>
       <path d="M-84-18h168" stroke="#fbbf24" stroke-width="9"/>
       <path d="M-42-88v36M42-88v36" stroke="#f59e0b" stroke-width="9" stroke-linecap="round"/>
       <g fill="#f59e0b"><circle cx="-46" cy="18" r="8"/><circle cx="0" cy="18" r="8"/><circle cx="46" cy="18" r="8"/><circle cx="-46" cy="56" r="8"/><circle cx="0" cy="56" r="8"/></g>
       <circle cx="46" cy="56" r="8" fill="#fb7185"/></g>
-  <rect x="740" y="465.1" width="120" height="5" rx="2.5" fill="url(#accent)"/>
-  <text x="800" y="541.5" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">40ème anniversaire du</tspan><tspan x="800" dy="90.5">Microclub, 24 septembre 2016 à</tspan><tspan x="800" dy="90.5">Renens</tspan></text>
-  <path d="M150 820H1450" stroke="#fbbf24" stroke-width="2" opacity=".24"/>
-  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#fbbf24">MICROCLUB</text>
-  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">VIE DU CLUB</text>
+  </g>
+  <g fill="#f8fafc" opacity=".35">
+    <path d="M1050 96l6 15 15 6-15 6-6 15-6-15-15-6 15-6z"/>
+    <path d="M840 720l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/>
+  </g>
+  <path d="M120 812H1480" stroke="#fbbf24" stroke-width="2" opacity=".22"/>
+  <text x="120" y="856" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#fbbf24">MICROCLUB</text>
+  <g fill="#f59e0b" opacity=".5">
+    <rect x="742" y="846" width="10" height="10" rx="2"/>
+    <rect x="762" y="846" width="10" height="10" rx="2" opacity=".7"/>
+    <rect x="782" y="846" width="10" height="10" rx="2" opacity=".4"/>
+  </g>
+  <text x="1480" y="856" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="3" fill="#cbd5e1" opacity=".6">microclub.ch</text>
 </svg>

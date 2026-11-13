@@ -2,34 +2,50 @@
   <title id="title">Tag Galaxy</title>
   <desc id="desc">Vignette éditoriale du MicroClub consacrée à : Tag Galaxy. Catégorie : WEB &amp; INTERNET.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#070d1f"/><stop offset=".52" stop-color="#102a56"/><stop offset="1" stop-color="#172554"/></linearGradient>
-    <radialGradient id="halo"><stop stop-color="#3b82f6" stop-opacity=".42"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
-    <linearGradient id="accent" x1="0" x2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
-    <filter id="textshadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000" flood-opacity=".45"/></filter>
-    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#22d3ee" opacity=".14"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070d1f"/><stop offset=".55" stop-color="#102a56"/><stop offset="1" stop-color="#172554"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#3b82f6" stop-opacity=".38"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0"/></radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#60a5fa" stroke-width="1" opacity=".09"/>
+    </pattern>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)"/>
-  <rect width="1600" height="900" fill="url(#dots)"/>
-  <ellipse cx="800" cy="390" rx="720" ry="430" fill="url(#halo)"/>
-  <g fill="none" stroke="#60a5fa" stroke-width="3" opacity=".11"><ellipse cx="800" cy="310" rx="400" ry="230" /><ellipse cx="800" cy="310" rx="505" ry="305" /><ellipse cx="800" cy="310" rx="610" ry="380" /></g>
-  <circle cx="1069" cy="715" r="5" fill="#22d3ee" opacity="0.5"/><circle cx="697" cy="333" r="5" fill="#22d3ee" opacity="0.5"/><circle cx="179" cy="232" r="5" fill="#22d3ee" opacity="0.5"/><circle cx="245" cy="529" r="4" fill="#22d3ee" opacity="0.35"/><circle cx="302" cy="573" r="4" fill="#22d3ee" opacity="0.35"/><circle cx="819" cy="187" r="3" fill="#22d3ee" opacity="0.65"/><circle cx="161" cy="720" r="4" fill="#22d3ee" opacity="0.35"/><circle cx="600" cy="630" r="3" fill="#22d3ee" opacity="0.65"/><circle cx="560" cy="659" r="5" fill="#22d3ee" opacity="0.5"/><circle cx="453" cy="115" r="3" fill="#22d3ee" opacity="0.65"/>
-  <g fill="#f8fafc" opacity=".45">
-    <path d="M180 150l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
-    <path d="M1390 690l7 18 18 7-18 7-7 18-7-18-18-7 18-7z"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <ellipse cx="1220" cy="420" rx="520" ry="480" fill="url(#halo)"/>
+  <ellipse cx="330" cy="520" rx="430" ry="380" fill="none" stroke="#60a5fa" stroke-width="2" opacity=".07"/>
+  <circle cx="1468" cy="534" r="3" fill="#22d3ee" opacity="0.3"/><circle cx="567" cy="636" r="3" fill="#22d3ee" opacity="0.18"/><circle cx="364" cy="777" r="3" fill="#22d3ee" opacity="0.18"/><circle cx="958" cy="366" r="2" fill="#22d3ee" opacity="0.18"/><circle cx="1046" cy="350" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="274" cy="218" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="357" cy="300" r="2" fill="#22d3ee" opacity="0.18"/><circle cx="1219" cy="737" r="3" fill="#22d3ee" opacity="0.18"/><circle cx="130" cy="293" r="3" fill="#22d3ee" opacity="0.18"/><circle cx="651" cy="531" r="3" fill="#22d3ee" opacity="0.3"/><circle cx="783" cy="492" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="1068" cy="542" r="2" fill="#22d3ee" opacity="0.18"/><circle cx="905" cy="566" r="3" fill="#22d3ee" opacity="0.3"/><circle cx="283" cy="414" r="3" fill="#22d3ee" opacity="0.3"/><circle cx="680" cy="527" r="2" fill="#22d3ee" opacity="0.18"/><circle cx="1104" cy="250" r="3" fill="#22d3ee" opacity="0.18"/><circle cx="95" cy="526" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="150" cy="758" r="2" fill="#22d3ee" opacity="0.18"/><circle cx="542" cy="217" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="372" cy="815" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="967" cy="676" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="1115" cy="606" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="80" cy="117" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="550" cy="207" r="2" fill="#22d3ee" opacity="0.3"/><circle cx="535" cy="473" r="2" fill="#22d3ee" opacity="0.18"/><circle cx="524" cy="787" r="2" fill="#22d3ee" opacity="0.18"/>
+  <g>
+    <rect x="120" y="418.0" width="328.5" height="46.0" rx="23.0" fill="none" stroke="#22d3ee" stroke-width="2.5" opacity=".75"/>
+    <text x="284.3" y="449.0" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25.0" font-weight="600" letter-spacing="4.5" fill="#22d3ee">WEB &amp; INTERNET</text>
   </g>
-  <circle cx="800" cy="270" r="150" fill="#06111f" opacity=".55"/>
-  <circle cx="800" cy="270" r="150" fill="none" stroke="#60a5fa" stroke-width="3" opacity=".65"/>
-  <circle cx="800" cy="270" r="168" fill="none" stroke="#22d3ee" stroke-width="2" opacity=".25" stroke-dasharray="7 15"/>
-  <circle cx="800" cy="270" r="126" fill="#3b82f6" opacity=".18" filter="url(#glow)"/>
-  <g transform="translate(800 270)">
+  <path d="M96 499.1H102V585.1H96Z" fill="url(#accent)" opacity=".9"/>
+  <text x="120" y="573.1" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="86" font-weight="700" fill="#f8fafc"><tspan x="120" dy="0.0">Tag Galaxy</tspan></text>
+  <g>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="#060c16" opacity=".55"/>
+    <rect x="940" y="150" width="560" height="560" rx="52" fill="none" stroke="#60a5fa" stroke-width="2" opacity=".28"/>
+    <rect x="968" y="178" width="504" height="504" rx="38" fill="none" stroke="#22d3ee" stroke-width="2" opacity=".28" stroke-dasharray="8 14"/>
+    <g stroke="#22d3ee" stroke-width="3" opacity=".55" stroke-linecap="round">
+      <path d="M940 250V202h48M1500 250V202h-48M940 610v48h48M1500 610v48h-48"/>
+    </g>
+    <circle cx="1220" cy="430" r="150" fill="#3b82f6" opacity=".2" filter="url(#glow)"/>
+    <circle cx="1220" cy="430" r="258" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity=".12"/>
+    <g transform="translate(1220 430) scale(1.75)">
       <circle r="92" fill="none" stroke="#60a5fa" stroke-width="9"/>
       <ellipse rx="38" ry="92" fill="none" stroke="#22d3ee" stroke-width="6"/>
       <path d="M-92-32h184M-92 32h184M-92 0h184" fill="none" stroke="#60a5fa" stroke-width="5" opacity=".65"/>
       <path d="M-58-70c40 30 40 110 0 140M58-70c-40 30-40 110 0 140" fill="none" stroke="#22d3ee" stroke-width="5" opacity=".65"/></g>
-  <rect x="740" y="555.6" width="120" height="5" rx="2.5" fill="url(#accent)"/>
-  <text x="800" y="632.0" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="78" font-weight="700" fill="#f8fafc" filter="url(#textshadow)"><tspan x="800" dy="0.0">Tag Galaxy</tspan></text>
-  <path d="M150 820H1450" stroke="#60a5fa" stroke-width="2" opacity=".24"/>
-  <text x="150" y="858" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#60a5fa">MICROCLUB</text>
-  <text x="1450" y="858" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="4" fill="#cbd5e1" opacity=".65">WEB &amp; INTERNET</text>
+  </g>
+  <g fill="#f8fafc" opacity=".35">
+    <path d="M1050 96l6 15 15 6-15 6-6 15-6-15-15-6 15-6z"/>
+    <path d="M840 720l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/>
+  </g>
+  <path d="M120 812H1480" stroke="#60a5fa" stroke-width="2" opacity=".22"/>
+  <text x="120" y="856" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#60a5fa">MICROCLUB</text>
+  <g fill="#22d3ee" opacity=".5">
+    <rect x="742" y="846" width="10" height="10" rx="2"/>
+    <rect x="762" y="846" width="10" height="10" rx="2" opacity=".7"/>
+    <rect x="782" y="846" width="10" height="10" rx="2" opacity=".4"/>
+  </g>
+  <text x="1480" y="856" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="3" fill="#cbd5e1" opacity=".6">microclub.ch</text>
 </svg>
