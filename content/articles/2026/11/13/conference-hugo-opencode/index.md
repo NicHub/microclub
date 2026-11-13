@@ -18,6 +18,8 @@ showHeadingAnchors: false
 showPagination: false
 ---
 
+Salut Jean-Marc !
+
 {{< comment >}}
 
     ## DÉSACTIVE CERTAINES NOTIFICATIONS MarkdownLint
