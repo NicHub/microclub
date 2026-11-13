@@ -18,6 +18,16 @@ showHeadingAnchors: false
 showPagination: false
 ---
 
+{{< comment >}}
+
+    ## DÉSACTIVE CERTAINES NOTIFICATIONS MarkdownLint
+
+    -   MD046 - Code block style
+        <https://github.com/DavidAnson/markdownlint/blob/v0.41.1/doc/md046.md>
+        <!-- markdownlint-disable MD046 -->
+
+{{< /comment >}}
+
 ![Cover][cover]
 
 ---
@@ -38,6 +48,12 @@ showPagination: false
 
 ---
 
+### [Hugo]
+
+[Hugo] est un générateur de sites web statiques.
+
+---
+
 ## Quelques méthodes de génération de sites web
 
 ---
@@ -52,9 +68,9 @@ HTML, CSS, JS
 
 ### Avec un constructeur visuel / no-code
 
-Desktop : Microsoft FrontPage, Adobe Dreamweaver, Pinegrow,...
+**Desktop :** Microsoft FrontPage, Adobe Dreamweaver, Pinegrow,...
 
-Cloud : Wix, Squarespace, Webflow, Framer,...
+**Cloud :** Wix, Squarespace, Webflow, Framer,...
 
 ![Créer un site avec un constructeur visuel][categorie-no-code]
 
@@ -70,7 +86,7 @@ WordPress, Joomla,...
 
 ### Avec un générateur de sites statiques
 
-Hugo, Jekyll, Quarto,...
+[Hugo], [Jekyll], [Quarto],…
 
 ![Générer un site statique][categorie-site-statique]
 
@@ -120,7 +136,7 @@ _Un “petit” site est hébergé gratuitement sur des forges comme GitHub._
 
 Pas de base de données ni de code serveur à protéger.
 
-_Par exemple, insensible à “php2shell” : deux failles critiques permettant l’exécution de code à distance sans authentification._
+_Par exemple, insensible à [PHP2Shell][php2shell] : deux failles critiques permettant l’exécution de code à distance sans authentification._
 
 ![Sécurité d’un site statique][avantage-securite]
 
@@ -136,13 +152,15 @@ Les fichiers sont générés à l’avance.
 
 ### Matrice de comparaison des méthodes
 
-| Paramètre             | À la main                                      | Constructeur visuel /<br>no-code     | CMS                                          | Générateur de sites statiques |
+| Paramètre             | À la main                                      | Constructeur visuel /<br>no-code  | CMS                                          | Générateur de sites statiques |
 | --------------------- | ---------------------------------------------- | --------------------------------- | -------------------------------------------- | ----------------------------- |
-| Vitesse de diffusion  | rapide                                         | dépend de l’hébergement           | limitée par le serveur et la base de données | **très rapide**                   |
+| Vitesse de diffusion  | rapide                                         | dépend de l’hébergement           | limitée par le serveur et la base de données | **très rapide**               |
 | Complexité            | élevée, nécessite des connaissances techniques | faible à moyenne                  | moyenne                                      | moyenne à élevée              |
 | Base de données       | non                                            | généralement gérée par le service | souvent nécessaire                           | non                           |
 | Vitesse de génération | immédiate, fichier par fichier                 | dépend du service                 | limitée par le serveur et la base de données | limitée par la durée du build |
 | Pages générées        | en avance                                      | selon le service                  | à la demande                                 | en avance                     |
+
+Mais là où les sites web statiques sont imbatables, c’est la facilité avec laquelle on peut les générer avec des agents IA.
 
 ---
 
@@ -150,25 +168,33 @@ Les fichiers sont générés à l’avance.
 
 Pour installer Hugo, exécutez cette commande dans PowerShell :
 
-    winget install -e --id Hugo.Hugo.Extended
+```shell
+winget install -e --id Hugo.Hugo.Extended
+```
 
 Je vous conseille aussi d’installer ces programmes
 
-    winget install -e --id Git.Git
-    winget install -e --id PedroAlbanese.QREncode
+```shell
+winget install -e --id Git.Git
+winget install -e --id PedroAlbanese.QREncode
+```
 
 ---
 
 ### Installation de Hugo sur macOS
 
-    brew install hugo git qrencode
+```shell
+brew install hugo git qrencode
+```
 
 ---
 
 ### Installation de Hugo sur Ubuntu
 
-    sudo apt update
-    sudo apt install hugo qrencode
+```shell
+sudo apt update
+sudo apt install hugo qrencode
+```
 
 ---
 
@@ -193,19 +219,8 @@ continuellement ; le catalogue à jour est consultable sur [models.dev].
 
 On peut ainsi passer d’un fournisseur à l’autre au cours d’une même conversation.
 
-_**Attention à une limitation !**_
-
-[Anthropic] n’autorise l’accès qu’au moyen de son API, et non par authentification directe.
-
----
-
-### Installation de OpenCode
-
-Télécharger depuis
-
-<https://opencode.ai/product>
-
-N.B. La version Desktop contient la version terminal.
+_**Attention à cette limitation ! :**_\
+_**[Anthropic] n’autorise l’accès qu’au moyen de son API, et non par authentification directe.**_
 
 ---
 
@@ -364,13 +379,19 @@ Voir aussi:
 
  -->
 
-## Aparté sur l’évolution ultra rapides de l’intelligence artificielle
+## Aparté sur l’évolution ultrarapide de l’intelligence artificielle
+
+---
+
+### L’évolution en 6 étapes
 
 ![La marche du progrès en 6 étapes][marche-du-progres-6]
 
 L’évolution humaine est souvent présentée avec cette frise en 6 étapes
 
 ---
+
+### L’évolution en 15 étapes
 
 ![La marche du progrès en 15 étapes][marche-du-progres-15]
 
@@ -380,25 +401,42 @@ Mais cette frise nous induit en erreur d’au moins trois façons :
 
 -   Seuls des mâles sont représentés.
 -   Certaines espèces ont évolué sans laisser de descendance et ne peuvent donc pas être représentées dans une lignée unique, mais plutôt comme des embranchements.
--   Certaines espèces ont coexisté et ont pu se reproduire entre elles. Elles ne devraient pas être représentées à la suite, mais côte-à-côte.
+-   Certaines espèces ont coexisté et ont même pu se reproduire entre elles.\
+  Elles ne devraient pas être représentées à la suite, mais côte-à-côte.
 
 ---
+
+### L’évolution en réalité
 
 ![La marche du progrès — version réaliste][marche-du-progres-2026]
 
-La vérité est un peu plus complexe...
+Mais rappelons nous que la réalité est un peu plus complexe.
 
-> **Conclusion de l’aparté**
->
-> Prenez avec des pincettes mes explications sur les IA, elles sont déjà très simplifiées aujourd’hui et seront probablement obsolètes dans pas longtemps.
+> Source :\
+> Ce qu’on a appris à l’école et qui n’est plus vrai aujourd’hui\
+> Scilabus\
+> <https://www.youtube.com/watch?v=rB-s51uPACc>
 
 ---
 
-## Et nous aussi peut-être
+### Conclusion de l’aparté
 
-![La marche du progrès en 7 étapes][marche-du-progres-7]
+![La marche du progrès inversée en 7 étapes][marche-du-progres-2026-inversee-v3]
 
-_En fait on aura peu-être même plus besoin d’ordi si elles font tout à notre place..._ 🤭
+En conclusion, prenez avec des pincettes mes explications sur les IA, elles sont déjà très simplifiées aujourd’hui et seront probablement obsolètes dans pas longtemps...\
+...et nous aussi peut-être
+
+> Illustration de ChatGPT, inspirée de [Cagle Cartoons][source-marche-du-progres]
+
+---
+
+### Installation de OpenCode
+
+Télécharger depuis
+
+<https://opencode.ai/product>
+
+N.B. La version Desktop contient la version terminal.
 
 ---
 
@@ -419,6 +457,26 @@ Des compétiteurs sérieux se pressent au portillon :
 -   [cmux]
 -   [tuios]
 -   [rex]
+
+---
+
+## SiteSucker & httrack
+
+---
+
+[![Logo SiteSucker][logo-sitesucker]][SiteSucker]
+
+[SiteSucker]
+
+[![Logo HTTrack][logo-httrack]][HTTrack]
+
+[HTTrack]
+
+---
+
+[SiteSucker] et [HTTrack] sont des [aspirateurs de sites Web][aspirateur-de-site-web] que j’ai utilisés pour préparer la génération des sites que je vais vous montrer.
+
+J’utilise [SiteSucker] depuis longtemps et il marche super bien, mais avec [opencode], je privilégie les programmes en ligne de commande et c’est pour ça que j’essaie [HTTrack].
 
 ---
 
@@ -794,17 +852,22 @@ La différence, c’est la responsabilité.
 
 ---
 
-## Questions
+## Ressources
 
 -   <https://microclub.ch>
 -   <https://gohugo.io>
 -   <https://blowfish.page>
 -   <https://opencode.ai>
 -   <https://github.com/NicHub/microclub>
+-   <https://hypnodingues.org/posts/2026-03-30-l-echelle-dalia/>
+-   <https://hypnodingues.org/posts/2026-04-10-les-dangers-des-ia/>
 
 Nicolas Jeanmonod · Microclub · 13 novembre 2026
 
 [gohugo.io]: https://gohugo.io/
+[Hugo]: https://gohugo.io/
+[Jekyll]: https://jekyllrb.com/
+[Quarto]: https://quarto.org/
 [OpenCode]: https://opencode.ai/
 [opencode.ai]: https://opencode.ai/
 [herdr.dev]: https://herdr.dev/
@@ -814,7 +877,6 @@ Nicolas Jeanmonod · Microclub · 13 novembre 2026
 [cmux]: https://github.com/manaflow-ai/cmux
 [tuios]: https://tuios.dev/
 [rex]: https://www.superlogical.com/rex
-
 [cover]: images/cover.png
 [logo-hugo]: images/logo-hugo.webp
 [logo-opencode]: images/opencode-wordmark-dark.svg
@@ -830,7 +892,7 @@ Nicolas Jeanmonod · Microclub · 13 novembre 2026
 [marche-du-progres-6]: images/la-marche-du-progres-1965-6-etapes.jpg
 [marche-du-progres-15]: images/la-marche-du-progres-1965-15-etapes.jpg
 [marche-du-progres-2026]: images/la-marche-du-progres-2026.jpg
-[marche-du-progres-7]: images/la-marche-du-progres-2000-7-etapes.jpg
+[marche-du-progres-2026-inversee-v3]: images/la-marche-du-progres-2026-inversee-v3.png
 [logo-herdr]: images/logo-herdr.svg
 [md-hugo-html-css-js]: images/md-hugo-html-css-js.png
 [Codex]: https://openai.com/codex/
@@ -838,4 +900,11 @@ Nicolas Jeanmonod · Microclub · 13 novembre 2026
 [Gemini CLI]: https://github.com/google-gemini/gemini-cli
 [Anthropic]: https://www.anthropic.com/
 [models.dev]: https://models.dev/
+[logo-sitesucker]: images/logo-sitesucker.png
+[logo-httrack]: images/logo-httrack.svg
+[SiteSucker]: https://ricks-apps.com/osx/sitesucker/
+[HTTrack]: https://www.httrack.com/
+[source-marche-du-progres]: https://caglecartoons.com/sku/302452?utm_source=chatgpt.com
+[aspirateur-de-site-web]: https://fr.wikipedia.org/wiki/Aspirateur_de_site_web
+[php2shell]: https://php2shell.com/
 [format Markdown]: https://www.markdownlang.com/fr/extended/

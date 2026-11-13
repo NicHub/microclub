@@ -197,6 +197,10 @@ body.deck-body {
   width: clamp(4rem, 10vw, 8rem);
 }
 
+.slide img[alt="Logo HUGO"] {
+  width: clamp(10rem, 230vw, 40rem);
+}
+
 .slide figure {
   margin: 0;
 }
