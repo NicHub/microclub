@@ -3,7 +3,6 @@ title: "Appart gratuit a Marrakech!!"
 date: "2009-02-28T07:53:55"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/02/28/appart-gratuit-a-marrakech.svg"
 categories: ["Microclub"]
 tags: ["histoire", "photos", "reseau"]
 url: "/2009/02/28/appart-gratuit-a-marrakech/"

@@ -3,7 +3,6 @@ title: "Anciennes conférences"
 date: "2015-11-21T00:12:18"
 lastmod: "2019-06-29T11:27:54"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2015/11/21/anciennes-conferences.svg"
 categories: ["non classé"]
 tags: []
 url: "/2015/11/21/anciennes-conferences/"

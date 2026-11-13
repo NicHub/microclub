@@ -3,7 +3,6 @@ title: "Main robotique pouvant coder le LPC"
 date: "2015-05-18T21:59:07"
 lastmod: "2016-02-02T20:11:13"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2015/05/18/main-robotique-pouvant-coder-le-lpc.svg"
 categories: ["Articles", "Microclub"]
 tags: ["arduino", "embarque", "hardware", "python", "robot", "software"]
 url: "/2015/05/18/main-robotique-pouvant-coder-le-lpc/"

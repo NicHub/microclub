@@ -3,7 +3,6 @@ title: "Barrette écologique – suivi 2"
 date: "2010-08-27T08:26:43"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2010/08/27/barrette-ecologique-suivi-2.svg"
 categories: ["Microclub"]
 tags: ["barrette", "ecologie", "hardware", "pic"]
 url: "/2010/08/27/barrette-ecologique-suivi-2/"

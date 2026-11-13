@@ -3,7 +3,6 @@ title: "« Conditions Yoda », « Gestion d’exception Pokémon » et autre
 date: "2013-09-03T21:05:45"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/09/03/conditions-yoda-gestion-dexception-pokemon-et-autres-classiques-de-programmation.svg"
 categories: ["Microclub"]
 tags: ["humour", "programmation"]
 url: "/2013/09/03/conditions-yoda-gestion-dexception-pokemon-et-autres-classiques-de-programmation/"

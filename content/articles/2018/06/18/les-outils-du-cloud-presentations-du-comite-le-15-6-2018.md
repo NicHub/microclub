@@ -3,7 +3,6 @@ title: "Les outils du cloud, présentations du 15.6.2018"
 date: "2018-06-18T09:10:58"
 lastmod: "2018-06-18T09:15:31"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2018/06/18/les-outils-du-cloud-presentations-du-comite-le-15-6-2018.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2018/06/18/les-outils-du-cloud-presentations-du-comite-le-15-6-2018/"

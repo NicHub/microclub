@@ -3,7 +3,6 @@ title: "Connecter son smartphone Android à Windows11"
 date: "2023-04-23T16:27:57"
 lastmod: "2023-04-23T16:52:02"
 author: "franic"
-featureimage: "images/articles/auto/2023/04/23/connecter-son-smartphone-android-a-windows11.svg"
 categories: ["Articles"]
 tags: ["windows"]
 url: "/2023/04/23/connecter-son-smartphone-android-a-windows11/"

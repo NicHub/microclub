@@ -3,7 +3,6 @@ title: "Source de courant à ampli-opérationnel"
 date: "2025-06-17T20:23:00"
 lastmod: "2025-06-17T20:23:01"
 author: "Jean-Pierre Broillet"
-featureimage: "images/articles/auto/2025/06/17/source-de-courant-a-ampli-operationnel.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/06/17/source-de-courant-a-ampli-operationnel/"

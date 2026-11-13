@@ -3,7 +3,6 @@ title: "Tag Galaxy"
 date: "2008-05-26T19:36:07"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/05/26/tag-galaxy.svg"
 categories: ["Microclub"]
 tags: ["flickr", "mashup", "photos"]
 url: "/2008/05/26/tag-galaxy/"

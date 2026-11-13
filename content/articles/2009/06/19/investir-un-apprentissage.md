@@ -3,7 +3,6 @@ title: "Investir, un apprentissage"
 date: "2009-06-19T19:07:19"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/06/19/investir-un-apprentissage.svg"
 categories: ["Microclub"]
 tags: ["conference", "finances"]
 url: "/2009/06/19/investir-un-apprentissage/"

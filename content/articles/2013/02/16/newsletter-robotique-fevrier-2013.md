@@ -3,7 +3,6 @@ title: "Newsletter robotique – Février 2013"
 date: "2013-02-16T15:27:47"
 lastmod: "2015-04-24T23:24:19"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/02/16/newsletter-robotique-fevrier-2013.svg"
 categories: ["Bricobot"]
 tags: ["robotique"]
 url: "/2013/02/16/newsletter-robotique-fevrier-2013/"

@@ -3,7 +3,6 @@ title: "Souris Logitech M515 améliorée"
 date: "2013-08-02T22:14:45"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/08/02/souris-logitech-m515-amelioree.svg"
 categories: ["Microclub"]
 tags: ["embarque", "hardware", "initiation"]
 url: "/2013/08/02/souris-logitech-m515-amelioree/"

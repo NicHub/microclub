@@ -3,7 +3,6 @@ title: "Conférence \"SwissCube\""
 date: "2008-02-23T15:14:46"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/02/23/conference-swisscube.svg"
 categories: ["Microclub"]
 tags: ["hardware", "radio-amateur"]
 url: "/2008/02/23/conference-swisscube/"

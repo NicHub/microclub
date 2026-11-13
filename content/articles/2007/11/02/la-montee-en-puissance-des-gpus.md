@@ -3,7 +3,6 @@ title: "La montée en puissance des GPUs"
 date: "2007-11-02T08:10:44"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/11/02/la-montee-en-puissance-des-gpus.svg"
 categories: ["Microclub"]
 tags: ["gpu", "hardware", "parallele", "programmation"]
 url: "/2007/11/02/la-montee-en-puissance-des-gpus/"

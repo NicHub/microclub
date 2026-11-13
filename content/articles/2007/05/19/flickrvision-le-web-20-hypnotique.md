@@ -3,7 +3,6 @@ title: "Flickrvision, le web 2.0 hypnotique"
 date: "2007-05-19T20:05:09"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/05/19/flickrvision-le-web-20-hypnotique.svg"
 categories: ["Microclub"]
 tags: ["flickr", "google", "mashup"]
 url: "/2007/05/19/flickrvision-le-web-20-hypnotique/"

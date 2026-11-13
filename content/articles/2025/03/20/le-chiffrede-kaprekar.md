@@ -3,7 +3,6 @@ title: "Le chiffre de Kaprekar"
 date: "2025-03-20T18:47:16"
 lastmod: "2025-03-20T19:41:45"
 author: "Jean-Pierre Broillet"
-featureimage: "images/articles/auto/2025/03/20/le-chiffrede-kaprekar.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/03/20/le-chiffrede-kaprekar/"

@@ -3,7 +3,6 @@ title: "U3 : les nouvelles clés USB"
 date: "2007-02-23T19:39:23"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/02/23/u3-les-nouvelles-cles-usb.svg"
 categories: ["Microclub"]
 tags: ["hardware", "non-classe", "u3"]
 url: "/2007/02/23/u3-les-nouvelles-cles-usb/"

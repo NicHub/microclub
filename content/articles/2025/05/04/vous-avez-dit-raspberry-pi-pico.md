@@ -3,7 +3,6 @@ title: "Vous avez dit Raspberry Pi ? Pico ?"
 date: "2025-05-04T16:35:28"
 lastmod: "2025-05-04T16:35:29"
 author: "Jean-Pierre Broillet"
-featureimage: "images/articles/auto/2025/05/04/vous-avez-dit-raspberry-pi-pico.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2025/05/04/vous-avez-dit-raspberry-pi-pico/"

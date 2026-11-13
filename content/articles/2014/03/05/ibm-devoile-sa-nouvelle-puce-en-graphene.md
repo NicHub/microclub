@@ -3,7 +3,6 @@ title: "IBM dévoile sa nouvelle puce en graphène"
 date: "2014-03-05T09:48:55"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2014/03/05/ibm-devoile-sa-nouvelle-puce-en-graphene.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2014/03/05/ibm-devoile-sa-nouvelle-puce-en-graphene/"

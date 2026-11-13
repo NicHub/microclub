@@ -3,7 +3,6 @@ title: "Installer un disque SSD (et ré-installer W7 et les programmes)"
 date: "2012-08-06T20:14:16"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/08/06/installer-un-disque-ssd-et-re-installer-w7-et-les-programmes.svg"
 categories: ["Microclub"]
 tags: ["hardware", "initiation", "ssd", "stockage", "systeme-dexploitation", "windows"]
 url: "/2012/08/06/installer-un-disque-ssd-et-re-installer-w7-et-les-programmes/"

@@ -3,7 +3,6 @@ title: "Les beaux nuages de tags de Wordle"
 date: "2008-07-22T20:16:17"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/07/22/les-beaux-nuages-de-tags-de-wordle.svg"
 categories: ["Microclub"]
 tags: ["del-icio-us", "graphiques", "tags", "wordle"]
 url: "/2008/07/22/les-beaux-nuages-de-tags-de-wordle/"

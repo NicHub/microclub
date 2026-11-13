@@ -3,7 +3,6 @@ title: "Pandora coupée en Europe !"
 date: "2007-05-03T22:19:45"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/05/03/pandora-coupee-en-europe.svg"
 categories: ["Microclub"]
 tags: ["musique", "pandora"]
 url: "/2007/05/03/pandora-coupee-en-europe/"

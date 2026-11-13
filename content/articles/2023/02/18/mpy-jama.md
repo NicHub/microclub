@@ -3,7 +3,6 @@ title: "MPY-jama"
 date: "2023-02-18T15:25:53"
 lastmod: "2023-02-18T15:30:00"
 author: "franic"
-featureimage: "images/articles/auto/2023/02/18/mpy-jama.svg"
 categories: ["Articles"]
 tags: ["hardware", "programmation"]
 url: "/2023/02/18/mpy-jama/"

@@ -3,7 +3,6 @@ title: "Superordinateurs de table"
 date: "2009-03-13T09:32:33"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/03/13/superordinateurs-de-table.svg"
 categories: ["Microclub"]
 tags: ["consoles", "futur", "gpgpu", "gpu", "hardware", "nvidia", "processeurs", "programmation", "science"]
 url: "/2009/03/13/superordinateurs-de-table/"

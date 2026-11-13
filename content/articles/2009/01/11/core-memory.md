@@ -3,7 +3,6 @@ title: "Core memory"
 date: "2009-01-11T19:01:25"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/01/11/core-memory.svg"
 categories: ["Microclub"]
 tags: ["histoire", "livre", "photos"]
 url: "/2009/01/11/core-memory/"

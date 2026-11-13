@@ -3,7 +3,6 @@ title: "Doit-on montrer le code informatique des scientifiques même s’il est 
 date: "2013-02-20T07:16:10"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/02/20/doit-on-montrer-le-code-informatique-des-scientifiques-meme-sil-est-moche.svg"
 categories: ["Microclub"]
 tags: ["open-source", "science"]
 url: "/2013/02/20/doit-on-montrer-le-code-informatique-des-scientifiques-meme-sil-est-moche/"

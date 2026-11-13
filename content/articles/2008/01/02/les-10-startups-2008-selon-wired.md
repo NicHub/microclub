@@ -3,7 +3,6 @@ title: "les 10 startups 2008 selon Wired"
 date: "2008-01-02T22:28:39"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/01/02/les-10-startups-2008-selon-wired.svg"
 categories: ["Microclub"]
 tags: ["bittorrent", "fon", "google", "linkedin", "rockyou", "slide-com", "spock", "widgets"]
 url: "/2008/01/02/les-10-startups-2008-selon-wired/"

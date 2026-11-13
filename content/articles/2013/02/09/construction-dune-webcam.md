@@ -3,7 +3,6 @@ title: "Construction d’une WEBCAM"
 date: "2013-02-09T00:26:51"
 lastmod: "2016-02-02T20:09:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/02/09/construction-dune-webcam.svg"
 categories: ["Articles", "Microclub"]
 tags: ["html", "javascript", "microcontroleur", "webcam", "webserver", "wifi"]
 url: "/2013/02/09/construction-dune-webcam/"

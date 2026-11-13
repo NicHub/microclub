@@ -3,7 +3,6 @@ title: "Python"
 date: "2011-05-13T15:20:24"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2011/05/13/python.svg"
 categories: ["Microclub"]
 tags: ["programmation", "python"]
 url: "/2011/05/13/python/"

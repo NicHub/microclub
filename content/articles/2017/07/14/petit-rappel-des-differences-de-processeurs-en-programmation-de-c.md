@@ -3,7 +3,6 @@ title: "Petit rappel des différences de processeurs en programmation de C."
 date: "2017-07-14T10:02:15"
 lastmod: "2017-07-14T13:41:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2017/07/14/petit-rappel-des-differences-de-processeurs-en-programmation-de-c.svg"
 categories: ["Articles", "Microclub"]
 tags: ["b77", "c-programming", "html", "interface", "remote", "revox"]
 url: "/2017/07/14/petit-rappel-des-differences-de-processeurs-en-programmation-de-c/"

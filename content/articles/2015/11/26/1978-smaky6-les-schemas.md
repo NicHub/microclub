@@ -3,7 +3,6 @@ title: "Smaky 6, les schémas 1978"
 date: "2015-11-26T23:11:27"
 lastmod: "2015-11-27T22:07:57"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2015/11/26/1978-smaky6-les-schemas.svg"
 categories: ["Nostalgique"]
 tags: []
 url: "/2015/11/26/1978-smaky6-les-schemas/"

@@ -3,7 +3,6 @@ title: "Process explorer – le remplaçant de Gestionnaire de tâches"
 date: "2008-12-31T17:16:49"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/12/31/process-explorer.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2008/12/31/process-explorer/"

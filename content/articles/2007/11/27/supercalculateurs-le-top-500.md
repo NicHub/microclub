@@ -3,7 +3,6 @@ title: "Supercalculateurs : le Top 500"
 date: "2007-11-27T12:34:27"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/11/27/supercalculateurs-le-top-500.svg"
 categories: ["Microclub"]
 tags: ["consoles", "hardware", "parallele", "science", "web"]
 url: "/2007/11/27/supercalculateurs-le-top-500/"

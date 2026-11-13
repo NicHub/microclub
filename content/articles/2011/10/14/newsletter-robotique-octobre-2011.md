@@ -3,7 +3,6 @@ title: "Newsletter Robotique – Octobre 2011"
 date: "2011-10-14T09:47:20"
 lastmod: "2015-04-24T23:25:29"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2011/10/14/newsletter-robotique-octobre-2011.svg"
 categories: ["Bricobot"]
 tags: ["embarque", "hardware", "robotique"]
 url: "/2011/10/14/newsletter-robotique-octobre-2011/"

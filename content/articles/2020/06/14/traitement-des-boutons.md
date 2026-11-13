@@ -3,7 +3,6 @@ title: "Traitement des boutons"
 date: "2020-06-14T21:15:36"
 lastmod: "2020-06-15T19:21:32"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2020/06/14/traitement-des-boutons.svg"
 categories: ["Articles", "Microclub"]
 tags: ["arduino", "bounce", "c-2", "macro", "switch"]
 url: "/2020/06/14/traitement-des-boutons/"

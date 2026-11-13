@@ -3,7 +3,6 @@ title: "Serveur DHCP avec Windows 7"
 date: "2014-06-15T21:05:41"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2014/06/15/serveur-dhcp-avec-windows-7.svg"
 categories: ["Microclub"]
 tags: ["arduino", "barrette", "dhcp", "initiation", "linux", "systeme-dexploitation", "windows"]
 url: "/2014/06/15/serveur-dhcp-avec-windows-7/"

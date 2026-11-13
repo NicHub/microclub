@@ -3,7 +3,6 @@ title: "informatique = IT + CS"
 date: "2008-01-10T08:31:03"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/01/10/informatique-it-cs.svg"
 categories: ["Microclub"]
 tags: ["futur", "google", "it", "livre", "web"]
 url: "/2008/01/10/informatique-it-cs/"

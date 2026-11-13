@@ -3,7 +3,6 @@ title: "SIT – Système d’Information sur le Territoire"
 date: "2014-11-12T18:19:59"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2014/11/12/sit-systeme-dinformation-sur-le-territoire.svg"
 categories: ["Microclub"]
 tags: ["cartographie", "georeference", "javascript", "sit", "web"]
 url: "/2014/11/12/sit-systeme-dinformation-sur-le-territoire/"

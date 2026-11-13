@@ -3,7 +3,6 @@ title: "Vitesse IO sur module ESP8266"
 date: "2016-09-16T14:33:58"
 lastmod: "2016-12-03T14:10:03"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/09/16/vitesse-io-sur-module-esp8266.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2016/09/16/vitesse-io-sur-module-esp8266/"

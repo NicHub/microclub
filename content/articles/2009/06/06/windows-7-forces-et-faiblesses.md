@@ -3,7 +3,6 @@ title: "Windows 7 – forces et faiblesses"
 date: "2009-06-06T09:32:13"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/06/06/windows-7-forces-et-faiblesses.svg"
 categories: ["Microclub"]
 tags: ["systeme-dexploitation", "vista", "windows"]
 url: "/2009/06/06/windows-7-forces-et-faiblesses/"

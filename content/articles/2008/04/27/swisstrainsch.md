@@ -3,7 +3,6 @@ title: "Swisstrains.ch"
 date: "2008-04-27T10:10:21"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/04/27/swisstrainsch.svg"
 categories: ["Microclub"]
 tags: ["google", "maps", "mashup"]
 url: "/2008/04/27/swisstrainsch/"

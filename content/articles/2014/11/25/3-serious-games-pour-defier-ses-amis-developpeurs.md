@@ -3,7 +3,6 @@ title: "3 serious games pour défier ses amis développeurs"
 date: "2014-11-25T19:59:07"
 lastmod: "2015-04-24T23:20:17"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2014/11/25/3-serious-games-pour-defier-ses-amis-developpeurs.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2014/11/25/3-serious-games-pour-defier-ses-amis-developpeurs/"

@@ -3,7 +3,6 @@ title: "Exercice de style en C, C++, C#"
 date: "2008-10-08T19:25:43"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/10/08/exercice-de-style-en-c-c-c.svg"
 categories: ["Microclub"]
 tags: ["programmation"]
 url: "/2008/10/08/exercice-de-style-en-c-c-c/"

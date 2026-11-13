@@ -3,7 +3,6 @@ title: "Comment tenter de contrôler son identité sur le Net"
 date: "2007-11-19T17:52:03"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/11/19/comment-tenter-de-controler-son-identite-sur-le-net.svg"
 categories: ["Microclub"]
 tags: ["social", "web"]
 url: "/2007/11/19/comment-tenter-de-controler-son-identite-sur-le-net/"

@@ -3,7 +3,6 @@ title: "Microclub et Mi-Chronique sont sur Internet !"
 date: "1995-09-03T15:02:50"
 lastmod: "2015-04-24T23:20:26"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/1995/09/03/microclub-et-mi-chronique-sont-sur-internet.svg"
 categories: ["Microclub"]
 tags: []
 url: "/1995/09/03/microclub-et-mi-chronique-sont-sur-internet/"

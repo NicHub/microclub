@@ -3,7 +3,6 @@ title: "del.icio.us"
 date: "2007-11-28T07:46:26"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/11/28/delicious.svg"
 categories: ["Microclub"]
 tags: ["social", "web"]
 url: "/2007/11/28/delicious/"

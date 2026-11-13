@@ -3,7 +3,6 @@ title: "facebook"
 date: "2007-11-02T08:52:40"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/11/02/facebook.svg"
 categories: ["Microclub"]
 tags: ["social"]
 url: "/2007/11/02/facebook/"

@@ -3,7 +3,6 @@ title: "Etude Facebook"
 date: "2007-10-16T07:14:49"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/10/16/etude-facebook.svg"
 categories: ["Microclub"]
 tags: ["divers", "facebook"]
 url: "/2007/10/16/etude-facebook/"

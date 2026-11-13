@@ -3,7 +3,6 @@ title: "Comment effacer du code"
 date: "2008-11-19T21:02:08"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/11/19/comment-effacer-du-code.svg"
 categories: ["Microclub"]
 tags: ["programmation"]
 url: "/2008/11/19/comment-effacer-du-code/"

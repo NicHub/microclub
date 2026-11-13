@@ -3,7 +3,6 @@ title: "flux RSS"
 date: "2007-05-10T18:06:21"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/05/10/flux-rss.svg"
 categories: ["Microclub"]
 tags: ["non-classe", "rss"]
 url: "/2007/05/10/flux-rss/"

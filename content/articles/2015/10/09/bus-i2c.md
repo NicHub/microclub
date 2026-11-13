@@ -3,7 +3,6 @@ title: "Bus I2C"
 date: "2015-10-09T20:05:00"
 lastmod: "2016-02-02T20:07:56"
 author: "Claude Balmer"
-featureimage: "images/articles/auto/2015/10/09/bus-i2c.svg"
 categories: ["Articles", "Microclub"]
 tags: ["bus-i2c"]
 url: "/2015/10/09/bus-i2c/"

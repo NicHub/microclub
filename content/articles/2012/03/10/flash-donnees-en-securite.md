@@ -3,7 +3,6 @@ title: "FLASH: données en sécurité?"
 date: "2012-03-10T17:32:32"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/03/10/flash-donnees-en-securite.svg"
 categories: ["Microclub"]
 tags: ["consoles", "donnees", "hardware", "systeme-dexploitation"]
 url: "/2012/03/10/flash-donnees-en-securite/"

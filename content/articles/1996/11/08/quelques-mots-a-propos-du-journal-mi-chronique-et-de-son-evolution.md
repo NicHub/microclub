@@ -3,7 +3,6 @@ title: "Quelques mots à propos du journal Mi-Chronique et de son évolution."
 date: "1996-11-08T15:48:57"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/1996/11/08/quelques-mots-a-propos-du-journal-mi-chronique-et-de-son-evolution.svg"
 categories: ["Microclub"]
 tags: []
 url: "/1996/11/08/quelques-mots-a-propos-du-journal-mi-chronique-et-de-son-evolution/"

@@ -3,7 +3,6 @@ title: "Contrôle de charge pour vélo électrique"
 date: "2012-09-11T19:47:38"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/09/11/controle-de-charge-pour-velo-electrique.svg"
 categories: ["Microclub"]
 tags: ["arduino", "barrette", "ecologie", "embarque", "energie", "hardware", "programmation"]
 url: "/2012/09/11/controle-de-charge-pour-velo-electrique/"

@@ -3,7 +3,6 @@ title: "4 coeurs c'est mieux que 2, parfois."
 date: "2008-04-19T20:02:00"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/04/19/4-coeurs-cest-mieux-que-2-parfois.svg"
 categories: ["Microclub"]
 tags: ["hardware", "processeurs"]
 url: "/2008/04/19/4-coeurs-cest-mieux-que-2-parfois/"

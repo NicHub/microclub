@@ -3,7 +3,6 @@ title: "Palmarès des virus de l'année 2007"
 date: "2008-01-10T15:29:58"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/01/10/palmares-des-virus-de-lannee-2007.svg"
 categories: ["Microclub"]
 tags: ["securite"]
 url: "/2008/01/10/palmares-des-virus-de-lannee-2007/"

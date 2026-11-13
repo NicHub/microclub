@@ -3,7 +3,6 @@ title: "DropBox et Wuala: le cloud s’enrichit"
 date: "2011-08-30T21:07:28"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2011/08/30/dropbox-et-wuala-le-cloud-senrichit.svg"
 categories: ["Microclub"]
 tags: ["software", "web"]
 url: "/2011/08/30/dropbox-et-wuala-le-cloud-senrichit/"

@@ -3,7 +3,6 @@ title: "Eau chaude – Calcul de constante de temps"
 date: "2018-01-05T21:27:44"
 lastmod: "2018-01-09T21:18:29"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2018/01/05/eau-chaude-calcul-de-constante-de-temps.svg"
 categories: ["Articles", "Microclub"]
 tags: ["analyse", "arduino", "chauffage-solaire", "ecs", "exponentielle", "python", "yun"]
 url: "/2018/01/05/eau-chaude-calcul-de-constante-de-temps/"

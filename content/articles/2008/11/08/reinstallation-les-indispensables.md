@@ -3,7 +3,6 @@ title: "Réinstallation : les indispensables"
 date: "2008-11-08T15:20:09"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/11/08/reinstallation-les-indispensables.svg"
 categories: ["Microclub"]
 tags: ["non-classe", "windows"]
 url: "/2008/11/08/reinstallation-les-indispensables/"

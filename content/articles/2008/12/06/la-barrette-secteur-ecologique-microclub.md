@@ -3,7 +3,6 @@ title: "La barrette secteur écologique MICROCLUB"
 date: "2008-12-06T21:43:12"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/12/06/la-barrette-secteur-ecologique-microclub.svg"
 categories: ["Microclub"]
 tags: ["ecologie", "futur", "gadgets", "hardware", "processeurs", "programmation", "reseau", "web"]
 url: "/2008/12/06/la-barrette-secteur-ecologique-microclub/"

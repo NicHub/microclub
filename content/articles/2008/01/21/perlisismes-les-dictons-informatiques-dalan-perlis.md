@@ -3,7 +3,6 @@ title: "Perlisismes : les dictons informatiques d'Alan Perlis"
 date: "2008-01-21T16:34:48"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/01/21/perlisismes-les-dictons-informatiques-dalan-perlis.svg"
 categories: ["Microclub"]
 tags: ["programmation"]
 url: "/2008/01/21/perlisismes-les-dictons-informatiques-dalan-perlis/"

@@ -3,7 +3,6 @@ title: "Clef USB flash en mode RAW – retrouver les fichiers"
 date: "2016-02-02T22:17:02"
 lastmod: "2016-02-02T22:17:02"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/02/02/clef-usb-flash-en-mode-raw-retrouver-les-fichiers.svg"
 categories: ["Microclub"]
 tags: ["chkdsk", "clef-usb-flash-memory-test", "consoles", "linux", "mode-raw", "recovery", "securite", "windows"]
 url: "/2016/02/02/clef-usb-flash-en-mode-raw-retrouver-les-fichiers/"

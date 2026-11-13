@@ -3,7 +3,6 @@ title: "CMS, Blogs et Wikis"
 date: "2006-06-03T19:44:29"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2006/06/03/cms-blogs-et-wikis.svg"
 categories: ["Microclub"]
 tags: ["web"]
 url: "/2006/06/03/cms-blogs-et-wikis/"

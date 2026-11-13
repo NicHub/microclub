@@ -1,53 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">RFID_Microclub</title>
-  <desc id="desc">Vignette éditoriale du MicroClub consacrée à : RFID_Microclub. Catégorie : ÉLECTRONIQUE.</desc>
+  <title id="title">Communication RFID sans contact</title>
+  <desc id="desc">Un lecteur échange des données par ondes radio avec une étiquette RFID équipée d’une puce et d’une antenne.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#04141c"/><stop offset=".55" stop-color="#0b3448"/><stop offset="1" stop-color="#083344"/></linearGradient>
-    <radialGradient id="halo"><stop stop-color="#06b6d4" stop-opacity=".38"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#67e8f9"/></linearGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="16"/></filter>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0H0V48" fill="none" stroke="#22d3ee" stroke-width="1" opacity=".09"/>
-    </pattern>
+    <linearGradient id="bg" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#071a26"/><stop offset=".5" stop-color="#12344a"/><stop offset="1" stop-color="#0b3b3a"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#2dd4bf" stop-opacity=".38"/><stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/></radialGradient>
+    <linearGradient id="tag" x1="0" x2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#cbd5e1"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000" flood-opacity=".48"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
+    <pattern id="dots" width="42" height="42" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="2" fill="#99f6e4" opacity=".14"/></pattern>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)"/>
-  <rect width="1600" height="900" fill="url(#grid)"/>
-  <ellipse cx="1220" cy="420" rx="520" ry="480" fill="url(#halo)"/>
-  <ellipse cx="330" cy="520" rx="430" ry="380" fill="none" stroke="#22d3ee" stroke-width="2" opacity=".07"/>
-  <circle cx="84" cy="791" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="934" cy="658" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="772" cy="578" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="910" cy="227" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="1097" cy="545" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="1000" cy="222" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="312" cy="134" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="696" cy="157" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="310" cy="590" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="184" cy="318" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="1446" cy="394" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="534" cy="261" r="2" fill="#67e8f9" opacity="0.18"/><circle cx="199" cy="119" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="300" cy="80" r="2" fill="#67e8f9" opacity="0.3"/><circle cx="1066" cy="254" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="771" cy="128" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="1535" cy="473" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="1267" cy="605" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="796" cy="626" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="387" cy="397" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="178" cy="398" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="303" cy="278" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="690" cy="353" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="104" cy="651" r="3" fill="#67e8f9" opacity="0.18"/><circle cx="1310" cy="203" r="3" fill="#67e8f9" opacity="0.3"/><circle cx="536" cy="673" r="2" fill="#67e8f9" opacity="0.18"/>
-  <g>
-    <rect x="120" y="418.0" width="295.0" height="46.0" rx="23.0" fill="none" stroke="#67e8f9" stroke-width="2.5" opacity=".75"/>
-    <text x="267.5" y="449.0" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25.0" font-weight="600" letter-spacing="4.5" fill="#67e8f9">ÉLECTRONIQUE</text>
+  <rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#dots)"/>
+  <ellipse cx="815" cy="445" rx="650" ry="430" fill="url(#halo)"/>
+  <g opacity=".22" stroke="#5eead4" stroke-width="2"><path d="M0 150h500l80 80h440l90-90h490M0 760h390l90-90h580l85 85h455" fill="none"/><circle cx="500" cy="150" r="7" fill="#5eead4"/><circle cx="1020" cy="230" r="7" fill="#5eead4"/><circle cx="480" cy="670" r="7" fill="#5eead4"/></g>
+  <g transform="translate(120 215)" filter="url(#shadow)">
+    <rect width="410" height="470" rx="46" fill="#0f2737" stroke="#5eead4" stroke-width="6"/>
+    <rect x="53" y="55" width="304" height="255" rx="22" fill="#102f40" stroke="#2dd4bf" stroke-width="4"/>
+    <path d="M105 238c55-58 145-58 200 0M137 199c37-38 99-38 136 0M175 161c17-17 43-17 60 0" fill="none" stroke="#5eead4" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="205" cy="258" r="15" fill="#fbbf24"/>
+    <rect x="86" y="354" width="238" height="48" rx="15" fill="#334155"/><circle cx="118" cy="378" r="10" fill="#34d399"/><path d="M148 378h135" stroke="#94a3b8" stroke-width="8"/>
   </g>
-  <path d="M96 499.1H102V585.1H96Z" fill="url(#accent)" opacity=".9"/>
-  <text x="120" y="573.1" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="86" font-weight="700" fill="#f8fafc"><tspan x="120" dy="0.0">RFID_Microclub</tspan></text>
-  <g>
-    <rect x="940" y="150" width="560" height="560" rx="52" fill="#060c16" opacity=".55"/>
-    <rect x="940" y="150" width="560" height="560" rx="52" fill="none" stroke="#22d3ee" stroke-width="2" opacity=".28"/>
-    <rect x="968" y="178" width="504" height="504" rx="38" fill="none" stroke="#67e8f9" stroke-width="2" opacity=".28" stroke-dasharray="8 14"/>
-    <g stroke="#67e8f9" stroke-width="3" opacity=".55" stroke-linecap="round">
-      <path d="M940 250V202h48M1500 250V202h-48M940 610v48h48M1500 610v48h-48"/>
+  <g fill="none" stroke="#67e8f9" stroke-width="12" stroke-linecap="round" opacity=".9">
+    <path d="M584 575q140-130 280 0"/><path d="M552 623q173-184 346 0"/><path d="M525 670q201-235 402 0"/>
+  </g>
+  <g fill="#fbbf24" filter="url(#glow)" opacity=".7"><circle cx="660" cy="515" r="10"/><circle cx="728" cy="475" r="8"/><circle cx="796" cy="482" r="11"/><circle cx="855" cy="525" r="7"/></g>
+  <g transform="translate(880 195)" filter="url(#shadow)">
+    <rect width="585" height="505" rx="40" fill="url(#tag)" stroke="#fff" stroke-width="6"/>
+    <rect x="235" y="180" width="115" height="145" rx="12" fill="#d97706" stroke="#fef3c7" stroke-width="8"/>
+    <rect x="258" y="208" width="69" height="99" rx="7" fill="#78350f"/>
+    <g fill="#fbbf24"><rect x="270" y="221" width="18" height="18"/><rect x="297" y="221" width="18" height="18"/><rect x="270" y="249" width="45" height="15"/><rect x="270" y="276" width="18" height="18"/><rect x="297" y="276" width="18" height="18"/></g>
+    <g fill="none" stroke="#b45309" stroke-width="14" stroke-linejoin="round">
+      <rect x="50" y="48" width="485" height="409" rx="72"/><rect x="82" y="79" width="421" height="347" rx="58"/><rect x="115" y="111" width="355" height="283" rx="45"/><rect x="150" y="145" width="285" height="215" rx="32"/>
     </g>
-    <circle cx="1220" cy="430" r="150" fill="#06b6d4" opacity=".2" filter="url(#glow)"/>
-    <circle cx="1220" cy="430" r="258" fill="none" stroke="#22d3ee" stroke-width="1.5" opacity=".12"/>
-    <g transform="translate(1220 430) scale(1.75)">
-      <g fill="none" stroke="#22d3ee" stroke-width="9" stroke-linecap="round">
-        <rect x="-72" y="-72" width="144" height="144" rx="22"/>
-        <rect x="-32" y="-32" width="64" height="64" rx="10" stroke="#67e8f9"/>
-        <path d="M-72-44h-26M-72-15h-26M-72 15h-26M-72 44h-26M72-44h26M72-15h26M72 15h26M72 44h26"/>
-        <path d="M-44-72v-26M-15-72v-26M15-72v-26M44-72v-26M-44 72v26M-15 72v26M15 72v26M44 72v26"/>
-      </g><circle r="7" fill="#a78bfa"/></g>
+    <path d="M235 252h-85M350 252h85" stroke="#b45309" stroke-width="14"/>
   </g>
-  <g fill="#f8fafc" opacity=".35">
-    <path d="M1050 96l6 15 15 6-15 6-6 15-6-15-15-6 15-6z"/>
-    <path d="M840 720l5 12 12 5-12 5-5 12-5-12-12-5 12-5z"/>
+  <g transform="translate(695 280)" fill="#e0f2fe" opacity=".92">
+    <rect x="0" y="0" width="72" height="54" rx="10"/><path d="M12 14l24 19 24-19v29H12z" fill="#0891b2"/>
+    <rect x="30" y="-62" width="72" height="54" rx="10"/><path d="M42-48l24 19 24-19v29H42z" fill="#0891b2"/>
+    <rect x="65" y="66" width="72" height="54" rx="10"/><path d="M77 80l24 19 24-19v29H77z" fill="#0891b2"/>
   </g>
-  <path d="M120 812H1480" stroke="#22d3ee" stroke-width="2" opacity=".22"/>
-  <text x="120" y="856" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="600" letter-spacing="5" fill="#22d3ee">MICROCLUB</text>
-  <g fill="#67e8f9" opacity=".5">
-    <rect x="742" y="846" width="10" height="10" rx="2"/>
-    <rect x="762" y="846" width="10" height="10" rx="2" opacity=".7"/>
-    <rect x="782" y="846" width="10" height="10" rx="2" opacity=".4"/>
-  </g>
-  <text x="1480" y="856" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="24" font-weight="500" letter-spacing="3" fill="#cbd5e1" opacity=".6">microclub.ch</text>
 </svg>

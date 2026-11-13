@@ -3,7 +3,6 @@ title: "Photo numérique: de 2 à 20 megapixels"
 date: "2013-09-07T14:38:20"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/09/07/photo-numerique-de-2-a-20-megapixels.svg"
 categories: ["Microclub"]
 tags: ["compression", "gadgets", "hardware", "images", "initiation", "jpeg", "photos"]
 url: "/2013/09/07/photo-numerique-de-2-a-20-megapixels/"

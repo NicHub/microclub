@@ -3,7 +3,6 @@ title: "Proposez un Microprojet !"
 date: "2009-03-14T14:06:12"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/03/14/proposez-un-microprojet.svg"
 categories: ["Microclub"]
 tags: ["pic", "processeurs", "robot"]
 url: "/2009/03/14/proposez-un-microprojet/"

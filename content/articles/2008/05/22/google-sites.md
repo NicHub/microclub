@@ -3,7 +3,6 @@ title: "Google Sites"
 date: "2008-05-22T09:25:57"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/05/22/google-sites.svg"
 categories: ["Microclub"]
 tags: ["google", "sites"]
 url: "/2008/05/22/google-sites/"

@@ -3,7 +3,6 @@ title: "Atelier: Arduino, déverminage et multi-tâche"
 date: "2018-02-07T21:57:42"
 lastmod: "2018-02-22T18:32:08"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2018/02/07/atelier-arduino-deverminage-et-multi-tache.svg"
 categories: ["non classé"]
 tags: []
 url: "/2018/02/07/atelier-arduino-deverminage-et-multi-tache/"

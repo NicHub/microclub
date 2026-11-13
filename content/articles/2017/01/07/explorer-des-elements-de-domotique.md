@@ -3,7 +3,6 @@ title: "Explorer des éléments de domotique"
 date: "2017-01-07T22:08:42"
 lastmod: "2017-01-07T22:13:24"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2017/01/07/explorer-des-elements-de-domotique.svg"
 categories: ["Articles", "Microclub"]
 tags: ["barrette", "domotique", "gadgets", "hardware", "iot", "reseau", "software"]
 url: "/2017/01/07/explorer-des-elements-de-domotique/"

@@ -3,7 +3,6 @@ title: "yves.masur.microclub devient yvesmasur.ch"
 date: "2011-01-23T18:39:33"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2011/01/23/yves-masur-microclub-devient-yvesmasur-ch.svg"
 categories: ["Microclub"]
 tags: ["mysql", "non-classe", "php", "programmation", "site", "software", "unix", "web"]
 url: "/2011/01/23/yves-masur-microclub-devient-yvesmasur-ch/"

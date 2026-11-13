@@ -3,7 +3,6 @@ title: "Niveau de complexité"
 date: "2018-08-26T20:52:52"
 lastmod: "2018-08-26T20:54:35"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2018/08/26/niveau-de-complexite.svg"
 categories: ["Articles"]
 tags: ["arduino", "divers", "initiation", "programmation", "securite"]
 url: "/2018/08/26/niveau-de-complexite/"

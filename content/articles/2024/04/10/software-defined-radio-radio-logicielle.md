@@ -3,7 +3,6 @@ title: "Software Defined Radio – Radio logicielle"
 date: "2024-04-10T21:14:18"
 lastmod: "2024-04-10T21:16:37"
 author: "Jean-Marc Paratte"
-featureimage: "images/articles/auto/2024/04/10/software-defined-radio-radio-logicielle.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2024/04/10/software-defined-radio-radio-logicielle/"

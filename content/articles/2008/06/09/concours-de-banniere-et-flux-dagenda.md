@@ -3,7 +3,6 @@ title: "Concours de bannière et flux d'agenda"
 date: "2008-06-09T09:30:23"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/06/09/concours-de-banniere-et-flux-dagenda.svg"
 categories: ["Microclub"]
 tags: ["web"]
 url: "/2008/06/09/concours-de-banniere-et-flux-dagenda/"

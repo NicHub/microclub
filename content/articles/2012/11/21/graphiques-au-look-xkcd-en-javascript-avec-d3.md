@@ -3,7 +3,6 @@ title: "Graphiques au look XKCD en Javascript avec D3"
 date: "2012-11-21T19:58:51"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/11/21/graphiques-au-look-xkcd-en-javascript-avec-d3.svg"
 categories: ["Microclub"]
 tags: ["d3", "graphiques", "javascript"]
 url: "/2012/11/21/graphiques-au-look-xkcd-en-javascript-avec-d3/"

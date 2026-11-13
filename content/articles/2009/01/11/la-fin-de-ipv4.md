@@ -3,7 +3,6 @@ title: "La fin de IPV4 ?"
 date: "2009-01-11T23:09:00"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/01/11/la-fin-de-ipv4.svg"
 categories: ["Microclub"]
 tags: ["it", "web"]
 url: "/2009/01/11/la-fin-de-ipv4/"

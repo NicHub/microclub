@@ -3,7 +3,6 @@ title: "Découvrir le Raspberry Pi"
 date: "2013-05-11T09:33:19"
 lastmod: "2016-04-10T17:11:02"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/05/11/decouvrir-le-raspberry-pi.svg"
 categories: ["Microclub"]
 tags: ["bittorrent", "consoles", "embarque", "hardware", "initiation", "processeurs", "python", "web"]
 url: "/2013/05/11/decouvrir-le-raspberry-pi/"

@@ -3,7 +3,6 @@ title: "TV et réparation"
 date: "2008-06-15T16:12:36"
 lastmod: "2015-04-24T23:21:14"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/06/15/tv-et-reparation.svg"
 categories: ["Microclub"]
 tags: ["hardware"]
 url: "/2008/06/15/tv-et-reparation/"

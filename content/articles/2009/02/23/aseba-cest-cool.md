@@ -3,7 +3,6 @@ title: "Aseba, c'est cool !"
 date: "2009-02-23T20:09:26"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/02/23/aseba-cest-cool.svg"
 categories: ["Microclub"]
 tags: ["aseba", "epfl", "programmation", "robot"]
 url: "/2009/02/23/aseba-cest-cool/"

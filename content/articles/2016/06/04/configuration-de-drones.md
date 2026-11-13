@@ -3,7 +3,6 @@ title: "Configuration de drones"
 date: "2016-06-04T10:00:11"
 lastmod: "2016-06-04T10:07:04"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/06/04/configuration-de-drones.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2016/06/04/configuration-de-drones/"

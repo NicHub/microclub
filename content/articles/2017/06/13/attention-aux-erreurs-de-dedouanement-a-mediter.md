@@ -3,7 +3,6 @@ title: "Attention aux erreurs de dédouanement ! — À méditer !!"
 date: "2017-06-13T10:05:04"
 lastmod: "2017-06-21T09:33:16"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2017/06/13/attention-aux-erreurs-de-dedouanement-a-mediter.svg"
 categories: ["Articles", "Microclub"]
 tags: ["arnaque", "declaration", "dedouanement", "dhl", "erreur", "tva"]
 url: "/2017/06/13/attention-aux-erreurs-de-dedouanement-a-mediter/"

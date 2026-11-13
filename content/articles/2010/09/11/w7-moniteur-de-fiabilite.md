@@ -3,7 +3,6 @@ title: "W7 – moniteur de fiabilité"
 date: "2010-09-11T18:40:25"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2010/09/11/w7-moniteur-de-fiabilite.svg"
 categories: ["Microclub"]
 tags: ["consoles", "programmation", "securite", "systeme-dexploitation", "windows"]
 url: "/2010/09/11/w7-moniteur-de-fiabilite/"

@@ -3,7 +3,6 @@ title: "Mémoire Windows: Hit parade"
 date: "2011-04-03T20:21:32"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2011/04/03/memoire-windows-hit-parade.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2011/04/03/memoire-windows-hit-parade/"

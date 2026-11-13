@@ -3,7 +3,6 @@ title: "Yun – Expériences & découvertes"
 date: "2014-08-13T19:58:08"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2014/08/13/yun-experiences-decouvertes.svg"
 categories: ["Microclub"]
 tags: ["arduino", "consoles", "embarque", "hardware", "initiation", "linux", "processeurs", "python", "systeme-dexploitation"]
 url: "/2014/08/13/yun-experiences-decouvertes/"

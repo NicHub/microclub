@@ -3,7 +3,6 @@ title: "Barrette écologique – suivi"
 date: "2009-11-23T22:11:16"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/11/23/barrette-ecologique-suivi.svg"
 categories: ["Microclub"]
 tags: ["barrette", "c", "cpu", "ecologie", "hardware", "javascript", "lan", "programmation", "reseau", "rtc", "web"]
 url: "/2009/11/23/barrette-ecologique-suivi/"

@@ -3,7 +3,6 @@ title: "P19 1er prototype en test"
 date: "2019-03-10T14:07:27"
 lastmod: "2019-04-16T10:42:32"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2019/03/10/p19-1er-prototype-en-test.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2019/03/10/p19-1er-prototype-en-test/"

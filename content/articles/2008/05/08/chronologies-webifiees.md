@@ -3,7 +3,6 @@ title: "Chronologies webifiées"
 date: "2008-05-08T14:03:20"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/05/08/chronologies-webifiees.svg"
 categories: ["Microclub"]
 tags: ["dipity", "mashup", "timeline"]
 url: "/2008/05/08/chronologies-webifiees/"

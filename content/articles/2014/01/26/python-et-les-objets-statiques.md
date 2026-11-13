@@ -3,7 +3,6 @@ title: "Python et les objets statiques"
 date: "2014-01-26T16:38:23"
 lastmod: "2015-04-24T23:21:10"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2014/01/26/python-et-les-objets-statiques.svg"
 categories: ["Microclub"]
 tags: ["embarque", "initiation", "programmation", "python"]
 url: "/2014/01/26/python-et-les-objets-statiques/"

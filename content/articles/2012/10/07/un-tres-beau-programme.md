@@ -3,7 +3,6 @@ title: "Désobfuscation du Mandelbrot en Python"
 date: "2012-10-07T15:29:55"
 lastmod: "2015-04-24T23:20:18"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/10/07/un-tres-beau-programme.svg"
 categories: ["Microclub"]
 tags: ["bmp", "graphiques", "mandelbrot", "python"]
 url: "/2012/10/07/un-tres-beau-programme/"

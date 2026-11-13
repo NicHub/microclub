@@ -3,7 +3,6 @@ title: "PlatformIO 5.0.1: Gestion des librairies"
 date: "2020-10-04T15:35:24"
 lastmod: "2020-10-04T15:35:26"
 author: "franic"
-featureimage: "images/articles/auto/2020/10/04/platformio-5-0-1-gestion-des-librairies.svg"
 categories: ["Ateliers"]
 tags: ["arduino", "esp32", "esp8266", "platformio"]
 url: "/2020/10/04/platformio-5-0-1-gestion-des-librairies/"

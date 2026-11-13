@@ -3,7 +3,6 @@ title: "Consoles à distance"
 date: "2012-08-25T16:06:27"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/08/25/consoles-a-distance.svg"
 categories: ["Microclub"]
 tags: ["consoles", "graphiques", "remote-desktop", "reseau", "systeme-dexploitation", "tcp-ip", "terminal", "utilitaire", "vpn", "web", "windows"]
 url: "/2012/08/25/consoles-a-distance/"

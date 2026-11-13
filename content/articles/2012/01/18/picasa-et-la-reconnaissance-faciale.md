@@ -3,7 +3,6 @@ title: "Picasa et la reconnaissance faciale"
 date: "2012-01-18T20:46:00"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/01/18/picasa-et-la-reconnaissance-faciale.svg"
 categories: ["Microclub"]
 tags: ["google", "photos", "securite", "software", "tags", "web"]
 url: "/2012/01/18/picasa-et-la-reconnaissance-faciale/"

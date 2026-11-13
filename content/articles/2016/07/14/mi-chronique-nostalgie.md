@@ -3,7 +3,6 @@ title: "mi-chronique nostalgie 40 ans"
 date: "2016-07-14T09:48:51"
 lastmod: "2016-07-14T20:13:40"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/07/14/mi-chronique-nostalgie.svg"
 categories: ["Microclub", "Nostalgique"]
 tags: ["mi-chronique", "nostalgie"]
 url: "/2016/07/14/mi-chronique-nostalgie/"

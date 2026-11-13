@@ -3,7 +3,6 @@ title: "Web 2.0 de Noël"
 date: "2007-12-12T21:38:24"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/12/12/web-20-de-noel.svg"
 categories: ["Microclub"]
 tags: ["rss"]
 url: "/2007/12/12/web-20-de-noel/"

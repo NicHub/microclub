@@ -3,7 +3,6 @@ title: "STATUTS DE MICROCLUB"
 date: "1982-11-12T18:24:20"
 lastmod: "2015-04-24T23:22:39"
 author: "franic"
-featureimage: "images/articles/auto/1982/11/12/statuts-de-microclub.svg"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/1982/11/12/statuts-de-microclub/"

@@ -3,7 +3,6 @@ title: "Python avec l’environnement PyCharm"
 date: "2012-01-03T15:02:15"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/01/03/python-avec-lenvironnement-pycharm.svg"
 categories: ["Microclub"]
 tags: ["consoles", "initiation", "programmation", "python", "software"]
 url: "/2012/01/03/python-avec-lenvironnement-pycharm/"

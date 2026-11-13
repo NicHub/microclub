@@ -3,7 +3,6 @@ title: "Lua, le nouveau Basic"
 date: "2007-11-11T10:37:36"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/11/11/lua-le-nouveau-basic.svg"
 categories: ["Microclub"]
 tags: ["lua", "programmation"]
 url: "/2007/11/11/lua-le-nouveau-basic/"

@@ -3,7 +3,6 @@ title: "Bouh! le vilain email"
 date: "2012-01-14T16:22:27"
 lastmod: "2015-04-24T23:21:12"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/01/14/bouh-le-vilain-email.svg"
 categories: ["Microclub"]
 tags: ["google", "securite", "site"]
 url: "/2012/01/14/bouh-le-vilain-email/"

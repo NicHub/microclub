@@ -3,7 +3,6 @@ title: "Module ESP8266, Internet des objets"
 date: "2016-10-07T23:39:05"
 lastmod: "2016-10-14T11:08:33"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/10/07/module-esp8266-internet-des-objets.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2016/10/07/module-esp8266-internet-des-objets/"

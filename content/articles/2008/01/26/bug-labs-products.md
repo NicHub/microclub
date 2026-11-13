@@ -3,7 +3,6 @@ title: "Bug Labs : les legos du geek"
 date: "2008-01-26T08:20:18"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/01/26/bug-labs-products.svg"
 categories: ["Microclub"]
 tags: ["gadgets", "hardware", "linux"]
 url: "/2008/01/26/bug-labs-products/"

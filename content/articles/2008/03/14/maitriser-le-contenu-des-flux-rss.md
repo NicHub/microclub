@@ -3,7 +3,6 @@ title: "Maitriser le contenu des flux RSS"
 date: "2008-03-14T14:58:41"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/03/14/maitriser-le-contenu-des-flux-rss.svg"
 categories: ["Microclub"]
 tags: ["google", "rss", "xfruits", "yahoo"]
 url: "/2008/03/14/maitriser-le-contenu-des-flux-rss/"

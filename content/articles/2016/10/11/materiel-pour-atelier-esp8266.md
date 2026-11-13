@@ -3,7 +3,6 @@ title: "Matériel pour atelier ESP8266"
 date: "2016-10-11T14:54:46"
 lastmod: "2016-11-21T20:07:38"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/10/11/materiel-pour-atelier-esp8266.svg"
 categories: ["Ateliers"]
 tags: []
 url: "/2016/10/11/materiel-pour-atelier-esp8266/"

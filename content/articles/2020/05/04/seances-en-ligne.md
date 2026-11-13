@@ -3,7 +3,6 @@ title: "Séances en ligne!"
 date: "2020-05-04T20:51:49"
 lastmod: "2020-05-05T06:25:10"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2020/05/04/seances-en-ligne.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2020/05/04/seances-en-ligne/"

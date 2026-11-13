@@ -3,7 +3,6 @@ title: "Tout sur les flux RSS"
 date: "2008-02-26T09:46:21"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/02/26/tout-sur-les-flux-rss.svg"
 categories: ["Microclub"]
 tags: ["rss"]
 url: "/2008/02/26/tout-sur-les-flux-rss/"

@@ -3,7 +3,6 @@ title: "Windows 7 + ancien OS dans VMware"
 date: "2009-05-09T06:24:27"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/05/09/windows-7-ancien-os-dans-vmware.svg"
 categories: ["Microclub"]
 tags: ["vista", "vmware", "windows-7"]
 url: "/2009/05/09/windows-7-ancien-os-dans-vmware/"

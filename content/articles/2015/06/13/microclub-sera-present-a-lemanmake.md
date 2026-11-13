@@ -3,7 +3,6 @@ title: "Microclub était à Lemanmake"
 date: "2015-06-13T00:09:24"
 lastmod: "2015-07-04T17:22:29"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2015/06/13/microclub-sera-present-a-lemanmake.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2015/06/13/microclub-sera-present-a-lemanmake/"

@@ -3,7 +3,6 @@ title: "meebo.com"
 date: "2007-10-28T11:20:47"
 lastmod: "2015-04-24T23:20:24"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/10/28/meebocom.svg"
 categories: ["Microclub"]
 tags: ["google", "meebo", "messaging", "msn", "non-classe"]
 url: "/2007/10/28/meebocom/"

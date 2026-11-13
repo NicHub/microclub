@@ -3,7 +3,6 @@ title: "Migration des e-mails @microclub.ch"
 date: "2011-01-07T23:44:51"
 lastmod: "2015-04-24T23:20:19"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2011/01/07/migration-des-e-mails-microclub-ch.svg"
 categories: ["Microclub"]
 tags: ["e-mail", "serveur"]
 url: "/2011/01/07/migration-des-e-mails-microclub-ch/"

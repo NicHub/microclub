@@ -3,7 +3,6 @@ title: "Le réseau du Microclub (1985), nostalgie 40ème"
 date: "2016-07-28T10:45:18"
 lastmod: "2016-07-28T10:49:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/07/28/le-reseau-du-microclub-nostalgie-40eme.svg"
 categories: ["Microclub", "Nostalgique"]
 tags: []
 url: "/2016/07/28/le-reseau-du-microclub-nostalgie-40eme/"

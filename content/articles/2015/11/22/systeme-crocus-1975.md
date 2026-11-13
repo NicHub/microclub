@@ -3,7 +3,6 @@ title: "Système Crocus, 1975"
 date: "2015-11-22T09:42:52"
 lastmod: "2015-11-22T09:42:52"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2015/11/22/systeme-crocus-1975.svg"
 categories: ["Nostalgique"]
 tags: ["crocus", "microclub-2", "microcontrolleur", "uc"]
 url: "/2015/11/22/systeme-crocus-1975/"

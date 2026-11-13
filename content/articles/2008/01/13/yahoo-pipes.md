@@ -3,7 +3,6 @@ title: "Yahoo Pipes"
 date: "2008-01-13T18:50:28"
 lastmod: "2015-04-24T23:20:22"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/01/13/yahoo-pipes.svg"
 categories: ["Microclub"]
 tags: ["mashup", "yahoo"]
 url: "/2008/01/13/yahoo-pipes/"

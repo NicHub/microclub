@@ -3,7 +3,6 @@ title: "Exemples et documentation Arduino"
 date: "2013-02-25T11:08:14"
 lastmod: "2015-04-24T23:22:39"
 author: "franic"
-featureimage: "images/articles/auto/2013/02/25/exemples-et-documentation-arduino.svg"
 categories: ["Microclub"]
 tags: ["arduino", "franiduino", "programmation"]
 url: "/2013/02/25/exemples-et-documentation-arduino/"

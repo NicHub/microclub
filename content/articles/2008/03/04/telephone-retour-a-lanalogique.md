@@ -3,7 +3,6 @@ title: "téléphone : retour à l'analogique"
 date: "2008-03-04T07:46:10"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/03/04/telephone-retour-a-lanalogique.svg"
 categories: ["Microclub"]
 tags: ["reseau", "telephone"]
 url: "/2008/03/04/telephone-retour-a-lanalogique/"

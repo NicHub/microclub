@@ -3,7 +3,6 @@ title: "servo-moteur, les limites"
 date: "2013-09-03T15:52:18"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2013/09/03/servo-moteur-les-limites.svg"
 categories: ["Microclub"]
 tags: []
 url: "/2013/09/03/servo-moteur-les-limites/"

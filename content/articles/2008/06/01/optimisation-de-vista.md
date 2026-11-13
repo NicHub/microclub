@@ -3,7 +3,6 @@ title: "Optimisation de Vista"
 date: "2008-06-01T15:22:30"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/06/01/optimisation-de-vista.svg"
 categories: ["Microclub"]
 tags: ["systeme-dexploitation", "vista", "vista-manager", "windows"]
 url: "/2008/06/01/optimisation-de-vista/"

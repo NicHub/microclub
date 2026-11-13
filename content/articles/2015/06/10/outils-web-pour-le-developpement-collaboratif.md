@@ -3,7 +3,6 @@ title: "Outils web pour le développement collaboratif"
 date: "2015-06-10T16:42:18"
 lastmod: "2016-02-02T20:07:02"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2015/06/10/outils-web-pour-le-developpement-collaboratif.svg"
 categories: ["Articles", "Microclub"]
 tags: []
 url: "/2015/06/10/outils-web-pour-le-developpement-collaboratif/"

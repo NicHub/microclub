@@ -3,7 +3,6 @@ title: "Les musts  du Web 2.0.07"
 date: "2007-01-07T20:06:16"
 lastmod: "2015-04-24T23:20:25"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/01/07/les-musts-du-web-2007.svg"
 categories: ["Microclub"]
 tags: ["del-icio-us", "digg", "divers", "flickr", "meebo", "netvibes", "non-classe", "skype"]
 url: "/2007/01/07/les-musts-du-web-2007/"

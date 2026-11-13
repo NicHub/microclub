@@ -3,7 +3,6 @@ title: "Sources de temps et cycle pour Arduino (ou autre)"
 date: "2016-01-05T22:21:21"
 lastmod: "2016-02-02T20:07:42"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/01/05/sources-de-temps-et-cycle-pour-arduino-ou-autre.svg"
 categories: ["Articles", "Microclub"]
 tags: ["arduino", "embarque", "micros", "millis", "programmation", "quartz", "rtc", "time"]
 url: "/2016/01/05/sources-de-temps-et-cycle-pour-arduino-ou-autre/"

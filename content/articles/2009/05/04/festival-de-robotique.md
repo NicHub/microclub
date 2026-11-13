@@ -3,7 +3,6 @@ title: "Festival de robotique"
 date: "2009-05-04T18:42:46"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/05/04/festival-de-robotique.svg"
 categories: ["Microclub"]
 tags: ["epfl", "robot"]
 url: "/2009/05/04/festival-de-robotique/"

@@ -3,7 +3,6 @@ title: "Petit Upgrade deviendra grand"
 date: "2007-11-29T20:55:51"
 lastmod: "2015-04-24T23:20:23"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2007/11/29/petit-upgrade-deviendra-grand.svg"
 categories: ["Microclub"]
 tags: ["hardware"]
 url: "/2007/11/29/petit-upgrade-deviendra-grand/"

@@ -3,7 +3,6 @@ title: "Arduino: aussi des difficultés"
 date: "2012-05-20T14:38:21"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/05/20/arduino-aussi-des-difficultes.svg"
 categories: ["Microclub"]
 tags: ["arduino", "diduino", "embarque", "initiation", "lcd-serie", "programmation", "prototype", "stalker"]
 url: "/2012/05/20/arduino-aussi-des-difficultes/"

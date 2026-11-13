@@ -3,7 +3,6 @@ title: "Horloge et table de commutation"
 date: "2010-03-06T18:12:30"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2010/03/06/horloge-et-table-de-commutation.svg"
 categories: ["Microclub"]
 tags: ["ecologie", "initiation", "pic", "programmation"]
 url: "/2010/03/06/horloge-et-table-de-commutation/"

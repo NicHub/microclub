@@ -3,7 +3,6 @@ title: "Joyeux Noël et Bonne année"
 date: "2017-12-14T17:27:12"
 lastmod: "2017-12-22T15:29:28"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2017/12/14/joyeux-noel-et-bonne-annee.svg"
 categories: ["Articles", "Microclub"]
 tags: []
 url: "/2017/12/14/joyeux-noel-et-bonne-annee/"

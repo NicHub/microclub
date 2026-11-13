@@ -3,7 +3,6 @@ title: "Mesure de courant – surprise"
 date: "2012-07-02T20:49:28"
 lastmod: "2015-04-24T23:21:11"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2012/07/02/mesure-de-courant-surprise.svg"
 categories: ["Microclub"]
 tags: ["electronique", "energie", "initiation", "mesure"]
 url: "/2012/07/02/mesure-de-courant-surprise/"

@@ -3,7 +3,6 @@ title: "Indice de popularité des langages de programmation"
 date: "2009-12-29T16:34:21"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2009/12/29/indice-de-popularite-des-langages-de-programmation.svg"
 categories: ["Microclub"]
 tags: ["programmation"]
 url: "/2009/12/29/indice-de-popularite-des-langages-de-programmation/"

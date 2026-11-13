@@ -3,7 +3,6 @@ title: "La plus grande invention de l'informatique ?"
 date: "2008-06-18T22:20:06"
 lastmod: "2015-04-24T23:20:20"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/06/18/la-plus-grande-invention-de-linformatique.svg"
 categories: ["Microclub"]
 tags: ["histoire", "programmation"]
 url: "/2008/06/18/la-plus-grande-invention-de-linformatique/"

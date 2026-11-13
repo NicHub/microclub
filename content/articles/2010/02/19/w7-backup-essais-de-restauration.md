@@ -3,7 +3,6 @@ title: "W7 – backup, essais de restauration"
 date: "2010-02-19T21:41:00"
 lastmod: "2015-04-24T23:21:13"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2010/02/19/w7-backup-essais-de-restauration.svg"
 categories: ["Microclub"]
 tags: ["backup", "initiation", "sauvegarde", "securite", "systeme-dexploitation", "vista", "windows", "windows-7"]
 url: "/2010/02/19/w7-backup-essais-de-restauration/"

@@ -3,7 +3,6 @@ title: "Deux livres Elektor sur le langage C et l’embarqué"
 date: "2016-04-09T19:54:46"
 lastmod: "2016-04-09T19:54:46"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2016/04/09/deux-livres-elektor-sur-le-langage-c-et-lembarque.svg"
 categories: ["Articles", "Microclub"]
 tags: ["arduino", "atmega", "consoles", "embarque", "hardware", "linux", "processeurs", "programmation", "software", "systeme-dexploitation"]
 url: "/2016/04/09/deux-livres-elektor-sur-le-langage-c-et-lembarque/"

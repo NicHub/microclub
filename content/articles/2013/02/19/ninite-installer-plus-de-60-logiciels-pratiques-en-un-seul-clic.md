@@ -3,7 +3,6 @@ title: "Ninite: Installer plus de 60 logiciels pratiques, en un seul clic!"
 date: "2013-02-19T11:37:47"
 lastmod: "2016-02-02T20:10:07"
 author: "franic"
-featureimage: "images/articles/auto/2013/02/19/ninite-installer-plus-de-60-logiciels-pratiques-en-un-seul-clic.svg"
 categories: ["Articles", "Microclub"]
 tags: ["non-classe"]
 url: "/2013/02/19/ninite-installer-plus-de-60-logiciels-pratiques-en-un-seul-clic/"

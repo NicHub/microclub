@@ -3,7 +3,6 @@ title: "Découpage d’enregistrements sonores avec Audacity"
 date: "2018-02-26T08:00:08"
 lastmod: "2018-02-22T18:33:45"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2018/02/26/decoupage-denregistrements-sonores-avec-audacity.svg"
 categories: ["Articles", "Microclub"]
 tags: ["cd-a", "echantillonnnage", "mp3", "musique"]
 url: "/2018/02/26/decoupage-denregistrements-sonores-avec-audacity/"

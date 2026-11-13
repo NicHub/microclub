@@ -3,7 +3,6 @@ title: "Le Tresling"
 date: "2008-04-26T12:47:06"
 lastmod: "2015-04-24T23:20:21"
 author: "Rolf Ziegler"
-featureimage: "images/articles/auto/2008/04/26/le-tresling.svg"
 categories: ["Microclub"]
 tags: ["gadgets", "hardware"]
 url: "/2008/04/26/le-tresling/"
