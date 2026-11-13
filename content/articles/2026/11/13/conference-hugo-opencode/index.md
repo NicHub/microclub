@@ -8,7 +8,7 @@ featureimage: "images/cover.png"
 categories: ["Microclub"]
 tags: ["Hugo", "OpenCode", "IA", "site web", "conférence"]
 url: "/2026/11/13/conference-hugo-opencode/"
-draft: true
+draft: false
 outputs: ["HTML", "slides"]
 showPresentation: true
 showReadingTime: false
