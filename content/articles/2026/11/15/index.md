@@ -18,7 +18,12 @@ showHeadingAnchors: false
 showPagination: false
 ---
 
-## Ceci est un test
+## Ceci est un test de l’éditeur visuel de GitHub
+
+Voici un test avec l’éditeur visuel de GitHub. On peut faire des copier-coller depuis un traitement de texte. Ça prend même les images. L’interface est identique à VSCode version Desktop.
+https://nichub.github.io/microclub/2026/11/15/test/
+
+## Lorem
 
 Lorem ipsum dolor sit
 Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!
