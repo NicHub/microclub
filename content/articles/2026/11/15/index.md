@@ -20,30 +20,34 @@ showPagination: false
 
 ## Ceci est un test
 
-Atelier HTML embarqué
-Découvrez ce qui se cache derrière les pages web et développez des interfaces web pour vos objets connectés !
+Lorem ipsum dolor sit
+Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua!
 
-![alt text](image.png)
+![ESP8266](esp8266.png)
 
-Durée : À définir (probablement 3 + 1)
-Prérequis :
-    • Avoir un ordinateur portable macOS, Windows ou Linux avec un OS récent.
-    • Avoir installé MAMP (macOS, Windows) ou XAMPP (Linux).
-1re soirée : Les éléments de base d’une page Web : HTML, CSS, JavaScript
-Création d’une page statique qui nous permettra d’aborder les notions suivantes :
-    • HTML : Agents utilisateurs, doctypes, XHTML vs HTML
-    • CSS : CSS intégrés, CSS externes, Bootstrap
-    • JavaScript : Introduction (approfondissement soirée 2)
-    • Ressources externes : JSON,  XML, Images bitmap, Images vectorielles, Vidéos
-2ᵉ soirée : Rendre une page dynamique
-Création d’une application PHP sur le serveur MAMP ou XAMPP installé sur votre propre ordinateur et exemples de communication entre le serveur et la page Web statique créée lors de la première soirée.
-    • JavaScript :  JS intégré,  JS externe,  JQuery,  JSON
-    • Protocoles : HTTP, WebSocket, AJAX,  GET,  POST,  MQTT, FTP,  MAIL
-    • PHP
-3ᵉ soirée : Création d’une application sur ESP8266
-Il y a plusieurs topologies possibles. Les deux que je connais sont :
-    • L’ESP est configuré comme serveur Web. Les agents utilisateurs ne communiquent qu’avec lui. Exemple : SIMPLE-WEBSOCKET.INO.
-    • L’ESP et les agents utilisateurs se connectent à un serveur externe (dans notre cas MAMP). Exemple : Station météo.
+Lorem : Ut labore (incididunt 3 + 1)
+Curabitur :
+   • Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.
+   • Donec vitae sapien (lorem, ipsum) ut labore (dolor).
+1re tempor : Sed do eiusmod tempor incididunt ut labore : Lorem, Ipsum, Dolor
+Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore :
+   • Lorem : Dolor sit amet, consectetur, adipiscing ut elit
+   • Ipsum : Sed do eiusmod, tempor labore, incididunt
+   • Dolor amet : Consectetur (adipiscing tempor 2)
+   • Curabitur sapien : Lorem, Ipsum, Dolor sit amet, Consectetur adipiscing, Elit
+2ᵉ tempor : Consectetur adipiscing elit
+Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.
+   • Lorem ipsum : Sed do eiusmod, Ut labore, Dolore, Magna
+   • Consectetur : Ipsum, Adipiscing, Elit, Sed, Amet, Dolor, Tempor
+   • Sit
+3ᵉ tempor : Consectetur adipiscing elit dolor
+Lorem ipsum dolor sit amet consectetur. Sed do eiusmod tempor incididunt :
+   • Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore. Exemple : LOREM-IPSUM-DOLOR.
+   • Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore (dolor magna amet). Exemple : Ipsum dolor.
 
-Prix 45.- pour les membres 75.- pour non membres
-Conférencier : Nicolas Jeanmonod
+Lorem 45.- dolor sit amet 75.- dolor sit amet
+Consectetur : Lorem Ipsum Dolor
+
+![Capture 1](c1.png)
+
+![Capture 2](c2.png)
