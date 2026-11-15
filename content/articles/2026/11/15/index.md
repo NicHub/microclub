@@ -10,7 +10,7 @@ tags: ["Hugo", "site web"]
 url: "/2026/11/15/test/"
 draft: false
 outputs: ["HTML"]
-showPresentation: true
+showPresentation: false
 showReadingTime: false
 showWordCount: false
 showTableOfContents: false
