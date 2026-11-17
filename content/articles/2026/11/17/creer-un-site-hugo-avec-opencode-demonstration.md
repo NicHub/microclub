@@ -5,7 +5,7 @@ lastmod: "2026-11-17T17:56:49"
 author: "Nicolas Jeanmonod"
 categories: ["Microclub"]
 tags: ["RS41", "Antigravity", "Gemini", "Hugo", "OpenCode", "YouTube"]
-url: "/2026/11/17/du-simulateur-rs41-a-la-publication-avec-hugo-et-opencode/"
+url: "/2026/11/17/creer-un-site-hugo-avec-opencode-demonstration/"
 draft: false
 ---
 
