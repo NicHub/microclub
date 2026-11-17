@@ -3,7 +3,8 @@ title: "Créer un site Hugo avec OpenCode — Démonstration"
 date: "2026-11-17T17:56:49"
 lastmod: "2026-11-17T17:56:49"
 author: "Nicolas Jeanmonod"
-featureimage: "images/cover.png"
+featureimage: "images/featureimage.png"
+socialImage: "images/featureimage.png"
 categories: ["Microclub"]
 tags: ["RS41", "Antigravity", "Gemini", "Hugo", "OpenCode", "YouTube"]
 url: "/2026/11/17/creer-un-site-hugo-avec-opencode-demonstration/"
