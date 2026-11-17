@@ -1,5 +1,5 @@
 ---
-title: "Du simulateur RS41 à sa publication avec Hugo et OpenCode"
+title: "Créer un site Hugo avec OpenCode — Démonstration"
 date: "2026-11-17T17:56:49"
 lastmod: "2026-11-17T17:56:49"
 author: "Nicolas Jeanmonod"
