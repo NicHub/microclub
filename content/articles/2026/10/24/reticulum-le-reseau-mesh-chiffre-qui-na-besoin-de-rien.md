@@ -265,3 +265,5 @@ Le **manuel officiel** (markqvist.github.io/Reticulum/manual) est la référence
 Reticulum est une pile réseau sobre, chiffrée par conception et indifférente au support physique.
 Sa force est de rendre possibles fichiers, voix, messagerie et shell distant sur des réseaux que l’on peut monter soi-même, sans Internet ni opérateur. Ses limites sont surtout physiques (débit des radios, réglementation) et liées à la jeunesse relative de son écosystème.
 {{< /alert >}}
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

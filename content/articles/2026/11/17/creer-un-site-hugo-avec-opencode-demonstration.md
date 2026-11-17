@@ -3,6 +3,7 @@ title: "Créer un site Hugo avec OpenCode — Démonstration"
 date: "2026-11-17T17:56:49"
 lastmod: "2026-11-17T17:56:49"
 author: "Nicolas Jeanmonod"
+featureimage: "images/featureimage.png"
 categories: ["Microclub"]
 tags: ["RS41", "Antigravity", "Gemini", "Hugo", "OpenCode", "YouTube"]
 url: "/2026/11/17/creer-un-site-hugo-avec-opencode-demonstration/"
@@ -14,3 +15,5 @@ Dans cette vidéo, je récupère un article publié sur le site de Microclub et 
 <div class="youtube-embed">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ldAE0beG07o?si=HCbi0XWYrMcSH31J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

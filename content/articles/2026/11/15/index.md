@@ -56,3 +56,5 @@ Consectetur : Lorem Ipsum Dolor
 ![Capture 1](c1.png)
 
 ![Capture 2](c2.png)
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

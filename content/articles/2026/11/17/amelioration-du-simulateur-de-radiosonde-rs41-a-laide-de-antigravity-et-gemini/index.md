@@ -1032,3 +1032,5 @@ en ordre et prêt à l’emploi**.
       :`# Exemple : reprendre directement au bout de 30 minutes (point 1800) stream_kml_realtime(kml_path, start_point_idx=1800)`
 
 Votre simulateur est prêt pour la démonstration !
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

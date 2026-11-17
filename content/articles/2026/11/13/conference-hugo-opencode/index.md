@@ -576,3 +576,5 @@ La différence, c’est la responsabilité.
 [php2shell]: https://php2shell.com/
 [MCP]: https://fr.wikipedia.org/wiki/Model_Context_Protocol
 [format Markdown]: https://www.markdownlang.com/fr/extended/
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->

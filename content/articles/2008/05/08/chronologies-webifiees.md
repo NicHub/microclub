@@ -42,3 +42,5 @@ Quelques sites permettent d’éditer et de partager des « timelines », list
 Dipity vient de publier « TimeTube », un « mashup » permettant de faire une timeline de videos youTube sur un thème donné : <http://www.dipity.com/mashups/timetube>
 
 <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
+
+## Commentaires <!-- Ajoutez un commentaire ci-dessous sous la forme : ### Votre nom — AAAA-MM-JJ -->
