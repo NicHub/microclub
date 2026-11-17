@@ -2,7 +2,6 @@
 {{ hugo.Generator }}
 <meta name="generator-date" content="{{ now.UTC.Format "2006-01-02T15:04:05Z" }}">
 {{ if not hugo.IsProduction }}<meta name="robots" content="noindex, nofollow">{{ end }}
-
 {{ $socialImageAlt := site.Params.socialImageAlt | default site.Title }}
 <meta property="og:image:alt" content="{{ $socialImageAlt }}">
 <meta name="twitter:image:alt" content="{{ $socialImageAlt }}">
@@ -11,7 +10,6 @@
   <meta property="og:image:height" content="{{ .Height }}">
   <meta property="og:image:type" content="image/{{ .MediaType.SubType }}">
 {{ end }}
-
 {{ if .IsHome }}
   {{ $productionBaseURL := strings.TrimSuffix "/" site.Params.productionBaseURL }}
   {{ $homeURL := printf "%s/" $productionBaseURL }}
