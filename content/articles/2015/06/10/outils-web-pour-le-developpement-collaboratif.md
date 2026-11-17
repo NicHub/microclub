@@ -18,7 +18,7 @@ comment_count: 0
 <li><a href="https://readthedocs.org/" rel="nofollow">https://readthedocs.org/</a> : génération de documentation</li>
 <li><a href="https://pypi.python.org" rel="nofollow">https://pypi.python.org</a> : distribution / installation Python</li>
 </ol>
-<p><iframe allowfullscreen="" frameborder="0" height="356" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/BgVfg4orn2fI6Q" width="427"> </iframe> </p>
+<p><iframe allowfullscreen="" height="356" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/BgVfg4orn2fI6Q" width="427"> </iframe> </p>
 <div> <strong> <a href="https://www.slideshare.net/Goulu/outils-web-pour-le-dveloppement-collaboratif" target="_blank" title="Outils web pour le développement collaboratif">Outils web pour le développement collaboratif</a> </strong> from <strong><a href="http://www.slideshare.net/Goulu" target="_blank">Philippe Guglielmetti</a></strong> </div>
 <p>Et vive WordPress qui sait intégrer une présentation SlideShare tout seul !</p>
 

@@ -56,7 +56,7 @@ C’est aussi un instrument difficile à maîtriser, car le musicien ne dispose 
 L’intérêt pédagogique est important : acquisition ultrasonore, filtrage numérique, conversion d’une grandeur physique en paramètre musical, temporisation, génération audio et amplification.
 
 <div class="youtube-embed">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lY7sXKGZl2w?si=1b4cQyzCR3A848Id" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lY7sXKGZl2w?si=1b4cQyzCR3A848Id" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 <p><a href="https://www.youtube.com/watch?v=lY7sXKGZl2w">Une virtuose du thérémine</a></p>
