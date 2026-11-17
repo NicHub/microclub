@@ -69,6 +69,7 @@ security:
 
 params:
   description: Le premier club informatique de Suisse romande, fondé en 1976. Échanges, électronique, programmation et culture numérique.
+  blowfishVersion: v3.10.0
   founded: 1976
   repository: ""
   productionBaseURL: https://microclub.ch

@@ -35,6 +35,9 @@ jobs:
           submodules: recursive
           fetch-depth: 1
 
+      - name: Update Blowfish theme
+        run: git submodule update --remote --init --recursive themes/blowfish
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v6

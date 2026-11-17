@@ -134,6 +134,20 @@ ensure_theme() {
     exit 1
 }
 
+# Keep a configured Git submodule theme current before each local preview.
+# The branch to follow is defined in .gitmodules (Blowfish follows main).
+update_theme() {
+    local theme_name="${THEME:-blowfish}"
+    local theme_path="themes/$theme_name"
+
+    if [ -f "$PROJECT_DIR/.gitmodules" ] && command -v git >/dev/null 2>&1 && \
+        git -C "$PROJECT_DIR" submodule status -- "$theme_path" 2>/dev/null | grep -q .; then
+        printf 'Mise à jour du thème Hugo « %s »…\n' "$theme_name"
+        git -C "$PROJECT_DIR" submodule update --remote --init --recursive -- "$theme_path" ||
+            exit 1
+    fi
+}
+
 # Prints the first free port starting at PREFERRED_PORT, probed on the bind
 # IP; at most PORT_SCAN_LIMIT ports are tested (network_utils.sh).
 resolve_port() {
@@ -235,6 +249,7 @@ main() {
     resolve_preview_context
     resolve_port "$PREFERRED_PORT"
     ensure_theme
+    update_theme
     resolve_hugo
     remove_generated_files
     display_preview_address "$BASE_URL:$PORT"
