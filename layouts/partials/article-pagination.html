@@ -1,10 +1,25 @@
 {{ if .Params.showPagination | default (.Site.Params.article.showPagination | default true) }}
-  {{ if or .NextInSection .PrevInSection }}
-    {{ $next := .NextInSection }}
-    {{ $prev := .PrevInSection }}
+  {{ $articlesSection := site.GetPage "section" "articles" }}
+  {{ $articles := $articlesSection.RegularPagesRecursive.ByDate.Reverse }}
+  {{ $currentIndex := -1 }}
+  {{ range $index, $article := $articles }}
+    {{ if eq $article.RelPermalink $.RelPermalink }}
+      {{ $currentIndex = $index }}
+    {{ end }}
+  {{ end }}
+  {{ if ge $currentIndex 0 }}
+    {{ $next := false }}
+    {{ $prev := false }}
+    {{ if gt $currentIndex 0 }}
+      {{ $next = index $articles (sub $currentIndex 1) }}
+    {{ end }}
+    {{ if lt $currentIndex (sub (len $articles) 1) }}
+      {{ $prev = index $articles (add $currentIndex 1) }}
+    {{ end }}
     {{ if .Params.invertPagination | default (.Site.Params.article.invertPagination | default false) }}
-      {{ $next = .PrevInSection }}
-      {{ $prev = .NextInSection }}
+      {{ $paginationNext := $next }}
+      {{ $next = $prev }}
+      {{ $prev = $paginationNext }}
     {{ end }}
     <div class="pt-8">
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600">

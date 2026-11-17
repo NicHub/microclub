@@ -15,7 +15,7 @@ showReadingTime: false
 showWordCount: false
 showTableOfContents: false
 showHeadingAnchors: false
-showPagination: false
+showPagination: true
 ---
 
 ## Ceci est un test de l’éditeur visuel de GitHub
