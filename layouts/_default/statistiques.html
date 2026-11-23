@@ -22,10 +22,24 @@
     {{ with $ranking }}
       {{ $total := len $articles }}
       {{ $rows := (slice (dict "key" "all" "name" "Tous les auteurs" "count" $total)) | append . }}
+      {{ $firstYear := int (index $years (sub (len $years) 1)).Key }}
+      {{ $lastYear := int (index $years 0).Key }}
+      {{ $yearRange := seq $firstYear $lastYear }}
       <section class="stats-section" aria-labelledby="statistiques-auteurs">
         <h2 id="statistiques-auteurs" class="text-2xl font-bold">Articles par auteur</h2>
-        <p class="stats-muted">Tous les articles publiés, depuis les premières archives du site.</p>
-        <ol class="stats-ranking stats-panel">
+        <div class="stats-controls stats-ranking-controls" data-ranking-controls hidden>
+          <label for="statistiques-debut">Année de début</label>
+          <select id="statistiques-debut">
+            {{ range $yearRange }}<option value="{{ . }}" {{ if eq . $firstYear }}selected{{ end }}>{{ . }}</option>{{ end }}
+          </select>
+          <label for="statistiques-fin">Année de fin</label>
+          <select id="statistiques-fin">
+            {{ range $yearRange }}<option value="{{ . }}" {{ if eq . $lastYear }}selected{{ end }}>{{ . }}</option>{{ end }}
+          </select>
+          <button type="button" data-ranking-reset>Tout l’historique</button>
+        </div>
+        <p class="stats-muted" data-ranking-status role="status">Tous les articles publiés, depuis les premières archives du site.</p>
+        <ol class="stats-ranking stats-panel" data-ranking>
           {{ range $rows }}
             {{ $width := div (mul .count 100.0) $total }}
             <li class="stats-rank{{ if eq .key "all" }} stats-rank-total{{ end }}">

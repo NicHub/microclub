@@ -26,6 +26,81 @@
     return `${total} ${total === 1 ? "article" : "articles"}`;
   }
 
+  function initRanking() {
+    const controls = root.querySelector("[data-ranking-controls]");
+    const start = controls.querySelector("#statistiques-debut");
+    const end = controls.querySelector("#statistiques-fin");
+    const reset = controls.querySelector("[data-ranking-reset]");
+    const status = root.querySelector("[data-ranking-status]");
+    const ranking = root.querySelector("[data-ranking]");
+    const first = start.options[0].value;
+    const last = end.options[end.options.length - 1].value;
+    const rows = Array.from(authors, (link) => {
+      const element = link.closest("li");
+      return {
+        element,
+        author: link.dataset.authorFilter,
+        count: element.querySelector(".stats-rank-count"),
+        bar: element.querySelector(".stats-rank-bar"),
+      };
+    });
+    const [all, ...individuals] = rows;
+
+    function renderRanking() {
+      const from = Number(start.value);
+      const to = Number(end.value);
+      const counts = new Map();
+      let total = 0;
+      for (const year of years) {
+        const value = Number(year.key);
+        if (value < from || value > to) continue;
+        for (const day of year.days) {
+          for (const article of day.articles) {
+            const author = article.dataset.author;
+            counts.set(author, (counts.get(author) ?? 0) + 1);
+            total += 1;
+          }
+        }
+      }
+
+      function updateRow(row, amount) {
+        row.count.textContent = articleCount(amount);
+        row.bar.style.width = total ? `${100 * amount / total}%` : "0%";
+        row.bar.hidden = amount === 0;
+        row.element.hidden = row !== all && amount === 0;
+      }
+
+      updateRow(all, total);
+      const ordered = individuals.map((row) => ({ row, amount: counts.get(row.author) ?? 0 }));
+      ordered.sort((a, b) => b.amount - a.amount);
+      for (const { row, amount } of ordered) {
+        updateRow(row, amount);
+        ranking.append(row.element);
+      }
+
+      const period = from === to ? `en ${from}` : `de ${from} à ${to}`;
+      status.textContent = total ? `${articleCount(total)} ${period}.` : `Aucun article publié ${period}.`;
+      reset.disabled = start.value === first && end.value === last;
+    }
+
+    start.addEventListener("change", () => {
+      if (Number(start.value) > Number(end.value)) end.value = start.value;
+      renderRanking();
+    });
+    end.addEventListener("change", () => {
+      if (Number(end.value) < Number(start.value)) start.value = end.value;
+      renderRanking();
+    });
+    reset.addEventListener("click", () => {
+      start.value = first;
+      end.value = last;
+      start.focus();
+      renderRanking();
+    });
+    renderRanking();
+    controls.hidden = false;
+  }
+
   function renderGrid(year, activeDays) {
     const first = new Date(Date.UTC(year, 0, 1));
     const end = new Date(Date.UTC(year + 1, 0, 1));
@@ -122,6 +197,7 @@
     link.previousElementSibling.hidden = true;
     link.hidden = false;
   }
+  initRanking();
   render();
   root.querySelector("[data-calendar-panel]").hidden = false;
 })();
