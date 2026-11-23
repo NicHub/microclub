@@ -3,12 +3,15 @@ title: "Amélioration du simulateur de radiosonde RS41 à l’aide de Antigravit
 date: "2026-11-17T13:50:26"
 lastmod: "2026-11-17T13:50:26"
 author: "Jean-Marc Paratte"
+featureimage: "images/vignette-simulateur-radiosonde-rs41.png"
 categories: ["Microclub"]
 tags: []
 url: "/2026/11/17/amelioration-du-simulateur-de-radiosonde-rs41-a-laide-de-antigravity-et-gemini/"
 wordpress_id: 5934
 comment_count: 0
 ---
+
+![Ballon météo et radiosonde RS41, avec les mentions Antigravity et Gemini](images/vignette-simulateur-radiosonde-rs41.png)
 
 ## Chat Conversation
 

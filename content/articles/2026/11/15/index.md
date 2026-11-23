@@ -4,7 +4,7 @@ date: "2026-11-15T22:00:00"
 publishDate: "2026-11-15T22:00:00"
 lastmod: "2026-11-15T22:00:00"
 author: "Nicolas Jeanmonod"
-featureimage: "images/cover.png"
+featureimage: "images/vignette-test-edition-navigateur.png"
 categories: ["Microclub"]
 tags: ["Hugo", "site web"]
 url: "/2026/11/15/test/"
@@ -17,6 +17,8 @@ showTableOfContents: false
 showHeadingAnchors: false
 showPagination: true
 ---
+
+![Fenêtre de navigateur avec un éditeur de texte et une coche de validation](images/vignette-test-edition-navigateur.png)
 
 ## Ceci est un test de l’éditeur visuel de GitHub
 
