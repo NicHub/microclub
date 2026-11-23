@@ -83,6 +83,17 @@ h2 > a.heading-self-link {
   max-width: 5rem;
 }
 
+.main-menu nav a[aria-current] > span {
+  color: rgb(var(--color-primary-700));
+  text-decoration: underline;
+  text-decoration-thickness: 0.15em;
+  text-underline-offset: 0.32em;
+}
+
+.dark .main-menu nav a[aria-current] > span {
+  color: rgb(var(--color-primary-300));
+}
+
 /* -------------------------------------------------------------------------- */
 /* Home: stratosphere illustration                                             */
 /* -------------------------------------------------------------------------- */

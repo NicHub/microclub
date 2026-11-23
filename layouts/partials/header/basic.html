@@ -1,4 +1,15 @@
-<div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+{{ $menuSection := "" }}
+{{ if eq .Section "articles" }}
+  {{ with site.GetPage "/articles" }}
+    {{ $menuSection = .RelPermalink }}
+  {{ end }}
+{{ else if and (eq .Kind "term") (eq .Data.Plural "categories") }}
+  {{ with site.GetPage "/categories" }}
+    {{ $menuSection = .RelPermalink }}
+  {{ end }}
+{{ end }}
+<div class="main-menu flex items-center w-full gap-2 p-1 pl-0" data-main-navigation
+  {{ with $menuSection }}data-menu-section="{{ . }}"{{ end }}>
   {{ if .Site.Params.Logo }}
     {{ $logo := resources.Get .Site.Params.Logo }}
     {{ if $logo }}
@@ -63,23 +74,4 @@
       </div>
     </div>
   </nav>
-{{ end }}
-
-{{ if .Site.Params.highlightCurrentMenuArea }}
-  <script>
-    (function () {
-      var mainmenu = document.querySelector(".main-menu");
-      if (!mainmenu) return;
-
-      var path = window.location.pathname;
-      var links = mainmenu.querySelectorAll('a[href="' + path + '"]');
-
-      links.forEach(function (link) {
-        var targets = link.querySelectorAll("span");
-        targets.forEach(function (el) {
-          el.classList.add("active");
-        });
-      });
-    })();
-  </script>
 {{ end }}

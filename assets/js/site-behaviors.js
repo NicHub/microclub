@@ -36,6 +36,24 @@ function decorateExternalLinks() {
   });
 }
 
+function markCurrentMenuPage() {
+  const menu = document.querySelector("[data-main-navigation]");
+  if (!menu) return;
+
+  const normalizePath = (path) => path.replace(/\/(?:index\.html)?$/, "");
+  const currentPath = normalizePath(window.location.pathname);
+  const sectionPath = menu.dataset.menuSection && normalizePath(menu.dataset.menuSection);
+  for (const link of menu.querySelectorAll("nav a[href]")) {
+    if (link.origin !== window.location.origin || link.hash || link.search) continue;
+    const path = normalizePath(link.pathname);
+    if (path === currentPath) {
+      link.setAttribute("aria-current", "page");
+    } else if (path === sectionPath) {
+      link.setAttribute("aria-current", "location");
+    }
+  }
+}
+
 function getPageNavHref(kind) {
   const link = document.querySelector(`[data-page-nav="${kind}"]`);
   return link ? link.getAttribute("href") : "";
@@ -84,3 +102,4 @@ document.addEventListener("keydown", function (event) {
 });
 
 decorateExternalLinks();
+markCurrentMenuPage();
