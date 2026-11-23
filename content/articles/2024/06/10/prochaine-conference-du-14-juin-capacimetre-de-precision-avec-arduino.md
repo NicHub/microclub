@@ -2,7 +2,7 @@
 title: "Prochaine conférence du 14 juin : Capacimètre de précision avec Arduino par Jean-Pierre Broillet"
 date: "2024-06-10T20:08:32"
 lastmod: "2024-06-10T20:09:40"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: ["arduino", "hardware"]
 url: "/2024/06/10/prochaine-conference-du-14-juin-capacimetre-de-precision-avec-arduino/"

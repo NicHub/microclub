@@ -2,7 +2,7 @@
 title: "Spectre lumineux de lampes de technologies différentes"
 date: "2016-04-26T11:32:40"
 lastmod: "2016-06-27T17:40:57"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: []
 url: "/2016/04/26/spectre-lumineux-de-lampes-de-technologies-differentes/"

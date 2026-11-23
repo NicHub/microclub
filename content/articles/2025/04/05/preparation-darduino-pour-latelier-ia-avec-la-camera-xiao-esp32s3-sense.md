@@ -2,7 +2,7 @@
 title: "Préparation d’Arduino pour l’atelier IA avec la camera XIAO ESP32S3 Sense"
 date: "2025-04-05T15:51:53"
 lastmod: "2025-04-11T18:19:21"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: []
 url: "/2025/04/05/preparation-darduino-pour-latelier-ia-avec-la-camera-xiao-esp32s3-sense/"

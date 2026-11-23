@@ -2,7 +2,7 @@
 title: "MPY-jama"
 date: "2023-02-18T15:25:53"
 lastmod: "2023-02-18T15:30:00"
-author: "franic"
+author: "Franic"
 categories: ["Articles"]
 tags: ["hardware", "programmation"]
 url: "/2023/02/18/mpy-jama/"

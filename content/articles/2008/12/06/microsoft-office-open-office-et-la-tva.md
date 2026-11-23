@@ -2,7 +2,7 @@
 title: "Microsoft Office, Open Office et la TVA !!!"
 date: "2008-12-06T19:07:52"
 lastmod: "2015-04-24T23:22:39"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: []
 url: "/2008/12/06/microsoft-office-open-office-et-la-tva/"

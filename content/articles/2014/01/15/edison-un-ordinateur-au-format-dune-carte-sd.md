@@ -2,7 +2,7 @@
 title: "Edison, un ordinateur au format d’une carte SD"
 date: "2014-01-15T09:39:18"
 lastmod: "2015-04-24T23:22:39"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2014/01/15/edison-un-ordinateur-au-format-dune-carte-sd/"

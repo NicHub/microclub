@@ -2,7 +2,7 @@
 title: "Festival de robotique EPFL 2012"
 date: "2012-05-07T16:41:48"
 lastmod: "2015-04-24T23:22:39"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2012/05/07/festival-de-robotique-epfl-2012/"

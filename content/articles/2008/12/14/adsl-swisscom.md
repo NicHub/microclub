@@ -2,7 +2,7 @@
 title: "ADSL Swisscom"
 date: "2008-12-14T08:10:25"
 lastmod: "2015-04-24T23:22:39"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: ["acces-internet", "it", "reseau"]
 url: "/2008/12/14/adsl-swisscom/"

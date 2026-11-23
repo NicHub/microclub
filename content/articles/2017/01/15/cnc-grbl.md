@@ -2,7 +2,7 @@
 title: "CNC GRBL"
 date: "2017-01-15T11:18:47"
 lastmod: "2017-02-07T19:20:15"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: []
 url: "/2017/01/15/cnc-grbl/"

@@ -2,7 +2,7 @@
 title: "LES SACS D’ARGENT"
 date: "2011-06-13T19:08:49"
 lastmod: "2015-04-24T23:22:39"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: ["non-classe"]
 url: "/2011/06/13/les-sacs-dargent/"

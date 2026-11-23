@@ -2,7 +2,7 @@
 title: "Vous cherchez un petit utilitaire pour …."
 date: "2013-02-19T11:31:30"
 lastmod: "2015-04-24T23:22:39"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: ["non-classe", "utilitaire"]
 url: "/2013/02/19/vous-cherchez-un-petit-utilitaire-pour/"

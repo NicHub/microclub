@@ -2,7 +2,7 @@
 title: "Trouver l’emplacement du fichier de sortie *.hex dans Arduino"
 date: "2015-05-21T15:39:48"
 lastmod: "2015-05-21T15:40:44"
-author: "franic"
+author: "Franic"
 categories: ["Microclub"]
 tags: ["ardui", "arduino", "hardware", "processeurs"]
 url: "/2015/05/21/trouver-lemplacement-du-fichier-de-sortie-hex-dans-arduino/"
