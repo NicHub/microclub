@@ -134,6 +134,9 @@ menus:
     - name: Catégories
       url: /categories/
       weight: 30
+    - name: Statistiques
+      pageRef: /statistiques
+      weight: 35
     - name: Agenda
       url: /agenda/
       weight: 10

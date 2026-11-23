@@ -1,0 +1,107 @@
+{{ define "main" }}
+  {{ $articles := where (where site.RegularPages "Section" "articles") "PublishDate.IsZero" false }}
+  {{ $years := $articles.GroupByPublishDate "2006" "desc" }}
+  {{ $counts := newScratch }}
+  {{ range $articles }}
+    {{ $author := strings.TrimSpace (.Params.author | default "") }}
+    {{ $counts.Add (printf "author:%s" $author) 1 }}
+  {{ end }}
+  {{ $ranking := slice }}
+  {{ range $key, $count := $counts.Values }}
+    {{ $author := strings.TrimPrefix "author:" $key }}
+    {{ $ranking = $ranking | append (dict "key" $key "name" ($author | default "Sans auteur renseigné") "count" $count) }}
+  {{ end }}
+  {{ $ranking = sort (sort $ranking "name") "count" "desc" }}
+
+  <div class="stats mt-5 max-w-4xl" data-statistiques>
+    <header>
+      <h1 class="text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+      <p class="mt-3 text-neutral-600 dark:text-neutral-300">{{ .Description }}</p>
+    </header>
+
+    {{ with $ranking }}
+      {{ $max := (index . 0).count }}
+      <section class="stats-section" aria-labelledby="statistiques-auteurs">
+        <h2 id="statistiques-auteurs" class="text-2xl font-bold">Articles par auteur</h2>
+        <p class="stats-muted">Tous les articles publiés, depuis les premières archives du site.</p>
+        <ol class="stats-ranking stats-panel">
+          {{ range . }}
+            {{ $width := div (mul .count 100.0) $max }}
+            <li class="stats-rank">
+              <span>{{ .name }}</span>
+              <a href="#statistiques-calendrier" data-author-filter="{{ .key }}" hidden>{{ .name }}</a>
+              <span class="stats-rank-count">{{ .count }} {{ cond (eq .count 1) "article" "articles" }}</span>
+              <div class="stats-rank-track" aria-hidden="true">
+                <div class="stats-rank-bar" style="width: {{ printf "%.2f%%" $width | safeCSS }}"></div>
+              </div>
+            </li>
+          {{ end }}
+        </ol>
+      </section>
+    {{ end }}
+
+    <section class="stats-section stats-calendar" aria-labelledby="statistiques-calendrier">
+      <h2 id="statistiques-calendrier" class="text-2xl font-bold">Calendrier des publications</h2>
+      {{ if $years }}
+        <div class="stats-panel stats-calendar-panel" data-calendar-panel hidden>
+          <div class="stats-controls">
+            <label for="statistiques-auteur">Auteur</label>
+            <select id="statistiques-auteur">
+              <option value="all">Tous les auteurs</option>
+              {{ range sort $ranking "name" }}
+                <option value="{{ .key }}">{{ .name }}</option>
+              {{ end }}
+            </select>
+            <label for="statistiques-annee">Année</label>
+            <select id="statistiques-annee">
+              {{ range $years }}<option value="{{ .Key }}">{{ .Key }}</option>{{ end }}
+            </select>
+          </div>
+          <p class="stats-muted" data-calendar-count role="status"></p>
+          <p class="stats-help">Sélectionne un jour actif pour voir les articles ou <a href="#statistiques-par-date">passe à la liste par date</a>.</p>
+          <div class="stats-scroll" role="region" aria-label="Mosaïque annuelle des publications" tabindex="0">
+            <div class="stats-grid" data-calendar-grid></div>
+          </div>
+          <ul class="stats-legend" aria-label="Nombre d’articles par jour">
+            <li><span class="stats-cell" data-level="0"></span> 0</li>
+            <li><span class="stats-cell" data-level="1"></span> 1</li>
+            <li><span class="stats-cell" data-level="2"></span> 2</li>
+            <li><span class="stats-cell" data-level="3"></span> 3</li>
+            <li><span class="stats-cell" data-level="4"></span> 4 ou plus</li>
+          </ul>
+        </div>
+
+        <h3 id="statistiques-par-date" class="mt-6 mb-2 text-lg font-bold" tabindex="-1">Articles par date</h3>
+        <p class="stats-muted" data-calendar-empty hidden>Aucun article ne correspond à cette sélection.</p>
+        <div class="stats-archives">
+          {{ range $i, $year := $years }}
+            <details class="stats-year" data-year="{{ .Key }}" {{ if eq $i 0 }}open{{ end }}>
+              <summary>{{ .Key }}</summary>
+              {{ range .Pages.GroupByPublishDate "2006-01-02" "desc" }}
+                <details class="stats-day" data-day="{{ .Key }}">
+                  <summary>
+                    <time datetime="{{ .Key }}">{{ time.Format "2 January 2006" (index .Pages 0).PublishDate }}</time>
+                    <span class="stats-muted" data-day-count>· {{ len .Pages }} {{ cond (eq (len .Pages) 1) "article" "articles" }}</span>
+                  </summary>
+                  <ul>
+                    {{ range .Pages }}
+                      {{ $author := strings.TrimSpace (.Params.author | default "") }}
+                      <li data-author="author:{{ $author }}"><a href="{{ .RelPermalink }}">{{ .LinkTitle | plainify }}</a></li>
+                    {{ end }}
+                  </ul>
+                </details>
+              {{ end }}
+            </details>
+          {{ end }}
+        </div>
+      {{ else }}
+        <p class="stats-muted">Aucun article publié pour le moment.</p>
+      {{ end }}
+    </section>
+  </div>
+
+  {{ if $years }}
+    {{ $script := resources.Get "js/statistiques.js" | minify | fingerprint }}
+    <script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+  {{ end }}
+{{ end }}
