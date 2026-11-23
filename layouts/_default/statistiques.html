@@ -20,14 +20,15 @@
     </header>
 
     {{ with $ranking }}
-      {{ $max := (index . 0).count }}
+      {{ $total := len $articles }}
+      {{ $rows := (slice (dict "key" "all" "name" "Tous les auteurs" "count" $total)) | append . }}
       <section class="stats-section" aria-labelledby="statistiques-auteurs">
         <h2 id="statistiques-auteurs" class="text-2xl font-bold">Articles par auteur</h2>
         <p class="stats-muted">Tous les articles publiés, depuis les premières archives du site.</p>
         <ol class="stats-ranking stats-panel">
-          {{ range . }}
-            {{ $width := div (mul .count 100.0) $max }}
-            <li class="stats-rank">
+          {{ range $rows }}
+            {{ $width := div (mul .count 100.0) $total }}
+            <li class="stats-rank{{ if eq .key "all" }} stats-rank-total{{ end }}">
               <span>{{ .name }}</span>
               <a href="#statistiques-calendrier" data-author-filter="{{ .key }}" hidden>{{ .name }}</a>
               <span class="stats-rank-count">{{ .count }} {{ cond (eq .count 1) "article" "articles" }}</span>

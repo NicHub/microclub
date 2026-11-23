@@ -58,6 +58,12 @@
   font-variant-numeric: tabular-nums;
 }
 
+.stats-rank-total {
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--stats-border);
+  font-weight: 700;
+}
+
 .stats a {
   color: var(--stats-accent);
   text-decoration: underline;

@@ -113,7 +113,7 @@
     link.addEventListener("click", () => {
       const author = link.dataset.authorFilter;
       const hasArticles = (year) => year.days.some((day) => day.articles.some((article) => article.dataset.author === author));
-      if (!years.some((year) => year.key === yearSelect.value && hasArticles(year))) {
+      if (author !== "all" && !years.some((year) => year.key === yearSelect.value && hasArticles(year))) {
         yearSelect.value = years.find(hasArticles).key;
       }
       authorSelect.value = author;
