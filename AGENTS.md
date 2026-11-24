@@ -25,6 +25,10 @@ la compatibilité du module Blowfish avec certaines versions de Hugo tant que
 ce problème ne bloque pas le build et ne provoque pas de comportement
 problématique.
 
+## Articles et supports de présentation
+
+Quand tu crées ou modifies un article avec `showPresentation: true`, ne laisse pas de section `## Commentaires` vide en bas de page. Si le modèle d’article en a ajouté une, retire le titre et le commentaire HTML d’aide. Conserve les commentaires déjà publiés.
+
 ## Pages externes WordPress vers Hugo
 
 Quand une demande consiste à rapatrier une page WordPress externe et à l’adapter au site Hugo :
