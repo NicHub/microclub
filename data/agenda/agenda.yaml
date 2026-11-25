@@ -24,6 +24,14 @@
 ##
 
 events:
+    - date: 2027-01-15T19:00:00
+      status: confirmed
+      title: Présentation des bricolages des membres
+      location:
+          name: MED 1 1815
+          url: https://plan.epfl.ch/?room=MED%201%201815
+      description: ""
+      links: []
     - date: 2026-12-11T19:00:00
       status: confirmed
       title: Repas de clôture au Florissant
