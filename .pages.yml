@@ -8,11 +8,13 @@ content:
     type: collection
     path: content/articles
     format: yaml-frontmatter
-    filename: "{primary}.md"
+    filename:
+      template: "{year}/{month}/{day}/{primary}/index.md"
+      field: false
     subfolders: true
     exclude: [images]
     operations:
-      create: false
+      create: true
       rename: false
       delete: false
     view:
@@ -28,10 +30,18 @@ content:
       - name: date
         label: Date
         type: string
-        readonly: true
+        required: true
+        description: "Format : AAAA-MM-JJ ou AAAA-MM-JJTHH:MM:SS. Le dossier d’un nouvel article utilise la date du jour."
+        pattern:
+          regex: '^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})?)?$'
+          message: Saisis une date au format AAAA-MM-JJ ou une date et heure ISO 8601.
       - name: author
         label: Auteur
         type: string
+      - name: draft
+        label: Brouillon
+        type: boolean
+        description: Active cette option pour enregistrer l’article sans le publier.
       - name: categories
         label: Catégories
         type: string
