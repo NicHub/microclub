@@ -42,7 +42,10 @@ content:
         list: true
       - name: body
         label: Contenu (Markdown)
-        type: text
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
 
   - name: pages
     label: Pages
@@ -64,7 +67,10 @@ content:
         required: true
       - name: body
         label: Contenu (Markdown)
-        type: text
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
 
   - name: accueil
     label: Accueil
@@ -86,4 +92,7 @@ content:
         type: string
       - name: body
         label: Contenu (Markdown)
-        type: text
+        type: rich-text
+        options:
+          format: markdown
+          switcher: true
