@@ -1,0 +1,89 @@
+settings:
+  content:
+    merge: true
+
+content:
+  - name: articles
+    label: Articles
+    type: collection
+    path: content/articles
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    subfolders: true
+    exclude: [images]
+    operations:
+      create: false
+      rename: false
+      delete: false
+    view:
+      layout: tree
+      fields: [title, date]
+      sort: [title, date]
+      search: [title]
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: string
+        readonly: true
+      - name: author
+        label: Auteur
+        type: string
+      - name: categories
+        label: Catégories
+        type: string
+        list: true
+      - name: tags
+        label: Mots-clés
+        type: string
+        list: true
+      - name: body
+        label: Contenu (Markdown)
+        type: text
+
+  - name: pages
+    label: Pages
+    type: collection
+    path: content/pages
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    subfolders: false
+    operations:
+      create: false
+      rename: false
+      delete: false
+    view:
+      fields: [title]
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: body
+        label: Contenu (Markdown)
+        type: text
+
+  - name: accueil
+    label: Accueil
+    type: file
+    path: content/_index.md
+    format: yaml-frontmatter
+    operations:
+      delete: false
+    fields:
+      - name: title
+        label: Titre
+        type: string
+        required: true
+      - name: heroCaption
+        label: Lieu
+        type: string
+      - name: heroLead
+        label: Présentation
+        type: string
+      - name: body
+        label: Contenu (Markdown)
+        type: text
